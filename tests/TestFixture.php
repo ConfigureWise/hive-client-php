@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace HiveCpq\Client\Tests;
 
+use HiveCpq\Client\Authentication\ClientCredentialsOptions;
 use HiveCpq\Client\Authentication\HiveAuthOptions;
 use HiveCpq\Client\HiveClient;
 
@@ -53,37 +54,19 @@ class TestFixture
             $dotenv->safeLoad();
         }
 
-        $username = $_ENV['HIVE_AUTH_USERNAME'] ?? getenv('HIVE_AUTH_USERNAME') ?: null;
-        $password = $_ENV['HIVE_AUTH_PASSWORD'] ?? getenv('HIVE_AUTH_PASSWORD') ?: null;
-
-        if (empty($username) || empty($password)) {
-            self::$skipReason = 'Missing credentials. Set HIVE_AUTH_USERNAME and HIVE_AUTH_PASSWORD.';
-            return;
-        }
-
         try {
-            $authOptions = new HiveAuthOptions();
-            $authOptions->username = $username;
-            $authOptions->password = $password;
+            self::$client = self::createClient();
 
-            self::$client = HiveClient::createWithOAuth2($authOptions);
+            if (self::$client === null) {
+                self::$skipReason = 'Missing credentials. Set HIVE_CLIENT_ID/HIVE_CLIENT_SECRET or HIVE_AUTH_USERNAME/HIVE_AUTH_PASSWORD.';
+                return;
+            }
 
             $manufacturers = self::$client->manufacturers()->getManufacturersList();
             $items = $manufacturers->getItems() ?? [];
 
             if (is_array($items) && count($items) > 0) {
-                foreach ($items as $manufacturer) {
-                    $name = method_exists($manufacturer, 'getName') ? $manufacturer->getName() : '';
-                    if (stripos($name, 'ConfigureWise') !== false || stripos($name, 'Configure Wise') !== false) {
-                        self::$manufacturerId = method_exists($manufacturer, 'getId') ? $manufacturer->getId() : null;
-                        break;
-                    }
-                }
-
-                if (self::$manufacturerId === null) {
-                    $first = $items[0];
-                    self::$manufacturerId = method_exists($first, 'getId') ? $first->getId() : null;
-                }
+                self::$manufacturerId = $items[0]->getId();
             }
 
             if (self::$manufacturerId === null) {
@@ -93,5 +76,30 @@ class TestFixture
             self::$skipReason = 'Failed to initialize: ' . $e->getMessage();
             self::$client = null;
         }
+    }
+
+    private static function createClient(): ?HiveClient
+    {
+        $clientId = $_ENV['HIVE_CLIENT_ID'] ?? getenv('HIVE_CLIENT_ID') ?: null;
+        $clientSecret = $_ENV['HIVE_CLIENT_SECRET'] ?? getenv('HIVE_CLIENT_SECRET') ?: null;
+
+        if (!empty($clientId) && !empty($clientSecret)) {
+            $options = new ClientCredentialsOptions();
+            $options->clientId = $clientId;
+            $options->clientSecret = $clientSecret;
+            return HiveClient::createWithClientCredentials($options);
+        }
+
+        $username = $_ENV['HIVE_AUTH_USERNAME'] ?? getenv('HIVE_AUTH_USERNAME') ?: null;
+        $password = $_ENV['HIVE_AUTH_PASSWORD'] ?? getenv('HIVE_AUTH_PASSWORD') ?: null;
+
+        if (!empty($username) && !empty($password)) {
+            $authOptions = new HiveAuthOptions();
+            $authOptions->username = $username;
+            $authOptions->password = $password;
+            return HiveClient::createWithOAuth2($authOptions);
+        }
+
+        return null;
     }
 }

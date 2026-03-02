@@ -10,7 +10,15 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^12.0",
-        "vlucas/phpdotenv": "^5.6"
+        "vlucas/phpdotenv": "^5.6",
+        "symfony/http-kernel": "^6.4 || ^7.0",
+        "symfony/dependency-injection": "^6.4 || ^7.0",
+        "symfony/config": "^6.4 || ^7.0"
+    },
+    "suggest": {
+        "symfony/http-kernel": "Required for Symfony bundle integration",
+        "symfony/dependency-injection": "Required for Symfony bundle integration",
+        "symfony/config": "Required for Symfony bundle integration"
     },
     "autoload": {
         "psr-4": {

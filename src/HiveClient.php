@@ -7,6 +7,8 @@ namespace HiveCpq\Client;
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
 use HiveCpq\Client\Authentication\BearerTokenProvider;
+use HiveCpq\Client\Authentication\ClientCredentialsOptions;
+use HiveCpq\Client\Authentication\ClientCredentialsTokenProvider;
 use HiveCpq\Client\Authentication\HiveAuthOptions;
 use HiveCpq\Client\Authentication\HiveOAuth2TokenProvider;
 use HiveCpq\Client\Generated\Api\CategoryApi;
@@ -91,6 +93,20 @@ class HiveClient
     public static function createWithOAuth2(HiveAuthOptions $authOptions, ?string $baseUrl = null, ?LoggerInterface $logger = null): self
     {
         $tokenProvider = new HiveOAuth2TokenProvider($authOptions);
+
+        $options = new HiveClientOptions();
+        $options->tokenProvider = $tokenProvider->getToken(...);
+
+        if ($baseUrl !== null) {
+            $options->baseUrl = $baseUrl;
+        }
+
+        return new self($options, $logger);
+    }
+
+    public static function createWithClientCredentials(ClientCredentialsOptions $credentialsOptions, ?string $baseUrl = null, ?LoggerInterface $logger = null): self
+    {
+        $tokenProvider = new ClientCredentialsTokenProvider($credentialsOptions);
 
         $options = new HiveClientOptions();
         $options->tokenProvider = $tokenProvider->getToken(...);
