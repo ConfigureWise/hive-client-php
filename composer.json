@@ -1,0 +1,29 @@
+{
+    "name": "hivecpq/client",
+    "description": "PHP client for the Hive CPQ Product Configurator API",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.10",
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "HiveCpq\\Client\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HiveCpq\\Client\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "regenerate": "bash scripts/regenerate.sh"
+    }
+}
