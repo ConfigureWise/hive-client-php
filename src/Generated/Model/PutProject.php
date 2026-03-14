@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PutProject Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,11 +60,11 @@ class PutProject implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'name' => 'string',
         'sell_to_customer_reference' => 'string',
-        'sell_to' => '\HiveCpq\\Client\\Generated\Model\PostProjectSellTo',
-        'invoice' => '\HiveCpq\\Client\\Generated\Model\PostProjectSellTo',
-        'delivery' => '\HiveCpq\\Client\\Generated\Model\PostProjectSellTo',
-        'installation' => '\HiveCpq\\Client\\Generated\Model\PostProjectSellTo',
-        'sales_conditions' => '\HiveCpq\\Client\\Generated\Model\PostProjectSalesConditions'
+        'sell_to' => '\HiveCpq\Client\Generated\Model\PostProjectSellTo',
+        'invoice' => '\HiveCpq\Client\Generated\Model\PostProjectSellTo',
+        'delivery' => '\HiveCpq\Client\Generated\Model\PostProjectSellTo',
+        'installation' => '\HiveCpq\Client\Generated\Model\PostProjectSellTo',
+        'sales_conditions' => '\HiveCpq\Client\Generated\Model\PostProjectSalesConditions'
     ];
 
     /**
@@ -389,7 +389,7 @@ class PutProject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sell_to
      *
-     * @return \HiveCpq\\Client\\Generated\Model\PostProjectSellTo|null
+     * @return \HiveCpq\Client\Generated\Model\PostProjectSellTo|null
      */
     public function getSellTo()
     {
@@ -399,7 +399,7 @@ class PutProject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sell_to
      *
-     * @param \HiveCpq\\Client\\Generated\Model\PostProjectSellTo|null $sell_to sell_to
+     * @param \HiveCpq\Client\Generated\Model\PostProjectSellTo|null $sell_to sell_to
      *
      * @return self
      */
@@ -416,7 +416,7 @@ class PutProject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets invoice
      *
-     * @return \HiveCpq\\Client\\Generated\Model\PostProjectSellTo|null
+     * @return \HiveCpq\Client\Generated\Model\PostProjectSellTo|null
      */
     public function getInvoice()
     {
@@ -426,7 +426,7 @@ class PutProject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets invoice
      *
-     * @param \HiveCpq\\Client\\Generated\Model\PostProjectSellTo|null $invoice invoice
+     * @param \HiveCpq\Client\Generated\Model\PostProjectSellTo|null $invoice invoice
      *
      * @return self
      */
@@ -443,7 +443,7 @@ class PutProject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets delivery
      *
-     * @return \HiveCpq\\Client\\Generated\Model\PostProjectSellTo|null
+     * @return \HiveCpq\Client\Generated\Model\PostProjectSellTo|null
      */
     public function getDelivery()
     {
@@ -453,7 +453,7 @@ class PutProject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets delivery
      *
-     * @param \HiveCpq\\Client\\Generated\Model\PostProjectSellTo|null $delivery delivery
+     * @param \HiveCpq\Client\Generated\Model\PostProjectSellTo|null $delivery delivery
      *
      * @return self
      */
@@ -470,7 +470,7 @@ class PutProject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets installation
      *
-     * @return \HiveCpq\\Client\\Generated\Model\PostProjectSellTo|null
+     * @return \HiveCpq\Client\Generated\Model\PostProjectSellTo|null
      */
     public function getInstallation()
     {
@@ -480,7 +480,7 @@ class PutProject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets installation
      *
-     * @param \HiveCpq\\Client\\Generated\Model\PostProjectSellTo|null $installation installation
+     * @param \HiveCpq\Client\Generated\Model\PostProjectSellTo|null $installation installation
      *
      * @return self
      */
@@ -497,7 +497,7 @@ class PutProject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sales_conditions
      *
-     * @return \HiveCpq\\Client\\Generated\Model\PostProjectSalesConditions|null
+     * @return \HiveCpq\Client\Generated\Model\PostProjectSalesConditions|null
      */
     public function getSalesConditions()
     {
@@ -507,7 +507,7 @@ class PutProject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sales_conditions
      *
-     * @param \HiveCpq\\Client\\Generated\Model\PostProjectSalesConditions|null $sales_conditions sales_conditions
+     * @param \HiveCpq\Client\Generated\Model\PostProjectSalesConditions|null $sales_conditions sales_conditions
      *
      * @return self
      */

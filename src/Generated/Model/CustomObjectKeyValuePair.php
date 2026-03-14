@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * CustomObjectKeyValuePair Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class CustomObjectKeyValuePair implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'key' => 'string',
-        'value' => '\HiveCpq\\Client\\Generated\Model\CustomObjectKeyValuePairValue',
-        'data_type' => '\HiveCpq\\Client\\Generated\Model\CustomObjectTypeEnum'
+        'value' => '\HiveCpq\Client\Generated\Model\CustomObjectKeyValuePairValue',
+        'data_type' => '\HiveCpq\Client\Generated\Model\CustomObjectTypeEnum'
     ];
 
     /**
@@ -337,7 +337,7 @@ class CustomObjectKeyValuePair implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets value
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CustomObjectKeyValuePairValue|null
+     * @return \HiveCpq\Client\Generated\Model\CustomObjectKeyValuePairValue|null
      */
     public function getValue()
     {
@@ -347,7 +347,7 @@ class CustomObjectKeyValuePair implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets value
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CustomObjectKeyValuePairValue|null $value value
+     * @param \HiveCpq\Client\Generated\Model\CustomObjectKeyValuePairValue|null $value value
      *
      * @return self
      */
@@ -364,7 +364,7 @@ class CustomObjectKeyValuePair implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets data_type
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CustomObjectTypeEnum|null
+     * @return \HiveCpq\Client\Generated\Model\CustomObjectTypeEnum|null
      */
     public function getDataType()
     {
@@ -374,7 +374,7 @@ class CustomObjectKeyValuePair implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets data_type
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CustomObjectTypeEnum|null $data_type data_type
+     * @param \HiveCpq\Client\Generated\Model\CustomObjectTypeEnum|null $data_type data_type
      *
      * @return self
      */

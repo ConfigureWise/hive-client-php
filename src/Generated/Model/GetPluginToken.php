@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * GetPluginToken Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetPluginToken implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'contacts' => '\HiveCpq\\Client\\Generated\Model\GetPluginTokenContactsInner[]'
+        'contacts' => '\HiveCpq\Client\Generated\Model\GetPluginTokenContactsInner[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class GetPluginToken implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets contacts
      *
-     * @return \HiveCpq\\Client\\Generated\Model\GetPluginTokenContactsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\GetPluginTokenContactsInner[]|null
      */
     public function getContacts()
     {
@@ -303,7 +303,7 @@ class GetPluginToken implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets contacts
      *
-     * @param \HiveCpq\\Client\\Generated\Model\GetPluginTokenContactsInner[]|null $contacts contacts
+     * @param \HiveCpq\Client\Generated\Model\GetPluginTokenContactsInner[]|null $contacts contacts
      *
      * @return self
      */

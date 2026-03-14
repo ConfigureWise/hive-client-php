@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Api;
+namespace HiveCpq\Client\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\\Client\\Generated\ApiException;
-use HiveCpq\\Client\\Generated\Configuration;
-use HiveCpq\\Client\\Generated\FormDataProcessor;
-use HiveCpq\\Client\\Generated\HeaderSelector;
-use HiveCpq\\Client\\Generated\ObjectSerializer;
+use HiveCpq\Client\Generated\ApiException;
+use HiveCpq\Client\Generated\Configuration;
+use HiveCpq\Client\Generated\FormDataProcessor;
+use HiveCpq\Client\Generated\HeaderSelector;
+use HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ProjectSegmentApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -184,12 +184,12 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\AddConfigurationToProjectSegmentRequest|null $add_configuration_to_project_segment_request add_configuration_to_project_segment_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\AddConfigurationToProjectSegmentRequest|null $add_configuration_to_project_segment_request add_configuration_to_project_segment_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addConfigurationToProjectSegment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\AddConfigurationToProjectSegment201Response
+     * @return \HiveCpq\Client\Generated\Model\AddConfigurationToProjectSegment201Response
      */
     public function addConfigurationToProjectSegment($manufacturer_id, $project_segment_id, $add_configuration_to_project_segment_request = null, string $contentType = self::contentTypes['addConfigurationToProjectSegment'][0])
     {
@@ -204,12 +204,12 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\AddConfigurationToProjectSegmentRequest|null $add_configuration_to_project_segment_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\AddConfigurationToProjectSegmentRequest|null $add_configuration_to_project_segment_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addConfigurationToProjectSegment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\AddConfigurationToProjectSegment201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\AddConfigurationToProjectSegment201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function addConfigurationToProjectSegmentWithHttpInfo($manufacturer_id, $project_segment_id, $add_configuration_to_project_segment_request = null, string $contentType = self::contentTypes['addConfigurationToProjectSegment'][0])
     {
@@ -241,7 +241,7 @@ class ProjectSegmentApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\AddConfigurationToProjectSegment201Response',
+                        '\HiveCpq\Client\Generated\Model\AddConfigurationToProjectSegment201Response',
                         $request,
                         $response,
                     );
@@ -263,7 +263,7 @@ class ProjectSegmentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\AddConfigurationToProjectSegment201Response',
+                '\HiveCpq\Client\Generated\Model\AddConfigurationToProjectSegment201Response',
                 $request,
                 $response,
             );
@@ -272,7 +272,7 @@ class ProjectSegmentApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\AddConfigurationToProjectSegment201Response',
+                        '\HiveCpq\Client\Generated\Model\AddConfigurationToProjectSegment201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -291,7 +291,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\AddConfigurationToProjectSegmentRequest|null $add_configuration_to_project_segment_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\AddConfigurationToProjectSegmentRequest|null $add_configuration_to_project_segment_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addConfigurationToProjectSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -314,7 +314,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\AddConfigurationToProjectSegmentRequest|null $add_configuration_to_project_segment_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\AddConfigurationToProjectSegmentRequest|null $add_configuration_to_project_segment_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addConfigurationToProjectSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -322,7 +322,7 @@ class ProjectSegmentApi
      */
     public function addConfigurationToProjectSegmentAsyncWithHttpInfo($manufacturer_id, $project_segment_id, $add_configuration_to_project_segment_request = null, string $contentType = self::contentTypes['addConfigurationToProjectSegment'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\AddConfigurationToProjectSegment201Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\AddConfigurationToProjectSegment201Response';
         $request = $this->addConfigurationToProjectSegmentRequest($manufacturer_id, $project_segment_id, $add_configuration_to_project_segment_request, $contentType);
 
         return $this->client
@@ -366,7 +366,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\AddConfigurationToProjectSegmentRequest|null $add_configuration_to_project_segment_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\AddConfigurationToProjectSegmentRequest|null $add_configuration_to_project_segment_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addConfigurationToProjectSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -493,9 +493,9 @@ class ProjectSegmentApi
      * @param  \SplFileObject|null $file file (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addProjectSegmentsAttachment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
      */
     public function addProjectSegmentsAttachment($manufacturer_id, $project_segment_id, $is_distributor_file = null, $file = null, string $contentType = self::contentTypes['addProjectSegmentsAttachment'][0])
     {
@@ -514,9 +514,9 @@ class ProjectSegmentApi
      * @param  \SplFileObject|null $file (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addProjectSegmentsAttachment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function addProjectSegmentsAttachmentWithHttpInfo($manufacturer_id, $project_segment_id, $is_distributor_file = null, $file = null, string $contentType = self::contentTypes['addProjectSegmentsAttachment'][0])
     {
@@ -548,7 +548,7 @@ class ProjectSegmentApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -570,7 +570,7 @@ class ProjectSegmentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -579,7 +579,7 @@ class ProjectSegmentApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -631,7 +631,7 @@ class ProjectSegmentApi
      */
     public function addProjectSegmentsAttachmentAsyncWithHttpInfo($manufacturer_id, $project_segment_id, $is_distributor_file = null, $file = null, string $contentType = self::contentTypes['addProjectSegmentsAttachment'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->addProjectSegmentsAttachmentRequest($manufacturer_id, $project_segment_id, $is_distributor_file, $file, $contentType);
 
         return $this->client
@@ -807,7 +807,7 @@ class ProjectSegmentApi
      * @param  string $attachment_id ID of the project segment attachment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteProjectSegmentsAttachment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -826,7 +826,7 @@ class ProjectSegmentApi
      * @param  string $attachment_id ID of the project segment attachment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteProjectSegmentsAttachment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1068,9 +1068,9 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerProjectSegment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegment
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegment
      */
     public function getManufacturerProjectSegment($manufacturer_id, $project_segment_id, string $contentType = self::contentTypes['getManufacturerProjectSegment'][0])
     {
@@ -1087,9 +1087,9 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerProjectSegment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\ProjectSegment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\ProjectSegment, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerProjectSegmentWithHttpInfo($manufacturer_id, $project_segment_id, string $contentType = self::contentTypes['getManufacturerProjectSegment'][0])
     {
@@ -1121,7 +1121,7 @@ class ProjectSegmentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\ProjectSegment',
+                        '\HiveCpq\Client\Generated\Model\ProjectSegment',
                         $request,
                         $response,
                     );
@@ -1143,7 +1143,7 @@ class ProjectSegmentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\ProjectSegment',
+                '\HiveCpq\Client\Generated\Model\ProjectSegment',
                 $request,
                 $response,
             );
@@ -1152,7 +1152,7 @@ class ProjectSegmentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\ProjectSegment',
+                        '\HiveCpq\Client\Generated\Model\ProjectSegment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1200,7 +1200,7 @@ class ProjectSegmentApi
      */
     public function getManufacturerProjectSegmentAsyncWithHttpInfo($manufacturer_id, $project_segment_id, string $contentType = self::contentTypes['getManufacturerProjectSegment'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\ProjectSegment';
+        $returnType = '\HiveCpq\Client\Generated\Model\ProjectSegment';
         $request = $this->getManufacturerProjectSegmentRequest($manufacturer_id, $project_segment_id, $contentType);
 
         return $this->client
@@ -1367,9 +1367,9 @@ class ProjectSegmentApi
      * @param  string[]|null $ids_in Filter on the IDs of the items. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdProjectSegments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetProjectSegmentsResponse
+     * @return \HiveCpq\Client\Generated\Model\GetProjectSegmentsResponse
      */
     public function getManufacturersManufacturerIdProjectSegments($manufacturer_id, $integrated_system_name = null, $integrated_system_ids_in = null, $company_bid = null, $step = null, $updated_since = null, $page = 0, $page_size = 10, $ids_in = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdProjectSegments'][0])
     {
@@ -1393,9 +1393,9 @@ class ProjectSegmentApi
      * @param  string[]|null $ids_in Filter on the IDs of the items. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdProjectSegments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetProjectSegmentsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetProjectSegmentsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdProjectSegmentsWithHttpInfo($manufacturer_id, $integrated_system_name = null, $integrated_system_ids_in = null, $company_bid = null, $step = null, $updated_since = null, $page = 0, $page_size = 10, $ids_in = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdProjectSegments'][0])
     {
@@ -1427,7 +1427,7 @@ class ProjectSegmentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetProjectSegmentsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetProjectSegmentsResponse',
                         $request,
                         $response,
                     );
@@ -1449,7 +1449,7 @@ class ProjectSegmentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetProjectSegmentsResponse',
+                '\HiveCpq\Client\Generated\Model\GetProjectSegmentsResponse',
                 $request,
                 $response,
             );
@@ -1458,7 +1458,7 @@ class ProjectSegmentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetProjectSegmentsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetProjectSegmentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1520,7 +1520,7 @@ class ProjectSegmentApi
      */
     public function getManufacturersManufacturerIdProjectSegmentsAsyncWithHttpInfo($manufacturer_id, $integrated_system_name = null, $integrated_system_ids_in = null, $company_bid = null, $step = null, $updated_since = null, $page = 0, $page_size = 10, $ids_in = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdProjectSegments'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetProjectSegmentsResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetProjectSegmentsResponse';
         $request = $this->getManufacturersManufacturerIdProjectSegmentsRequest($manufacturer_id, $integrated_system_name, $integrated_system_ids_in, $company_bid, $step, $updated_since, $page, $page_size, $ids_in, $contentType);
 
         return $this->client
@@ -1752,7 +1752,7 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerCancelOrderToQuotation'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1770,7 +1770,7 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerCancelOrderToQuotation'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1994,7 +1994,7 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerCancelOrderToStep1'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2012,7 +2012,7 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerCancelOrderToStep1'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2236,7 +2236,7 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerCancelOrderToStep2'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2254,7 +2254,7 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerCancelOrderToStep2'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2478,7 +2478,7 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdArchive'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2496,7 +2496,7 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdArchive'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2718,10 +2718,10 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1|null $project_segment_move_to_step1 project_segment_move_to_step1 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1|null $project_segment_move_to_step1 project_segment_move_to_step1 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep1'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2737,10 +2737,10 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1|null $project_segment_move_to_step1 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1|null $project_segment_move_to_step1 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep1'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2788,7 +2788,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1|null $project_segment_move_to_step1 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1|null $project_segment_move_to_step1 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep1'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2811,7 +2811,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1|null $project_segment_move_to_step1 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1|null $project_segment_move_to_step1 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep1'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2850,7 +2850,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1|null $project_segment_move_to_step1 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1|null $project_segment_move_to_step1 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep1'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2973,10 +2973,10 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep2|null $project_segment_move_to_step2 project_segment_move_to_step2 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep2|null $project_segment_move_to_step2 project_segment_move_to_step2 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep2'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2992,10 +2992,10 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep2|null $project_segment_move_to_step2 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep2|null $project_segment_move_to_step2 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep2'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3043,7 +3043,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep2|null $project_segment_move_to_step2 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep2|null $project_segment_move_to_step2 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep2'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3066,7 +3066,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep2|null $project_segment_move_to_step2 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep2|null $project_segment_move_to_step2 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep2'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3105,7 +3105,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep2|null $project_segment_move_to_step2 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep2|null $project_segment_move_to_step2 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep2'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3228,10 +3228,10 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3|null $project_segment_move_to_step3 project_segment_move_to_step3 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3|null $project_segment_move_to_step3 project_segment_move_to_step3 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep3'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3247,10 +3247,10 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3|null $project_segment_move_to_step3 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3|null $project_segment_move_to_step3 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep3'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3298,7 +3298,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3|null $project_segment_move_to_step3 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3|null $project_segment_move_to_step3 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep3'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3321,7 +3321,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3|null $project_segment_move_to_step3 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3|null $project_segment_move_to_step3 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep3'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3360,7 +3360,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3|null $project_segment_move_to_step3 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3|null $project_segment_move_to_step3 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep3'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3483,10 +3483,10 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep4|null $project_segment_move_to_step4 project_segment_move_to_step4 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep4|null $project_segment_move_to_step4 project_segment_move_to_step4 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep4'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3502,10 +3502,10 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep4|null $project_segment_move_to_step4 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep4|null $project_segment_move_to_step4 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep4'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3553,7 +3553,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep4|null $project_segment_move_to_step4 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep4|null $project_segment_move_to_step4 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep4'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3576,7 +3576,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep4|null $project_segment_move_to_step4 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep4|null $project_segment_move_to_step4 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep4'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3615,7 +3615,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep4|null $project_segment_move_to_step4 (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep4|null $project_segment_move_to_step4 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdCommandsMoveToStep4'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3740,7 +3740,7 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdProceedRecalculation'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3758,7 +3758,7 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdProceedRecalculation'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3980,10 +3980,10 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettingsRequest|null $post_manufacturers_manufacturer_id_project_segments_project_segment_id_settings_request post_manufacturers_manufacturer_id_project_segments_project_segment_id_settings_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettingsRequest|null $post_manufacturers_manufacturer_id_project_segments_project_segment_id_settings_request post_manufacturers_manufacturer_id_project_segments_project_segment_id_settings_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettings'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3999,10 +3999,10 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettingsRequest|null $post_manufacturers_manufacturer_id_project_segments_project_segment_id_settings_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettingsRequest|null $post_manufacturers_manufacturer_id_project_segments_project_segment_id_settings_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettings'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4050,7 +4050,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettingsRequest|null $post_manufacturers_manufacturer_id_project_segments_project_segment_id_settings_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettingsRequest|null $post_manufacturers_manufacturer_id_project_segments_project_segment_id_settings_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettings'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4073,7 +4073,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettingsRequest|null $post_manufacturers_manufacturer_id_project_segments_project_segment_id_settings_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettingsRequest|null $post_manufacturers_manufacturer_id_project_segments_project_segment_id_settings_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettings'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4112,7 +4112,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettingsRequest|null $post_manufacturers_manufacturer_id_project_segments_project_segment_id_settings_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettingsRequest|null $post_manufacturers_manufacturer_id_project_segments_project_segment_id_settings_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdSettings'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4237,7 +4237,7 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdUnarchive'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4255,7 +4255,7 @@ class ProjectSegmentApi
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectSegmentsProjectSegmentIdUnarchive'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4477,10 +4477,10 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegment|null $request_put_project_segment request_put_project_segment (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPutProjectSegment|null $request_put_project_segment request_put_project_segment (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerProjectSegment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4496,10 +4496,10 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegment|null $request_put_project_segment (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPutProjectSegment|null $request_put_project_segment (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerProjectSegment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4547,7 +4547,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegment|null $request_put_project_segment (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPutProjectSegment|null $request_put_project_segment (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerProjectSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4570,7 +4570,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegment|null $request_put_project_segment (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPutProjectSegment|null $request_put_project_segment (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerProjectSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4609,7 +4609,7 @@ class ProjectSegmentApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_segment_id ID of the project segment you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegment|null $request_put_project_segment (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPutProjectSegment|null $request_put_project_segment (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerProjectSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4735,9 +4735,9 @@ class ProjectSegmentApi
      * @param  bool|null $is_distributor_file Filter on whether the file is owned by the manufacturer or distributor. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchProjectSegmentsAttachments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\ResponseGetProjectSegmentAttachments
+     * @return \HiveCpq\Client\Generated\Model\ResponseGetProjectSegmentAttachments
      */
     public function searchProjectSegmentsAttachments($manufacturer_id, $project_segment_id, $is_distributor_file = null, string $contentType = self::contentTypes['searchProjectSegmentsAttachments'][0])
     {
@@ -4755,9 +4755,9 @@ class ProjectSegmentApi
      * @param  bool|null $is_distributor_file Filter on whether the file is owned by the manufacturer or distributor. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchProjectSegmentsAttachments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\ResponseGetProjectSegmentAttachments, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\ResponseGetProjectSegmentAttachments, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchProjectSegmentsAttachmentsWithHttpInfo($manufacturer_id, $project_segment_id, $is_distributor_file = null, string $contentType = self::contentTypes['searchProjectSegmentsAttachments'][0])
     {
@@ -4789,7 +4789,7 @@ class ProjectSegmentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\ResponseGetProjectSegmentAttachments',
+                        '\HiveCpq\Client\Generated\Model\ResponseGetProjectSegmentAttachments',
                         $request,
                         $response,
                     );
@@ -4811,7 +4811,7 @@ class ProjectSegmentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\ResponseGetProjectSegmentAttachments',
+                '\HiveCpq\Client\Generated\Model\ResponseGetProjectSegmentAttachments',
                 $request,
                 $response,
             );
@@ -4820,7 +4820,7 @@ class ProjectSegmentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\ResponseGetProjectSegmentAttachments',
+                        '\HiveCpq\Client\Generated\Model\ResponseGetProjectSegmentAttachments',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4870,7 +4870,7 @@ class ProjectSegmentApi
      */
     public function searchProjectSegmentsAttachmentsAsyncWithHttpInfo($manufacturer_id, $project_segment_id, $is_distributor_file = null, string $contentType = self::contentTypes['searchProjectSegmentsAttachments'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\ResponseGetProjectSegmentAttachments';
+        $returnType = '\HiveCpq\Client\Generated\Model\ResponseGetProjectSegmentAttachments';
         $request = $this->searchProjectSegmentsAttachmentsRequest($manufacturer_id, $project_segment_id, $is_distributor_file, $contentType);
 
         return $this->client

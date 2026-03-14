@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PostManufacturersManufacturerIdComponentsBulkUpsert200ResponseResultsInner Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class PostManufacturersManufacturerIdComponentsBulkUpsert200ResponseResultsInner
     protected static $openAPITypes = [
         'item_id' => 'string',
         'resource_id' => 'string',
-        'status' => '\HiveCpq\\Client\\Generated\Model\EnumBulkResponseStatus',
+        'status' => '\HiveCpq\Client\Generated\Model\EnumBulkResponseStatus',
         'message' => 'string'
     ];
 
@@ -368,7 +368,7 @@ class PostManufacturersManufacturerIdComponentsBulkUpsert200ResponseResultsInner
     /**
      * Gets status
      *
-     * @return \HiveCpq\\Client\\Generated\Model\EnumBulkResponseStatus|null
+     * @return \HiveCpq\Client\Generated\Model\EnumBulkResponseStatus|null
      */
     public function getStatus()
     {
@@ -378,7 +378,7 @@ class PostManufacturersManufacturerIdComponentsBulkUpsert200ResponseResultsInner
     /**
      * Sets status
      *
-     * @param \HiveCpq\\Client\\Generated\Model\EnumBulkResponseStatus|null $status status
+     * @param \HiveCpq\Client\Generated\Model\EnumBulkResponseStatus|null $status status
      *
      * @return self
      */

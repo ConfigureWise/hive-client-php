@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ResponseCompanySubDistributorSettings Class Doc Comment
  *
  * @category Class
  * @description These settings are included for SUB DISTRIBUTOR companies.
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class ResponseCompanySubDistributorSettings implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'distributor' => '\HiveCpq\\Client\\Generated\Model\CompanyLink',
+        'distributor' => '\HiveCpq\Client\Generated\Model\CompanyLink',
         'order_emails' => 'string[]'
     ];
 
@@ -301,7 +301,7 @@ class ResponseCompanySubDistributorSettings implements ModelInterface, ArrayAcce
     /**
      * Gets distributor
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanyLink|null
+     * @return \HiveCpq\Client\Generated\Model\CompanyLink|null
      */
     public function getDistributor()
     {
@@ -311,7 +311,7 @@ class ResponseCompanySubDistributorSettings implements ModelInterface, ArrayAcce
     /**
      * Sets distributor
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanyLink|null $distributor distributor
+     * @param \HiveCpq\Client\Generated\Model\CompanyLink|null $distributor distributor
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ComponentExplodedViewsInner Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ComponentExplodedViewsInner implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'category' => '\HiveCpq\\Client\\Generated\Model\CategoryLink',
+        'category' => '\HiveCpq\Client\Generated\Model\CategoryLink',
         'exploded_view_area' => 'string'
     ];
 
@@ -300,7 +300,7 @@ class ComponentExplodedViewsInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets category
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CategoryLink|null
+     * @return \HiveCpq\Client\Generated\Model\CategoryLink|null
      */
     public function getCategory()
     {
@@ -310,7 +310,7 @@ class ComponentExplodedViewsInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets category
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CategoryLink|null $category category
+     * @param \HiveCpq\Client\Generated\Model\CategoryLink|null $category category
      *
      * @return self
      */

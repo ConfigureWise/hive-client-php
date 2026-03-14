@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PostWebhook Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class PostWebhook implements ModelInterface, ArrayAccess, \JsonSerializable
         'code' => 'string',
         'url' => 'string',
         'description' => 'string',
-        'event_subscriptions' => '\HiveCpq\\Client\\Generated\Model\HiveEvent[]'
+        'event_subscriptions' => '\HiveCpq\Client\Generated\Model\HiveEvent[]'
     ];
 
     /**
@@ -401,7 +401,7 @@ class PostWebhook implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets event_subscriptions
      *
-     * @return \HiveCpq\\Client\\Generated\Model\HiveEvent[]|null
+     * @return \HiveCpq\Client\Generated\Model\HiveEvent[]|null
      */
     public function getEventSubscriptions()
     {
@@ -411,7 +411,7 @@ class PostWebhook implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets event_subscriptions
      *
-     * @param \HiveCpq\\Client\\Generated\Model\HiveEvent[]|null $event_subscriptions Triggers the webhook upton firing of one of the events.
+     * @param \HiveCpq\Client\Generated\Model\HiveEvent[]|null $event_subscriptions Triggers the webhook upton firing of one of the events.
      *
      * @return self
      */

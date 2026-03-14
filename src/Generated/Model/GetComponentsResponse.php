@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * GetComponentsResponse Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class GetComponentsResponse implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\HiveCpq\\Client\\Generated\Model\ComponentLimited[]',
+        'items' => '\HiveCpq\Client\Generated\Model\ComponentLimited[]',
         'total' => 'float'
     ];
 
@@ -311,7 +311,7 @@ class GetComponentsResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets items
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ComponentLimited[]
+     * @return \HiveCpq\Client\Generated\Model\ComponentLimited[]
      */
     public function getItems()
     {
@@ -321,7 +321,7 @@ class GetComponentsResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets items
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ComponentLimited[] $items items
+     * @param \HiveCpq\Client\Generated\Model\ComponentLimited[] $items items
      *
      * @return self
      */

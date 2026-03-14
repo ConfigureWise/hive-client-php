@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Api;
+namespace HiveCpq\Client\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\\Client\\Generated\ApiException;
-use HiveCpq\\Client\\Generated\Configuration;
-use HiveCpq\\Client\\Generated\FormDataProcessor;
-use HiveCpq\\Client\\Generated\HeaderSelector;
-use HiveCpq\\Client\\Generated\ObjectSerializer;
+use HiveCpq\Client\Generated\ApiException;
+use HiveCpq\Client\Generated\Configuration;
+use HiveCpq\Client\Generated\FormDataProcessor;
+use HiveCpq\Client\Generated\HeaderSelector;
+use HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * SecurityApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -143,9 +143,9 @@ class SecurityApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerRoles'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturerRolesResponse
+     * @return \HiveCpq\Client\Generated\Model\GetManufacturerRolesResponse
      */
     public function getManufacturerRoles($manufacturer_id, $default_role_for_manufacturer_company = null, $default_role_for_distributor_companies = null, $name = null, $company_id = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerRoles'][0])
     {
@@ -167,9 +167,9 @@ class SecurityApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerRoles'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturerRolesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturerRolesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerRolesWithHttpInfo($manufacturer_id, $default_role_for_manufacturer_company = null, $default_role_for_distributor_companies = null, $name = null, $company_id = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerRoles'][0])
     {
@@ -201,7 +201,7 @@ class SecurityApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerRolesResponse',
+                        '\HiveCpq\Client\Generated\Model\GetManufacturerRolesResponse',
                         $request,
                         $response,
                     );
@@ -223,7 +223,7 @@ class SecurityApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetManufacturerRolesResponse',
+                '\HiveCpq\Client\Generated\Model\GetManufacturerRolesResponse',
                 $request,
                 $response,
             );
@@ -232,7 +232,7 @@ class SecurityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerRolesResponse',
+                        '\HiveCpq\Client\Generated\Model\GetManufacturerRolesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -290,7 +290,7 @@ class SecurityApi
      */
     public function getManufacturerRolesAsyncWithHttpInfo($manufacturer_id, $default_role_for_manufacturer_company = null, $default_role_for_distributor_companies = null, $name = null, $company_id = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerRoles'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturerRolesResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturerRolesResponse';
         $request = $this->getManufacturerRolesRequest($manufacturer_id, $default_role_for_manufacturer_company, $default_role_for_distributor_companies, $name, $company_id, $page, $page_size, $contentType);
 
         return $this->client
@@ -503,9 +503,9 @@ class SecurityApi
      * @param  string|null $role_id Search the permissions linked to a role (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersPermissions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturerPermissionsResponse
+     * @return \HiveCpq\Client\Generated\Model\GetManufacturerPermissionsResponse
      */
     public function getManufacturersPermissions($manufacturer_id, $code = null, $page = 0, $page_size = 10, $role_id = null, string $contentType = self::contentTypes['getManufacturersPermissions'][0])
     {
@@ -525,9 +525,9 @@ class SecurityApi
      * @param  string|null $role_id Search the permissions linked to a role (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersPermissions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturerPermissionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturerPermissionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersPermissionsWithHttpInfo($manufacturer_id, $code = null, $page = 0, $page_size = 10, $role_id = null, string $contentType = self::contentTypes['getManufacturersPermissions'][0])
     {
@@ -559,7 +559,7 @@ class SecurityApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerPermissionsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetManufacturerPermissionsResponse',
                         $request,
                         $response,
                     );
@@ -581,7 +581,7 @@ class SecurityApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetManufacturerPermissionsResponse',
+                '\HiveCpq\Client\Generated\Model\GetManufacturerPermissionsResponse',
                 $request,
                 $response,
             );
@@ -590,7 +590,7 @@ class SecurityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerPermissionsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetManufacturerPermissionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -644,7 +644,7 @@ class SecurityApi
      */
     public function getManufacturersPermissionsAsyncWithHttpInfo($manufacturer_id, $code = null, $page = 0, $page_size = 10, $role_id = null, string $contentType = self::contentTypes['getManufacturersPermissions'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturerPermissionsResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturerPermissionsResponse';
         $request = $this->getManufacturersPermissionsRequest($manufacturer_id, $code, $page, $page_size, $role_id, $contentType);
 
         return $this->client

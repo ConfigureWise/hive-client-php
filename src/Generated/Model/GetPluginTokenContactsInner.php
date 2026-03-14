@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * GetPluginTokenContactsInner Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,8 +61,8 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
         'email' => 'string',
         'company_id' => 'string',
         'company_name' => 'string',
-        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
-        'user_account' => '\HiveCpq\\Client\\Generated\Model\UserAccountLink',
+        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
+        'user_account' => '\HiveCpq\Client\Generated\Model\UserAccountLink',
         'id' => 'string'
     ];
 
@@ -409,7 +409,7 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -419,7 +419,7 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -436,7 +436,7 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets user_account
      *
-     * @return \HiveCpq\\Client\\Generated\Model\UserAccountLink|null
+     * @return \HiveCpq\Client\Generated\Model\UserAccountLink|null
      */
     public function getUserAccount()
     {
@@ -446,7 +446,7 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets user_account
      *
-     * @param \HiveCpq\\Client\\Generated\Model\UserAccountLink|null $user_account user_account
+     * @param \HiveCpq\Client\Generated\Model\UserAccountLink|null $user_account user_account
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * CustomObject Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class CustomObject implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'key' => 'string',
         'href' => 'string',
-        'key_values' => '\HiveCpq\\Client\\Generated\Model\CustomObjectKeyValuePair[]'
+        'key_values' => '\HiveCpq\Client\Generated\Model\CustomObjectKeyValuePair[]'
     ];
 
     /**
@@ -361,7 +361,7 @@ class CustomObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets key_values
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CustomObjectKeyValuePair[]|null
+     * @return \HiveCpq\Client\Generated\Model\CustomObjectKeyValuePair[]|null
      */
     public function getKeyValues()
     {
@@ -371,7 +371,7 @@ class CustomObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets key_values
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CustomObjectKeyValuePair[]|null $key_values key_values
+     * @param \HiveCpq\Client\Generated\Model\CustomObjectKeyValuePair[]|null $key_values key_values
      *
      * @return self
      */

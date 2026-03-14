@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * Complaint Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,12 +63,12 @@ class Complaint implements ModelInterface, ArrayAccess, \JsonSerializable
         'description' => 'string',
         'status' => 'string',
         'type' => 'string',
-        'company' => '\HiveCpq\\Client\\Generated\Model\CompanyLink',
+        'company' => '\HiveCpq\Client\Generated\Model\CompanyLink',
         'order_reference' => 'string',
         'claim_number' => 'string',
-        'articles' => '\HiveCpq\\Client\\Generated\Model\ComplaintArticlesInner[]',
-        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
-        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit'
+        'articles' => '\HiveCpq\Client\Generated\Model\ComplaintArticlesInner[]',
+        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
+        'audit' => '\HiveCpq\Client\Generated\Model\Audit'
     ];
 
     /**
@@ -570,7 +570,7 @@ class Complaint implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets company
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanyLink|null
+     * @return \HiveCpq\Client\Generated\Model\CompanyLink|null
      */
     public function getCompany()
     {
@@ -580,7 +580,7 @@ class Complaint implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets company
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanyLink|null $company company
+     * @param \HiveCpq\Client\Generated\Model\CompanyLink|null $company company
      *
      * @return self
      */
@@ -651,7 +651,7 @@ class Complaint implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets articles
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ComplaintArticlesInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ComplaintArticlesInner[]|null
      */
     public function getArticles()
     {
@@ -661,7 +661,7 @@ class Complaint implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets articles
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ComplaintArticlesInner[]|null $articles articles
+     * @param \HiveCpq\Client\Generated\Model\ComplaintArticlesInner[]|null $articles articles
      *
      * @return self
      */
@@ -678,7 +678,7 @@ class Complaint implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -688,7 +688,7 @@ class Complaint implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -705,7 +705,7 @@ class Complaint implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets audit
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
+     * @return \HiveCpq\Client\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -715,7 +715,7 @@ class Complaint implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets audit
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */

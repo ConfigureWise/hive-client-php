@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * DefaultAddress Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,13 +60,13 @@ class DefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'company_name' => 'string',
-        'type' => '\HiveCpq\\Client\\Generated\Model\CompanyDefaultAddressTypeEnum',
-        'address' => '\HiveCpq\\Client\\Generated\Model\Address',
+        'type' => '\HiveCpq\Client\Generated\Model\CompanyDefaultAddressTypeEnum',
+        'address' => '\HiveCpq\Client\Generated\Model\Address',
         'email' => 'string',
         'contact_person' => 'string',
         'contact_phone' => 'string',
         'vat_number' => 'string',
-        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
+        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
         'can_change_address' => 'bool',
         'can_change_address_on_place_order' => 'bool'
     ];
@@ -417,7 +417,7 @@ class DefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets type
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanyDefaultAddressTypeEnum|null
+     * @return \HiveCpq\Client\Generated\Model\CompanyDefaultAddressTypeEnum|null
      */
     public function getType()
     {
@@ -427,7 +427,7 @@ class DefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanyDefaultAddressTypeEnum|null $type type
+     * @param \HiveCpq\Client\Generated\Model\CompanyDefaultAddressTypeEnum|null $type type
      *
      * @return self
      */
@@ -444,7 +444,7 @@ class DefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets address
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Address|null
+     * @return \HiveCpq\Client\Generated\Model\Address|null
      */
     public function getAddress()
     {
@@ -454,7 +454,7 @@ class DefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets address
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Address|null $address address
+     * @param \HiveCpq\Client\Generated\Model\Address|null $address address
      *
      * @return self
      */
@@ -579,7 +579,7 @@ class DefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -589,7 +589,7 @@ class DefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */

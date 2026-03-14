@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PostComponent Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,11 +61,11 @@ class PostComponent implements ModelInterface, ArrayAccess, \JsonSerializable
         'article_code' => 'string',
         'ean_code' => 'string',
         'gtin_code' => 'string',
-        'names' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
-        'descriptions' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
+        'names' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
+        'descriptions' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
         'product_group' => 'string',
-        'extensions' => '\HiveCpq\\Client\\Generated\Model\ComponentExtensions',
-        'integrated_system_link' => '\HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink'
+        'extensions' => '\HiveCpq\Client\Generated\Model\ComponentExtensions',
+        'integrated_system_link' => '\HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink'
     ];
 
     /**
@@ -437,7 +437,7 @@ class PostComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets names
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]
      */
     public function getNames()
     {
@@ -447,7 +447,7 @@ class PostComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets names
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[] $names A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[] $names A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -469,7 +469,7 @@ class PostComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets descriptions
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
      */
     public function getDescriptions()
     {
@@ -479,7 +479,7 @@ class PostComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets descriptions
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $descriptions A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $descriptions A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -528,7 +528,7 @@ class PostComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets extensions
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ComponentExtensions|null
+     * @return \HiveCpq\Client\Generated\Model\ComponentExtensions|null
      */
     public function getExtensions()
     {
@@ -538,7 +538,7 @@ class PostComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets extensions
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ComponentExtensions|null $extensions extensions
+     * @param \HiveCpq\Client\Generated\Model\ComponentExtensions|null $extensions extensions
      *
      * @return self
      */
@@ -555,7 +555,7 @@ class PostComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets integrated_system_link
      *
-     * @return \HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink|null
+     * @return \HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink|null
      */
     public function getIntegratedSystemLink()
     {
@@ -565,7 +565,7 @@ class PostComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets integrated_system_link
      *
-     * @param \HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink|null $integrated_system_link integrated_system_link
+     * @param \HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink|null $integrated_system_link integrated_system_link
      *
      * @return self
      */

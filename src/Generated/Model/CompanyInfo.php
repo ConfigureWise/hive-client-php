@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * CompanyInfo Class Doc Comment
  *
  * @category Class
  * @description The general info about a company.
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,7 +66,7 @@ class CompanyInfo implements ModelInterface, ArrayAccess, \JsonSerializable
         'telephone' => 'string',
         'website_url' => 'string',
         'preferred_language' => 'string',
-        'address' => '\HiveCpq\\Client\\Generated\Model\Address',
+        'address' => '\HiveCpq\Client\Generated\Model\Address',
         'external_system_id1' => 'string',
         'external_system_id2' => 'string'
     ];
@@ -549,7 +549,7 @@ class CompanyInfo implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets address
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Address|null
+     * @return \HiveCpq\Client\Generated\Model\Address|null
      */
     public function getAddress()
     {
@@ -559,7 +559,7 @@ class CompanyInfo implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets address
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Address|null $address address
+     * @param \HiveCpq\Client\Generated\Model\Address|null $address address
      *
      * @return self
      */

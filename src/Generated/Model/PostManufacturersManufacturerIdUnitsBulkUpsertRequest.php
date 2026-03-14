@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PostManufacturersManufacturerIdUnitsBulkUpsertRequest Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PostManufacturersManufacturerIdUnitsBulkUpsertRequest implements ModelInte
       */
     protected static $openAPITypes = [
         'integrated_system_name' => 'string',
-        'units' => '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequestUnitsInner[]'
+        'units' => '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequestUnitsInner[]'
     ];
 
     /**
@@ -334,7 +334,7 @@ class PostManufacturersManufacturerIdUnitsBulkUpsertRequest implements ModelInte
     /**
      * Gets units
      *
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequestUnitsInner[]
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequestUnitsInner[]
      */
     public function getUnits()
     {
@@ -344,7 +344,7 @@ class PostManufacturersManufacturerIdUnitsBulkUpsertRequest implements ModelInte
     /**
      * Sets units
      *
-     * @param \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequestUnitsInner[] $units units
+     * @param \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequestUnitsInner[] $units units
      *
      * @return self
      */

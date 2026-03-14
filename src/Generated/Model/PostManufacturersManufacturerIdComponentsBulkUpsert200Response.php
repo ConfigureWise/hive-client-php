@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PostManufacturersManufacturerIdComponentsBulkUpsert200Response Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostManufacturersManufacturerIdComponentsBulkUpsert200Response implements 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'results' => '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200ResponseResultsInner[]',
+        'results' => '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200ResponseResultsInner[]',
         'success_count' => 'float'
     ];
 
@@ -300,7 +300,7 @@ class PostManufacturersManufacturerIdComponentsBulkUpsert200Response implements 
     /**
      * Gets results
      *
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200ResponseResultsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200ResponseResultsInner[]|null
      */
     public function getResults()
     {
@@ -310,7 +310,7 @@ class PostManufacturersManufacturerIdComponentsBulkUpsert200Response implements 
     /**
      * Sets results
      *
-     * @param \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200ResponseResultsInner[]|null $results results
+     * @param \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200ResponseResultsInner[]|null $results results
      *
      * @return self
      */

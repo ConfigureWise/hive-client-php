@@ -16,7 +16,7 @@ openapi-generator generate \
     -i "$SPEC_FILE" \
     -g php \
     -o "$PROJECT_DIR/.openapi-gen-tmp" \
-    --additional-properties=invokerPackage='HiveCpq\\Client\\Generated' \
+    --additional-properties=invokerPackage='HiveCpq\Client\Generated' \
     --additional-properties=apiPackage=Api \
     --additional-properties=modelPackage=Model \
     --global-property=apiTests=false,modelTests=false,apiDocs=false,modelDocs=false

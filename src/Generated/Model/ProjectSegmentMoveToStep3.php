@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ProjectSegmentMoveToStep3 Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class ProjectSegmentMoveToStep3 implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'info' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3Info',
-        'delivery' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3Delivery',
-        'invoice' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3Invoice'
+        'info' => '\HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3Info',
+        'delivery' => '\HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3Delivery',
+        'invoice' => '\HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3Invoice'
     ];
 
     /**
@@ -317,7 +317,7 @@ class ProjectSegmentMoveToStep3 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets info
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3Info
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3Info
      */
     public function getInfo()
     {
@@ -327,7 +327,7 @@ class ProjectSegmentMoveToStep3 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets info
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3Info $info info
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3Info $info info
      *
      * @return self
      */
@@ -344,7 +344,7 @@ class ProjectSegmentMoveToStep3 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets delivery
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3Delivery
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3Delivery
      */
     public function getDelivery()
     {
@@ -354,7 +354,7 @@ class ProjectSegmentMoveToStep3 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets delivery
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3Delivery $delivery delivery
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3Delivery $delivery delivery
      *
      * @return self
      */
@@ -371,7 +371,7 @@ class ProjectSegmentMoveToStep3 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets invoice
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3Invoice
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3Invoice
      */
     public function getInvoice()
     {
@@ -381,7 +381,7 @@ class ProjectSegmentMoveToStep3 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets invoice
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep3Invoice $invoice invoice
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep3Invoice $invoice invoice
      *
      * @return self
      */

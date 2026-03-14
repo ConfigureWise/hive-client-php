@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * RequestSetPropertyValues Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class RequestSetPropertyValues implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'integrated_system_name' => 'string',
-        'property_values' => '\HiveCpq\\Client\\Generated\Model\PostPropertyComponentValue[]'
+        'property_values' => '\HiveCpq\Client\Generated\Model\PostPropertyComponentValue[]'
     ];
 
     /**
@@ -330,7 +330,7 @@ class RequestSetPropertyValues implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets property_values
      *
-     * @return \HiveCpq\\Client\\Generated\Model\PostPropertyComponentValue[]
+     * @return \HiveCpq\Client\Generated\Model\PostPropertyComponentValue[]
      */
     public function getPropertyValues()
     {
@@ -340,7 +340,7 @@ class RequestSetPropertyValues implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets property_values
      *
-     * @param \HiveCpq\\Client\\Generated\Model\PostPropertyComponentValue[] $property_values A set of property values. To clear existing values specify an empty list.
+     * @param \HiveCpq\Client\Generated\Model\PostPropertyComponentValue[] $property_values A set of property values. To clear existing values specify an empty list.
      *
      * @return self
      */

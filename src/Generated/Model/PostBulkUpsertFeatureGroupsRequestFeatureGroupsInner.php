@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PostBulkUpsertFeatureGroupsRequestFeatureGroupsInner Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class PostBulkUpsertFeatureGroupsRequestFeatureGroupsInner implements ModelInter
     protected static $openAPITypes = [
         'item_id' => 'string',
         'code' => 'string',
-        'descriptions' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
+        'descriptions' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
         'integrated_system_id' => 'string'
     ];
 
@@ -381,7 +381,7 @@ class PostBulkUpsertFeatureGroupsRequestFeatureGroupsInner implements ModelInter
     /**
      * Gets descriptions
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]
      */
     public function getDescriptions()
     {
@@ -391,7 +391,7 @@ class PostBulkUpsertFeatureGroupsRequestFeatureGroupsInner implements ModelInter
     /**
      * Sets descriptions
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[] $descriptions A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[] $descriptions A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */

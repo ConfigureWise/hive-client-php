@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ResponseGetCompany Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,15 +59,15 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'company_type' => '\HiveCpq\\Client\\Generated\Model\CompanyTypeEnum',
-        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
-        'info' => '\HiveCpq\\Client\\Generated\Model\CompanyInfo',
-        'advanced' => '\HiveCpq\\Client\\Generated\Model\CompanyAdvanced',
-        'sub_distributor_settings' => '\HiveCpq\\Client\\Generated\Model\ResponseCompanySubDistributorSettings',
+        'company_type' => '\HiveCpq\Client\Generated\Model\CompanyTypeEnum',
+        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
+        'info' => '\HiveCpq\Client\Generated\Model\CompanyInfo',
+        'advanced' => '\HiveCpq\Client\Generated\Model\CompanyAdvanced',
+        'sub_distributor_settings' => '\HiveCpq\Client\Generated\Model\ResponseCompanySubDistributorSettings',
         'archived' => 'bool',
-        'product_store' => '\HiveCpq\\Client\\Generated\Model\CompanyProductStore',
-        'sales_conditions' => '\HiveCpq\\Client\\Generated\Model\CompanySalesConditions',
-        'default_project_settings' => '\HiveCpq\\Client\\Generated\Model\CompanyDefaultProjectSettings'
+        'product_store' => '\HiveCpq\Client\Generated\Model\CompanyProductStore',
+        'sales_conditions' => '\HiveCpq\Client\Generated\Model\CompanySalesConditions',
+        'default_project_settings' => '\HiveCpq\Client\Generated\Model\CompanyDefaultProjectSettings'
     ];
 
     /**
@@ -383,7 +383,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets company_type
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanyTypeEnum|null
+     * @return \HiveCpq\Client\Generated\Model\CompanyTypeEnum|null
      */
     public function getCompanyType()
     {
@@ -393,7 +393,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets company_type
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanyTypeEnum|null $company_type company_type
+     * @param \HiveCpq\Client\Generated\Model\CompanyTypeEnum|null $company_type company_type
      *
      * @return self
      */
@@ -410,7 +410,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -420,7 +420,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -437,7 +437,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets info
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanyInfo|null
+     * @return \HiveCpq\Client\Generated\Model\CompanyInfo|null
      */
     public function getInfo()
     {
@@ -447,7 +447,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets info
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanyInfo|null $info info
+     * @param \HiveCpq\Client\Generated\Model\CompanyInfo|null $info info
      *
      * @return self
      */
@@ -464,7 +464,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets advanced
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanyAdvanced|null
+     * @return \HiveCpq\Client\Generated\Model\CompanyAdvanced|null
      */
     public function getAdvanced()
     {
@@ -474,7 +474,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets advanced
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanyAdvanced|null $advanced advanced
+     * @param \HiveCpq\Client\Generated\Model\CompanyAdvanced|null $advanced advanced
      *
      * @return self
      */
@@ -491,7 +491,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets sub_distributor_settings
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ResponseCompanySubDistributorSettings|null
+     * @return \HiveCpq\Client\Generated\Model\ResponseCompanySubDistributorSettings|null
      */
     public function getSubDistributorSettings()
     {
@@ -501,7 +501,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets sub_distributor_settings
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ResponseCompanySubDistributorSettings|null $sub_distributor_settings sub_distributor_settings
+     * @param \HiveCpq\Client\Generated\Model\ResponseCompanySubDistributorSettings|null $sub_distributor_settings sub_distributor_settings
      *
      * @return self
      */
@@ -545,7 +545,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets product_store
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanyProductStore|null
+     * @return \HiveCpq\Client\Generated\Model\CompanyProductStore|null
      */
     public function getProductStore()
     {
@@ -555,7 +555,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets product_store
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanyProductStore|null $product_store product_store
+     * @param \HiveCpq\Client\Generated\Model\CompanyProductStore|null $product_store product_store
      *
      * @return self
      */
@@ -572,7 +572,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets sales_conditions
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanySalesConditions|null
+     * @return \HiveCpq\Client\Generated\Model\CompanySalesConditions|null
      */
     public function getSalesConditions()
     {
@@ -582,7 +582,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets sales_conditions
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanySalesConditions|null $sales_conditions sales_conditions
+     * @param \HiveCpq\Client\Generated\Model\CompanySalesConditions|null $sales_conditions sales_conditions
      *
      * @return self
      */
@@ -599,7 +599,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets default_project_settings
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanyDefaultProjectSettings|null
+     * @return \HiveCpq\Client\Generated\Model\CompanyDefaultProjectSettings|null
      */
     public function getDefaultProjectSettings()
     {
@@ -609,7 +609,7 @@ class ResponseGetCompany implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets default_project_settings
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanyDefaultProjectSettings|null $default_project_settings default_project_settings
+     * @param \HiveCpq\Client\Generated\Model\CompanyDefaultProjectSettings|null $default_project_settings default_project_settings
      *
      * @return self
      */

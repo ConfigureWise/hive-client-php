@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Api;
+namespace HiveCpq\Client\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\\Client\\Generated\ApiException;
-use HiveCpq\\Client\\Generated\Configuration;
-use HiveCpq\\Client\\Generated\FormDataProcessor;
-use HiveCpq\\Client\\Generated\HeaderSelector;
-use HiveCpq\\Client\\Generated\ObjectSerializer;
+use HiveCpq\Client\Generated\ApiException;
+use HiveCpq\Client\Generated\Configuration;
+use HiveCpq\Client\Generated\FormDataProcessor;
+use HiveCpq\Client\Generated\HeaderSelector;
+use HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * CommonApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -147,7 +147,7 @@ class CommonApi
      * @param  string $integrated_system_link_id The integrated system link id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersIntegratedSystemLink'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -165,7 +165,7 @@ class CommonApi
      * @param  string $integrated_system_link_id The integrated system link id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersIntegratedSystemLink'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -391,9 +391,9 @@ class CommonApi
      * @param  string $resource_type The resource type that should match with the integrated system ids (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerIntegratedSystemLinks'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetIntegratedSystemLinksResponse
+     * @return \HiveCpq\Client\Generated\Model\GetIntegratedSystemLinksResponse
      */
     public function getManufacturerIntegratedSystemLinks($manufacturer_id, $integrated_system_ids_in, $integrated_system_name, $resource_type, string $contentType = self::contentTypes['getManufacturerIntegratedSystemLinks'][0])
     {
@@ -412,9 +412,9 @@ class CommonApi
      * @param  string $resource_type The resource type that should match with the integrated system ids (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerIntegratedSystemLinks'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetIntegratedSystemLinksResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetIntegratedSystemLinksResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerIntegratedSystemLinksWithHttpInfo($manufacturer_id, $integrated_system_ids_in, $integrated_system_name, $resource_type, string $contentType = self::contentTypes['getManufacturerIntegratedSystemLinks'][0])
     {
@@ -446,7 +446,7 @@ class CommonApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetIntegratedSystemLinksResponse',
+                        '\HiveCpq\Client\Generated\Model\GetIntegratedSystemLinksResponse',
                         $request,
                         $response,
                     );
@@ -468,7 +468,7 @@ class CommonApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetIntegratedSystemLinksResponse',
+                '\HiveCpq\Client\Generated\Model\GetIntegratedSystemLinksResponse',
                 $request,
                 $response,
             );
@@ -477,7 +477,7 @@ class CommonApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetIntegratedSystemLinksResponse',
+                        '\HiveCpq\Client\Generated\Model\GetIntegratedSystemLinksResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -529,7 +529,7 @@ class CommonApi
      */
     public function getManufacturerIntegratedSystemLinksAsyncWithHttpInfo($manufacturer_id, $integrated_system_ids_in, $integrated_system_name, $resource_type, string $contentType = self::contentTypes['getManufacturerIntegratedSystemLinks'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetIntegratedSystemLinksResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetIntegratedSystemLinksResponse';
         $request = $this->getManufacturerIntegratedSystemLinksRequest($manufacturer_id, $integrated_system_ids_in, $integrated_system_name, $resource_type, $contentType);
 
         return $this->client
@@ -725,9 +725,9 @@ class CommonApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufactureridSupportedLanguages'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\ResponseGetSupportedLanguages
+     * @return \HiveCpq\Client\Generated\Model\ResponseGetSupportedLanguages
      */
     public function getManufacturersManufactureridSupportedLanguages($manufacturer_id, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersManufactureridSupportedLanguages'][0])
     {
@@ -745,9 +745,9 @@ class CommonApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufactureridSupportedLanguages'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\ResponseGetSupportedLanguages, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\ResponseGetSupportedLanguages, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufactureridSupportedLanguagesWithHttpInfo($manufacturer_id, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersManufactureridSupportedLanguages'][0])
     {
@@ -779,7 +779,7 @@ class CommonApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\ResponseGetSupportedLanguages',
+                        '\HiveCpq\Client\Generated\Model\ResponseGetSupportedLanguages',
                         $request,
                         $response,
                     );
@@ -801,7 +801,7 @@ class CommonApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\ResponseGetSupportedLanguages',
+                '\HiveCpq\Client\Generated\Model\ResponseGetSupportedLanguages',
                 $request,
                 $response,
             );
@@ -810,7 +810,7 @@ class CommonApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\ResponseGetSupportedLanguages',
+                        '\HiveCpq\Client\Generated\Model\ResponseGetSupportedLanguages',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -860,7 +860,7 @@ class CommonApi
      */
     public function getManufacturersManufactureridSupportedLanguagesAsyncWithHttpInfo($manufacturer_id, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersManufactureridSupportedLanguages'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\ResponseGetSupportedLanguages';
+        $returnType = '\HiveCpq\Client\Generated\Model\ResponseGetSupportedLanguages';
         $request = $this->getManufacturersManufactureridSupportedLanguagesRequest($manufacturer_id, $page, $page_size, $contentType);
 
         return $this->client
@@ -1023,12 +1023,12 @@ class CommonApi
      * Add integrated system link
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostIntegratedSystemLink|null $post_integrated_system_link post_integrated_system_link (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostIntegratedSystemLink|null $post_integrated_system_link post_integrated_system_link (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postAddIntegratedSystemLink'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostIntegratedSystemLink
+     * @return \HiveCpq\Client\Generated\Model\PostIntegratedSystemLink
      */
     public function postAddIntegratedSystemLink($manufacturer_id, $post_integrated_system_link = null, string $contentType = self::contentTypes['postAddIntegratedSystemLink'][0])
     {
@@ -1042,12 +1042,12 @@ class CommonApi
      * Add integrated system link
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostIntegratedSystemLink|null $post_integrated_system_link (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostIntegratedSystemLink|null $post_integrated_system_link (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postAddIntegratedSystemLink'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostIntegratedSystemLink, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostIntegratedSystemLink, HTTP status code, HTTP response headers (array of strings)
      */
     public function postAddIntegratedSystemLinkWithHttpInfo($manufacturer_id, $post_integrated_system_link = null, string $contentType = self::contentTypes['postAddIntegratedSystemLink'][0])
     {
@@ -1079,7 +1079,7 @@ class CommonApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostIntegratedSystemLink',
+                        '\HiveCpq\Client\Generated\Model\PostIntegratedSystemLink',
                         $request,
                         $response,
                     );
@@ -1101,7 +1101,7 @@ class CommonApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostIntegratedSystemLink',
+                '\HiveCpq\Client\Generated\Model\PostIntegratedSystemLink',
                 $request,
                 $response,
             );
@@ -1110,7 +1110,7 @@ class CommonApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostIntegratedSystemLink',
+                        '\HiveCpq\Client\Generated\Model\PostIntegratedSystemLink',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1128,7 +1128,7 @@ class CommonApi
      * Add integrated system link
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostIntegratedSystemLink|null $post_integrated_system_link (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostIntegratedSystemLink|null $post_integrated_system_link (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postAddIntegratedSystemLink'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1150,7 +1150,7 @@ class CommonApi
      * Add integrated system link
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostIntegratedSystemLink|null $post_integrated_system_link (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostIntegratedSystemLink|null $post_integrated_system_link (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postAddIntegratedSystemLink'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1158,7 +1158,7 @@ class CommonApi
      */
     public function postAddIntegratedSystemLinkAsyncWithHttpInfo($manufacturer_id, $post_integrated_system_link = null, string $contentType = self::contentTypes['postAddIntegratedSystemLink'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostIntegratedSystemLink';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostIntegratedSystemLink';
         $request = $this->postAddIntegratedSystemLinkRequest($manufacturer_id, $post_integrated_system_link, $contentType);
 
         return $this->client
@@ -1201,7 +1201,7 @@ class CommonApi
      * Create request for operation 'postAddIntegratedSystemLink'
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostIntegratedSystemLink|null $post_integrated_system_link (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostIntegratedSystemLink|null $post_integrated_system_link (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postAddIntegratedSystemLink'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1309,10 +1309,10 @@ class CommonApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $integrated_system_link_id The integrated system link id (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutIntegratedSystemLink|null $put_integrated_system_link put_integrated_system_link (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutIntegratedSystemLink|null $put_integrated_system_link put_integrated_system_link (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersIntegratedSystemLink'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1328,10 +1328,10 @@ class CommonApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $integrated_system_link_id The integrated system link id (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutIntegratedSystemLink|null $put_integrated_system_link (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutIntegratedSystemLink|null $put_integrated_system_link (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersIntegratedSystemLink'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1379,7 +1379,7 @@ class CommonApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $integrated_system_link_id The integrated system link id (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutIntegratedSystemLink|null $put_integrated_system_link (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutIntegratedSystemLink|null $put_integrated_system_link (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersIntegratedSystemLink'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1402,7 +1402,7 @@ class CommonApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $integrated_system_link_id The integrated system link id (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutIntegratedSystemLink|null $put_integrated_system_link (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutIntegratedSystemLink|null $put_integrated_system_link (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersIntegratedSystemLink'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1441,7 +1441,7 @@ class CommonApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $integrated_system_link_id The integrated system link id (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutIntegratedSystemLink|null $put_integrated_system_link (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutIntegratedSystemLink|null $put_integrated_system_link (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersIntegratedSystemLink'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

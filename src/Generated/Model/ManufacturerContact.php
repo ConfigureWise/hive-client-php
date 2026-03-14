@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ManufacturerContact Class Doc Comment
  *
  * @category Class
  * @description This is contact of a manufacturer. Each contact is linked to a specific company.
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -67,15 +67,15 @@ class ManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerializa
         'mobile' => 'string',
         'preferred_language' => 'string',
         'function_title' => 'string',
-        'address' => '\HiveCpq\\Client\\Generated\Model\Address',
+        'address' => '\HiveCpq\Client\Generated\Model\Address',
         'salutation' => 'string',
         'external_system_id' => 'string',
         'avatar_url' => 'string',
-        'company' => '\HiveCpq\\Client\\Generated\Model\CompanyLink',
+        'company' => '\HiveCpq\Client\Generated\Model\CompanyLink',
         'archived' => 'bool',
-        'roles' => '\HiveCpq\\Client\\Generated\Model\RoleLink[]',
-        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
-        'user_account' => '\HiveCpq\\Client\\Generated\Model\UserAccountLink'
+        'roles' => '\HiveCpq\Client\Generated\Model\RoleLink[]',
+        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
+        'user_account' => '\HiveCpq\Client\Generated\Model\UserAccountLink'
     ];
 
     /**
@@ -701,7 +701,7 @@ class ManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets address
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Address|null
+     * @return \HiveCpq\Client\Generated\Model\Address|null
      */
     public function getAddress()
     {
@@ -711,7 +711,7 @@ class ManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets address
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Address|null $address address
+     * @param \HiveCpq\Client\Generated\Model\Address|null $address address
      *
      * @return self
      */
@@ -824,7 +824,7 @@ class ManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets company
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanyLink|null
+     * @return \HiveCpq\Client\Generated\Model\CompanyLink|null
      */
     public function getCompany()
     {
@@ -834,7 +834,7 @@ class ManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets company
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanyLink|null $company company
+     * @param \HiveCpq\Client\Generated\Model\CompanyLink|null $company company
      *
      * @return self
      */
@@ -878,7 +878,7 @@ class ManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets roles
      *
-     * @return \HiveCpq\\Client\\Generated\Model\RoleLink[]|null
+     * @return \HiveCpq\Client\Generated\Model\RoleLink[]|null
      */
     public function getRoles()
     {
@@ -888,7 +888,7 @@ class ManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets roles
      *
-     * @param \HiveCpq\\Client\\Generated\Model\RoleLink[]|null $roles Hive security roles linked to a contact
+     * @param \HiveCpq\Client\Generated\Model\RoleLink[]|null $roles Hive security roles linked to a contact
      *
      * @return self
      */
@@ -910,7 +910,7 @@ class ManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -920,7 +920,7 @@ class ManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -937,7 +937,7 @@ class ManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets user_account
      *
-     * @return \HiveCpq\\Client\\Generated\Model\UserAccountLink|null
+     * @return \HiveCpq\Client\Generated\Model\UserAccountLink|null
      */
     public function getUserAccount()
     {
@@ -947,7 +947,7 @@ class ManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets user_account
      *
-     * @param \HiveCpq\\Client\\Generated\Model\UserAccountLink|null $user_account user_account
+     * @param \HiveCpq\Client\Generated\Model\UserAccountLink|null $user_account user_account
      *
      * @return self
      */

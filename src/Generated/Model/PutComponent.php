@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PutComponent Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,10 +61,10 @@ class PutComponent implements ModelInterface, ArrayAccess, \JsonSerializable
         'article_code' => 'string',
         'ean_code' => 'string',
         'gtin_code' => 'string',
-        'names' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
-        'descriptions' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
+        'names' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
+        'descriptions' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
         'product_group' => 'string',
-        'extensions' => '\HiveCpq\\Client\\Generated\Model\ComponentExtensions'
+        'extensions' => '\HiveCpq\Client\Generated\Model\ComponentExtensions'
     ];
 
     /**
@@ -430,7 +430,7 @@ class PutComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets names
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]
      */
     public function getNames()
     {
@@ -440,7 +440,7 @@ class PutComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets names
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[] $names A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[] $names A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -462,7 +462,7 @@ class PutComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets descriptions
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
      */
     public function getDescriptions()
     {
@@ -472,7 +472,7 @@ class PutComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets descriptions
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $descriptions A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $descriptions A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -521,7 +521,7 @@ class PutComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets extensions
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ComponentExtensions|null
+     * @return \HiveCpq\Client\Generated\Model\ComponentExtensions|null
      */
     public function getExtensions()
     {
@@ -531,7 +531,7 @@ class PutComponent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets extensions
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ComponentExtensions|null $extensions extensions
+     * @param \HiveCpq\Client\Generated\Model\ComponentExtensions|null $extensions extensions
      *
      * @return self
      */

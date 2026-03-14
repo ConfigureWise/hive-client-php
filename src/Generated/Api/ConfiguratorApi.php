@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Api;
+namespace HiveCpq\Client\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\\Client\\Generated\ApiException;
-use HiveCpq\\Client\\Generated\Configuration;
-use HiveCpq\\Client\\Generated\FormDataProcessor;
-use HiveCpq\\Client\\Generated\HeaderSelector;
-use HiveCpq\\Client\\Generated\ObjectSerializer;
+use HiveCpq\Client\Generated\ApiException;
+use HiveCpq\Client\Generated\Configuration;
+use HiveCpq\Client\Generated\FormDataProcessor;
+use HiveCpq\Client\Generated\HeaderSelector;
+use HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ConfiguratorApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,7 +140,7 @@ class ConfiguratorApi
      * @param  string $configurator_id ID of the configurator you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersManufacturerIdContainersNameVersionsVersionConfiguratorsConfiguratorId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -160,7 +160,7 @@ class ConfiguratorApi
      * @param  string $configurator_id ID of the configurator you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersManufacturerIdContainersNameVersionsVersionConfiguratorsConfiguratorId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -422,9 +422,9 @@ class ConfiguratorApi
      * @param  string|null $code Filter on the code of the configurators. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdConfigurators'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdConfigurators200Response
+     * @return \HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdConfigurators200Response
      */
     public function getManufacturersManufacturerIdConfigurators($manufacturer_id, $name, $version, $code = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdConfigurators'][0])
     {
@@ -443,9 +443,9 @@ class ConfiguratorApi
      * @param  string|null $code Filter on the code of the configurators. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdConfigurators'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdConfigurators200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdConfigurators200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdConfiguratorsWithHttpInfo($manufacturer_id, $name, $version, $code = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdConfigurators'][0])
     {
@@ -477,7 +477,7 @@ class ConfiguratorApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdConfigurators200Response',
+                        '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdConfigurators200Response',
                         $request,
                         $response,
                     );
@@ -499,7 +499,7 @@ class ConfiguratorApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdConfigurators200Response',
+                '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdConfigurators200Response',
                 $request,
                 $response,
             );
@@ -508,7 +508,7 @@ class ConfiguratorApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdConfigurators200Response',
+                        '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdConfigurators200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -560,7 +560,7 @@ class ConfiguratorApi
      */
     public function getManufacturersManufacturerIdConfiguratorsAsyncWithHttpInfo($manufacturer_id, $name, $version, $code = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdConfigurators'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdConfigurators200Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdConfigurators200Response';
         $request = $this->getManufacturersManufacturerIdConfiguratorsRequest($manufacturer_id, $name, $version, $code, $contentType);
 
         return $this->client

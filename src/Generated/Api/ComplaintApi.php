@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Api;
+namespace HiveCpq\Client\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\\Client\\Generated\ApiException;
-use HiveCpq\\Client\\Generated\Configuration;
-use HiveCpq\\Client\\Generated\FormDataProcessor;
-use HiveCpq\\Client\\Generated\HeaderSelector;
-use HiveCpq\\Client\\Generated\ObjectSerializer;
+use HiveCpq\Client\Generated\ApiException;
+use HiveCpq\Client\Generated\Configuration;
+use HiveCpq\Client\Generated\FormDataProcessor;
+use HiveCpq\Client\Generated\HeaderSelector;
+use HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ComplaintApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -168,7 +168,7 @@ class ComplaintApi
      * @param  string $complaint_id The hive id of the complaint (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerComplaint'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -186,7 +186,7 @@ class ComplaintApi
      * @param  string $complaint_id The hive id of the complaint (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerComplaint'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -411,7 +411,7 @@ class ComplaintApi
      * @param  string $attachment_id the complaint attachment id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerComplaintAttachment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -430,7 +430,7 @@ class ComplaintApi
      * @param  string $attachment_id the complaint attachment id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerComplaintAttachment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -672,9 +672,9 @@ class ComplaintApi
      * @param  string $complaint_id The hive id of the complaint (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComplaint'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\Complaint
+     * @return \HiveCpq\Client\Generated\Model\Complaint
      */
     public function getManufacturerComplaint($manufacturer_id, $complaint_id, string $contentType = self::contentTypes['getManufacturerComplaint'][0])
     {
@@ -691,9 +691,9 @@ class ComplaintApi
      * @param  string $complaint_id The hive id of the complaint (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComplaint'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\Complaint, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\Complaint, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerComplaintWithHttpInfo($manufacturer_id, $complaint_id, string $contentType = self::contentTypes['getManufacturerComplaint'][0])
     {
@@ -725,7 +725,7 @@ class ComplaintApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\Complaint',
+                        '\HiveCpq\Client\Generated\Model\Complaint',
                         $request,
                         $response,
                     );
@@ -747,7 +747,7 @@ class ComplaintApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\Complaint',
+                '\HiveCpq\Client\Generated\Model\Complaint',
                 $request,
                 $response,
             );
@@ -756,7 +756,7 @@ class ComplaintApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\Complaint',
+                        '\HiveCpq\Client\Generated\Model\Complaint',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -804,7 +804,7 @@ class ComplaintApi
      */
     public function getManufacturerComplaintAsyncWithHttpInfo($manufacturer_id, $complaint_id, string $contentType = self::contentTypes['getManufacturerComplaint'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\Complaint';
+        $returnType = '\HiveCpq\Client\Generated\Model\Complaint';
         $request = $this->getManufacturerComplaintRequest($manufacturer_id, $complaint_id, $contentType);
 
         return $this->client
@@ -965,7 +965,7 @@ class ComplaintApi
      * @param  string $attachment_id the complaint attachment id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComplaintAttachment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -985,7 +985,7 @@ class ComplaintApi
      * @param  string $attachment_id the complaint attachment id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComplaintAttachment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1276,9 +1276,9 @@ class ComplaintApi
      * @param  string $complaint_id The id of the complaint (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComplaintComments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetComplaintCommentResponse
+     * @return \HiveCpq\Client\Generated\Model\GetComplaintCommentResponse
      */
     public function getManufacturerComplaintComments($manufacturer_id, $complaint_id, string $contentType = self::contentTypes['getManufacturerComplaintComments'][0])
     {
@@ -1295,9 +1295,9 @@ class ComplaintApi
      * @param  string $complaint_id The id of the complaint (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComplaintComments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetComplaintCommentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetComplaintCommentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerComplaintCommentsWithHttpInfo($manufacturer_id, $complaint_id, string $contentType = self::contentTypes['getManufacturerComplaintComments'][0])
     {
@@ -1329,7 +1329,7 @@ class ComplaintApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetComplaintCommentResponse',
+                        '\HiveCpq\Client\Generated\Model\GetComplaintCommentResponse',
                         $request,
                         $response,
                     );
@@ -1351,7 +1351,7 @@ class ComplaintApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetComplaintCommentResponse',
+                '\HiveCpq\Client\Generated\Model\GetComplaintCommentResponse',
                 $request,
                 $response,
             );
@@ -1360,7 +1360,7 @@ class ComplaintApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetComplaintCommentResponse',
+                        '\HiveCpq\Client\Generated\Model\GetComplaintCommentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1408,7 +1408,7 @@ class ComplaintApi
      */
     public function getManufacturerComplaintCommentsAsyncWithHttpInfo($manufacturer_id, $complaint_id, string $contentType = self::contentTypes['getManufacturerComplaintComments'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetComplaintCommentResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetComplaintCommentResponse';
         $request = $this->getManufacturerComplaintCommentsRequest($manufacturer_id, $complaint_id, $contentType);
 
         return $this->client
@@ -1574,9 +1574,9 @@ class ComplaintApi
      * @param  string|null $type Search the complaints by type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComplaints'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetComplaintsResponse
+     * @return \HiveCpq\Client\Generated\Model\GetComplaintsResponse
      */
     public function getManufacturerComplaints($manufacturer_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $status = null, $type = null, string $contentType = self::contentTypes['getManufacturerComplaints'][0])
     {
@@ -1599,9 +1599,9 @@ class ComplaintApi
      * @param  string|null $type Search the complaints by type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComplaints'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetComplaintsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetComplaintsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerComplaintsWithHttpInfo($manufacturer_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $status = null, $type = null, string $contentType = self::contentTypes['getManufacturerComplaints'][0])
     {
@@ -1633,7 +1633,7 @@ class ComplaintApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetComplaintsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetComplaintsResponse',
                         $request,
                         $response,
                     );
@@ -1655,7 +1655,7 @@ class ComplaintApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetComplaintsResponse',
+                '\HiveCpq\Client\Generated\Model\GetComplaintsResponse',
                 $request,
                 $response,
             );
@@ -1664,7 +1664,7 @@ class ComplaintApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetComplaintsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetComplaintsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1724,7 +1724,7 @@ class ComplaintApi
      */
     public function getManufacturerComplaintsAsyncWithHttpInfo($manufacturer_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $status = null, $type = null, string $contentType = self::contentTypes['getManufacturerComplaints'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetComplaintsResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetComplaintsResponse';
         $request = $this->getManufacturerComplaintsRequest($manufacturer_id, $ids_in, $integrated_system_name, $integrated_system_ids_in, $page, $page_size, $status, $type, $contentType);
 
         return $this->client
@@ -1945,9 +1945,9 @@ class ComplaintApi
      * @param  string $complaint_id the hive complaint id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdComplaintsComplaintIdAttachment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetComplaintAttachmentResponse
+     * @return \HiveCpq\Client\Generated\Model\GetComplaintAttachmentResponse
      */
     public function getManufacturersManufacturerIdComplaintsComplaintIdAttachment($manufacturer_id, $complaint_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdComplaintsComplaintIdAttachment'][0])
     {
@@ -1964,9 +1964,9 @@ class ComplaintApi
      * @param  string $complaint_id the hive complaint id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdComplaintsComplaintIdAttachment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetComplaintAttachmentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetComplaintAttachmentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdComplaintsComplaintIdAttachmentWithHttpInfo($manufacturer_id, $complaint_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdComplaintsComplaintIdAttachment'][0])
     {
@@ -1998,7 +1998,7 @@ class ComplaintApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetComplaintAttachmentResponse',
+                        '\HiveCpq\Client\Generated\Model\GetComplaintAttachmentResponse',
                         $request,
                         $response,
                     );
@@ -2020,7 +2020,7 @@ class ComplaintApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetComplaintAttachmentResponse',
+                '\HiveCpq\Client\Generated\Model\GetComplaintAttachmentResponse',
                 $request,
                 $response,
             );
@@ -2029,7 +2029,7 @@ class ComplaintApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetComplaintAttachmentResponse',
+                        '\HiveCpq\Client\Generated\Model\GetComplaintAttachmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2077,7 +2077,7 @@ class ComplaintApi
      */
     public function getManufacturersManufacturerIdComplaintsComplaintIdAttachmentAsyncWithHttpInfo($manufacturer_id, $complaint_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdComplaintsComplaintIdAttachment'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetComplaintAttachmentResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetComplaintAttachmentResponse';
         $request = $this->getManufacturersManufacturerIdComplaintsComplaintIdAttachmentRequest($manufacturer_id, $complaint_id, $contentType);
 
         return $this->client
@@ -2238,9 +2238,9 @@ class ComplaintApi
      * @param  \SplFileObject|null $file file (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerAddComplaintAttachment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturerAddComplaintAttachment($manufacturer_id, $complaint_id, $file = null, string $contentType = self::contentTypes['postManufacturerAddComplaintAttachment'][0])
     {
@@ -2258,9 +2258,9 @@ class ComplaintApi
      * @param  \SplFileObject|null $file (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerAddComplaintAttachment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturerAddComplaintAttachmentWithHttpInfo($manufacturer_id, $complaint_id, $file = null, string $contentType = self::contentTypes['postManufacturerAddComplaintAttachment'][0])
     {
@@ -2292,7 +2292,7 @@ class ComplaintApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -2314,7 +2314,7 @@ class ComplaintApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -2323,7 +2323,7 @@ class ComplaintApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2373,7 +2373,7 @@ class ComplaintApi
      */
     public function postManufacturerAddComplaintAttachmentAsyncWithHttpInfo($manufacturer_id, $complaint_id, $file = null, string $contentType = self::contentTypes['postManufacturerAddComplaintAttachment'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturerAddComplaintAttachmentRequest($manufacturer_id, $complaint_id, $file, $contentType);
 
         return $this->client
@@ -2543,12 +2543,12 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The id of the complaint (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComplaintComment|null $post_complaint_comment post_complaint_comment (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComplaintComment|null $post_complaint_comment post_complaint_comment (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerComplaintComment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturerComplaintComment($manufacturer_id, $complaint_id, $post_complaint_comment = null, string $contentType = self::contentTypes['postManufacturerComplaintComment'][0])
     {
@@ -2563,12 +2563,12 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The id of the complaint (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComplaintComment|null $post_complaint_comment (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComplaintComment|null $post_complaint_comment (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerComplaintComment'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturerComplaintCommentWithHttpInfo($manufacturer_id, $complaint_id, $post_complaint_comment = null, string $contentType = self::contentTypes['postManufacturerComplaintComment'][0])
     {
@@ -2600,7 +2600,7 @@ class ComplaintApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -2622,7 +2622,7 @@ class ComplaintApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -2631,7 +2631,7 @@ class ComplaintApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2650,7 +2650,7 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The id of the complaint (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComplaintComment|null $post_complaint_comment (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComplaintComment|null $post_complaint_comment (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerComplaintComment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2673,7 +2673,7 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The id of the complaint (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComplaintComment|null $post_complaint_comment (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComplaintComment|null $post_complaint_comment (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerComplaintComment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2681,7 +2681,7 @@ class ComplaintApi
      */
     public function postManufacturerComplaintCommentAsyncWithHttpInfo($manufacturer_id, $complaint_id, $post_complaint_comment = null, string $contentType = self::contentTypes['postManufacturerComplaintComment'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturerComplaintCommentRequest($manufacturer_id, $complaint_id, $post_complaint_comment, $contentType);
 
         return $this->client
@@ -2725,7 +2725,7 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The id of the complaint (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComplaintComment|null $post_complaint_comment (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComplaintComment|null $post_complaint_comment (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerComplaintComment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2848,10 +2848,10 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The hive complaint id (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturerReplaceComplaitCommentsRequest|null $post_manufacturer_replace_complait_comments_request post_manufacturer_replace_complait_comments_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturerReplaceComplaitCommentsRequest|null $post_manufacturer_replace_complait_comments_request post_manufacturer_replace_complait_comments_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerReplaceComplaitComments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2867,10 +2867,10 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The hive complaint id (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturerReplaceComplaitCommentsRequest|null $post_manufacturer_replace_complait_comments_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturerReplaceComplaitCommentsRequest|null $post_manufacturer_replace_complait_comments_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerReplaceComplaitComments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2918,7 +2918,7 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The hive complaint id (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturerReplaceComplaitCommentsRequest|null $post_manufacturer_replace_complait_comments_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturerReplaceComplaitCommentsRequest|null $post_manufacturer_replace_complait_comments_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerReplaceComplaitComments'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2941,7 +2941,7 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The hive complaint id (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturerReplaceComplaitCommentsRequest|null $post_manufacturer_replace_complait_comments_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturerReplaceComplaitCommentsRequest|null $post_manufacturer_replace_complait_comments_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerReplaceComplaitComments'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2980,7 +2980,7 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The hive complaint id (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturerReplaceComplaitCommentsRequest|null $post_manufacturer_replace_complait_comments_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturerReplaceComplaitCommentsRequest|null $post_manufacturer_replace_complait_comments_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerReplaceComplaitComments'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3102,12 +3102,12 @@ class ComplaintApi
      * Add a new complaint
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComplaint|null $post_complaint post_complaint (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComplaint|null $post_complaint post_complaint (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComplaints'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturersManufacturerIdComplaints($manufacturer_id, $post_complaint = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdComplaints'][0])
     {
@@ -3121,12 +3121,12 @@ class ComplaintApi
      * Add a new complaint
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComplaint|null $post_complaint (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComplaint|null $post_complaint (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComplaints'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturersManufacturerIdComplaintsWithHttpInfo($manufacturer_id, $post_complaint = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdComplaints'][0])
     {
@@ -3158,7 +3158,7 @@ class ComplaintApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -3180,7 +3180,7 @@ class ComplaintApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -3189,7 +3189,7 @@ class ComplaintApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3207,7 +3207,7 @@ class ComplaintApi
      * Add a new complaint
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComplaint|null $post_complaint (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComplaint|null $post_complaint (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComplaints'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3229,7 +3229,7 @@ class ComplaintApi
      * Add a new complaint
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComplaint|null $post_complaint (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComplaint|null $post_complaint (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComplaints'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3237,7 +3237,7 @@ class ComplaintApi
      */
     public function postManufacturersManufacturerIdComplaintsAsyncWithHttpInfo($manufacturer_id, $post_complaint = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdComplaints'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturersManufacturerIdComplaintsRequest($manufacturer_id, $post_complaint, $contentType);
 
         return $this->client
@@ -3280,7 +3280,7 @@ class ComplaintApi
      * Create request for operation 'postManufacturersManufacturerIdComplaints'
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComplaint|null $post_complaint (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComplaint|null $post_complaint (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComplaints'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3388,10 +3388,10 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The hive id of the complaint (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComplaints|null $put_complaints Update the Complaint of a manufacturer (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComplaints|null $put_complaints Update the Complaint of a manufacturer (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerComplaint'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3407,10 +3407,10 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The hive id of the complaint (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComplaints|null $put_complaints Update the Complaint of a manufacturer (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComplaints|null $put_complaints Update the Complaint of a manufacturer (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerComplaint'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3458,7 +3458,7 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The hive id of the complaint (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComplaints|null $put_complaints Update the Complaint of a manufacturer (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComplaints|null $put_complaints Update the Complaint of a manufacturer (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerComplaint'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3481,7 +3481,7 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The hive id of the complaint (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComplaints|null $put_complaints Update the Complaint of a manufacturer (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComplaints|null $put_complaints Update the Complaint of a manufacturer (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerComplaint'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3520,7 +3520,7 @@ class ComplaintApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $complaint_id The hive id of the complaint (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComplaints|null $put_complaints Update the Complaint of a manufacturer (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComplaints|null $put_complaints Update the Complaint of a manufacturer (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerComplaint'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

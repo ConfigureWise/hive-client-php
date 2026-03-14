@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ProjectSegment Class Doc Comment
  *
  * @category Class
  * @description A project segment is a segment of a project that holds project segment items linked to one manufacturer. A project segment also functions as an order depending on the status.
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,23 +60,23 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
-        'project_segment_items' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentItemLink[]',
-        'project' => '\HiveCpq\\Client\\Generated\Model\ProjectLink',
-        'order' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentOrder',
-        'price' => '\HiveCpq\\Client\\Generated\Model\Price',
-        'company_relation' => '\HiveCpq\\Client\\Generated\Model\CompanyRelationLink',
-        'company_a_sales_manager' => '\HiveCpq\\Client\\Generated\Model\ContactLink',
-        'company_b_sales_manager' => '\HiveCpq\\Client\\Generated\Model\ContactLink',
-        'status' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentFollowUpStatusEnum',
+        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
+        'project_segment_items' => '\HiveCpq\Client\Generated\Model\ProjectSegmentItemLink[]',
+        'project' => '\HiveCpq\Client\Generated\Model\ProjectLink',
+        'order' => '\HiveCpq\Client\Generated\Model\ProjectSegmentOrder',
+        'price' => '\HiveCpq\Client\Generated\Model\Price',
+        'company_relation' => '\HiveCpq\Client\Generated\Model\CompanyRelationLink',
+        'company_a_sales_manager' => '\HiveCpq\Client\Generated\Model\ContactLink',
+        'company_b_sales_manager' => '\HiveCpq\Client\Generated\Model\ContactLink',
+        'status' => '\HiveCpq\Client\Generated\Model\ProjectSegmentFollowUpStatusEnum',
         'next_follow_up_date' => 'string',
         'estimated_sales_date' => 'string',
         'free_text_note' => 'string',
         'sale_probability' => 'int',
-        'external_order_status' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentExternalOrderStatus',
+        'external_order_status' => '\HiveCpq\Client\Generated\Model\ProjectSegmentExternalOrderStatus',
         'order_group' => 'string',
-        'configuration' => '\HiveCpq\\Client\\Generated\Model\ConfigurationLink',
-        'sub_distributor' => '\HiveCpq\\Client\\Generated\Model\CompanyLink'
+        'configuration' => '\HiveCpq\Client\Generated\Model\ConfigurationLink',
+        'sub_distributor' => '\HiveCpq\Client\Generated\Model\CompanyLink'
     ];
 
     /**
@@ -448,7 +448,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -458,7 +458,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -475,7 +475,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets project_segment_items
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentItemLink[]|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentItemLink[]|null
      */
     public function getProjectSegmentItems()
     {
@@ -485,7 +485,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets project_segment_items
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentItemLink[]|null $project_segment_items project_segment_items
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentItemLink[]|null $project_segment_items project_segment_items
      *
      * @return self
      */
@@ -502,7 +502,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets project
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectLink|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectLink|null
      */
     public function getProject()
     {
@@ -512,7 +512,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets project
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectLink|null $project project
+     * @param \HiveCpq\Client\Generated\Model\ProjectLink|null $project project
      *
      * @return self
      */
@@ -529,7 +529,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentOrder|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentOrder|null
      */
     public function getOrder()
     {
@@ -539,7 +539,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentOrder|null $order order
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentOrder|null $order order
      *
      * @return self
      */
@@ -556,7 +556,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Price|null
+     * @return \HiveCpq\Client\Generated\Model\Price|null
      */
     public function getPrice()
     {
@@ -566,7 +566,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Price|null $price price
+     * @param \HiveCpq\Client\Generated\Model\Price|null $price price
      *
      * @return self
      */
@@ -583,7 +583,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets company_relation
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanyRelationLink|null
+     * @return \HiveCpq\Client\Generated\Model\CompanyRelationLink|null
      */
     public function getCompanyRelation()
     {
@@ -593,7 +593,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets company_relation
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanyRelationLink|null $company_relation company_relation
+     * @param \HiveCpq\Client\Generated\Model\CompanyRelationLink|null $company_relation company_relation
      *
      * @return self
      */
@@ -610,7 +610,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets company_a_sales_manager
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ContactLink|null
+     * @return \HiveCpq\Client\Generated\Model\ContactLink|null
      */
     public function getCompanyASalesManager()
     {
@@ -620,7 +620,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets company_a_sales_manager
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ContactLink|null $company_a_sales_manager company_a_sales_manager
+     * @param \HiveCpq\Client\Generated\Model\ContactLink|null $company_a_sales_manager company_a_sales_manager
      *
      * @return self
      */
@@ -637,7 +637,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets company_b_sales_manager
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ContactLink|null
+     * @return \HiveCpq\Client\Generated\Model\ContactLink|null
      */
     public function getCompanyBSalesManager()
     {
@@ -647,7 +647,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets company_b_sales_manager
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ContactLink|null $company_b_sales_manager company_b_sales_manager
+     * @param \HiveCpq\Client\Generated\Model\ContactLink|null $company_b_sales_manager company_b_sales_manager
      *
      * @return self
      */
@@ -664,7 +664,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets status
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentFollowUpStatusEnum|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentFollowUpStatusEnum|null
      */
     public function getStatus()
     {
@@ -674,7 +674,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentFollowUpStatusEnum|null $status status
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentFollowUpStatusEnum|null $status status
      *
      * @return self
      */
@@ -807,7 +807,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets external_order_status
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentExternalOrderStatus|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentExternalOrderStatus|null
      */
     public function getExternalOrderStatus()
     {
@@ -817,7 +817,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets external_order_status
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentExternalOrderStatus|null $external_order_status external_order_status
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentExternalOrderStatus|null $external_order_status external_order_status
      *
      * @return self
      */
@@ -861,7 +861,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets configuration
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ConfigurationLink|null
+     * @return \HiveCpq\Client\Generated\Model\ConfigurationLink|null
      */
     public function getConfiguration()
     {
@@ -871,7 +871,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets configuration
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ConfigurationLink|null $configuration configuration
+     * @param \HiveCpq\Client\Generated\Model\ConfigurationLink|null $configuration configuration
      *
      * @return self
      */
@@ -888,7 +888,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sub_distributor
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanyLink|null
+     * @return \HiveCpq\Client\Generated\Model\CompanyLink|null
      */
     public function getSubDistributor()
     {
@@ -898,7 +898,7 @@ class ProjectSegment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sub_distributor
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanyLink|null $sub_distributor sub_distributor
+     * @param \HiveCpq\Client\Generated\Model\CompanyLink|null $sub_distributor sub_distributor
      *
      * @return self
      */

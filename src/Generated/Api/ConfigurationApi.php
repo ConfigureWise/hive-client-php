@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Api;
+namespace HiveCpq\Client\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\\Client\\Generated\ApiException;
-use HiveCpq\\Client\\Generated\Configuration;
-use HiveCpq\\Client\\Generated\FormDataProcessor;
-use HiveCpq\\Client\\Generated\HeaderSelector;
-use HiveCpq\\Client\\Generated\ObjectSerializer;
+use HiveCpq\Client\Generated\ApiException;
+use HiveCpq\Client\Generated\Configuration;
+use HiveCpq\Client\Generated\FormDataProcessor;
+use HiveCpq\Client\Generated\HeaderSelector;
+use HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ConfigurationApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -150,7 +150,7 @@ class ConfigurationApi
      * @param  string $configuration_id ID of the configuration you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerConfigurationById'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -168,7 +168,7 @@ class ConfigurationApi
      * @param  string $configuration_id ID of the configuration you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerConfigurationById'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -398,9 +398,9 @@ class ConfigurationApi
      * @param  string[]|null $language Filter BOM descriptions on the provided language codes (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerConfigurationById'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\ResponseGetConfiguration
+     * @return \HiveCpq\Client\Generated\Model\ResponseGetConfiguration
      */
     public function getManufacturerConfigurationById($manufacturer_id, $configuration_id, $unique_label = null, $property_code = null, $include_optional_nodes = false, $include_component_data = false, $output_mode = 'DEFAULT', $language = null, string $contentType = self::contentTypes['getManufacturerConfigurationById'][0])
     {
@@ -423,9 +423,9 @@ class ConfigurationApi
      * @param  string[]|null $language Filter BOM descriptions on the provided language codes (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerConfigurationById'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\ResponseGetConfiguration, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\ResponseGetConfiguration, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerConfigurationByIdWithHttpInfo($manufacturer_id, $configuration_id, $unique_label = null, $property_code = null, $include_optional_nodes = false, $include_component_data = false, $output_mode = 'DEFAULT', $language = null, string $contentType = self::contentTypes['getManufacturerConfigurationById'][0])
     {
@@ -457,7 +457,7 @@ class ConfigurationApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\ResponseGetConfiguration',
+                        '\HiveCpq\Client\Generated\Model\ResponseGetConfiguration',
                         $request,
                         $response,
                     );
@@ -479,7 +479,7 @@ class ConfigurationApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\ResponseGetConfiguration',
+                '\HiveCpq\Client\Generated\Model\ResponseGetConfiguration',
                 $request,
                 $response,
             );
@@ -488,7 +488,7 @@ class ConfigurationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\ResponseGetConfiguration',
+                        '\HiveCpq\Client\Generated\Model\ResponseGetConfiguration',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -548,7 +548,7 @@ class ConfigurationApi
      */
     public function getManufacturerConfigurationByIdAsyncWithHttpInfo($manufacturer_id, $configuration_id, $unique_label = null, $property_code = null, $include_optional_nodes = false, $include_component_data = false, $output_mode = 'DEFAULT', $language = null, string $contentType = self::contentTypes['getManufacturerConfigurationById'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\ResponseGetConfiguration';
+        $returnType = '\HiveCpq\Client\Generated\Model\ResponseGetConfiguration';
         $request = $this->getManufacturerConfigurationByIdRequest($manufacturer_id, $configuration_id, $unique_label, $property_code, $include_optional_nodes, $include_component_data, $output_mode, $language, $contentType);
 
         return $this->client
@@ -775,7 +775,7 @@ class ConfigurationApi
      * @param  string $unique_label A unique label of a node in the configuration (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerManufacturerIdConfigurationsConfigurationIdNodesUniqueLabelFile'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -795,7 +795,7 @@ class ConfigurationApi
      * @param  string $unique_label A unique label of a node in the configuration (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerManufacturerIdConfigurationsConfigurationIdNodesUniqueLabelFile'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1086,7 +1086,7 @@ class ConfigurationApi
      * @param  string $configuration_id ID of the configuration you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerConfigurationRenderScreenshot'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -1105,7 +1105,7 @@ class ConfigurationApi
      * @param  string $configuration_id ID of the configuration you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerConfigurationRenderScreenshot'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1375,12 +1375,12 @@ class ConfigurationApi
      * Create a configuration
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdConfigurationsRequest|null $post_manufacturers_manufacturer_id_configurations_request post_manufacturers_manufacturer_id_configurations_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdConfigurationsRequest|null $post_manufacturers_manufacturer_id_configurations_request post_manufacturers_manufacturer_id_configurations_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdConfigurations'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturersManufacturerIdConfigurations($manufacturer_id, $post_manufacturers_manufacturer_id_configurations_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdConfigurations'][0])
     {
@@ -1394,12 +1394,12 @@ class ConfigurationApi
      * Create a configuration
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdConfigurationsRequest|null $post_manufacturers_manufacturer_id_configurations_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdConfigurationsRequest|null $post_manufacturers_manufacturer_id_configurations_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdConfigurations'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturersManufacturerIdConfigurationsWithHttpInfo($manufacturer_id, $post_manufacturers_manufacturer_id_configurations_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdConfigurations'][0])
     {
@@ -1431,7 +1431,7 @@ class ConfigurationApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -1453,7 +1453,7 @@ class ConfigurationApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -1462,7 +1462,7 @@ class ConfigurationApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1480,7 +1480,7 @@ class ConfigurationApi
      * Create a configuration
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdConfigurationsRequest|null $post_manufacturers_manufacturer_id_configurations_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdConfigurationsRequest|null $post_manufacturers_manufacturer_id_configurations_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdConfigurations'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1502,7 +1502,7 @@ class ConfigurationApi
      * Create a configuration
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdConfigurationsRequest|null $post_manufacturers_manufacturer_id_configurations_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdConfigurationsRequest|null $post_manufacturers_manufacturer_id_configurations_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdConfigurations'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1510,7 +1510,7 @@ class ConfigurationApi
      */
     public function postManufacturersManufacturerIdConfigurationsAsyncWithHttpInfo($manufacturer_id, $post_manufacturers_manufacturer_id_configurations_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdConfigurations'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturersManufacturerIdConfigurationsRequest($manufacturer_id, $post_manufacturers_manufacturer_id_configurations_request, $contentType);
 
         return $this->client
@@ -1553,7 +1553,7 @@ class ConfigurationApi
      * Create request for operation 'postManufacturersManufacturerIdConfigurations'
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdConfigurationsRequest|null $post_manufacturers_manufacturer_id_configurations_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdConfigurationsRequest|null $post_manufacturers_manufacturer_id_configurations_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdConfigurations'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1661,10 +1661,10 @@ class ConfigurationApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $configuration_id ID of the configuration you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequest|null $post_manufacturers_manufacturer_id_configurations_configuration_id_set_value_request post_manufacturers_manufacturer_id_configurations_configuration_id_set_value_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequest|null $post_manufacturers_manufacturer_id_configurations_configuration_id_set_value_request post_manufacturers_manufacturer_id_configurations_configuration_id_set_value_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdConfigurationsConfigurationIdSetValue'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1680,10 +1680,10 @@ class ConfigurationApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $configuration_id ID of the configuration you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequest|null $post_manufacturers_manufacturer_id_configurations_configuration_id_set_value_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequest|null $post_manufacturers_manufacturer_id_configurations_configuration_id_set_value_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdConfigurationsConfigurationIdSetValue'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1731,7 +1731,7 @@ class ConfigurationApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $configuration_id ID of the configuration you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequest|null $post_manufacturers_manufacturer_id_configurations_configuration_id_set_value_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequest|null $post_manufacturers_manufacturer_id_configurations_configuration_id_set_value_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdConfigurationsConfigurationIdSetValue'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1754,7 +1754,7 @@ class ConfigurationApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $configuration_id ID of the configuration you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequest|null $post_manufacturers_manufacturer_id_configurations_configuration_id_set_value_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequest|null $post_manufacturers_manufacturer_id_configurations_configuration_id_set_value_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdConfigurationsConfigurationIdSetValue'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1793,7 +1793,7 @@ class ConfigurationApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $configuration_id ID of the configuration you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequest|null $post_manufacturers_manufacturer_id_configurations_configuration_id_set_value_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequest|null $post_manufacturers_manufacturer_id_configurations_configuration_id_set_value_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdConfigurationsConfigurationIdSetValue'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

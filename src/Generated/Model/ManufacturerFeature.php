@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ManufacturerFeature Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,9 +61,9 @@ class ManufacturerFeature implements ModelInterface, ArrayAccess, \JsonSerializa
         'id' => 'string',
         'code' => 'string',
         'description' => 'string',
-        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
+        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
         'serial_search_function' => 'string',
-        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit'
+        'audit' => '\HiveCpq\Client\Generated\Model\Audit'
     ];
 
     /**
@@ -409,7 +409,7 @@ class ManufacturerFeature implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -419,7 +419,7 @@ class ManufacturerFeature implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class ManufacturerFeature implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets audit
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
+     * @return \HiveCpq\Client\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -473,7 +473,7 @@ class ManufacturerFeature implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets audit
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */

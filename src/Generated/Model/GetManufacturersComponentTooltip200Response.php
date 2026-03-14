@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * GetManufacturersComponentTooltip200Response Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,8 +60,8 @@ class GetManufacturersComponentTooltip200Response implements ModelInterface, Arr
     protected static $openAPITypes = [
         'id' => 'string',
         'enabled' => 'bool',
-        'titles' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
-        'details' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]'
+        'titles' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
+        'details' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]'
     ];
 
     /**
@@ -376,7 +376,7 @@ class GetManufacturersComponentTooltip200Response implements ModelInterface, Arr
     /**
      * Gets titles
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
      */
     public function getTitles()
     {
@@ -386,7 +386,7 @@ class GetManufacturersComponentTooltip200Response implements ModelInterface, Arr
     /**
      * Sets titles
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $titles A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $titles A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -408,7 +408,7 @@ class GetManufacturersComponentTooltip200Response implements ModelInterface, Arr
     /**
      * Gets details
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
      */
     public function getDetails()
     {
@@ -418,7 +418,7 @@ class GetManufacturersComponentTooltip200Response implements ModelInterface, Arr
     /**
      * Sets details
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $details A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $details A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */

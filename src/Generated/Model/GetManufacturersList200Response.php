@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * GetManufacturersList200Response Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetManufacturersList200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\HiveCpq\\Client\\Generated\Model\GetManufacturersList200ResponseItemsInner[]',
+        'items' => '\HiveCpq\Client\Generated\Model\GetManufacturersList200ResponseItemsInner[]',
         'total' => 'int'
     ];
 
@@ -300,7 +300,7 @@ class GetManufacturersList200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets items
      *
-     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturersList200ResponseItemsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\GetManufacturersList200ResponseItemsInner[]|null
      */
     public function getItems()
     {
@@ -310,7 +310,7 @@ class GetManufacturersList200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets items
      *
-     * @param \HiveCpq\\Client\\Generated\Model\GetManufacturersList200ResponseItemsInner[]|null $items A list of manufacturers.
+     * @param \HiveCpq\Client\Generated\Model\GetManufacturersList200ResponseItemsInner[]|null $items A list of manufacturers.
      *
      * @return self
      */

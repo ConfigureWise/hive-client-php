@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * RequestPostBulkUpsertCategories Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class RequestPostBulkUpsertCategories implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'integrated_system_name' => 'string',
-        'categories' => '\HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertCategoriesCategoriesInner[]'
+        'categories' => '\HiveCpq\Client\Generated\Model\RequestPostBulkUpsertCategoriesCategoriesInner[]'
     ];
 
     /**
@@ -330,7 +330,7 @@ class RequestPostBulkUpsertCategories implements ModelInterface, ArrayAccess, \J
     /**
      * Gets categories
      *
-     * @return \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertCategoriesCategoriesInner[]
+     * @return \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertCategoriesCategoriesInner[]
      */
     public function getCategories()
     {
@@ -340,7 +340,7 @@ class RequestPostBulkUpsertCategories implements ModelInterface, ArrayAccess, \J
     /**
      * Sets categories
      *
-     * @param \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertCategoriesCategoriesInner[] $categories categories
+     * @param \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertCategoriesCategoriesInner[] $categories categories
      *
      * @return self
      */

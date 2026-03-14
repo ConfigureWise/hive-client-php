@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Api;
+namespace HiveCpq\Client\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\\Client\\Generated\ApiException;
-use HiveCpq\\Client\\Generated\Configuration;
-use HiveCpq\\Client\\Generated\FormDataProcessor;
-use HiveCpq\\Client\\Generated\HeaderSelector;
-use HiveCpq\\Client\\Generated\ObjectSerializer;
+use HiveCpq\Client\Generated\ApiException;
+use HiveCpq\Client\Generated\Configuration;
+use HiveCpq\Client\Generated\FormDataProcessor;
+use HiveCpq\Client\Generated\HeaderSelector;
+use HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * UnitApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -153,12 +153,12 @@ class UnitApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $unit_id ID of the unit you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version request_post_copy_to_version (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyUnitToAnotherVersion'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse
+     * @return \HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse
      */
     public function copyUnitToAnotherVersion($manufacturer_id, $name, $version, $unit_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyUnitToAnotherVersion'][0])
     {
@@ -175,12 +175,12 @@ class UnitApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $unit_id ID of the unit you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyUnitToAnotherVersion'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function copyUnitToAnotherVersionWithHttpInfo($manufacturer_id, $name, $version, $unit_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyUnitToAnotherVersion'][0])
     {
@@ -212,7 +212,7 @@ class UnitApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                        '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
                         $request,
                         $response,
                     );
@@ -234,7 +234,7 @@ class UnitApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
                 $request,
                 $response,
             );
@@ -243,7 +243,7 @@ class UnitApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                        '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -264,7 +264,7 @@ class UnitApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $unit_id ID of the unit you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyUnitToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -289,7 +289,7 @@ class UnitApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $unit_id ID of the unit you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyUnitToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -297,7 +297,7 @@ class UnitApi
      */
     public function copyUnitToAnotherVersionAsyncWithHttpInfo($manufacturer_id, $name, $version, $unit_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyUnitToAnotherVersion'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse';
         $request = $this->copyUnitToAnotherVersionRequest($manufacturer_id, $name, $version, $unit_id, $request_post_copy_to_version, $contentType);
 
         return $this->client
@@ -343,7 +343,7 @@ class UnitApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $unit_id ID of the unit you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyUnitToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -500,7 +500,7 @@ class UnitApi
      * @param  string $unit_id ID of the unit you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersManufacturerIdContainersNameVersionsVersionUnitsUnitId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -520,7 +520,7 @@ class UnitApi
      * @param  string $unit_id ID of the unit you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersManufacturerIdContainersNameVersionsVersionUnitsUnitId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -788,9 +788,9 @@ class UnitApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerUnits'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetUnitsResponse
+     * @return \HiveCpq\Client\Generated\Model\GetUnitsResponse
      */
     public function getManufacturerUnits($manufacturer_id, $name, $version, $code = null, $integrated_system_name = null, $integrated_system_ids_in = null, $ids_in = null, $page = 0, $page_size = 10, $language = null, string $contentType = self::contentTypes['getManufacturerUnits'][0])
     {
@@ -815,9 +815,9 @@ class UnitApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerUnits'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetUnitsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetUnitsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerUnitsWithHttpInfo($manufacturer_id, $name, $version, $code = null, $integrated_system_name = null, $integrated_system_ids_in = null, $ids_in = null, $page = 0, $page_size = 10, $language = null, string $contentType = self::contentTypes['getManufacturerUnits'][0])
     {
@@ -849,7 +849,7 @@ class UnitApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetUnitsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetUnitsResponse',
                         $request,
                         $response,
                     );
@@ -871,7 +871,7 @@ class UnitApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetUnitsResponse',
+                '\HiveCpq\Client\Generated\Model\GetUnitsResponse',
                 $request,
                 $response,
             );
@@ -880,7 +880,7 @@ class UnitApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetUnitsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetUnitsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -944,7 +944,7 @@ class UnitApi
      */
     public function getManufacturerUnitsAsyncWithHttpInfo($manufacturer_id, $name, $version, $code = null, $integrated_system_name = null, $integrated_system_ids_in = null, $ids_in = null, $page = 0, $page_size = 10, $language = null, string $contentType = self::contentTypes['getManufacturerUnits'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetUnitsResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetUnitsResponse';
         $request = $this->getManufacturerUnitsRequest($manufacturer_id, $name, $version, $code, $integrated_system_name, $integrated_system_ids_in, $ids_in, $page, $page_size, $language, $contentType);
 
         return $this->client
@@ -1199,9 +1199,9 @@ class UnitApi
      * @param  string $unit_id ID of the unit you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdContainersNameVersionsVersionUnitsUnitId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetUnitResponse
+     * @return \HiveCpq\Client\Generated\Model\GetUnitResponse
      */
     public function getManufacturersManufacturerIdContainersNameVersionsVersionUnitsUnitId($manufacturer_id, $name, $version, $unit_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdContainersNameVersionsVersionUnitsUnitId'][0])
     {
@@ -1220,9 +1220,9 @@ class UnitApi
      * @param  string $unit_id ID of the unit you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdContainersNameVersionsVersionUnitsUnitId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetUnitResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetUnitResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdContainersNameVersionsVersionUnitsUnitIdWithHttpInfo($manufacturer_id, $name, $version, $unit_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdContainersNameVersionsVersionUnitsUnitId'][0])
     {
@@ -1254,7 +1254,7 @@ class UnitApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetUnitResponse',
+                        '\HiveCpq\Client\Generated\Model\GetUnitResponse',
                         $request,
                         $response,
                     );
@@ -1276,7 +1276,7 @@ class UnitApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetUnitResponse',
+                '\HiveCpq\Client\Generated\Model\GetUnitResponse',
                 $request,
                 $response,
             );
@@ -1285,7 +1285,7 @@ class UnitApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetUnitResponse',
+                        '\HiveCpq\Client\Generated\Model\GetUnitResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1337,7 +1337,7 @@ class UnitApi
      */
     public function getManufacturersManufacturerIdContainersNameVersionsVersionUnitsUnitIdAsyncWithHttpInfo($manufacturer_id, $name, $version, $unit_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdContainersNameVersionsVersionUnitsUnitId'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetUnitResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetUnitResponse';
         $request = $this->getManufacturersManufacturerIdContainersNameVersionsVersionUnitsUnitIdRequest($manufacturer_id, $name, $version, $unit_id, $contentType);
 
         return $this->client
@@ -1528,12 +1528,12 @@ class UnitApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostUnit|null $post_unit post_unit (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostUnit|null $post_unit post_unit (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdContainersNameVersionsVersionUnits'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturersManufacturerIdContainersNameVersionsVersionUnits($manufacturer_id, $name, $version, $post_unit = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdContainersNameVersionsVersionUnits'][0])
     {
@@ -1549,12 +1549,12 @@ class UnitApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostUnit|null $post_unit (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostUnit|null $post_unit (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdContainersNameVersionsVersionUnits'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturersManufacturerIdContainersNameVersionsVersionUnitsWithHttpInfo($manufacturer_id, $name, $version, $post_unit = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdContainersNameVersionsVersionUnits'][0])
     {
@@ -1586,7 +1586,7 @@ class UnitApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -1608,7 +1608,7 @@ class UnitApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -1617,7 +1617,7 @@ class UnitApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1637,7 +1637,7 @@ class UnitApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostUnit|null $post_unit (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostUnit|null $post_unit (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdContainersNameVersionsVersionUnits'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1661,7 +1661,7 @@ class UnitApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostUnit|null $post_unit (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostUnit|null $post_unit (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdContainersNameVersionsVersionUnits'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1669,7 +1669,7 @@ class UnitApi
      */
     public function postManufacturersManufacturerIdContainersNameVersionsVersionUnitsAsyncWithHttpInfo($manufacturer_id, $name, $version, $post_unit = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdContainersNameVersionsVersionUnits'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturersManufacturerIdContainersNameVersionsVersionUnitsRequest($manufacturer_id, $name, $version, $post_unit, $contentType);
 
         return $this->client
@@ -1714,7 +1714,7 @@ class UnitApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostUnit|null $post_unit (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostUnit|null $post_unit (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdContainersNameVersionsVersionUnits'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1853,12 +1853,12 @@ class UnitApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequest|null $post_manufacturers_manufacturer_id_units_bulk_upsert_request post_manufacturers_manufacturer_id_units_bulk_upsert_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequest|null $post_manufacturers_manufacturer_id_units_bulk_upsert_request post_manufacturers_manufacturer_id_units_bulk_upsert_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdUnitsBulkUpsert'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
      */
     public function postManufacturersManufacturerIdUnitsBulkUpsert($manufacturer_id, $name, $version, $post_manufacturers_manufacturer_id_units_bulk_upsert_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdUnitsBulkUpsert'][0])
     {
@@ -1874,12 +1874,12 @@ class UnitApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequest|null $post_manufacturers_manufacturer_id_units_bulk_upsert_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequest|null $post_manufacturers_manufacturer_id_units_bulk_upsert_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdUnitsBulkUpsert'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturersManufacturerIdUnitsBulkUpsertWithHttpInfo($manufacturer_id, $name, $version, $post_manufacturers_manufacturer_id_units_bulk_upsert_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdUnitsBulkUpsert'][0])
     {
@@ -1911,7 +1911,7 @@ class UnitApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $request,
                         $response,
                     );
@@ -1933,7 +1933,7 @@ class UnitApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                 $request,
                 $response,
             );
@@ -1942,7 +1942,7 @@ class UnitApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1962,7 +1962,7 @@ class UnitApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequest|null $post_manufacturers_manufacturer_id_units_bulk_upsert_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequest|null $post_manufacturers_manufacturer_id_units_bulk_upsert_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdUnitsBulkUpsert'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1986,7 +1986,7 @@ class UnitApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequest|null $post_manufacturers_manufacturer_id_units_bulk_upsert_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequest|null $post_manufacturers_manufacturer_id_units_bulk_upsert_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdUnitsBulkUpsert'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1994,7 +1994,7 @@ class UnitApi
      */
     public function postManufacturersManufacturerIdUnitsBulkUpsertAsyncWithHttpInfo($manufacturer_id, $name, $version, $post_manufacturers_manufacturer_id_units_bulk_upsert_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdUnitsBulkUpsert'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
         $request = $this->postManufacturersManufacturerIdUnitsBulkUpsertRequest($manufacturer_id, $name, $version, $post_manufacturers_manufacturer_id_units_bulk_upsert_request, $contentType);
 
         return $this->client
@@ -2039,7 +2039,7 @@ class UnitApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequest|null $post_manufacturers_manufacturer_id_units_bulk_upsert_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdUnitsBulkUpsertRequest|null $post_manufacturers_manufacturer_id_units_bulk_upsert_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdUnitsBulkUpsert'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2179,10 +2179,10 @@ class UnitApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $unit_id ID of the unit you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutUnit|null $put_unit put_unit (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutUnit|null $put_unit put_unit (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateManufacturerUnit'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2200,10 +2200,10 @@ class UnitApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $unit_id ID of the unit you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutUnit|null $put_unit (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutUnit|null $put_unit (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateManufacturerUnit'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2253,7 +2253,7 @@ class UnitApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $unit_id ID of the unit you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutUnit|null $put_unit (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutUnit|null $put_unit (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateManufacturerUnit'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2278,7 +2278,7 @@ class UnitApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $unit_id ID of the unit you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutUnit|null $put_unit (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutUnit|null $put_unit (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateManufacturerUnit'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2319,7 +2319,7 @@ class UnitApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $unit_id ID of the unit you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutUnit|null $put_unit (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutUnit|null $put_unit (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateManufacturerUnit'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

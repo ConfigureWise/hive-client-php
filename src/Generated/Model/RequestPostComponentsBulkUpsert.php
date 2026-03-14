@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * RequestPostComponentsBulkUpsert Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class RequestPostComponentsBulkUpsert implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'integrated_system_name' => 'string',
-        'components' => '\HiveCpq\\Client\\Generated\Model\RequestPostComponentsBulkUpsertComponentsInner[]'
+        'components' => '\HiveCpq\Client\Generated\Model\RequestPostComponentsBulkUpsertComponentsInner[]'
     ];
 
     /**
@@ -334,7 +334,7 @@ class RequestPostComponentsBulkUpsert implements ModelInterface, ArrayAccess, \J
     /**
      * Gets components
      *
-     * @return \HiveCpq\\Client\\Generated\Model\RequestPostComponentsBulkUpsertComponentsInner[]
+     * @return \HiveCpq\Client\Generated\Model\RequestPostComponentsBulkUpsertComponentsInner[]
      */
     public function getComponents()
     {
@@ -344,7 +344,7 @@ class RequestPostComponentsBulkUpsert implements ModelInterface, ArrayAccess, \J
     /**
      * Sets components
      *
-     * @param \HiveCpq\\Client\\Generated\Model\RequestPostComponentsBulkUpsertComponentsInner[] $components components
+     * @param \HiveCpq\Client\Generated\Model\RequestPostComponentsBulkUpsertComponentsInner[] $components components
      *
      * @return self
      */

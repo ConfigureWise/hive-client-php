@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * GetInvitesResponse Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class GetInvitesResponse implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\HiveCpq\\Client\\Generated\Model\Invite[]',
+        'items' => '\HiveCpq\Client\Generated\Model\Invite[]',
         'total' => 'float'
     ];
 
@@ -311,7 +311,7 @@ class GetInvitesResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets items
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Invite[]
+     * @return \HiveCpq\Client\Generated\Model\Invite[]
      */
     public function getItems()
     {
@@ -321,7 +321,7 @@ class GetInvitesResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets items
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Invite[] $items items
+     * @param \HiveCpq\Client\Generated\Model\Invite[] $items items
      *
      * @return self
      */

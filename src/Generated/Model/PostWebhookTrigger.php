@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PostWebhookTrigger Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,12 +59,12 @@ class PostWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPITypes = [
         'code' => 'string',
-        'names' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
-        'confirmations' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
+        'names' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
+        'confirmations' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
         'confirmation_required' => 'bool',
         'open_in_same_tab' => 'bool',
-        'location' => '\HiveCpq\\Client\\Generated\Model\WebhookTriggerLocation',
-        'type' => '\HiveCpq\\Client\\Generated\Model\WebhookTriggerType',
+        'location' => '\HiveCpq\Client\Generated\Model\WebhookTriggerLocation',
+        'type' => '\HiveCpq\Client\Generated\Model\WebhookTriggerType',
         'permission_ids' => 'string[]'
     ];
 
@@ -389,7 +389,7 @@ class PostWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets names
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]
      */
     public function getNames()
     {
@@ -399,7 +399,7 @@ class PostWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets names
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[] $names A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[] $names A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -421,7 +421,7 @@ class PostWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets confirmations
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
      */
     public function getConfirmations()
     {
@@ -431,7 +431,7 @@ class PostWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets confirmations
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $confirmations A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $confirmations A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -507,7 +507,7 @@ class PostWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets location
      *
-     * @return \HiveCpq\\Client\\Generated\Model\WebhookTriggerLocation
+     * @return \HiveCpq\Client\Generated\Model\WebhookTriggerLocation
      */
     public function getLocation()
     {
@@ -517,7 +517,7 @@ class PostWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets location
      *
-     * @param \HiveCpq\\Client\\Generated\Model\WebhookTriggerLocation $location location
+     * @param \HiveCpq\Client\Generated\Model\WebhookTriggerLocation $location location
      *
      * @return self
      */
@@ -534,7 +534,7 @@ class PostWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets type
      *
-     * @return \HiveCpq\\Client\\Generated\Model\WebhookTriggerType
+     * @return \HiveCpq\Client\Generated\Model\WebhookTriggerType
      */
     public function getType()
     {
@@ -544,7 +544,7 @@ class PostWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets type
      *
-     * @param \HiveCpq\\Client\\Generated\Model\WebhookTriggerType $type type
+     * @param \HiveCpq\Client\Generated\Model\WebhookTriggerType $type type
      *
      * @return self
      */

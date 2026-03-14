@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PutProjectSegmentItem Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class PutProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSeriali
         'name' => 'string',
         'quantity' => 'int',
         'external_serial_numbers' => 'string[]',
-        'price' => '\HiveCpq\\Client\\Generated\Model\PutProjectSegmentItemPrice'
+        'price' => '\HiveCpq\Client\Generated\Model\PutProjectSegmentItemPrice'
     ];
 
     /**
@@ -407,7 +407,7 @@ class PutProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets price
      *
-     * @return \HiveCpq\\Client\\Generated\Model\PutProjectSegmentItemPrice|null
+     * @return \HiveCpq\Client\Generated\Model\PutProjectSegmentItemPrice|null
      */
     public function getPrice()
     {
@@ -417,7 +417,7 @@ class PutProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets price
      *
-     * @param \HiveCpq\\Client\\Generated\Model\PutProjectSegmentItemPrice|null $price price
+     * @param \HiveCpq\Client\Generated\Model\PutProjectSegmentItemPrice|null $price price
      *
      * @return self
      */

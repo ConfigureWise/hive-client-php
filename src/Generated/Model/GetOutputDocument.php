@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * GetOutputDocument Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class GetOutputDocument implements ModelInterface, ArrayAccess, \JsonSerializabl
         'id' => 'string',
         'name' => 'string',
         'language_codes' => 'string[]',
-        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit',
+        'audit' => '\HiveCpq\Client\Generated\Model\Audit',
         'type' => 'string'
     ];
 
@@ -428,7 +428,7 @@ class GetOutputDocument implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets audit
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
+     * @return \HiveCpq\Client\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -438,7 +438,7 @@ class GetOutputDocument implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets audit
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */

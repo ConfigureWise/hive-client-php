@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Api;
+namespace HiveCpq\Client\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\\Client\\Generated\ApiException;
-use HiveCpq\\Client\\Generated\Configuration;
-use HiveCpq\\Client\\Generated\FormDataProcessor;
-use HiveCpq\\Client\\Generated\HeaderSelector;
-use HiveCpq\\Client\\Generated\ObjectSerializer;
+use HiveCpq\Client\Generated\ApiException;
+use HiveCpq\Client\Generated\Configuration;
+use HiveCpq\Client\Generated\FormDataProcessor;
+use HiveCpq\Client\Generated\HeaderSelector;
+use HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * SalesConditionsApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -141,9 +141,9 @@ class SalesConditionsApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerDeliveryConditions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetDeliveryConditionsResponse
+     * @return \HiveCpq\Client\Generated\Model\GetDeliveryConditionsResponse
      */
     public function getManufacturerDeliveryConditions($manufacturer_id, $language = null, string $contentType = self::contentTypes['getManufacturerDeliveryConditions'][0])
     {
@@ -160,9 +160,9 @@ class SalesConditionsApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerDeliveryConditions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetDeliveryConditionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetDeliveryConditionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerDeliveryConditionsWithHttpInfo($manufacturer_id, $language = null, string $contentType = self::contentTypes['getManufacturerDeliveryConditions'][0])
     {
@@ -194,7 +194,7 @@ class SalesConditionsApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetDeliveryConditionsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetDeliveryConditionsResponse',
                         $request,
                         $response,
                     );
@@ -216,7 +216,7 @@ class SalesConditionsApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetDeliveryConditionsResponse',
+                '\HiveCpq\Client\Generated\Model\GetDeliveryConditionsResponse',
                 $request,
                 $response,
             );
@@ -225,7 +225,7 @@ class SalesConditionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetDeliveryConditionsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetDeliveryConditionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -273,7 +273,7 @@ class SalesConditionsApi
      */
     public function getManufacturerDeliveryConditionsAsyncWithHttpInfo($manufacturer_id, $language = null, string $contentType = self::contentTypes['getManufacturerDeliveryConditions'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetDeliveryConditionsResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetDeliveryConditionsResponse';
         $request = $this->getManufacturerDeliveryConditionsRequest($manufacturer_id, $language, $contentType);
 
         return $this->client
@@ -428,9 +428,9 @@ class SalesConditionsApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerPaymentConditions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetPaymentConditionsResponse
+     * @return \HiveCpq\Client\Generated\Model\GetPaymentConditionsResponse
      */
     public function getManufacturerPaymentConditions($manufacturer_id, $language = null, string $contentType = self::contentTypes['getManufacturerPaymentConditions'][0])
     {
@@ -447,9 +447,9 @@ class SalesConditionsApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerPaymentConditions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetPaymentConditionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetPaymentConditionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerPaymentConditionsWithHttpInfo($manufacturer_id, $language = null, string $contentType = self::contentTypes['getManufacturerPaymentConditions'][0])
     {
@@ -481,7 +481,7 @@ class SalesConditionsApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetPaymentConditionsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetPaymentConditionsResponse',
                         $request,
                         $response,
                     );
@@ -503,7 +503,7 @@ class SalesConditionsApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetPaymentConditionsResponse',
+                '\HiveCpq\Client\Generated\Model\GetPaymentConditionsResponse',
                 $request,
                 $response,
             );
@@ -512,7 +512,7 @@ class SalesConditionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetPaymentConditionsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetPaymentConditionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -560,7 +560,7 @@ class SalesConditionsApi
      */
     public function getManufacturerPaymentConditionsAsyncWithHttpInfo($manufacturer_id, $language = null, string $contentType = self::contentTypes['getManufacturerPaymentConditions'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetPaymentConditionsResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetPaymentConditionsResponse';
         $request = $this->getManufacturerPaymentConditionsRequest($manufacturer_id, $language, $contentType);
 
         return $this->client
@@ -715,9 +715,9 @@ class SalesConditionsApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdTaxConditions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetTaxConditionsResponse
+     * @return \HiveCpq\Client\Generated\Model\GetTaxConditionsResponse
      */
     public function getManufacturersManufacturerIdTaxConditions($manufacturer_id, $language = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdTaxConditions'][0])
     {
@@ -734,9 +734,9 @@ class SalesConditionsApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdTaxConditions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetTaxConditionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetTaxConditionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdTaxConditionsWithHttpInfo($manufacturer_id, $language = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdTaxConditions'][0])
     {
@@ -768,7 +768,7 @@ class SalesConditionsApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetTaxConditionsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetTaxConditionsResponse',
                         $request,
                         $response,
                     );
@@ -790,7 +790,7 @@ class SalesConditionsApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetTaxConditionsResponse',
+                '\HiveCpq\Client\Generated\Model\GetTaxConditionsResponse',
                 $request,
                 $response,
             );
@@ -799,7 +799,7 @@ class SalesConditionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetTaxConditionsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetTaxConditionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -847,7 +847,7 @@ class SalesConditionsApi
      */
     public function getManufacturersManufacturerIdTaxConditionsAsyncWithHttpInfo($manufacturer_id, $language = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdTaxConditions'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetTaxConditionsResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetTaxConditionsResponse';
         $request = $this->getManufacturersManufacturerIdTaxConditionsRequest($manufacturer_id, $language, $contentType);
 
         return $this->client

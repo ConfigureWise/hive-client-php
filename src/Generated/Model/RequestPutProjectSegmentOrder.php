@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * RequestPutProjectSegmentOrder Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,11 +65,11 @@ class RequestPutProjectSegmentOrder implements ModelInterface, ArrayAccess, \Jso
         'customer_po_ref' => 'string',
         'manufacturer_so_ref' => 'string',
         'manufacturer_reference' => 'string',
-        'delivery' => '\HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderDelivery',
-        'sell_to' => '\HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderSellTo',
-        'invoice' => '\HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderInvoice',
-        'installation' => '\HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderDelivery',
-        'sales_condition' => '\HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderSalesCondition',
+        'delivery' => '\HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderDelivery',
+        'sell_to' => '\HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderSellTo',
+        'invoice' => '\HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderInvoice',
+        'installation' => '\HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderDelivery',
+        'sales_condition' => '\HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderSalesCondition',
         'order_sender_contact_id' => 'string',
         'order_receiver_contact_id' => 'string'
     ];
@@ -573,7 +573,7 @@ class RequestPutProjectSegmentOrder implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets delivery
      *
-     * @return \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderDelivery|null
+     * @return \HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderDelivery|null
      */
     public function getDelivery()
     {
@@ -583,7 +583,7 @@ class RequestPutProjectSegmentOrder implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets delivery
      *
-     * @param \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderDelivery|null $delivery delivery
+     * @param \HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderDelivery|null $delivery delivery
      *
      * @return self
      */
@@ -600,7 +600,7 @@ class RequestPutProjectSegmentOrder implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets sell_to
      *
-     * @return \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderSellTo|null
+     * @return \HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderSellTo|null
      */
     public function getSellTo()
     {
@@ -610,7 +610,7 @@ class RequestPutProjectSegmentOrder implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets sell_to
      *
-     * @param \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderSellTo|null $sell_to sell_to
+     * @param \HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderSellTo|null $sell_to sell_to
      *
      * @return self
      */
@@ -627,7 +627,7 @@ class RequestPutProjectSegmentOrder implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets invoice
      *
-     * @return \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderInvoice|null
+     * @return \HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderInvoice|null
      */
     public function getInvoice()
     {
@@ -637,7 +637,7 @@ class RequestPutProjectSegmentOrder implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets invoice
      *
-     * @param \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderInvoice|null $invoice invoice
+     * @param \HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderInvoice|null $invoice invoice
      *
      * @return self
      */
@@ -654,7 +654,7 @@ class RequestPutProjectSegmentOrder implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets installation
      *
-     * @return \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderDelivery|null
+     * @return \HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderDelivery|null
      */
     public function getInstallation()
     {
@@ -664,7 +664,7 @@ class RequestPutProjectSegmentOrder implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets installation
      *
-     * @param \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderDelivery|null $installation installation
+     * @param \HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderDelivery|null $installation installation
      *
      * @return self
      */
@@ -681,7 +681,7 @@ class RequestPutProjectSegmentOrder implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets sales_condition
      *
-     * @return \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderSalesCondition|null
+     * @return \HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderSalesCondition|null
      */
     public function getSalesCondition()
     {
@@ -691,7 +691,7 @@ class RequestPutProjectSegmentOrder implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets sales_condition
      *
-     * @param \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrderSalesCondition|null $sales_condition sales_condition
+     * @param \HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrderSalesCondition|null $sales_condition sales_condition
      *
      * @return self
      */

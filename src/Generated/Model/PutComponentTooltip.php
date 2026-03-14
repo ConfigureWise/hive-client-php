@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PutComponentTooltip Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class PutComponentTooltip implements ModelInterface, ArrayAccess, \JsonSerializa
       */
     protected static $openAPITypes = [
         'enabled' => 'bool',
-        'titles' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
-        'details' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]'
+        'titles' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
+        'details' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]'
     ];
 
     /**
@@ -342,7 +342,7 @@ class PutComponentTooltip implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets titles
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
      */
     public function getTitles()
     {
@@ -352,7 +352,7 @@ class PutComponentTooltip implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets titles
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $titles A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $titles A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -374,7 +374,7 @@ class PutComponentTooltip implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets details
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
      */
     public function getDetails()
     {
@@ -384,7 +384,7 @@ class PutComponentTooltip implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets details
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $details A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $details A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */

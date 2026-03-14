@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ExternalLinksInner Class Doc Comment
  *
  * @category Class
  * @description The external link allows integrators to link resources of external systems to resources within HiveCPQ. An integrated can link a \&quot;project\&quot; with a CRM. In this case the integratedSystemName would be \&quot;CRM\&quot; and integratedSystemId will be the id of the project in the CRM. This ExternalLink object will be attached to the \&quot;projects\&quot; resource.
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

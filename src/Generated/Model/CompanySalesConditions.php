@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * CompanySalesConditions Class Doc Comment
  *
  * @category Class
  * @description The conditions and defaults applied to projects of this company.
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,7 +64,7 @@ class CompanySalesConditions implements ModelInterface, ArrayAccess, \JsonSerial
         'payment_condition_code' => 'string',
         'base_discount' => 'float',
         'order_currency' => 'string',
-        'administration_fee' => '\HiveCpq\\Client\\Generated\Model\CompanySalesConditionsAdministrationFee'
+        'administration_fee' => '\HiveCpq\Client\Generated\Model\CompanySalesConditionsAdministrationFee'
     ];
 
     /**
@@ -464,7 +464,7 @@ class CompanySalesConditions implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets administration_fee
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanySalesConditionsAdministrationFee|null
+     * @return \HiveCpq\Client\Generated\Model\CompanySalesConditionsAdministrationFee|null
      */
     public function getAdministrationFee()
     {
@@ -474,7 +474,7 @@ class CompanySalesConditions implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets administration_fee
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanySalesConditionsAdministrationFee|null $administration_fee administration_fee
+     * @param \HiveCpq\Client\Generated\Model\CompanySalesConditionsAdministrationFee|null $administration_fee administration_fee
      *
      * @return self
      */

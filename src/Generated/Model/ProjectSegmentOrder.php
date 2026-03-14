@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ProjectSegmentOrder Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -70,13 +70,13 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
         'customer_po_ref' => 'string',
         'manufacturer_so_ref' => 'string',
         'manufacturer_reference' => 'string',
-        'delivery' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderDelivery',
-        'invoice' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderInvoice',
-        'sell_to' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderSellTo',
-        'installation' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderInstallation',
-        'sales_condition' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderSalesCondition',
-        'order_sender_contact' => '\HiveCpq\\Client\\Generated\Model\ContactLink',
-        'order_receiver_contact' => '\HiveCpq\\Client\\Generated\Model\ContactLink'
+        'delivery' => '\HiveCpq\Client\Generated\Model\ProjectSegmentOrderDelivery',
+        'invoice' => '\HiveCpq\Client\Generated\Model\ProjectSegmentOrderInvoice',
+        'sell_to' => '\HiveCpq\Client\Generated\Model\ProjectSegmentOrderSellTo',
+        'installation' => '\HiveCpq\Client\Generated\Model\ProjectSegmentOrderInstallation',
+        'sales_condition' => '\HiveCpq\Client\Generated\Model\ProjectSegmentOrderSalesCondition',
+        'order_sender_contact' => '\HiveCpq\Client\Generated\Model\ContactLink',
+        'order_receiver_contact' => '\HiveCpq\Client\Generated\Model\ContactLink'
     ];
 
     /**
@@ -785,7 +785,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets delivery
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderDelivery|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentOrderDelivery|null
      */
     public function getDelivery()
     {
@@ -795,7 +795,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets delivery
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderDelivery|null $delivery delivery
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentOrderDelivery|null $delivery delivery
      *
      * @return self
      */
@@ -812,7 +812,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets invoice
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderInvoice|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentOrderInvoice|null
      */
     public function getInvoice()
     {
@@ -822,7 +822,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets invoice
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderInvoice|null $invoice invoice
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentOrderInvoice|null $invoice invoice
      *
      * @return self
      */
@@ -839,7 +839,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets sell_to
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderSellTo|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentOrderSellTo|null
      */
     public function getSellTo()
     {
@@ -849,7 +849,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets sell_to
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderSellTo|null $sell_to sell_to
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentOrderSellTo|null $sell_to sell_to
      *
      * @return self
      */
@@ -866,7 +866,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets installation
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderInstallation|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentOrderInstallation|null
      */
     public function getInstallation()
     {
@@ -876,7 +876,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets installation
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderInstallation|null $installation installation
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentOrderInstallation|null $installation installation
      *
      * @return self
      */
@@ -893,7 +893,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets sales_condition
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderSalesCondition|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentOrderSalesCondition|null
      */
     public function getSalesCondition()
     {
@@ -903,7 +903,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets sales_condition
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentOrderSalesCondition|null $sales_condition sales_condition
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentOrderSalesCondition|null $sales_condition sales_condition
      *
      * @return self
      */
@@ -920,7 +920,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets order_sender_contact
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ContactLink|null
+     * @return \HiveCpq\Client\Generated\Model\ContactLink|null
      */
     public function getOrderSenderContact()
     {
@@ -930,7 +930,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets order_sender_contact
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ContactLink|null $order_sender_contact order_sender_contact
+     * @param \HiveCpq\Client\Generated\Model\ContactLink|null $order_sender_contact order_sender_contact
      *
      * @return self
      */
@@ -947,7 +947,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets order_receiver_contact
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ContactLink|null
+     * @return \HiveCpq\Client\Generated\Model\ContactLink|null
      */
     public function getOrderReceiverContact()
     {
@@ -957,7 +957,7 @@ class ProjectSegmentOrder implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets order_receiver_contact
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ContactLink|null $order_receiver_contact order_receiver_contact
+     * @param \HiveCpq\Client\Generated\Model\ContactLink|null $order_receiver_contact order_receiver_contact
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ComponentConfigurable Class Doc Comment
  *
  * @category Class
  * @description This block represents a component that is a template for a configuration. It is linked to a configurator and has initial input values that will be used to created the configuration.
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class ComponentConfigurable implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'configurator' => '\HiveCpq\\Client\\Generated\Model\ConfiguratorLink',
-        'parameters' => '\HiveCpq\\Client\\Generated\Model\ComponentConfigurableParametersInner[]'
+        'configurator' => '\HiveCpq\Client\Generated\Model\ConfiguratorLink',
+        'parameters' => '\HiveCpq\Client\Generated\Model\ComponentConfigurableParametersInner[]'
     ];
 
     /**
@@ -301,7 +301,7 @@ class ComponentConfigurable implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets configurator
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ConfiguratorLink|null
+     * @return \HiveCpq\Client\Generated\Model\ConfiguratorLink|null
      */
     public function getConfigurator()
     {
@@ -311,7 +311,7 @@ class ComponentConfigurable implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets configurator
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ConfiguratorLink|null $configurator configurator
+     * @param \HiveCpq\Client\Generated\Model\ConfiguratorLink|null $configurator configurator
      *
      * @return self
      */
@@ -328,7 +328,7 @@ class ComponentConfigurable implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets parameters
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ComponentConfigurableParametersInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ComponentConfigurableParametersInner[]|null
      */
     public function getParameters()
     {
@@ -338,7 +338,7 @@ class ComponentConfigurable implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets parameters
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ComponentConfigurableParametersInner[]|null $parameters parameters
+     * @param \HiveCpq\Client\Generated\Model\ComponentConfigurableParametersInner[]|null $parameters parameters
      *
      * @return self
      */

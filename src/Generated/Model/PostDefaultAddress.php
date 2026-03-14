@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PostDefaultAddress Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,15 +59,15 @@ class PostDefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPITypes = [
         'company_name' => 'string',
-        'type' => '\HiveCpq\\Client\\Generated\Model\CompanyDefaultAddressTypeEnum',
-        'address' => '\HiveCpq\\Client\\Generated\Model\Address',
+        'type' => '\HiveCpq\Client\Generated\Model\CompanyDefaultAddressTypeEnum',
+        'address' => '\HiveCpq\Client\Generated\Model\Address',
         'contact_person' => 'string',
         'contact_phone' => 'string',
         'email' => 'string',
         'vat_number' => 'string',
         'can_change_address' => 'bool',
         'can_change_address_on_place_order' => 'bool',
-        'integrated_system_link' => '\HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink'
+        'integrated_system_link' => '\HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink'
     ];
 
     /**
@@ -401,7 +401,7 @@ class PostDefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets type
      *
-     * @return \HiveCpq\\Client\\Generated\Model\CompanyDefaultAddressTypeEnum
+     * @return \HiveCpq\Client\Generated\Model\CompanyDefaultAddressTypeEnum
      */
     public function getType()
     {
@@ -411,7 +411,7 @@ class PostDefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets type
      *
-     * @param \HiveCpq\\Client\\Generated\Model\CompanyDefaultAddressTypeEnum $type type
+     * @param \HiveCpq\Client\Generated\Model\CompanyDefaultAddressTypeEnum $type type
      *
      * @return self
      */
@@ -428,7 +428,7 @@ class PostDefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets address
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Address
+     * @return \HiveCpq\Client\Generated\Model\Address
      */
     public function getAddress()
     {
@@ -438,7 +438,7 @@ class PostDefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets address
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Address $address address
+     * @param \HiveCpq\Client\Generated\Model\Address $address address
      *
      * @return self
      */
@@ -617,7 +617,7 @@ class PostDefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets integrated_system_link
      *
-     * @return \HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink|null
+     * @return \HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink|null
      */
     public function getIntegratedSystemLink()
     {
@@ -627,7 +627,7 @@ class PostDefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets integrated_system_link
      *
-     * @param \HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink|null $integrated_system_link integrated_system_link
+     * @param \HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink|null $integrated_system_link integrated_system_link
      *
      * @return self
      */

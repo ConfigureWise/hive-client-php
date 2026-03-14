@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * Invite Class Doc Comment
  *
  * @category Class
  * @description An invite represents an invitation to create a user within the Hive platform. Users can only be added through an invite.
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,8 +65,8 @@ class Invite implements ModelInterface, ArrayAccess, \JsonSerializable
         'created_at' => 'string',
         'claimed_at' => 'string',
         'invite_url' => 'string',
-        'from_contact' => '\HiveCpq\\Client\\Generated\Model\ContactLink',
-        'to_contact' => '\HiveCpq\\Client\\Generated\Model\ContactLink'
+        'from_contact' => '\HiveCpq\Client\Generated\Model\ContactLink',
+        'to_contact' => '\HiveCpq\Client\Generated\Model\ContactLink'
     ];
 
     /**
@@ -586,7 +586,7 @@ class Invite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets from_contact
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ContactLink|null
+     * @return \HiveCpq\Client\Generated\Model\ContactLink|null
      */
     public function getFromContact()
     {
@@ -596,7 +596,7 @@ class Invite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets from_contact
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ContactLink|null $from_contact from_contact
+     * @param \HiveCpq\Client\Generated\Model\ContactLink|null $from_contact from_contact
      *
      * @return self
      */
@@ -613,7 +613,7 @@ class Invite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets to_contact
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ContactLink|null
+     * @return \HiveCpq\Client\Generated\Model\ContactLink|null
      */
     public function getToContact()
     {
@@ -623,7 +623,7 @@ class Invite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets to_contact
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ContactLink|null $to_contact to_contact
+     * @param \HiveCpq\Client\Generated\Model\ContactLink|null $to_contact to_contact
      *
      * @return self
      */

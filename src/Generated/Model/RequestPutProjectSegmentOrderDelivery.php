@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * RequestPutProjectSegmentOrderDelivery Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class RequestPutProjectSegmentOrderDelivery implements ModelInterface, ArrayAcce
     protected static $openAPITypes = [
         'email' => 'string',
         'company_name' => 'string',
-        'address' => '\HiveCpq\\Client\\Generated\Model\Address',
+        'address' => '\HiveCpq\Client\Generated\Model\Address',
         'contact_name' => 'string',
         'contact_phone' => 'string'
     ];
@@ -375,7 +375,7 @@ class RequestPutProjectSegmentOrderDelivery implements ModelInterface, ArrayAcce
     /**
      * Gets address
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Address|null
+     * @return \HiveCpq\Client\Generated\Model\Address|null
      */
     public function getAddress()
     {
@@ -385,7 +385,7 @@ class RequestPutProjectSegmentOrderDelivery implements ModelInterface, ArrayAcce
     /**
      * Sets address
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Address|null $address address
+     * @param \HiveCpq\Client\Generated\Model\Address|null $address address
      *
      * @return self
      */

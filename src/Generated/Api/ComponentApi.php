@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Api;
+namespace HiveCpq\Client\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\\Client\\Generated\ApiException;
-use HiveCpq\\Client\\Generated\Configuration;
-use HiveCpq\\Client\\Generated\FormDataProcessor;
-use HiveCpq\\Client\\Generated\HeaderSelector;
-use HiveCpq\\Client\\Generated\ObjectSerializer;
+use HiveCpq\Client\Generated\ApiException;
+use HiveCpq\Client\Generated\Configuration;
+use HiveCpq\Client\Generated\FormDataProcessor;
+use HiveCpq\Client\Generated\HeaderSelector;
+use HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ComponentApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -222,12 +222,12 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComponentPrice|null $post_component_price post_component_price (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComponentPrice|null $post_component_price post_component_price (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerComponentPrice'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
      */
     public function addManufacturerComponentPrice($manufacturer_id, $name, $version, $component_id, $post_component_price = null, string $contentType = self::contentTypes['addManufacturerComponentPrice'][0])
     {
@@ -244,12 +244,12 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComponentPrice|null $post_component_price (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComponentPrice|null $post_component_price (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerComponentPrice'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function addManufacturerComponentPriceWithHttpInfo($manufacturer_id, $name, $version, $component_id, $post_component_price = null, string $contentType = self::contentTypes['addManufacturerComponentPrice'][0])
     {
@@ -281,7 +281,7 @@ class ComponentApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -303,7 +303,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -312,7 +312,7 @@ class ComponentApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -333,7 +333,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComponentPrice|null $post_component_price (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComponentPrice|null $post_component_price (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerComponentPrice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -358,7 +358,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComponentPrice|null $post_component_price (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComponentPrice|null $post_component_price (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerComponentPrice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -366,7 +366,7 @@ class ComponentApi
      */
     public function addManufacturerComponentPriceAsyncWithHttpInfo($manufacturer_id, $name, $version, $component_id, $post_component_price = null, string $contentType = self::contentTypes['addManufacturerComponentPrice'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->addManufacturerComponentPriceRequest($manufacturer_id, $name, $version, $component_id, $post_component_price, $contentType);
 
         return $this->client
@@ -412,7 +412,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComponentPrice|null $post_component_price (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComponentPrice|null $post_component_price (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerComponentPrice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -571,9 +571,9 @@ class ComponentApi
      * @param  \SplFileObject|null $file file (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerComponnentAttachments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
      */
     public function addManufacturerComponnentAttachments($manufacturer_id, $name, $version, $component_id, $is_image = null, $file = null, string $contentType = self::contentTypes['addManufacturerComponnentAttachments'][0])
     {
@@ -594,9 +594,9 @@ class ComponentApi
      * @param  \SplFileObject|null $file (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerComponnentAttachments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function addManufacturerComponnentAttachmentsWithHttpInfo($manufacturer_id, $name, $version, $component_id, $is_image = null, $file = null, string $contentType = self::contentTypes['addManufacturerComponnentAttachments'][0])
     {
@@ -628,7 +628,7 @@ class ComponentApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -650,7 +650,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -659,7 +659,7 @@ class ComponentApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -715,7 +715,7 @@ class ComponentApi
      */
     public function addManufacturerComponnentAttachmentsAsyncWithHttpInfo($manufacturer_id, $name, $version, $component_id, $is_image = null, $file = null, string $contentType = self::contentTypes['addManufacturerComponnentAttachments'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->addManufacturerComponnentAttachmentsRequest($manufacturer_id, $name, $version, $component_id, $is_image, $file, $contentType);
 
         return $this->client
@@ -922,12 +922,12 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version request_post_copy_to_version (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyComponentToAnotherVersion'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse
+     * @return \HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse
      */
     public function copyComponentToAnotherVersion($manufacturer_id, $name, $version, $component_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyComponentToAnotherVersion'][0])
     {
@@ -944,12 +944,12 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyComponentToAnotherVersion'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function copyComponentToAnotherVersionWithHttpInfo($manufacturer_id, $name, $version, $component_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyComponentToAnotherVersion'][0])
     {
@@ -981,7 +981,7 @@ class ComponentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                        '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
                         $request,
                         $response,
                     );
@@ -1003,7 +1003,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
                 $request,
                 $response,
             );
@@ -1012,7 +1012,7 @@ class ComponentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                        '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1033,7 +1033,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyComponentToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1058,7 +1058,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyComponentToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1066,7 +1066,7 @@ class ComponentApi
      */
     public function copyComponentToAnotherVersionAsyncWithHttpInfo($manufacturer_id, $name, $version, $component_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyComponentToAnotherVersion'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse';
         $request = $this->copyComponentToAnotherVersionRequest($manufacturer_id, $name, $version, $component_id, $request_post_copy_to_version, $contentType);
 
         return $this->client
@@ -1112,7 +1112,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyComponentToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1269,7 +1269,7 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1289,7 +1289,7 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1551,7 +1551,7 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersComponentImage'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1571,7 +1571,7 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersComponentImage'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1833,7 +1833,7 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersComponentTooltip'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1853,7 +1853,7 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersComponentTooltip'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2116,7 +2116,7 @@ class ComponentApi
      * @param  string $attachment_id Id of the attachment (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersManufacturerIdContainersNameVersionsVersionComponentsComponentIdAttachmentsAttachmentId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2137,7 +2137,7 @@ class ComponentApi
      * @param  string $attachment_id Id of the attachment (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersManufacturerIdContainersNameVersionsVersionComponentsComponentIdAttachmentsAttachmentId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2417,9 +2417,9 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\Component
+     * @return \HiveCpq\Client\Generated\Model\Component
      */
     public function getManufacturerComponent($manufacturer_id, $name, $version, $component_id, string $contentType = self::contentTypes['getManufacturerComponent'][0])
     {
@@ -2438,9 +2438,9 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\Component, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\Component, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerComponentWithHttpInfo($manufacturer_id, $name, $version, $component_id, string $contentType = self::contentTypes['getManufacturerComponent'][0])
     {
@@ -2472,7 +2472,7 @@ class ComponentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\Component',
+                        '\HiveCpq\Client\Generated\Model\Component',
                         $request,
                         $response,
                     );
@@ -2494,7 +2494,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\Component',
+                '\HiveCpq\Client\Generated\Model\Component',
                 $request,
                 $response,
             );
@@ -2503,7 +2503,7 @@ class ComponentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\Component',
+                        '\HiveCpq\Client\Generated\Model\Component',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2555,7 +2555,7 @@ class ComponentApi
      */
     public function getManufacturerComponentAsyncWithHttpInfo($manufacturer_id, $name, $version, $component_id, string $contentType = self::contentTypes['getManufacturerComponent'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\Component';
+        $returnType = '\HiveCpq\Client\Generated\Model\Component';
         $request = $this->getManufacturerComponentRequest($manufacturer_id, $name, $version, $component_id, $contentType);
 
         return $this->client
@@ -2749,9 +2749,9 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComponentPrices'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetComponentPricesResponse
+     * @return \HiveCpq\Client\Generated\Model\GetComponentPricesResponse
      */
     public function getManufacturerComponentPrices($manufacturer_id, $name, $version, $component_id, string $contentType = self::contentTypes['getManufacturerComponentPrices'][0])
     {
@@ -2770,9 +2770,9 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComponentPrices'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetComponentPricesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetComponentPricesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerComponentPricesWithHttpInfo($manufacturer_id, $name, $version, $component_id, string $contentType = self::contentTypes['getManufacturerComponentPrices'][0])
     {
@@ -2804,7 +2804,7 @@ class ComponentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetComponentPricesResponse',
+                        '\HiveCpq\Client\Generated\Model\GetComponentPricesResponse',
                         $request,
                         $response,
                     );
@@ -2826,7 +2826,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetComponentPricesResponse',
+                '\HiveCpq\Client\Generated\Model\GetComponentPricesResponse',
                 $request,
                 $response,
             );
@@ -2835,7 +2835,7 @@ class ComponentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetComponentPricesResponse',
+                        '\HiveCpq\Client\Generated\Model\GetComponentPricesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2887,7 +2887,7 @@ class ComponentApi
      */
     public function getManufacturerComponentPricesAsyncWithHttpInfo($manufacturer_id, $name, $version, $component_id, string $contentType = self::contentTypes['getManufacturerComponentPrices'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetComponentPricesResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetComponentPricesResponse';
         $request = $this->getManufacturerComponentPricesRequest($manufacturer_id, $name, $version, $component_id, $contentType);
 
         return $this->client
@@ -3081,7 +3081,7 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComponentTooltipImage'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -3102,7 +3102,7 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComponentTooltipImage'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3423,9 +3423,9 @@ class ComponentApi
      * @param  string|null $gtin_code gtin_code (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComponents'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetComponentsResponse
+     * @return \HiveCpq\Client\Generated\Model\GetComponentsResponse
      */
     public function getManufacturerComponents($manufacturer_id, $name, $version, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $language = null, $page = 0, $page_size = 10, $feature_ids = null, $price_catalog_id = null, $article_code = null, $ean_code = null, $gtin_code = null, string $contentType = self::contentTypes['getManufacturerComponents'][0])
     {
@@ -3454,9 +3454,9 @@ class ComponentApi
      * @param  string|null $gtin_code (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComponents'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetComponentsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetComponentsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerComponentsWithHttpInfo($manufacturer_id, $name, $version, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $language = null, $page = 0, $page_size = 10, $feature_ids = null, $price_catalog_id = null, $article_code = null, $ean_code = null, $gtin_code = null, string $contentType = self::contentTypes['getManufacturerComponents'][0])
     {
@@ -3488,7 +3488,7 @@ class ComponentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetComponentsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetComponentsResponse',
                         $request,
                         $response,
                     );
@@ -3510,7 +3510,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetComponentsResponse',
+                '\HiveCpq\Client\Generated\Model\GetComponentsResponse',
                 $request,
                 $response,
             );
@@ -3519,7 +3519,7 @@ class ComponentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetComponentsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetComponentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3591,7 +3591,7 @@ class ComponentApi
      */
     public function getManufacturerComponentsAsyncWithHttpInfo($manufacturer_id, $name, $version, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $language = null, $page = 0, $page_size = 10, $feature_ids = null, $price_catalog_id = null, $article_code = null, $ean_code = null, $gtin_code = null, string $contentType = self::contentTypes['getManufacturerComponents'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetComponentsResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetComponentsResponse';
         $request = $this->getManufacturerComponentsRequest($manufacturer_id, $name, $version, $ids_in, $integrated_system_name, $integrated_system_ids_in, $language, $page, $page_size, $feature_ids, $price_catalog_id, $article_code, $ean_code, $gtin_code, $contentType);
 
         return $this->client
@@ -3893,9 +3893,9 @@ class ComponentApi
      * @param  bool|null $is_image Optional parameter to only return the images (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComponnentAttachments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetComponentAttachmentsResponnse
+     * @return \HiveCpq\Client\Generated\Model\GetComponentAttachmentsResponnse
      */
     public function getManufacturerComponnentAttachments($manufacturer_id, $name, $version, $component_id, $page = 0, $page_size = 10, $is_image = null, string $contentType = self::contentTypes['getManufacturerComponnentAttachments'][0])
     {
@@ -3917,9 +3917,9 @@ class ComponentApi
      * @param  bool|null $is_image Optional parameter to only return the images (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerComponnentAttachments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetComponentAttachmentsResponnse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetComponentAttachmentsResponnse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerComponnentAttachmentsWithHttpInfo($manufacturer_id, $name, $version, $component_id, $page = 0, $page_size = 10, $is_image = null, string $contentType = self::contentTypes['getManufacturerComponnentAttachments'][0])
     {
@@ -3951,7 +3951,7 @@ class ComponentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetComponentAttachmentsResponnse',
+                        '\HiveCpq\Client\Generated\Model\GetComponentAttachmentsResponnse',
                         $request,
                         $response,
                     );
@@ -3973,7 +3973,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetComponentAttachmentsResponnse',
+                '\HiveCpq\Client\Generated\Model\GetComponentAttachmentsResponnse',
                 $request,
                 $response,
             );
@@ -3982,7 +3982,7 @@ class ComponentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetComponentAttachmentsResponnse',
+                        '\HiveCpq\Client\Generated\Model\GetComponentAttachmentsResponnse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4040,7 +4040,7 @@ class ComponentApi
      */
     public function getManufacturerComponnentAttachmentsAsyncWithHttpInfo($manufacturer_id, $name, $version, $component_id, $page = 0, $page_size = 10, $is_image = null, string $contentType = self::contentTypes['getManufacturerComponnentAttachments'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetComponentAttachmentsResponnse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetComponentAttachmentsResponnse';
         $request = $this->getManufacturerComponnentAttachmentsRequest($manufacturer_id, $name, $version, $component_id, $page, $page_size, $is_image, $contentType);
 
         return $this->client
@@ -4269,9 +4269,9 @@ class ComponentApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersComponentProperties'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\ResponseGetComponentPropertyValues
+     * @return \HiveCpq\Client\Generated\Model\ResponseGetComponentPropertyValues
      */
     public function getManufacturersComponentProperties($manufacturer_id, $name, $version, $component_id, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersComponentProperties'][0])
     {
@@ -4292,9 +4292,9 @@ class ComponentApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersComponentProperties'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\ResponseGetComponentPropertyValues, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\ResponseGetComponentPropertyValues, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersComponentPropertiesWithHttpInfo($manufacturer_id, $name, $version, $component_id, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersComponentProperties'][0])
     {
@@ -4326,7 +4326,7 @@ class ComponentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\ResponseGetComponentPropertyValues',
+                        '\HiveCpq\Client\Generated\Model\ResponseGetComponentPropertyValues',
                         $request,
                         $response,
                     );
@@ -4348,7 +4348,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\ResponseGetComponentPropertyValues',
+                '\HiveCpq\Client\Generated\Model\ResponseGetComponentPropertyValues',
                 $request,
                 $response,
             );
@@ -4357,7 +4357,7 @@ class ComponentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\ResponseGetComponentPropertyValues',
+                        '\HiveCpq\Client\Generated\Model\ResponseGetComponentPropertyValues',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4413,7 +4413,7 @@ class ComponentApi
      */
     public function getManufacturersComponentPropertiesAsyncWithHttpInfo($manufacturer_id, $name, $version, $component_id, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersComponentProperties'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\ResponseGetComponentPropertyValues';
+        $returnType = '\HiveCpq\Client\Generated\Model\ResponseGetComponentPropertyValues';
         $request = $this->getManufacturersComponentPropertiesRequest($manufacturer_id, $name, $version, $component_id, $page, $page_size, $contentType);
 
         return $this->client
@@ -4629,9 +4629,9 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersComponentTooltip'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturersComponentTooltip200Response
+     * @return \HiveCpq\Client\Generated\Model\GetManufacturersComponentTooltip200Response
      */
     public function getManufacturersComponentTooltip($manufacturer_id, $name, $version, $component_id, string $contentType = self::contentTypes['getManufacturersComponentTooltip'][0])
     {
@@ -4650,9 +4650,9 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersComponentTooltip'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturersComponentTooltip200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturersComponentTooltip200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersComponentTooltipWithHttpInfo($manufacturer_id, $name, $version, $component_id, string $contentType = self::contentTypes['getManufacturersComponentTooltip'][0])
     {
@@ -4684,7 +4684,7 @@ class ComponentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetManufacturersComponentTooltip200Response',
+                        '\HiveCpq\Client\Generated\Model\GetManufacturersComponentTooltip200Response',
                         $request,
                         $response,
                     );
@@ -4706,7 +4706,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetManufacturersComponentTooltip200Response',
+                '\HiveCpq\Client\Generated\Model\GetManufacturersComponentTooltip200Response',
                 $request,
                 $response,
             );
@@ -4715,7 +4715,7 @@ class ComponentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetManufacturersComponentTooltip200Response',
+                        '\HiveCpq\Client\Generated\Model\GetManufacturersComponentTooltip200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4767,7 +4767,7 @@ class ComponentApi
      */
     public function getManufacturersComponentTooltipAsyncWithHttpInfo($manufacturer_id, $name, $version, $component_id, string $contentType = self::contentTypes['getManufacturersComponentTooltip'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturersComponentTooltip200Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturersComponentTooltip200Response';
         $request = $this->getManufacturersComponentTooltipRequest($manufacturer_id, $name, $version, $component_id, $contentType);
 
         return $this->client
@@ -4961,9 +4961,9 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getQuantitiesOfAComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\ResponseGetComponentQuantities
+     * @return \HiveCpq\Client\Generated\Model\ResponseGetComponentQuantities
      */
     public function getQuantitiesOfAComponent($manufacturer_id, $name, $version, $component_id, string $contentType = self::contentTypes['getQuantitiesOfAComponent'][0])
     {
@@ -4982,9 +4982,9 @@ class ComponentApi
      * @param  string $component_id ID of the component you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getQuantitiesOfAComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\ResponseGetComponentQuantities, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\ResponseGetComponentQuantities, HTTP status code, HTTP response headers (array of strings)
      */
     public function getQuantitiesOfAComponentWithHttpInfo($manufacturer_id, $name, $version, $component_id, string $contentType = self::contentTypes['getQuantitiesOfAComponent'][0])
     {
@@ -5016,7 +5016,7 @@ class ComponentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\ResponseGetComponentQuantities',
+                        '\HiveCpq\Client\Generated\Model\ResponseGetComponentQuantities',
                         $request,
                         $response,
                     );
@@ -5038,7 +5038,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\ResponseGetComponentQuantities',
+                '\HiveCpq\Client\Generated\Model\ResponseGetComponentQuantities',
                 $request,
                 $response,
             );
@@ -5047,7 +5047,7 @@ class ComponentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\ResponseGetComponentQuantities',
+                        '\HiveCpq\Client\Generated\Model\ResponseGetComponentQuantities',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5099,7 +5099,7 @@ class ComponentApi
      */
     public function getQuantitiesOfAComponentAsyncWithHttpInfo($manufacturer_id, $name, $version, $component_id, string $contentType = self::contentTypes['getQuantitiesOfAComponent'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\ResponseGetComponentQuantities';
+        $returnType = '\HiveCpq\Client\Generated\Model\ResponseGetComponentQuantities';
         $request = $this->getQuantitiesOfAComponentRequest($manufacturer_id, $name, $version, $component_id, $contentType);
 
         return $this->client
@@ -5294,7 +5294,7 @@ class ComponentApi
      * @param  string $feature_id ID of the feature you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['linkFeatureToComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -5315,7 +5315,7 @@ class ComponentApi
      * @param  string $feature_id ID of the feature you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['linkFeatureToComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5592,12 +5592,12 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertComponentPrices|null $request_post_bulk_upsert_component_prices request_post_bulk_upsert_component_prices (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertComponentPrices|null $request_post_bulk_upsert_component_prices request_post_bulk_upsert_component_prices (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertComponentPrices'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
      */
     public function postBulkUpsertComponentPrices($manufacturer_id, $name, $version, $request_post_bulk_upsert_component_prices = null, string $contentType = self::contentTypes['postBulkUpsertComponentPrices'][0])
     {
@@ -5613,12 +5613,12 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertComponentPrices|null $request_post_bulk_upsert_component_prices (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertComponentPrices|null $request_post_bulk_upsert_component_prices (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertComponentPrices'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postBulkUpsertComponentPricesWithHttpInfo($manufacturer_id, $name, $version, $request_post_bulk_upsert_component_prices = null, string $contentType = self::contentTypes['postBulkUpsertComponentPrices'][0])
     {
@@ -5650,7 +5650,7 @@ class ComponentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $request,
                         $response,
                     );
@@ -5672,7 +5672,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                 $request,
                 $response,
             );
@@ -5681,7 +5681,7 @@ class ComponentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5701,7 +5701,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertComponentPrices|null $request_post_bulk_upsert_component_prices (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertComponentPrices|null $request_post_bulk_upsert_component_prices (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertComponentPrices'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5725,7 +5725,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertComponentPrices|null $request_post_bulk_upsert_component_prices (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertComponentPrices|null $request_post_bulk_upsert_component_prices (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertComponentPrices'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5733,7 +5733,7 @@ class ComponentApi
      */
     public function postBulkUpsertComponentPricesAsyncWithHttpInfo($manufacturer_id, $name, $version, $request_post_bulk_upsert_component_prices = null, string $contentType = self::contentTypes['postBulkUpsertComponentPrices'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
         $request = $this->postBulkUpsertComponentPricesRequest($manufacturer_id, $name, $version, $request_post_bulk_upsert_component_prices, $contentType);
 
         return $this->client
@@ -5778,7 +5778,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertComponentPrices|null $request_post_bulk_upsert_component_prices (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertComponentPrices|null $request_post_bulk_upsert_component_prices (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertComponentPrices'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5917,12 +5917,12 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComponent|null $post_component post_component (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComponent|null $post_component post_component (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersAddComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturersAddComponent($manufacturer_id, $name, $version, $post_component = null, string $contentType = self::contentTypes['postManufacturersAddComponent'][0])
     {
@@ -5938,12 +5938,12 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComponent|null $post_component (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComponent|null $post_component (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersAddComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturersAddComponentWithHttpInfo($manufacturer_id, $name, $version, $post_component = null, string $contentType = self::contentTypes['postManufacturersAddComponent'][0])
     {
@@ -5975,7 +5975,7 @@ class ComponentApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -5997,7 +5997,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -6006,7 +6006,7 @@ class ComponentApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6026,7 +6026,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComponent|null $post_component (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComponent|null $post_component (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersAddComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6050,7 +6050,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComponent|null $post_component (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComponent|null $post_component (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersAddComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6058,7 +6058,7 @@ class ComponentApi
      */
     public function postManufacturersAddComponentAsyncWithHttpInfo($manufacturer_id, $name, $version, $post_component = null, string $contentType = self::contentTypes['postManufacturersAddComponent'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturersAddComponentRequest($manufacturer_id, $name, $version, $post_component, $contentType);
 
         return $this->client
@@ -6103,7 +6103,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostComponent|null $post_component (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostComponent|null $post_component (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersAddComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6242,12 +6242,12 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentAttachmentsBulkUpsert|null $request_post_component_attachments_bulk_upsert request_post_component_attachments_bulk_upsert (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentAttachmentsBulkUpsert|null $request_post_component_attachments_bulk_upsert request_post_component_attachments_bulk_upsert (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsAttachmentsBulkUpsert'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
      */
     public function postManufacturersManufacturerIdComponentsAttachmentsBulkUpsert($manufacturer_id, $name, $version, $request_post_component_attachments_bulk_upsert = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdComponentsAttachmentsBulkUpsert'][0])
     {
@@ -6263,12 +6263,12 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentAttachmentsBulkUpsert|null $request_post_component_attachments_bulk_upsert (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentAttachmentsBulkUpsert|null $request_post_component_attachments_bulk_upsert (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsAttachmentsBulkUpsert'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturersManufacturerIdComponentsAttachmentsBulkUpsertWithHttpInfo($manufacturer_id, $name, $version, $request_post_component_attachments_bulk_upsert = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdComponentsAttachmentsBulkUpsert'][0])
     {
@@ -6300,7 +6300,7 @@ class ComponentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $request,
                         $response,
                     );
@@ -6322,7 +6322,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                 $request,
                 $response,
             );
@@ -6331,7 +6331,7 @@ class ComponentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6351,7 +6351,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentAttachmentsBulkUpsert|null $request_post_component_attachments_bulk_upsert (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentAttachmentsBulkUpsert|null $request_post_component_attachments_bulk_upsert (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsAttachmentsBulkUpsert'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6375,7 +6375,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentAttachmentsBulkUpsert|null $request_post_component_attachments_bulk_upsert (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentAttachmentsBulkUpsert|null $request_post_component_attachments_bulk_upsert (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsAttachmentsBulkUpsert'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6383,7 +6383,7 @@ class ComponentApi
      */
     public function postManufacturersManufacturerIdComponentsAttachmentsBulkUpsertAsyncWithHttpInfo($manufacturer_id, $name, $version, $request_post_component_attachments_bulk_upsert = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdComponentsAttachmentsBulkUpsert'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
         $request = $this->postManufacturersManufacturerIdComponentsAttachmentsBulkUpsertRequest($manufacturer_id, $name, $version, $request_post_component_attachments_bulk_upsert, $contentType);
 
         return $this->client
@@ -6428,7 +6428,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentAttachmentsBulkUpsert|null $request_post_component_attachments_bulk_upsert (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentAttachmentsBulkUpsert|null $request_post_component_attachments_bulk_upsert (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsAttachmentsBulkUpsert'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6567,10 +6567,10 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentsBulkDelete|null $request_post_components_bulk_delete request_post_components_bulk_delete (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentsBulkDelete|null $request_post_components_bulk_delete request_post_components_bulk_delete (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsBulkDelete'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -6587,10 +6587,10 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentsBulkDelete|null $request_post_components_bulk_delete (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentsBulkDelete|null $request_post_components_bulk_delete (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsBulkDelete'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6639,7 +6639,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentsBulkDelete|null $request_post_components_bulk_delete (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentsBulkDelete|null $request_post_components_bulk_delete (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsBulkDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6663,7 +6663,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentsBulkDelete|null $request_post_components_bulk_delete (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentsBulkDelete|null $request_post_components_bulk_delete (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsBulkDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6703,7 +6703,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentsBulkDelete|null $request_post_components_bulk_delete (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentsBulkDelete|null $request_post_components_bulk_delete (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsBulkDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6842,12 +6842,12 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentsBulkUpsert|null $request_post_components_bulk_upsert request_post_components_bulk_upsert (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentsBulkUpsert|null $request_post_components_bulk_upsert request_post_components_bulk_upsert (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsBulkUpsert'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
      */
     public function postManufacturersManufacturerIdComponentsBulkUpsert($manufacturer_id, $name, $version, $request_post_components_bulk_upsert = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdComponentsBulkUpsert'][0])
     {
@@ -6863,12 +6863,12 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentsBulkUpsert|null $request_post_components_bulk_upsert (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentsBulkUpsert|null $request_post_components_bulk_upsert (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsBulkUpsert'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturersManufacturerIdComponentsBulkUpsertWithHttpInfo($manufacturer_id, $name, $version, $request_post_components_bulk_upsert = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdComponentsBulkUpsert'][0])
     {
@@ -6900,7 +6900,7 @@ class ComponentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $request,
                         $response,
                     );
@@ -6922,7 +6922,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                 $request,
                 $response,
             );
@@ -6931,7 +6931,7 @@ class ComponentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6951,7 +6951,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentsBulkUpsert|null $request_post_components_bulk_upsert (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentsBulkUpsert|null $request_post_components_bulk_upsert (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsBulkUpsert'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6975,7 +6975,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentsBulkUpsert|null $request_post_components_bulk_upsert (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentsBulkUpsert|null $request_post_components_bulk_upsert (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsBulkUpsert'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6983,7 +6983,7 @@ class ComponentApi
      */
     public function postManufacturersManufacturerIdComponentsBulkUpsertAsyncWithHttpInfo($manufacturer_id, $name, $version, $request_post_components_bulk_upsert = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdComponentsBulkUpsert'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
         $request = $this->postManufacturersManufacturerIdComponentsBulkUpsertRequest($manufacturer_id, $name, $version, $request_post_components_bulk_upsert, $contentType);
 
         return $this->client
@@ -7028,7 +7028,7 @@ class ComponentApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostComponentsBulkUpsert|null $request_post_components_bulk_upsert (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestPostComponentsBulkUpsert|null $request_post_components_bulk_upsert (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdComponentsBulkUpsert'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7171,7 +7171,7 @@ class ComponentApi
      * @param  \SplFileObject|null $file file (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerComponentTooltipImage'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -7192,7 +7192,7 @@ class ComponentApi
      * @param  \SplFileObject|null $file (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerComponentTooltipImage'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7466,10 +7466,10 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComponent|null $put_component put_component (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComponent|null $put_component put_component (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -7487,10 +7487,10 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComponent|null $put_component (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComponent|null $put_component (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7540,7 +7540,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComponent|null $put_component (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComponent|null $put_component (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7565,7 +7565,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComponent|null $put_component (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComponent|null $put_component (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7606,7 +7606,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComponent|null $put_component (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComponent|null $put_component (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7761,12 +7761,12 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComponentTooltip|null $put_component_tooltip put_component_tooltip (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComponentTooltip|null $put_component_tooltip put_component_tooltip (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersComponentTooltip'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
      */
     public function putManufacturersComponentTooltip($manufacturer_id, $name, $version, $component_id, $put_component_tooltip = null, string $contentType = self::contentTypes['putManufacturersComponentTooltip'][0])
     {
@@ -7783,12 +7783,12 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComponentTooltip|null $put_component_tooltip (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComponentTooltip|null $put_component_tooltip (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersComponentTooltip'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function putManufacturersComponentTooltipWithHttpInfo($manufacturer_id, $name, $version, $component_id, $put_component_tooltip = null, string $contentType = self::contentTypes['putManufacturersComponentTooltip'][0])
     {
@@ -7820,7 +7820,7 @@ class ComponentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -7842,7 +7842,7 @@ class ComponentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -7851,7 +7851,7 @@ class ComponentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7872,7 +7872,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComponentTooltip|null $put_component_tooltip (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComponentTooltip|null $put_component_tooltip (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersComponentTooltip'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7897,7 +7897,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComponentTooltip|null $put_component_tooltip (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComponentTooltip|null $put_component_tooltip (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersComponentTooltip'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7905,7 +7905,7 @@ class ComponentApi
      */
     public function putManufacturersComponentTooltipAsyncWithHttpInfo($manufacturer_id, $name, $version, $component_id, $put_component_tooltip = null, string $contentType = self::contentTypes['putManufacturersComponentTooltip'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->putManufacturersComponentTooltipRequest($manufacturer_id, $name, $version, $component_id, $put_component_tooltip, $contentType);
 
         return $this->client
@@ -7951,7 +7951,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutComponentTooltip|null $put_component_tooltip (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutComponentTooltip|null $put_component_tooltip (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersComponentTooltip'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8109,7 +8109,7 @@ class ComponentApi
      * @param  string $component_price_id component_price_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['removeManufacturerComponentPrice'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -8130,7 +8130,7 @@ class ComponentApi
      * @param  string $component_price_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['removeManufacturerComponentPrice'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8408,10 +8408,10 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetFeatureLinks|null $request_set_feature_links request_set_feature_links (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetFeatureLinks|null $request_set_feature_links request_set_feature_links (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setFeaturesForComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -8429,10 +8429,10 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetFeatureLinks|null $request_set_feature_links (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetFeatureLinks|null $request_set_feature_links (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setFeaturesForComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8482,7 +8482,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetFeatureLinks|null $request_set_feature_links (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetFeatureLinks|null $request_set_feature_links (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setFeaturesForComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8507,7 +8507,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetFeatureLinks|null $request_set_feature_links (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetFeatureLinks|null $request_set_feature_links (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setFeaturesForComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8548,7 +8548,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetFeatureLinks|null $request_set_feature_links (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetFeatureLinks|null $request_set_feature_links (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setFeaturesForComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8703,10 +8703,10 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostPropertyComponentValue|null $post_property_component_value post_property_component_value (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostPropertyComponentValue|null $post_property_component_value post_property_component_value (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPropertyValueForCoomponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -8724,10 +8724,10 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostPropertyComponentValue|null $post_property_component_value (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostPropertyComponentValue|null $post_property_component_value (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPropertyValueForCoomponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8777,7 +8777,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostPropertyComponentValue|null $post_property_component_value (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostPropertyComponentValue|null $post_property_component_value (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPropertyValueForCoomponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8802,7 +8802,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostPropertyComponentValue|null $post_property_component_value (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostPropertyComponentValue|null $post_property_component_value (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPropertyValueForCoomponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8843,7 +8843,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostPropertyComponentValue|null $post_property_component_value (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostPropertyComponentValue|null $post_property_component_value (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPropertyValueForCoomponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8998,10 +8998,10 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetPropertyValues|null $request_set_property_values request_set_property_values (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetPropertyValues|null $request_set_property_values request_set_property_values (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPropertyValuesForComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -9019,10 +9019,10 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetPropertyValues|null $request_set_property_values (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetPropertyValues|null $request_set_property_values (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPropertyValuesForComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -9072,7 +9072,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetPropertyValues|null $request_set_property_values (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetPropertyValues|null $request_set_property_values (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPropertyValuesForComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9097,7 +9097,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetPropertyValues|null $request_set_property_values (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetPropertyValues|null $request_set_property_values (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPropertyValuesForComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9138,7 +9138,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetPropertyValues|null $request_set_property_values (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetPropertyValues|null $request_set_property_values (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPropertyValuesForComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9293,10 +9293,10 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetComponentQuantities|null $request_set_component_quantities request_set_component_quantities (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetComponentQuantities|null $request_set_component_quantities request_set_component_quantities (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setQuantitiesOfAComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -9314,10 +9314,10 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetComponentQuantities|null $request_set_component_quantities (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetComponentQuantities|null $request_set_component_quantities (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setQuantitiesOfAComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -9367,7 +9367,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetComponentQuantities|null $request_set_component_quantities (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetComponentQuantities|null $request_set_component_quantities (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setQuantitiesOfAComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9392,7 +9392,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetComponentQuantities|null $request_set_component_quantities (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetComponentQuantities|null $request_set_component_quantities (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setQuantitiesOfAComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9433,7 +9433,7 @@ class ComponentApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $component_id ID of the component you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\RequestSetComponentQuantities|null $request_set_component_quantities (optional)
+     * @param  \HiveCpq\Client\Generated\Model\RequestSetComponentQuantities|null $request_set_component_quantities (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setQuantitiesOfAComponent'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9591,7 +9591,7 @@ class ComponentApi
      * @param  string $feature_id ID of the feature you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['unlinkFeatureToComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -9612,7 +9612,7 @@ class ComponentApi
      * @param  string $feature_id ID of the feature you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['unlinkFeatureToComponent'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

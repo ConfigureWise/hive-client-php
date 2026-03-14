@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ComplaintComment Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class ComplaintComment implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'comment' => 'string',
-        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit'
+        'audit' => '\HiveCpq\Client\Generated\Model\Audit'
     ];
 
     /**
@@ -361,7 +361,7 @@ class ComplaintComment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets audit
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
+     * @return \HiveCpq\Client\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -371,7 +371,7 @@ class ComplaintComment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets audit
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */

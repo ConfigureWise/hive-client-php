@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * RequestPostComponentsBulkUpsertComponentsInner Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,10 +62,10 @@ class RequestPostComponentsBulkUpsertComponentsInner implements ModelInterface, 
         'article_code' => 'string',
         'ean_code' => 'string',
         'gtin_code' => 'string',
-        'names' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
-        'descriptions' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
+        'names' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
+        'descriptions' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
         'product_group' => 'string',
-        'extensions' => '\HiveCpq\\Client\\Generated\Model\ComponentExtensions',
+        'extensions' => '\HiveCpq\Client\Generated\Model\ComponentExtensions',
         'integrated_system_id' => 'string'
     ];
 
@@ -474,7 +474,7 @@ class RequestPostComponentsBulkUpsertComponentsInner implements ModelInterface, 
     /**
      * Gets names
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]
      */
     public function getNames()
     {
@@ -484,7 +484,7 @@ class RequestPostComponentsBulkUpsertComponentsInner implements ModelInterface, 
     /**
      * Sets names
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[] $names A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[] $names A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -506,7 +506,7 @@ class RequestPostComponentsBulkUpsertComponentsInner implements ModelInterface, 
     /**
      * Gets descriptions
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
      */
     public function getDescriptions()
     {
@@ -516,7 +516,7 @@ class RequestPostComponentsBulkUpsertComponentsInner implements ModelInterface, 
     /**
      * Sets descriptions
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $descriptions A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $descriptions A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -565,7 +565,7 @@ class RequestPostComponentsBulkUpsertComponentsInner implements ModelInterface, 
     /**
      * Gets extensions
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ComponentExtensions|null
+     * @return \HiveCpq\Client\Generated\Model\ComponentExtensions|null
      */
     public function getExtensions()
     {
@@ -575,7 +575,7 @@ class RequestPostComponentsBulkUpsertComponentsInner implements ModelInterface, 
     /**
      * Sets extensions
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ComponentExtensions|null $extensions extensions
+     * @param \HiveCpq\Client\Generated\Model\ComponentExtensions|null $extensions extensions
      *
      * @return self
      */

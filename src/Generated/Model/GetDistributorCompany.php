@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * GetDistributorCompany Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,10 +59,10 @@ class GetDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'info' => '\HiveCpq\\Client\\Generated\Model\GetDistributorCompanyInfo',
-        'address' => '\HiveCpq\\Client\\Generated\Model\Address',
-        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
-        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit'
+        'info' => '\HiveCpq\Client\Generated\Model\GetDistributorCompanyInfo',
+        'address' => '\HiveCpq\Client\Generated\Model\Address',
+        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
+        'audit' => '\HiveCpq\Client\Generated\Model\Audit'
     ];
 
     /**
@@ -348,7 +348,7 @@ class GetDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets info
      *
-     * @return \HiveCpq\\Client\\Generated\Model\GetDistributorCompanyInfo|null
+     * @return \HiveCpq\Client\Generated\Model\GetDistributorCompanyInfo|null
      */
     public function getInfo()
     {
@@ -358,7 +358,7 @@ class GetDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets info
      *
-     * @param \HiveCpq\\Client\\Generated\Model\GetDistributorCompanyInfo|null $info info
+     * @param \HiveCpq\Client\Generated\Model\GetDistributorCompanyInfo|null $info info
      *
      * @return self
      */
@@ -375,7 +375,7 @@ class GetDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets address
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Address|null
+     * @return \HiveCpq\Client\Generated\Model\Address|null
      */
     public function getAddress()
     {
@@ -385,7 +385,7 @@ class GetDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets address
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Address|null $address address
+     * @param \HiveCpq\Client\Generated\Model\Address|null $address address
      *
      * @return self
      */
@@ -402,7 +402,7 @@ class GetDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -412,7 +412,7 @@ class GetDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -429,7 +429,7 @@ class GetDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets audit
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
+     * @return \HiveCpq\Client\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -439,7 +439,7 @@ class GetDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets audit
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */

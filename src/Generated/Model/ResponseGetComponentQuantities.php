@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ResponseGetComponentQuantities Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ResponseGetComponentQuantities implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\HiveCpq\\Client\\Generated\Model\ResponseGetComponentQuantitiesItemsInner[]',
+        'items' => '\HiveCpq\Client\Generated\Model\ResponseGetComponentQuantitiesItemsInner[]',
         'total' => 'float'
     ];
 
@@ -300,7 +300,7 @@ class ResponseGetComponentQuantities implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets items
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ResponseGetComponentQuantitiesItemsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ResponseGetComponentQuantitiesItemsInner[]|null
      */
     public function getItems()
     {
@@ -310,7 +310,7 @@ class ResponseGetComponentQuantities implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets items
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ResponseGetComponentQuantitiesItemsInner[]|null $items items
+     * @param \HiveCpq\Client\Generated\Model\ResponseGetComponentQuantitiesItemsInner[]|null $items items
      *
      * @return self
      */

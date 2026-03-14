@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ResponseConfigurationNodeComponentData Class Doc Comment
  *
  * @category Class
  * @description Additional data of the component attached to the node. By default this data is not included.
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,9 +62,9 @@ class ResponseConfigurationNodeComponentData implements ModelInterface, ArrayAcc
         'ean_code' => 'string',
         'gtin_code' => 'string',
         'unit_code' => 'string',
-        'names' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
-        'descriptions' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
-        'property_values' => '\HiveCpq\\Client\\Generated\Model\ResponseComponentPropertyValueWithoutAudit[]'
+        'names' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
+        'descriptions' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
+        'property_values' => '\HiveCpq\Client\Generated\Model\ResponseComponentPropertyValueWithoutAudit[]'
     ];
 
     /**
@@ -418,7 +418,7 @@ class ResponseConfigurationNodeComponentData implements ModelInterface, ArrayAcc
     /**
      * Gets names
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
      */
     public function getNames()
     {
@@ -428,7 +428,7 @@ class ResponseConfigurationNodeComponentData implements ModelInterface, ArrayAcc
     /**
      * Sets names
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $names A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $names A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -450,7 +450,7 @@ class ResponseConfigurationNodeComponentData implements ModelInterface, ArrayAcc
     /**
      * Gets descriptions
      *
-     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
      */
     public function getDescriptions()
     {
@@ -460,7 +460,7 @@ class ResponseConfigurationNodeComponentData implements ModelInterface, ArrayAcc
     /**
      * Sets descriptions
      *
-     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $descriptions A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $descriptions A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -482,7 +482,7 @@ class ResponseConfigurationNodeComponentData implements ModelInterface, ArrayAcc
     /**
      * Gets property_values
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ResponseComponentPropertyValueWithoutAudit[]|null
+     * @return \HiveCpq\Client\Generated\Model\ResponseComponentPropertyValueWithoutAudit[]|null
      */
     public function getPropertyValues()
     {
@@ -492,7 +492,7 @@ class ResponseConfigurationNodeComponentData implements ModelInterface, ArrayAcc
     /**
      * Sets property_values
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ResponseComponentPropertyValueWithoutAudit[]|null $property_values property_values
+     * @param \HiveCpq\Client\Generated\Model\ResponseComponentPropertyValueWithoutAudit[]|null $property_values property_values
      *
      * @return self
      */

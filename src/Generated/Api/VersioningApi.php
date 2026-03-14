@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Api;
+namespace HiveCpq\Client\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\\Client\\Generated\ApiException;
-use HiveCpq\\Client\\Generated\Configuration;
-use HiveCpq\\Client\\Generated\FormDataProcessor;
-use HiveCpq\\Client\\Generated\HeaderSelector;
-use HiveCpq\\Client\\Generated\ObjectSerializer;
+use HiveCpq\Client\Generated\ApiException;
+use HiveCpq\Client\Generated\Configuration;
+use HiveCpq\Client\Generated\FormDataProcessor;
+use HiveCpq\Client\Generated\HeaderSelector;
+use HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * VersioningApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -133,14 +133,14 @@ class VersioningApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ContainerVersionStatusEnum|null $status status (optional)
-     * @param  \HiveCpq\\Client\\Generated\Model\ContainerVersionTypeEnum|null $type type (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ContainerVersionStatusEnum|null $status status (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ContainerVersionTypeEnum|null $type type (optional)
      * @param  string[]|null $ids_in Filter on the IDs of the items. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdContainersContainernameVersions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetVersionsResponse|\HiveCpq\\Client\\Generated\Model\HiveError|\HiveCpq\\Client\\Generated\Model\HiveError|\HiveCpq\\Client\\Generated\Model\HiveError|\HiveCpq\\Client\\Generated\Model\HiveError
+     * @return \HiveCpq\Client\Generated\Model\GetVersionsResponse|\HiveCpq\Client\Generated\Model\HiveError|\HiveCpq\Client\Generated\Model\HiveError|\HiveCpq\Client\Generated\Model\HiveError|\HiveCpq\Client\Generated\Model\HiveError
      */
     public function getManufacturersManufacturerIdContainersContainernameVersions($manufacturer_id, $name, $status = null, $type = null, $ids_in = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdContainersContainernameVersions'][0])
     {
@@ -155,14 +155,14 @@ class VersioningApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ContainerVersionStatusEnum|null $status (optional)
-     * @param  \HiveCpq\\Client\\Generated\Model\ContainerVersionTypeEnum|null $type (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ContainerVersionStatusEnum|null $status (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ContainerVersionTypeEnum|null $type (optional)
      * @param  string[]|null $ids_in Filter on the IDs of the items. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdContainersContainernameVersions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetVersionsResponse|\HiveCpq\\Client\\Generated\Model\HiveError|\HiveCpq\\Client\\Generated\Model\HiveError|\HiveCpq\\Client\\Generated\Model\HiveError|\HiveCpq\\Client\\Generated\Model\HiveError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetVersionsResponse|\HiveCpq\Client\Generated\Model\HiveError|\HiveCpq\Client\Generated\Model\HiveError|\HiveCpq\Client\Generated\Model\HiveError|\HiveCpq\Client\Generated\Model\HiveError, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdContainersContainernameVersionsWithHttpInfo($manufacturer_id, $name, $status = null, $type = null, $ids_in = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdContainersContainernameVersions'][0])
     {
@@ -194,31 +194,31 @@ class VersioningApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetVersionsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetVersionsResponse',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\HiveError',
+                        '\HiveCpq\Client\Generated\Model\HiveError',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\HiveError',
+                        '\HiveCpq\Client\Generated\Model\HiveError',
                         $request,
                         $response,
                     );
                 case 403:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\HiveError',
+                        '\HiveCpq\Client\Generated\Model\HiveError',
                         $request,
                         $response,
                     );
                 case 404:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\HiveError',
+                        '\HiveCpq\Client\Generated\Model\HiveError',
                         $request,
                         $response,
                     );
@@ -240,7 +240,7 @@ class VersioningApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetVersionsResponse',
+                '\HiveCpq\Client\Generated\Model\GetVersionsResponse',
                 $request,
                 $response,
             );
@@ -249,7 +249,7 @@ class VersioningApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetVersionsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetVersionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -257,7 +257,7 @@ class VersioningApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\HiveError',
+                        '\HiveCpq\Client\Generated\Model\HiveError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -265,7 +265,7 @@ class VersioningApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\HiveError',
+                        '\HiveCpq\Client\Generated\Model\HiveError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -273,7 +273,7 @@ class VersioningApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\HiveError',
+                        '\HiveCpq\Client\Generated\Model\HiveError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -281,7 +281,7 @@ class VersioningApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\HiveError',
+                        '\HiveCpq\Client\Generated\Model\HiveError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -300,8 +300,8 @@ class VersioningApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ContainerVersionStatusEnum|null $status (optional)
-     * @param  \HiveCpq\\Client\\Generated\Model\ContainerVersionTypeEnum|null $type (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ContainerVersionStatusEnum|null $status (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ContainerVersionTypeEnum|null $type (optional)
      * @param  string[]|null $ids_in Filter on the IDs of the items. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdContainersContainernameVersions'] to see the possible values for this operation
      *
@@ -325,8 +325,8 @@ class VersioningApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ContainerVersionStatusEnum|null $status (optional)
-     * @param  \HiveCpq\\Client\\Generated\Model\ContainerVersionTypeEnum|null $type (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ContainerVersionStatusEnum|null $status (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ContainerVersionTypeEnum|null $type (optional)
      * @param  string[]|null $ids_in Filter on the IDs of the items. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdContainersContainernameVersions'] to see the possible values for this operation
      *
@@ -335,7 +335,7 @@ class VersioningApi
      */
     public function getManufacturersManufacturerIdContainersContainernameVersionsAsyncWithHttpInfo($manufacturer_id, $name, $status = null, $type = null, $ids_in = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdContainersContainernameVersions'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetVersionsResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetVersionsResponse';
         $request = $this->getManufacturersManufacturerIdContainersContainernameVersionsRequest($manufacturer_id, $name, $status, $type, $ids_in, $contentType);
 
         return $this->client
@@ -379,8 +379,8 @@ class VersioningApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\ContainerVersionStatusEnum|null $status (optional)
-     * @param  \HiveCpq\\Client\\Generated\Model\ContainerVersionTypeEnum|null $type (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ContainerVersionStatusEnum|null $status (optional)
+     * @param  \HiveCpq\Client\Generated\Model\ContainerVersionTypeEnum|null $type (optional)
      * @param  string[]|null $ids_in Filter on the IDs of the items. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdContainersContainernameVersions'] to see the possible values for this operation
      *

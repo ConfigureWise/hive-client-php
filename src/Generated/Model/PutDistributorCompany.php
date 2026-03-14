@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PutDistributorCompany Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class PutDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'info' => '\HiveCpq\\Client\\Generated\Model\PostDistributorCompanyInfo',
-        'address' => '\HiveCpq\\Client\\Generated\Model\Address'
+        'info' => '\HiveCpq\Client\Generated\Model\PostDistributorCompanyInfo',
+        'address' => '\HiveCpq\Client\Generated\Model\Address'
     ];
 
     /**
@@ -300,7 +300,7 @@ class PutDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets info
      *
-     * @return \HiveCpq\\Client\\Generated\Model\PostDistributorCompanyInfo|null
+     * @return \HiveCpq\Client\Generated\Model\PostDistributorCompanyInfo|null
      */
     public function getInfo()
     {
@@ -310,7 +310,7 @@ class PutDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets info
      *
-     * @param \HiveCpq\\Client\\Generated\Model\PostDistributorCompanyInfo|null $info info
+     * @param \HiveCpq\Client\Generated\Model\PostDistributorCompanyInfo|null $info info
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class PutDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets address
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Address|null
+     * @return \HiveCpq\Client\Generated\Model\Address|null
      */
     public function getAddress()
     {
@@ -337,7 +337,7 @@ class PutDistributorCompany implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets address
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Address|null $address address
+     * @param \HiveCpq\Client\Generated\Model\Address|null $address address
      *
      * @return self
      */

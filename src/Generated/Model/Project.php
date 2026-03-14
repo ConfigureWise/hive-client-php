@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * Project Class Doc Comment
  *
  * @category Class
  * @description A project is the starting point for making configurations in Hive. A projects is build from a set of project segments. These segments resprent project segment items and their order status.
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,16 +60,16 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
-        'project_segments' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentLink[]',
+        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
+        'project_segments' => '\HiveCpq\Client\Generated\Model\ProjectSegmentLink[]',
         'name' => 'string',
         'sell_to_customer_reference' => 'string',
-        'sell_to' => '\HiveCpq\\Client\\Generated\Model\ProjectSellTo',
-        'invoice' => '\HiveCpq\\Client\\Generated\Model\ProjectInvoice',
-        'delivery' => '\HiveCpq\\Client\\Generated\Model\ProjectDelivery',
-        'installation' => '\HiveCpq\\Client\\Generated\Model\ProjectInstallation',
-        'sales_conditions' => '\HiveCpq\\Client\\Generated\Model\ProjectSalesConditions',
-        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit'
+        'sell_to' => '\HiveCpq\Client\Generated\Model\ProjectSellTo',
+        'invoice' => '\HiveCpq\Client\Generated\Model\ProjectInvoice',
+        'delivery' => '\HiveCpq\Client\Generated\Model\ProjectDelivery',
+        'installation' => '\HiveCpq\Client\Generated\Model\ProjectInstallation',
+        'sales_conditions' => '\HiveCpq\Client\Generated\Model\ProjectSalesConditions',
+        'audit' => '\HiveCpq\Client\Generated\Model\Audit'
     ];
 
     /**
@@ -391,7 +391,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -401,7 +401,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -418,7 +418,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets project_segments
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentLink[]|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentLink[]|null
      */
     public function getProjectSegments()
     {
@@ -428,7 +428,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets project_segments
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentLink[]|null $project_segments project_segments
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentLink[]|null $project_segments project_segments
      *
      * @return self
      */
@@ -499,7 +499,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sell_to
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSellTo|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectSellTo|null
      */
     public function getSellTo()
     {
@@ -509,7 +509,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sell_to
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSellTo|null $sell_to sell_to
+     * @param \HiveCpq\Client\Generated\Model\ProjectSellTo|null $sell_to sell_to
      *
      * @return self
      */
@@ -526,7 +526,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets invoice
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectInvoice|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectInvoice|null
      */
     public function getInvoice()
     {
@@ -536,7 +536,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets invoice
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectInvoice|null $invoice invoice
+     * @param \HiveCpq\Client\Generated\Model\ProjectInvoice|null $invoice invoice
      *
      * @return self
      */
@@ -553,7 +553,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets delivery
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectDelivery|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectDelivery|null
      */
     public function getDelivery()
     {
@@ -563,7 +563,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets delivery
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectDelivery|null $delivery delivery
+     * @param \HiveCpq\Client\Generated\Model\ProjectDelivery|null $delivery delivery
      *
      * @return self
      */
@@ -580,7 +580,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets installation
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectInstallation|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectInstallation|null
      */
     public function getInstallation()
     {
@@ -590,7 +590,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets installation
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectInstallation|null $installation installation
+     * @param \HiveCpq\Client\Generated\Model\ProjectInstallation|null $installation installation
      *
      * @return self
      */
@@ -607,7 +607,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sales_conditions
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSalesConditions|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectSalesConditions|null
      */
     public function getSalesConditions()
     {
@@ -617,7 +617,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sales_conditions
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSalesConditions|null $sales_conditions sales_conditions
+     * @param \HiveCpq\Client\Generated\Model\ProjectSalesConditions|null $sales_conditions sales_conditions
      *
      * @return self
      */
@@ -634,7 +634,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets audit
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
+     * @return \HiveCpq\Client\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -644,7 +644,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets audit
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * GetProjectsReponse Class Doc Comment
  *
  * @category Class
  * @description Response for the projects linked to a manufacturer.
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class GetProjectsReponse implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\HiveCpq\\Client\\Generated\Model\Project[]',
+        'items' => '\HiveCpq\Client\Generated\Model\Project[]',
         'total' => 'int'
     ];
 
@@ -301,7 +301,7 @@ class GetProjectsReponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets items
      *
-     * @return \HiveCpq\\Client\\Generated\Model\Project[]|null
+     * @return \HiveCpq\Client\Generated\Model\Project[]|null
      */
     public function getItems()
     {
@@ -311,7 +311,7 @@ class GetProjectsReponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets items
      *
-     * @param \HiveCpq\\Client\\Generated\Model\Project[]|null $items items
+     * @param \HiveCpq\Client\Generated\Model\Project[]|null $items items
      *
      * @return self
      */

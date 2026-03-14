@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * Audit Class Doc Comment
  *
  * @category Class
  * @description Audit fields allowing for tracking creates and updates on resources. Contains the contact that created or updated the resource together with the timestamp.
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class Audit implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'created_by' => '\HiveCpq\\Client\\Generated\Model\ContactLink',
+        'created_by' => '\HiveCpq\Client\Generated\Model\ContactLink',
         'created_at' => 'string',
-        'updated_by' => '\HiveCpq\\Client\\Generated\Model\ContactLink',
+        'updated_by' => '\HiveCpq\Client\Generated\Model\ContactLink',
         'updated_at' => 'string'
     ];
 
@@ -315,7 +315,7 @@ class Audit implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets created_by
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ContactLink|null
+     * @return \HiveCpq\Client\Generated\Model\ContactLink|null
      */
     public function getCreatedBy()
     {
@@ -325,7 +325,7 @@ class Audit implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets created_by
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ContactLink|null $created_by created_by
+     * @param \HiveCpq\Client\Generated\Model\ContactLink|null $created_by created_by
      *
      * @return self
      */
@@ -369,7 +369,7 @@ class Audit implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets updated_by
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ContactLink|null
+     * @return \HiveCpq\Client\Generated\Model\ContactLink|null
      */
     public function getUpdatedBy()
     {
@@ -379,7 +379,7 @@ class Audit implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets updated_by
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ContactLink|null $updated_by updated_by
+     * @param \HiveCpq\Client\Generated\Model\ContactLink|null $updated_by updated_by
      *
      * @return self
      */

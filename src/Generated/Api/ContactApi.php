@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Api;
+namespace HiveCpq\Client\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\\Client\\Generated\ApiException;
-use HiveCpq\\Client\\Generated\Configuration;
-use HiveCpq\\Client\\Generated\FormDataProcessor;
-use HiveCpq\\Client\\Generated\HeaderSelector;
-use HiveCpq\\Client\\Generated\ObjectSerializer;
+use HiveCpq\Client\Generated\ApiException;
+use HiveCpq\Client\Generated\Configuration;
+use HiveCpq\Client\Generated\FormDataProcessor;
+use HiveCpq\Client\Generated\HeaderSelector;
+use HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ContactApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -162,10 +162,10 @@ class ContactApi
      * Add manufacturer contact
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturerContact|null $post_manufacturer_contact Add a new manufacturer contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturerContact|null $post_manufacturer_contact Add a new manufacturer contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerContact'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -180,10 +180,10 @@ class ContactApi
      * Add manufacturer contact
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturerContact|null $post_manufacturer_contact Add a new manufacturer contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturerContact|null $post_manufacturer_contact Add a new manufacturer contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerContact'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -230,7 +230,7 @@ class ContactApi
      * Add manufacturer contact
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturerContact|null $post_manufacturer_contact Add a new manufacturer contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturerContact|null $post_manufacturer_contact Add a new manufacturer contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -252,7 +252,7 @@ class ContactApi
      * Add manufacturer contact
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturerContact|null $post_manufacturer_contact Add a new manufacturer contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturerContact|null $post_manufacturer_contact Add a new manufacturer contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -290,7 +290,7 @@ class ContactApi
      * Create request for operation 'addManufacturerContact'
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturerContact|null $post_manufacturer_contact Add a new manufacturer contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostManufacturerContact|null $post_manufacturer_contact Add a new manufacturer contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -400,7 +400,7 @@ class ContactApi
      * @param  string $contact_id ID of the contact you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteDistributorContact'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -418,7 +418,7 @@ class ContactApi
      * @param  string $contact_id ID of the contact you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteDistributorContact'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -643,7 +643,7 @@ class ContactApi
      * @param  string $distributor_id The hive id of the distributor (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersDistributorContact'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -662,7 +662,7 @@ class ContactApi
      * @param  string $distributor_id The hive id of the distributor (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersDistributorContact'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -904,9 +904,9 @@ class ContactApi
      * @param  string $contact_id ID of the contact you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerContact'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\ManufacturerContact
+     * @return \HiveCpq\Client\Generated\Model\ManufacturerContact
      */
     public function getManufacturerContact($manufacturer_id, $contact_id, string $contentType = self::contentTypes['getManufacturerContact'][0])
     {
@@ -923,9 +923,9 @@ class ContactApi
      * @param  string $contact_id ID of the contact you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerContact'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\ManufacturerContact, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\ManufacturerContact, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerContactWithHttpInfo($manufacturer_id, $contact_id, string $contentType = self::contentTypes['getManufacturerContact'][0])
     {
@@ -957,7 +957,7 @@ class ContactApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\ManufacturerContact',
+                        '\HiveCpq\Client\Generated\Model\ManufacturerContact',
                         $request,
                         $response,
                     );
@@ -979,7 +979,7 @@ class ContactApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\ManufacturerContact',
+                '\HiveCpq\Client\Generated\Model\ManufacturerContact',
                 $request,
                 $response,
             );
@@ -988,7 +988,7 @@ class ContactApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\ManufacturerContact',
+                        '\HiveCpq\Client\Generated\Model\ManufacturerContact',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1036,7 +1036,7 @@ class ContactApi
      */
     public function getManufacturerContactAsyncWithHttpInfo($manufacturer_id, $contact_id, string $contentType = self::contentTypes['getManufacturerContact'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\ManufacturerContact';
+        $returnType = '\HiveCpq\Client\Generated\Model\ManufacturerContact';
         $request = $this->getManufacturerContactRequest($manufacturer_id, $contact_id, $contentType);
 
         return $this->client
@@ -1201,9 +1201,9 @@ class ContactApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerContacts'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturerContactsResponse
+     * @return \HiveCpq\Client\Generated\Model\GetManufacturerContactsResponse
      */
     public function getManufacturerContacts($manufacturer_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $company_id = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerContacts'][0])
     {
@@ -1225,9 +1225,9 @@ class ContactApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerContacts'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturerContactsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturerContactsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerContactsWithHttpInfo($manufacturer_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $company_id = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerContacts'][0])
     {
@@ -1259,7 +1259,7 @@ class ContactApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerContactsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetManufacturerContactsResponse',
                         $request,
                         $response,
                     );
@@ -1281,7 +1281,7 @@ class ContactApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetManufacturerContactsResponse',
+                '\HiveCpq\Client\Generated\Model\GetManufacturerContactsResponse',
                 $request,
                 $response,
             );
@@ -1290,7 +1290,7 @@ class ContactApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerContactsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetManufacturerContactsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1348,7 +1348,7 @@ class ContactApi
      */
     public function getManufacturerContactsAsyncWithHttpInfo($manufacturer_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $company_id = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerContacts'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturerContactsResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturerContactsResponse';
         $request = $this->getManufacturerContactsRequest($manufacturer_id, $ids_in, $integrated_system_name, $integrated_system_ids_in, $company_id, $page, $page_size, $contentType);
 
         return $this->client
@@ -1564,9 +1564,9 @@ class ContactApi
      * @param  string|null $account_id The ID of the account in the address book of the distributor. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerDistributorContacts'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetDistributorContactsResponse
+     * @return \HiveCpq\Client\Generated\Model\GetDistributorContactsResponse
      */
     public function getManufacturerDistributorContacts($manufacturer_id, $distributor_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $account_id = null, string $contentType = self::contentTypes['getManufacturerDistributorContacts'][0])
     {
@@ -1589,9 +1589,9 @@ class ContactApi
      * @param  string|null $account_id The ID of the account in the address book of the distributor. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerDistributorContacts'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetDistributorContactsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetDistributorContactsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerDistributorContactsWithHttpInfo($manufacturer_id, $distributor_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $account_id = null, string $contentType = self::contentTypes['getManufacturerDistributorContacts'][0])
     {
@@ -1623,7 +1623,7 @@ class ContactApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetDistributorContactsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetDistributorContactsResponse',
                         $request,
                         $response,
                     );
@@ -1645,7 +1645,7 @@ class ContactApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetDistributorContactsResponse',
+                '\HiveCpq\Client\Generated\Model\GetDistributorContactsResponse',
                 $request,
                 $response,
             );
@@ -1654,7 +1654,7 @@ class ContactApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetDistributorContactsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetDistributorContactsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1714,7 +1714,7 @@ class ContactApi
      */
     public function getManufacturerDistributorContactsAsyncWithHttpInfo($manufacturer_id, $distributor_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $account_id = null, string $contentType = self::contentTypes['getManufacturerDistributorContacts'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetDistributorContactsResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetDistributorContactsResponse';
         $request = $this->getManufacturerDistributorContactsRequest($manufacturer_id, $distributor_id, $ids_in, $integrated_system_name, $integrated_system_ids_in, $page, $page_size, $account_id, $contentType);
 
         return $this->client
@@ -1938,12 +1938,12 @@ class ContactApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $distributor_id The hive id of the distributor (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostContactDistributor|null $post_contact_distributor post_contact_distributor (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostContactDistributor|null $post_contact_distributor post_contact_distributor (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerDistributorContacts'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturerDistributorContacts($manufacturer_id, $distributor_id, $post_contact_distributor = null, string $contentType = self::contentTypes['postManufacturerDistributorContacts'][0])
     {
@@ -1958,12 +1958,12 @@ class ContactApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $distributor_id The hive id of the distributor (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostContactDistributor|null $post_contact_distributor (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostContactDistributor|null $post_contact_distributor (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerDistributorContacts'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturerDistributorContactsWithHttpInfo($manufacturer_id, $distributor_id, $post_contact_distributor = null, string $contentType = self::contentTypes['postManufacturerDistributorContacts'][0])
     {
@@ -1995,7 +1995,7 @@ class ContactApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -2017,7 +2017,7 @@ class ContactApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -2026,7 +2026,7 @@ class ContactApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2045,7 +2045,7 @@ class ContactApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $distributor_id The hive id of the distributor (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostContactDistributor|null $post_contact_distributor (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostContactDistributor|null $post_contact_distributor (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerDistributorContacts'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2068,7 +2068,7 @@ class ContactApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $distributor_id The hive id of the distributor (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostContactDistributor|null $post_contact_distributor (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostContactDistributor|null $post_contact_distributor (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerDistributorContacts'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2076,7 +2076,7 @@ class ContactApi
      */
     public function postManufacturerDistributorContactsAsyncWithHttpInfo($manufacturer_id, $distributor_id, $post_contact_distributor = null, string $contentType = self::contentTypes['postManufacturerDistributorContacts'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturerDistributorContactsRequest($manufacturer_id, $distributor_id, $post_contact_distributor, $contentType);
 
         return $this->client
@@ -2120,7 +2120,7 @@ class ContactApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $distributor_id The hive id of the distributor (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostContactDistributor|null $post_contact_distributor (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostContactDistributor|null $post_contact_distributor (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerDistributorContacts'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2245,7 +2245,7 @@ class ContactApi
      * @param  string $contact_id ID of the contact you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdContactsContactIdArchive'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2263,7 +2263,7 @@ class ContactApi
      * @param  string $contact_id ID of the contact you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdContactsContactIdArchive'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2486,10 +2486,10 @@ class ContactApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $contact_id The hive id of the contact in the address book of the distributor (required)
      * @param  string $distributor_id The hive id of the distributor (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutDistributorContact|null $put_distributor_contact put_distributor_contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutDistributorContact|null $put_distributor_contact put_distributor_contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersDistributorContact'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2506,10 +2506,10 @@ class ContactApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $contact_id The hive id of the contact in the address book of the distributor (required)
      * @param  string $distributor_id The hive id of the distributor (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutDistributorContact|null $put_distributor_contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutDistributorContact|null $put_distributor_contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersDistributorContact'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2558,7 +2558,7 @@ class ContactApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $contact_id The hive id of the contact in the address book of the distributor (required)
      * @param  string $distributor_id The hive id of the distributor (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutDistributorContact|null $put_distributor_contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutDistributorContact|null $put_distributor_contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersDistributorContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2582,7 +2582,7 @@ class ContactApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $contact_id The hive id of the contact in the address book of the distributor (required)
      * @param  string $distributor_id The hive id of the distributor (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutDistributorContact|null $put_distributor_contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutDistributorContact|null $put_distributor_contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersDistributorContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2622,7 +2622,7 @@ class ContactApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $contact_id The hive id of the contact in the address book of the distributor (required)
      * @param  string $distributor_id The hive id of the distributor (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutDistributorContact|null $put_distributor_contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutDistributorContact|null $put_distributor_contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersDistributorContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2760,10 +2760,10 @@ class ContactApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $contact_id ID of the contact you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutManufacturerContact|null $put_manufacturer_contact put_manufacturer_contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutManufacturerContact|null $put_manufacturer_contact put_manufacturer_contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdContactsContactId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2779,10 +2779,10 @@ class ContactApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $contact_id ID of the contact you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutManufacturerContact|null $put_manufacturer_contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutManufacturerContact|null $put_manufacturer_contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdContactsContactId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2830,7 +2830,7 @@ class ContactApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $contact_id ID of the contact you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutManufacturerContact|null $put_manufacturer_contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutManufacturerContact|null $put_manufacturer_contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdContactsContactId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2853,7 +2853,7 @@ class ContactApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $contact_id ID of the contact you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutManufacturerContact|null $put_manufacturer_contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutManufacturerContact|null $put_manufacturer_contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdContactsContactId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2892,7 +2892,7 @@ class ContactApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $contact_id ID of the contact you want to access. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutManufacturerContact|null $put_manufacturer_contact (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutManufacturerContact|null $put_manufacturer_contact (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdContactsContactId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3017,7 +3017,7 @@ class ContactApi
      * @param  string $contact_id ID of the contact you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['unarchiveAContact'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3035,7 +3035,7 @@ class ContactApi
      * @param  string $contact_id ID of the contact you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['unarchiveAContact'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ResponseGetConfiguration Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,14 +59,14 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'configured_product' => '\HiveCpq\\Client\\Generated\Model\ComponentLink',
-        'descriptions' => '\HiveCpq\\Client\\Generated\Model\KeyValueTranslationsInner[]',
+        'configured_product' => '\HiveCpq\Client\Generated\Model\ComponentLink',
+        'descriptions' => '\HiveCpq\Client\Generated\Model\KeyValueTranslationsInner[]',
         'configuration_code' => 'string',
-        'configuration_status' => '\HiveCpq\\Client\\Generated\Model\ConfigurationStatusEnum',
-        'configurator' => '\HiveCpq\\Client\\Generated\Model\ConfiguratorLink',
-        'nodes' => '\HiveCpq\\Client\\Generated\Model\ResponseConfigurationNode[]',
-        'price' => '\HiveCpq\\Client\\Generated\Model\ResponseGetConfigurationPrice',
-        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]'
+        'configuration_status' => '\HiveCpq\Client\Generated\Model\ConfigurationStatusEnum',
+        'configurator' => '\HiveCpq\Client\Generated\Model\ConfiguratorLink',
+        'nodes' => '\HiveCpq\Client\Generated\Model\ResponseConfigurationNode[]',
+        'price' => '\HiveCpq\Client\Generated\Model\ResponseGetConfigurationPrice',
+        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]'
     ];
 
     /**
@@ -376,7 +376,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets configured_product
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ComponentLink|null
+     * @return \HiveCpq\Client\Generated\Model\ComponentLink|null
      */
     public function getConfiguredProduct()
     {
@@ -386,7 +386,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets configured_product
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ComponentLink|null $configured_product configured_product
+     * @param \HiveCpq\Client\Generated\Model\ComponentLink|null $configured_product configured_product
      *
      * @return self
      */
@@ -403,7 +403,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets descriptions
      *
-     * @return \HiveCpq\\Client\\Generated\Model\KeyValueTranslationsInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\KeyValueTranslationsInner[]|null
      */
     public function getDescriptions()
     {
@@ -413,7 +413,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets descriptions
      *
-     * @param \HiveCpq\\Client\\Generated\Model\KeyValueTranslationsInner[]|null $descriptions descriptions
+     * @param \HiveCpq\Client\Generated\Model\KeyValueTranslationsInner[]|null $descriptions descriptions
      *
      * @return self
      */
@@ -457,7 +457,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets configuration_status
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ConfigurationStatusEnum|null
+     * @return \HiveCpq\Client\Generated\Model\ConfigurationStatusEnum|null
      */
     public function getConfigurationStatus()
     {
@@ -467,7 +467,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets configuration_status
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ConfigurationStatusEnum|null $configuration_status configuration_status
+     * @param \HiveCpq\Client\Generated\Model\ConfigurationStatusEnum|null $configuration_status configuration_status
      *
      * @return self
      */
@@ -484,7 +484,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets configurator
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ConfiguratorLink|null
+     * @return \HiveCpq\Client\Generated\Model\ConfiguratorLink|null
      */
     public function getConfigurator()
     {
@@ -494,7 +494,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets configurator
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ConfiguratorLink|null $configurator configurator
+     * @param \HiveCpq\Client\Generated\Model\ConfiguratorLink|null $configurator configurator
      *
      * @return self
      */
@@ -511,7 +511,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets nodes
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ResponseConfigurationNode[]|null
+     * @return \HiveCpq\Client\Generated\Model\ResponseConfigurationNode[]|null
      */
     public function getNodes()
     {
@@ -521,7 +521,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets nodes
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ResponseConfigurationNode[]|null $nodes nodes
+     * @param \HiveCpq\Client\Generated\Model\ResponseConfigurationNode[]|null $nodes nodes
      *
      * @return self
      */
@@ -538,7 +538,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets price
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ResponseGetConfigurationPrice|null
+     * @return \HiveCpq\Client\Generated\Model\ResponseGetConfigurationPrice|null
      */
     public function getPrice()
     {
@@ -548,7 +548,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets price
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ResponseGetConfigurationPrice|null $price price
+     * @param \HiveCpq\Client\Generated\Model\ResponseGetConfigurationPrice|null $price price
      *
      * @return self
      */
@@ -565,7 +565,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -575,7 +575,7 @@ class ResponseGetConfiguration implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */

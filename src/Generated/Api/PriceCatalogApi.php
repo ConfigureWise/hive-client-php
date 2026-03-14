@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Api;
+namespace HiveCpq\Client\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\\Client\\Generated\ApiException;
-use HiveCpq\\Client\\Generated\Configuration;
-use HiveCpq\\Client\\Generated\FormDataProcessor;
-use HiveCpq\\Client\\Generated\HeaderSelector;
-use HiveCpq\\Client\\Generated\ObjectSerializer;
+use HiveCpq\Client\Generated\ApiException;
+use HiveCpq\Client\Generated\Configuration;
+use HiveCpq\Client\Generated\FormDataProcessor;
+use HiveCpq\Client\Generated\HeaderSelector;
+use HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PriceCatalogApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -147,7 +147,7 @@ class PriceCatalogApi
      * @param  string $price_catalog_id The id of the price catalog (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerPricecatalog'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -165,7 +165,7 @@ class PriceCatalogApi
      * @param  string $price_catalog_id The id of the price catalog (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerPricecatalog'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -395,9 +395,9 @@ class PriceCatalogApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerPriceCatalogs'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetPriceCatalogsResponse
+     * @return \HiveCpq\Client\Generated\Model\GetPriceCatalogsResponse
      */
     public function getManufacturerPriceCatalogs($manufacturer_id, $integrated_system_name = null, $integrated_system_ids_in = null, $ids_in = null, $name = null, $default = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerPriceCatalogs'][0])
     {
@@ -420,9 +420,9 @@ class PriceCatalogApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerPriceCatalogs'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetPriceCatalogsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetPriceCatalogsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerPriceCatalogsWithHttpInfo($manufacturer_id, $integrated_system_name = null, $integrated_system_ids_in = null, $ids_in = null, $name = null, $default = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerPriceCatalogs'][0])
     {
@@ -454,7 +454,7 @@ class PriceCatalogApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetPriceCatalogsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetPriceCatalogsResponse',
                         $request,
                         $response,
                     );
@@ -476,7 +476,7 @@ class PriceCatalogApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetPriceCatalogsResponse',
+                '\HiveCpq\Client\Generated\Model\GetPriceCatalogsResponse',
                 $request,
                 $response,
             );
@@ -485,7 +485,7 @@ class PriceCatalogApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetPriceCatalogsResponse',
+                        '\HiveCpq\Client\Generated\Model\GetPriceCatalogsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -545,7 +545,7 @@ class PriceCatalogApi
      */
     public function getManufacturerPriceCatalogsAsyncWithHttpInfo($manufacturer_id, $integrated_system_name = null, $integrated_system_ids_in = null, $ids_in = null, $name = null, $default = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerPriceCatalogs'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetPriceCatalogsResponse';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetPriceCatalogsResponse';
         $request = $this->getManufacturerPriceCatalogsRequest($manufacturer_id, $integrated_system_name, $integrated_system_ids_in, $ids_in, $name, $default, $page, $page_size, $contentType);
 
         return $this->client
@@ -766,9 +766,9 @@ class PriceCatalogApi
      * @param  string $price_catalog_id The id of the price catalog (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerPricecatalog'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\GetPriceCatalog
+     * @return \HiveCpq\Client\Generated\Model\GetPriceCatalog
      */
     public function getManufacturerPricecatalog($manufacturer_id, $price_catalog_id, string $contentType = self::contentTypes['getManufacturerPricecatalog'][0])
     {
@@ -785,9 +785,9 @@ class PriceCatalogApi
      * @param  string $price_catalog_id The id of the price catalog (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerPricecatalog'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\GetPriceCatalog, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\GetPriceCatalog, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerPricecatalogWithHttpInfo($manufacturer_id, $price_catalog_id, string $contentType = self::contentTypes['getManufacturerPricecatalog'][0])
     {
@@ -819,7 +819,7 @@ class PriceCatalogApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\GetPriceCatalog',
+                        '\HiveCpq\Client\Generated\Model\GetPriceCatalog',
                         $request,
                         $response,
                     );
@@ -841,7 +841,7 @@ class PriceCatalogApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\GetPriceCatalog',
+                '\HiveCpq\Client\Generated\Model\GetPriceCatalog',
                 $request,
                 $response,
             );
@@ -850,7 +850,7 @@ class PriceCatalogApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\GetPriceCatalog',
+                        '\HiveCpq\Client\Generated\Model\GetPriceCatalog',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -898,7 +898,7 @@ class PriceCatalogApi
      */
     public function getManufacturerPricecatalogAsyncWithHttpInfo($manufacturer_id, $price_catalog_id, string $contentType = self::contentTypes['getManufacturerPricecatalog'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\GetPriceCatalog';
+        $returnType = '\HiveCpq\Client\Generated\Model\GetPriceCatalog';
         $request = $this->getManufacturerPricecatalogRequest($manufacturer_id, $price_catalog_id, $contentType);
 
         return $this->client
@@ -1055,12 +1055,12 @@ class PriceCatalogApi
      * Create a price catalog of a manufacturer
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostPriceCatalogsRequest|null $post_price_catalogs_request post_price_catalogs_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostPriceCatalogsRequest|null $post_price_catalogs_request post_price_catalogs_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerPricecatalogs'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturerPricecatalogs($manufacturer_id, $post_price_catalogs_request = null, string $contentType = self::contentTypes['postManufacturerPricecatalogs'][0])
     {
@@ -1074,12 +1074,12 @@ class PriceCatalogApi
      * Create a price catalog of a manufacturer
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostPriceCatalogsRequest|null $post_price_catalogs_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostPriceCatalogsRequest|null $post_price_catalogs_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerPricecatalogs'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturerPricecatalogsWithHttpInfo($manufacturer_id, $post_price_catalogs_request = null, string $contentType = self::contentTypes['postManufacturerPricecatalogs'][0])
     {
@@ -1111,7 +1111,7 @@ class PriceCatalogApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -1133,7 +1133,7 @@ class PriceCatalogApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -1142,7 +1142,7 @@ class PriceCatalogApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1160,7 +1160,7 @@ class PriceCatalogApi
      * Create a price catalog of a manufacturer
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostPriceCatalogsRequest|null $post_price_catalogs_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostPriceCatalogsRequest|null $post_price_catalogs_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerPricecatalogs'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1182,7 +1182,7 @@ class PriceCatalogApi
      * Create a price catalog of a manufacturer
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostPriceCatalogsRequest|null $post_price_catalogs_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostPriceCatalogsRequest|null $post_price_catalogs_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerPricecatalogs'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1190,7 +1190,7 @@ class PriceCatalogApi
      */
     public function postManufacturerPricecatalogsAsyncWithHttpInfo($manufacturer_id, $post_price_catalogs_request = null, string $contentType = self::contentTypes['postManufacturerPricecatalogs'][0])
     {
-        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturerPricecatalogsRequest($manufacturer_id, $post_price_catalogs_request, $contentType);
 
         return $this->client
@@ -1233,7 +1233,7 @@ class PriceCatalogApi
      * Create request for operation 'postManufacturerPricecatalogs'
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PostPriceCatalogsRequest|null $post_price_catalogs_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PostPriceCatalogsRequest|null $post_price_catalogs_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerPricecatalogs'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1341,10 +1341,10 @@ class PriceCatalogApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $price_catalog_id The id of the price catalog (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutPriceCatalogsRequest|null $put_price_catalogs_request put_price_catalogs_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutPriceCatalogsRequest|null $put_price_catalogs_request put_price_catalogs_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerPricecatalogId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1360,10 +1360,10 @@ class PriceCatalogApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $price_catalog_id The id of the price catalog (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutPriceCatalogsRequest|null $put_price_catalogs_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutPriceCatalogsRequest|null $put_price_catalogs_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerPricecatalogId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1411,7 +1411,7 @@ class PriceCatalogApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $price_catalog_id The id of the price catalog (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutPriceCatalogsRequest|null $put_price_catalogs_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutPriceCatalogsRequest|null $put_price_catalogs_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerPricecatalogId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1434,7 +1434,7 @@ class PriceCatalogApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $price_catalog_id The id of the price catalog (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutPriceCatalogsRequest|null $put_price_catalogs_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutPriceCatalogsRequest|null $put_price_catalogs_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerPricecatalogId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1473,7 +1473,7 @@ class PriceCatalogApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $price_catalog_id The id of the price catalog (required)
-     * @param  \HiveCpq\\Client\\Generated\Model\PutPriceCatalogsRequest|null $put_price_catalogs_request (optional)
+     * @param  \HiveCpq\Client\Generated\Model\PutPriceCatalogsRequest|null $put_price_catalogs_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerPricecatalogId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

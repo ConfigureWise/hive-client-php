@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ProjectSegmentItemLink Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,11 +59,11 @@ class ProjectSegmentItemLink implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
+        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
         'name' => 'string',
         'article_code' => 'string',
         'configurator_code' => 'string',
-        'type' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentItemType'
+        'type' => '\HiveCpq\Client\Generated\Model\ProjectSegmentItemType'
     ];
 
     /**
@@ -355,7 +355,7 @@ class ProjectSegmentItemLink implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -365,7 +365,7 @@ class ProjectSegmentItemLink implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class ProjectSegmentItemLink implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets type
      *
-     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentItemType|null
+     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentItemType|null
      */
     public function getType()
     {
@@ -473,7 +473,7 @@ class ProjectSegmentItemLink implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets type
      *
-     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentItemType|null $type type
+     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentItemType|null $type type
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,15 +27,15 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+namespace HiveCpq\Client\Generated\Model;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * ConfigurationStatusEnum Class Doc Comment
  *
  * @category Class
  * @description Status of the item. Can be VALID: this item is without errors ERROR: this item has an error in its configuration UPGRADE or ACCEPT_UPGRADE: this item must be upgraded to a new configurator version
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

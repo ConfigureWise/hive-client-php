@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\\Client\\Generated\Model;
+namespace HiveCpq\Client\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\\Client\\Generated\ObjectSerializer;
+use \HiveCpq\Client\Generated\ObjectSerializer;
 
 /**
  * PostManufacturersManufacturerIdPropertiesBulkUpsertRequestPropertiesInner Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\\Client\\Generated
+ * @package  HiveCpq\Client\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,8 +60,8 @@ class PostManufacturersManufacturerIdPropertiesBulkUpsertRequestPropertiesInner 
     protected static $openAPITypes = [
         'item_id' => 'string',
         'code' => 'string',
-        'type' => '\HiveCpq\\Client\\Generated\Model\EnumComponentPropertyType',
-        'array_type' => '\HiveCpq\\Client\\Generated\Model\EnumComponentPropertyArrayType',
+        'type' => '\HiveCpq\Client\Generated\Model\EnumComponentPropertyType',
+        'array_type' => '\HiveCpq\Client\Generated\Model\EnumComponentPropertyArrayType',
         'info' => 'string',
         'integrated_system_id' => 'string'
     ];
@@ -391,7 +391,7 @@ class PostManufacturersManufacturerIdPropertiesBulkUpsertRequestPropertiesInner 
     /**
      * Gets type
      *
-     * @return \HiveCpq\\Client\\Generated\Model\EnumComponentPropertyType
+     * @return \HiveCpq\Client\Generated\Model\EnumComponentPropertyType
      */
     public function getType()
     {
@@ -401,7 +401,7 @@ class PostManufacturersManufacturerIdPropertiesBulkUpsertRequestPropertiesInner 
     /**
      * Sets type
      *
-     * @param \HiveCpq\\Client\\Generated\Model\EnumComponentPropertyType $type type
+     * @param \HiveCpq\Client\Generated\Model\EnumComponentPropertyType $type type
      *
      * @return self
      */
@@ -418,7 +418,7 @@ class PostManufacturersManufacturerIdPropertiesBulkUpsertRequestPropertiesInner 
     /**
      * Gets array_type
      *
-     * @return \HiveCpq\\Client\\Generated\Model\EnumComponentPropertyArrayType|null
+     * @return \HiveCpq\Client\Generated\Model\EnumComponentPropertyArrayType|null
      */
     public function getArrayType()
     {
@@ -428,7 +428,7 @@ class PostManufacturersManufacturerIdPropertiesBulkUpsertRequestPropertiesInner 
     /**
      * Sets array_type
      *
-     * @param \HiveCpq\\Client\\Generated\Model\EnumComponentPropertyArrayType|null $array_type array_type
+     * @param \HiveCpq\Client\Generated\Model\EnumComponentPropertyArrayType|null $array_type array_type
      *
      * @return self
      */
