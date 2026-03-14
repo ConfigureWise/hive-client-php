@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * UpsertCustomObjectRequest Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class UpsertCustomObjectRequest implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'key_values' => '\HiveCpq\Client\Generated\Model\CustomObjectKeyValuePair[]'
+        'key_values' => '\HiveCpq\\Client\\Generated\Model\CustomObjectKeyValuePair[]'
     ];
 
     /**
@@ -296,7 +296,7 @@ class UpsertCustomObjectRequest implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets key_values
      *
-     * @return \HiveCpq\Client\Generated\Model\CustomObjectKeyValuePair[]
+     * @return \HiveCpq\\Client\\Generated\Model\CustomObjectKeyValuePair[]
      */
     public function getKeyValues()
     {
@@ -306,7 +306,7 @@ class UpsertCustomObjectRequest implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets key_values
      *
-     * @param \HiveCpq\Client\Generated\Model\CustomObjectKeyValuePair[] $key_values key_values
+     * @param \HiveCpq\\Client\\Generated\Model\CustomObjectKeyValuePair[] $key_values key_values
      *
      * @return self
      */

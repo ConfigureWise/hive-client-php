@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PostManufacturersManufacturerIdConfigurationsRequest Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,8 +60,8 @@ class PostManufacturersManufacturerIdConfigurationsRequest implements ModelInter
     protected static $openAPITypes = [
         'configurator_id' => 'string',
         'version_id' => 'string',
-        'initial_values' => '\HiveCpq\Client\Generated\Model\V2ConfigurationInput[]',
-        'integrated_system_link' => '\HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink'
+        'initial_values' => '\HiveCpq\\Client\\Generated\Model\V2ConfigurationInput[]',
+        'integrated_system_link' => '\HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink'
     ];
 
     /**
@@ -371,7 +371,7 @@ class PostManufacturersManufacturerIdConfigurationsRequest implements ModelInter
     /**
      * Gets initial_values
      *
-     * @return \HiveCpq\Client\Generated\Model\V2ConfigurationInput[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\V2ConfigurationInput[]|null
      */
     public function getInitialValues()
     {
@@ -381,7 +381,7 @@ class PostManufacturersManufacturerIdConfigurationsRequest implements ModelInter
     /**
      * Sets initial_values
      *
-     * @param \HiveCpq\Client\Generated\Model\V2ConfigurationInput[]|null $initial_values initial_values
+     * @param \HiveCpq\\Client\\Generated\Model\V2ConfigurationInput[]|null $initial_values initial_values
      *
      * @return self
      */
@@ -398,7 +398,7 @@ class PostManufacturersManufacturerIdConfigurationsRequest implements ModelInter
     /**
      * Gets integrated_system_link
      *
-     * @return \HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink|null
      */
     public function getIntegratedSystemLink()
     {
@@ -408,7 +408,7 @@ class PostManufacturersManufacturerIdConfigurationsRequest implements ModelInter
     /**
      * Sets integrated_system_link
      *
-     * @param \HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink|null $integrated_system_link integrated_system_link
+     * @param \HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink|null $integrated_system_link integrated_system_link
      *
      * @return self
      */

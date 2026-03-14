@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Api;
+namespace HiveCpq\\Client\\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\Client\Generated\ApiException;
-use HiveCpq\Client\Generated\Configuration;
-use HiveCpq\Client\Generated\FormDataProcessor;
-use HiveCpq\Client\Generated\HeaderSelector;
-use HiveCpq\Client\Generated\ObjectSerializer;
+use HiveCpq\\Client\\Generated\ApiException;
+use HiveCpq\\Client\\Generated\Configuration;
+use HiveCpq\\Client\\Generated\FormDataProcessor;
+use HiveCpq\\Client\\Generated\HeaderSelector;
+use HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * ProjectApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -166,12 +166,12 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\AddProjectConfigurationRequestBody|null $add_project_configuration_request_body add_project_configuration_request_body (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\AddProjectConfigurationRequestBody|null $add_project_configuration_request_body add_project_configuration_request_body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addConfigurationToProject'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
      */
     public function addConfigurationToProject($manufacturer_id, $project_id, $add_project_configuration_request_body = null, string $contentType = self::contentTypes['addConfigurationToProject'][0])
     {
@@ -186,12 +186,12 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\AddProjectConfigurationRequestBody|null $add_project_configuration_request_body (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\AddProjectConfigurationRequestBody|null $add_project_configuration_request_body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addConfigurationToProject'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function addConfigurationToProjectWithHttpInfo($manufacturer_id, $project_id, $add_project_configuration_request_body = null, string $contentType = self::contentTypes['addConfigurationToProject'][0])
     {
@@ -223,7 +223,7 @@ class ProjectApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -245,7 +245,7 @@ class ProjectApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -254,7 +254,7 @@ class ProjectApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -273,7 +273,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\AddProjectConfigurationRequestBody|null $add_project_configuration_request_body (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\AddProjectConfigurationRequestBody|null $add_project_configuration_request_body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addConfigurationToProject'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -296,7 +296,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\AddProjectConfigurationRequestBody|null $add_project_configuration_request_body (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\AddProjectConfigurationRequestBody|null $add_project_configuration_request_body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addConfigurationToProject'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -304,7 +304,7 @@ class ProjectApi
      */
     public function addConfigurationToProjectAsyncWithHttpInfo($manufacturer_id, $project_id, $add_project_configuration_request_body = null, string $contentType = self::contentTypes['addConfigurationToProject'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->addConfigurationToProjectRequest($manufacturer_id, $project_id, $add_project_configuration_request_body, $contentType);
 
         return $this->client
@@ -348,7 +348,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\AddProjectConfigurationRequestBody|null $add_project_configuration_request_body (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\AddProjectConfigurationRequestBody|null $add_project_configuration_request_body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addConfigurationToProject'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -470,12 +470,12 @@ class ProjectApi
      * Create a new project
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostProject|null $post_project  (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostProject|null $post_project  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerProject'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
      */
     public function addManufacturerProject($manufacturer_id, $post_project = null, string $contentType = self::contentTypes['addManufacturerProject'][0])
     {
@@ -489,12 +489,12 @@ class ProjectApi
      * Create a new project
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostProject|null $post_project  (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostProject|null $post_project  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerProject'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function addManufacturerProjectWithHttpInfo($manufacturer_id, $post_project = null, string $contentType = self::contentTypes['addManufacturerProject'][0])
     {
@@ -526,7 +526,7 @@ class ProjectApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -548,7 +548,7 @@ class ProjectApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -557,7 +557,7 @@ class ProjectApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -575,7 +575,7 @@ class ProjectApi
      * Create a new project
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostProject|null $post_project  (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostProject|null $post_project  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerProject'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -597,7 +597,7 @@ class ProjectApi
      * Create a new project
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostProject|null $post_project  (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostProject|null $post_project  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerProject'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -605,7 +605,7 @@ class ProjectApi
      */
     public function addManufacturerProjectAsyncWithHttpInfo($manufacturer_id, $post_project = null, string $contentType = self::contentTypes['addManufacturerProject'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->addManufacturerProjectRequest($manufacturer_id, $post_project, $contentType);
 
         return $this->client
@@ -648,7 +648,7 @@ class ProjectApi
      * Create request for operation 'addManufacturerProject'
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostProject|null $post_project  (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostProject|null $post_project  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerProject'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -758,7 +758,7 @@ class ProjectApi
      * @param  string $project_id ID of the project you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerProject'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -776,7 +776,7 @@ class ProjectApi
      * @param  string $project_id ID of the project you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerProject'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1000,9 +1000,9 @@ class ProjectApi
      * @param  string $project_id ID of the project you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerProject'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\Project
+     * @return \HiveCpq\\Client\\Generated\Model\Project
      */
     public function getManufacturerProject($manufacturer_id, $project_id, string $contentType = self::contentTypes['getManufacturerProject'][0])
     {
@@ -1019,9 +1019,9 @@ class ProjectApi
      * @param  string $project_id ID of the project you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerProject'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\Project, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\Project, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerProjectWithHttpInfo($manufacturer_id, $project_id, string $contentType = self::contentTypes['getManufacturerProject'][0])
     {
@@ -1053,7 +1053,7 @@ class ProjectApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\Project',
+                        '\HiveCpq\\Client\\Generated\Model\Project',
                         $request,
                         $response,
                     );
@@ -1075,7 +1075,7 @@ class ProjectApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\Project',
+                '\HiveCpq\\Client\\Generated\Model\Project',
                 $request,
                 $response,
             );
@@ -1084,7 +1084,7 @@ class ProjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\Project',
+                        '\HiveCpq\\Client\\Generated\Model\Project',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1132,7 +1132,7 @@ class ProjectApi
      */
     public function getManufacturerProjectAsyncWithHttpInfo($manufacturer_id, $project_id, string $contentType = self::contentTypes['getManufacturerProject'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\Project';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\Project';
         $request = $this->getManufacturerProjectRequest($manufacturer_id, $project_id, $contentType);
 
         return $this->client
@@ -1298,9 +1298,9 @@ class ProjectApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerProjects'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetProjectsReponse
+     * @return \HiveCpq\\Client\\Generated\Model\GetProjectsReponse
      */
     public function getManufacturerProjects($manufacturer_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $updated_since = null, $updated_before = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerProjects'][0])
     {
@@ -1323,9 +1323,9 @@ class ProjectApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerProjects'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetProjectsReponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetProjectsReponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerProjectsWithHttpInfo($manufacturer_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $updated_since = null, $updated_before = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerProjects'][0])
     {
@@ -1357,7 +1357,7 @@ class ProjectApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetProjectsReponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetProjectsReponse',
                         $request,
                         $response,
                     );
@@ -1379,7 +1379,7 @@ class ProjectApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetProjectsReponse',
+                '\HiveCpq\\Client\\Generated\Model\GetProjectsReponse',
                 $request,
                 $response,
             );
@@ -1388,7 +1388,7 @@ class ProjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetProjectsReponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetProjectsReponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1448,7 +1448,7 @@ class ProjectApi
      */
     public function getManufacturerProjectsAsyncWithHttpInfo($manufacturer_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $updated_since = null, $updated_before = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerProjects'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetProjectsReponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetProjectsReponse';
         $request = $this->getManufacturerProjectsRequest($manufacturer_id, $ids_in, $integrated_system_name, $integrated_system_ids_in, $updated_since, $updated_before, $page, $page_size, $contentType);
 
         return $this->client
@@ -1667,12 +1667,12 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostAddProducts[]|null $post_add_products post_add_products (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostAddProducts[]|null $post_add_products post_add_products (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsAddProducts'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturersManufacturerIdProjectsAddProducts($manufacturer_id, $project_id, $post_add_products = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdProjectsAddProducts'][0])
     {
@@ -1687,12 +1687,12 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostAddProducts[]|null $post_add_products (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostAddProducts[]|null $post_add_products (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsAddProducts'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturersManufacturerIdProjectsAddProductsWithHttpInfo($manufacturer_id, $project_id, $post_add_products = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdProjectsAddProducts'][0])
     {
@@ -1724,7 +1724,7 @@ class ProjectApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -1746,7 +1746,7 @@ class ProjectApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -1755,7 +1755,7 @@ class ProjectApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1774,7 +1774,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostAddProducts[]|null $post_add_products (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostAddProducts[]|null $post_add_products (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsAddProducts'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1797,7 +1797,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostAddProducts[]|null $post_add_products (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostAddProducts[]|null $post_add_products (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsAddProducts'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1805,7 +1805,7 @@ class ProjectApi
      */
     public function postManufacturersManufacturerIdProjectsAddProductsAsyncWithHttpInfo($manufacturer_id, $project_id, $post_add_products = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdProjectsAddProducts'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturersManufacturerIdProjectsAddProductsRequest($manufacturer_id, $project_id, $post_add_products, $contentType);
 
         return $this->client
@@ -1849,7 +1849,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostAddProducts[]|null $post_add_products (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostAddProducts[]|null $post_add_products (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsAddProducts'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1972,12 +1972,12 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdProjectsDuplicateRequest|null $post_manufacturers_manufacturer_id_projects_duplicate_request post_manufacturers_manufacturer_id_projects_duplicate_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdProjectsDuplicateRequest|null $post_manufacturers_manufacturer_id_projects_duplicate_request post_manufacturers_manufacturer_id_projects_duplicate_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsDuplicate'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturersManufacturerIdProjectsDuplicate($manufacturer_id, $project_id, $post_manufacturers_manufacturer_id_projects_duplicate_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdProjectsDuplicate'][0])
     {
@@ -1992,12 +1992,12 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdProjectsDuplicateRequest|null $post_manufacturers_manufacturer_id_projects_duplicate_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdProjectsDuplicateRequest|null $post_manufacturers_manufacturer_id_projects_duplicate_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsDuplicate'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturersManufacturerIdProjectsDuplicateWithHttpInfo($manufacturer_id, $project_id, $post_manufacturers_manufacturer_id_projects_duplicate_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdProjectsDuplicate'][0])
     {
@@ -2029,7 +2029,7 @@ class ProjectApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -2051,7 +2051,7 @@ class ProjectApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -2060,7 +2060,7 @@ class ProjectApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2079,7 +2079,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdProjectsDuplicateRequest|null $post_manufacturers_manufacturer_id_projects_duplicate_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdProjectsDuplicateRequest|null $post_manufacturers_manufacturer_id_projects_duplicate_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsDuplicate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2102,7 +2102,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdProjectsDuplicateRequest|null $post_manufacturers_manufacturer_id_projects_duplicate_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdProjectsDuplicateRequest|null $post_manufacturers_manufacturer_id_projects_duplicate_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsDuplicate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2110,7 +2110,7 @@ class ProjectApi
      */
     public function postManufacturersManufacturerIdProjectsDuplicateAsyncWithHttpInfo($manufacturer_id, $project_id, $post_manufacturers_manufacturer_id_projects_duplicate_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdProjectsDuplicate'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturersManufacturerIdProjectsDuplicateRequest($manufacturer_id, $project_id, $post_manufacturers_manufacturer_id_projects_duplicate_request, $contentType);
 
         return $this->client
@@ -2154,7 +2154,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdProjectsDuplicateRequest|null $post_manufacturers_manufacturer_id_projects_duplicate_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdProjectsDuplicateRequest|null $post_manufacturers_manufacturer_id_projects_duplicate_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsDuplicate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2277,10 +2277,10 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document request_post_generate_output_document (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document request_post_generate_output_document (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsProjectIdOutputDocumentsGenerateOutputDocument'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -2297,10 +2297,10 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsProjectIdOutputDocumentsGenerateOutputDocument'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2384,7 +2384,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsProjectIdOutputDocumentsGenerateOutputDocument'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2407,7 +2407,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsProjectIdOutputDocumentsGenerateOutputDocument'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2459,7 +2459,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsProjectIdOutputDocumentsGenerateOutputDocument'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2582,10 +2582,10 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document request_post_generate_output_document (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document request_post_generate_output_document (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsProjectIdOutputDocumentsGenerateWordOutputDocument'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -2602,10 +2602,10 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsProjectIdOutputDocumentsGenerateWordOutputDocument'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2689,7 +2689,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsProjectIdOutputDocumentsGenerateWordOutputDocument'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2712,7 +2712,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsProjectIdOutputDocumentsGenerateWordOutputDocument'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2764,7 +2764,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostGenerateOutputDocument|null $request_post_generate_output_document (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsProjectIdOutputDocumentsGenerateWordOutputDocument'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2889,7 +2889,7 @@ class ProjectApi
      * @param  string $project_id ID of the project you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsRecalculate'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2907,7 +2907,7 @@ class ProjectApi
      * @param  string $project_id ID of the project you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdProjectsRecalculate'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3128,10 +3128,10 @@ class ProjectApi
      * Refresh the prices in running projects with those from master data
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostUpdateProjectPrices|null $post_update_project_prices post_update_project_prices (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostUpdateProjectPrices|null $post_update_project_prices post_update_project_prices (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersUpdateProjectPrices'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3146,10 +3146,10 @@ class ProjectApi
      * Refresh the prices in running projects with those from master data
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostUpdateProjectPrices|null $post_update_project_prices (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostUpdateProjectPrices|null $post_update_project_prices (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersUpdateProjectPrices'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3196,7 +3196,7 @@ class ProjectApi
      * Refresh the prices in running projects with those from master data
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostUpdateProjectPrices|null $post_update_project_prices (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostUpdateProjectPrices|null $post_update_project_prices (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersUpdateProjectPrices'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3218,7 +3218,7 @@ class ProjectApi
      * Refresh the prices in running projects with those from master data
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostUpdateProjectPrices|null $post_update_project_prices (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostUpdateProjectPrices|null $post_update_project_prices (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersUpdateProjectPrices'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3256,7 +3256,7 @@ class ProjectApi
      * Create request for operation 'postManufacturersUpdateProjectPrices'
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostUpdateProjectPrices|null $post_update_project_prices (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostUpdateProjectPrices|null $post_update_project_prices (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersUpdateProjectPrices'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3364,10 +3364,10 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutProject|null $put_project put_project (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutProject|null $put_project put_project (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateManufacturerProject'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3383,10 +3383,10 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutProject|null $put_project (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutProject|null $put_project (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateManufacturerProject'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3434,7 +3434,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutProject|null $put_project (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutProject|null $put_project (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateManufacturerProject'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3457,7 +3457,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutProject|null $put_project (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutProject|null $put_project (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateManufacturerProject'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3496,7 +3496,7 @@ class ProjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $project_id ID of the project you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutProject|null $put_project (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutProject|null $put_project (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateManufacturerProject'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

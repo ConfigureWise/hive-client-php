@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PostBulkUpsertFeaturesRequestFeaturesInner Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class PostBulkUpsertFeaturesRequestFeaturesInner implements ModelInterface, Arra
         'item_id' => 'string',
         'code' => 'string',
         'feature_group_code' => 'string',
-        'descriptions' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
+        'descriptions' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
         'serial_search_function' => 'string',
         'integrated_system_id' => 'string'
     ];
@@ -425,7 +425,7 @@ class PostBulkUpsertFeaturesRequestFeaturesInner implements ModelInterface, Arra
     /**
      * Gets descriptions
      *
-     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]
+     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]
      */
     public function getDescriptions()
     {
@@ -435,7 +435,7 @@ class PostBulkUpsertFeaturesRequestFeaturesInner implements ModelInterface, Arra
     /**
      * Sets descriptions
      *
-     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[] $descriptions A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[] $descriptions A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */

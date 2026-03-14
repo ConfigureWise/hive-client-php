@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * GetComponentAttachmentsResponnse Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetComponentAttachmentsResponnse implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\HiveCpq\Client\Generated\Model\GetComponentAttachment[]',
+        'items' => '\HiveCpq\\Client\\Generated\Model\GetComponentAttachment[]',
         'total' => 'int'
     ];
 
@@ -300,7 +300,7 @@ class GetComponentAttachmentsResponnse implements ModelInterface, ArrayAccess, \
     /**
      * Gets items
      *
-     * @return \HiveCpq\Client\Generated\Model\GetComponentAttachment[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\GetComponentAttachment[]|null
      */
     public function getItems()
     {
@@ -310,7 +310,7 @@ class GetComponentAttachmentsResponnse implements ModelInterface, ArrayAccess, \
     /**
      * Sets items
      *
-     * @param \HiveCpq\Client\Generated\Model\GetComponentAttachment[]|null $items items
+     * @param \HiveCpq\\Client\\Generated\Model\GetComponentAttachment[]|null $items items
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * RequestPostBulkUpsertComponentPrices Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class RequestPostBulkUpsertComponentPrices implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'prices' => '\HiveCpq\Client\Generated\Model\RequestPostBulkUpsertComponentPricesPricesInner[]'
+        'prices' => '\HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertComponentPricesPricesInner[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class RequestPostBulkUpsertComponentPrices implements ModelInterface, ArrayAcces
     /**
      * Gets prices
      *
-     * @return \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertComponentPricesPricesInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertComponentPricesPricesInner[]|null
      */
     public function getPrices()
     {
@@ -303,7 +303,7 @@ class RequestPostBulkUpsertComponentPrices implements ModelInterface, ArrayAcces
     /**
      * Sets prices
      *
-     * @param \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertComponentPricesPricesInner[]|null $prices prices
+     * @param \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertComponentPricesPricesInner[]|null $prices prices
      *
      * @return self
      */

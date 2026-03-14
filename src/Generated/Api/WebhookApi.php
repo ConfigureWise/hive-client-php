@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Api;
+namespace HiveCpq\\Client\\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\Client\Generated\ApiException;
-use HiveCpq\Client\Generated\Configuration;
-use HiveCpq\Client\Generated\FormDataProcessor;
-use HiveCpq\Client\Generated\HeaderSelector;
-use HiveCpq\Client\Generated\ObjectSerializer;
+use HiveCpq\\Client\\Generated\ApiException;
+use HiveCpq\\Client\\Generated\Configuration;
+use HiveCpq\\Client\\Generated\FormDataProcessor;
+use HiveCpq\\Client\\Generated\HeaderSelector;
+use HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * WebhookApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -175,12 +175,12 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhookHeader|null $post_webhook_header post_webhook_header (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhookHeader|null $post_webhook_header post_webhook_header (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerWebhookHeader'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
      */
     public function addManufacturerWebhookHeader($manufacturer_id, $webhook_id, $post_webhook_header = null, string $contentType = self::contentTypes['addManufacturerWebhookHeader'][0])
     {
@@ -195,12 +195,12 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhookHeader|null $post_webhook_header (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhookHeader|null $post_webhook_header (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerWebhookHeader'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function addManufacturerWebhookHeaderWithHttpInfo($manufacturer_id, $webhook_id, $post_webhook_header = null, string $contentType = self::contentTypes['addManufacturerWebhookHeader'][0])
     {
@@ -232,7 +232,7 @@ class WebhookApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -254,7 +254,7 @@ class WebhookApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -263,7 +263,7 @@ class WebhookApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -282,7 +282,7 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhookHeader|null $post_webhook_header (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhookHeader|null $post_webhook_header (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerWebhookHeader'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -305,7 +305,7 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhookHeader|null $post_webhook_header (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhookHeader|null $post_webhook_header (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerWebhookHeader'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -313,7 +313,7 @@ class WebhookApi
      */
     public function addManufacturerWebhookHeaderAsyncWithHttpInfo($manufacturer_id, $webhook_id, $post_webhook_header = null, string $contentType = self::contentTypes['addManufacturerWebhookHeader'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->addManufacturerWebhookHeaderRequest($manufacturer_id, $webhook_id, $post_webhook_header, $contentType);
 
         return $this->client
@@ -357,7 +357,7 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhookHeader|null $post_webhook_header (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhookHeader|null $post_webhook_header (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerWebhookHeader'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -480,12 +480,12 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhookTrigger|null $post_webhook_trigger post_webhook_trigger (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhookTrigger|null $post_webhook_trigger post_webhook_trigger (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerWebhookTrigger'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
      */
     public function addManufacturerWebhookTrigger($manufacturer_id, $webhook_id, $post_webhook_trigger = null, string $contentType = self::contentTypes['addManufacturerWebhookTrigger'][0])
     {
@@ -500,12 +500,12 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhookTrigger|null $post_webhook_trigger (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhookTrigger|null $post_webhook_trigger (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerWebhookTrigger'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function addManufacturerWebhookTriggerWithHttpInfo($manufacturer_id, $webhook_id, $post_webhook_trigger = null, string $contentType = self::contentTypes['addManufacturerWebhookTrigger'][0])
     {
@@ -537,7 +537,7 @@ class WebhookApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -559,7 +559,7 @@ class WebhookApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -568,7 +568,7 @@ class WebhookApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -587,7 +587,7 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhookTrigger|null $post_webhook_trigger (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhookTrigger|null $post_webhook_trigger (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerWebhookTrigger'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -610,7 +610,7 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhookTrigger|null $post_webhook_trigger (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhookTrigger|null $post_webhook_trigger (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerWebhookTrigger'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -618,7 +618,7 @@ class WebhookApi
      */
     public function addManufacturerWebhookTriggerAsyncWithHttpInfo($manufacturer_id, $webhook_id, $post_webhook_trigger = null, string $contentType = self::contentTypes['addManufacturerWebhookTrigger'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->addManufacturerWebhookTriggerRequest($manufacturer_id, $webhook_id, $post_webhook_trigger, $contentType);
 
         return $this->client
@@ -662,7 +662,7 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhookTrigger|null $post_webhook_trigger (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhookTrigger|null $post_webhook_trigger (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerWebhookTrigger'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -787,7 +787,7 @@ class WebhookApi
      * @param  string $webhook_id The hive id of the webhook (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerWebhook'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -805,7 +805,7 @@ class WebhookApi
      * @param  string $webhook_id The hive id of the webhook (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerWebhook'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1030,7 +1030,7 @@ class WebhookApi
      * @param  string $header_id The hive id of the header of the webhook (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerWebhookHeeader'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1049,7 +1049,7 @@ class WebhookApi
      * @param  string $header_id The hive id of the header of the webhook (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerWebhookHeeader'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1292,7 +1292,7 @@ class WebhookApi
      * @param  string $webhook_trigger_id the hive id of the trigger (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerWebhookTrigger'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1311,7 +1311,7 @@ class WebhookApi
      * @param  string $webhook_trigger_id the hive id of the trigger (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerWebhookTrigger'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1550,7 +1550,7 @@ class WebhookApi
      * Search the events of a manufacturer using a poll api call
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\HiveEvent|null $event_type Type of event to query for (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\HiveEvent|null $event_type Type of event to query for (optional)
      * @param  string|null $event_group The groups of events (optional)
      * @param  string|null $date_occurred_after Return all events that occured after a specific date (optional)
      * @param  string|null $target_integration_name Return all events for a specific integration (optional)
@@ -1558,9 +1558,9 @@ class WebhookApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerEvents'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetManufacturerEventsResponse
+     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturerEventsResponse
      */
     public function getManufacturerEvents($manufacturer_id, $event_type = null, $event_group = null, $date_occurred_after = null, $target_integration_name = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerEvents'][0])
     {
@@ -1574,7 +1574,7 @@ class WebhookApi
      * Search the events of a manufacturer using a poll api call
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\HiveEvent|null $event_type Type of event to query for (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\HiveEvent|null $event_type Type of event to query for (optional)
      * @param  string|null $event_group The groups of events (optional)
      * @param  string|null $date_occurred_after Return all events that occured after a specific date (optional)
      * @param  string|null $target_integration_name Return all events for a specific integration (optional)
@@ -1582,9 +1582,9 @@ class WebhookApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerEvents'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturerEventsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturerEventsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerEventsWithHttpInfo($manufacturer_id, $event_type = null, $event_group = null, $date_occurred_after = null, $target_integration_name = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerEvents'][0])
     {
@@ -1616,7 +1616,7 @@ class WebhookApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerEventsResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerEventsResponse',
                         $request,
                         $response,
                     );
@@ -1638,7 +1638,7 @@ class WebhookApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetManufacturerEventsResponse',
+                '\HiveCpq\\Client\\Generated\Model\GetManufacturerEventsResponse',
                 $request,
                 $response,
             );
@@ -1647,7 +1647,7 @@ class WebhookApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerEventsResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1665,7 +1665,7 @@ class WebhookApi
      * Search the events of a manufacturer using a poll api call
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\HiveEvent|null $event_type Type of event to query for (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\HiveEvent|null $event_type Type of event to query for (optional)
      * @param  string|null $event_group The groups of events (optional)
      * @param  string|null $date_occurred_after Return all events that occured after a specific date (optional)
      * @param  string|null $target_integration_name Return all events for a specific integration (optional)
@@ -1692,7 +1692,7 @@ class WebhookApi
      * Search the events of a manufacturer using a poll api call
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\HiveEvent|null $event_type Type of event to query for (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\HiveEvent|null $event_type Type of event to query for (optional)
      * @param  string|null $event_group The groups of events (optional)
      * @param  string|null $date_occurred_after Return all events that occured after a specific date (optional)
      * @param  string|null $target_integration_name Return all events for a specific integration (optional)
@@ -1705,7 +1705,7 @@ class WebhookApi
      */
     public function getManufacturerEventsAsyncWithHttpInfo($manufacturer_id, $event_type = null, $event_group = null, $date_occurred_after = null, $target_integration_name = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerEvents'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturerEventsResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturerEventsResponse';
         $request = $this->getManufacturerEventsRequest($manufacturer_id, $event_type, $event_group, $date_occurred_after, $target_integration_name, $page, $page_size, $contentType);
 
         return $this->client
@@ -1748,7 +1748,7 @@ class WebhookApi
      * Create request for operation 'getManufacturerEvents'
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\HiveEvent|null $event_type Type of event to query for (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\HiveEvent|null $event_type Type of event to query for (optional)
      * @param  string|null $event_group The groups of events (optional)
      * @param  string|null $date_occurred_after Return all events that occured after a specific date (optional)
      * @param  string|null $target_integration_name Return all events for a specific integration (optional)
@@ -1915,9 +1915,9 @@ class WebhookApi
      * @param  string $webhook_id The hive id of the webhook (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerWebhook'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetWebhook
+     * @return \HiveCpq\\Client\\Generated\Model\GetWebhook
      */
     public function getManufacturerWebhook($manufacturer_id, $webhook_id, string $contentType = self::contentTypes['getManufacturerWebhook'][0])
     {
@@ -1934,9 +1934,9 @@ class WebhookApi
      * @param  string $webhook_id The hive id of the webhook (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerWebhook'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetWebhook, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetWebhook, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerWebhookWithHttpInfo($manufacturer_id, $webhook_id, string $contentType = self::contentTypes['getManufacturerWebhook'][0])
     {
@@ -1968,7 +1968,7 @@ class WebhookApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetWebhook',
+                        '\HiveCpq\\Client\\Generated\Model\GetWebhook',
                         $request,
                         $response,
                     );
@@ -1990,7 +1990,7 @@ class WebhookApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetWebhook',
+                '\HiveCpq\\Client\\Generated\Model\GetWebhook',
                 $request,
                 $response,
             );
@@ -1999,7 +1999,7 @@ class WebhookApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetWebhook',
+                        '\HiveCpq\\Client\\Generated\Model\GetWebhook',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2047,7 +2047,7 @@ class WebhookApi
      */
     public function getManufacturerWebhookAsyncWithHttpInfo($manufacturer_id, $webhook_id, string $contentType = self::contentTypes['getManufacturerWebhook'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetWebhook';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetWebhook';
         $request = $this->getManufacturerWebhookRequest($manufacturer_id, $webhook_id, $contentType);
 
         return $this->client
@@ -2207,9 +2207,9 @@ class WebhookApi
      * @param  string $webhook_id The hive id of the webhook (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerWebhookHeaders'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetWebhookHeadersResponse
+     * @return \HiveCpq\\Client\\Generated\Model\GetWebhookHeadersResponse
      */
     public function getManufacturerWebhookHeaders($manufacturer_id, $webhook_id, string $contentType = self::contentTypes['getManufacturerWebhookHeaders'][0])
     {
@@ -2226,9 +2226,9 @@ class WebhookApi
      * @param  string $webhook_id The hive id of the webhook (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerWebhookHeaders'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetWebhookHeadersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetWebhookHeadersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerWebhookHeadersWithHttpInfo($manufacturer_id, $webhook_id, string $contentType = self::contentTypes['getManufacturerWebhookHeaders'][0])
     {
@@ -2260,7 +2260,7 @@ class WebhookApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetWebhookHeadersResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetWebhookHeadersResponse',
                         $request,
                         $response,
                     );
@@ -2282,7 +2282,7 @@ class WebhookApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetWebhookHeadersResponse',
+                '\HiveCpq\\Client\\Generated\Model\GetWebhookHeadersResponse',
                 $request,
                 $response,
             );
@@ -2291,7 +2291,7 @@ class WebhookApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetWebhookHeadersResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetWebhookHeadersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2339,7 +2339,7 @@ class WebhookApi
      */
     public function getManufacturerWebhookHeadersAsyncWithHttpInfo($manufacturer_id, $webhook_id, string $contentType = self::contentTypes['getManufacturerWebhookHeaders'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetWebhookHeadersResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetWebhookHeadersResponse';
         $request = $this->getManufacturerWebhookHeadersRequest($manufacturer_id, $webhook_id, $contentType);
 
         return $this->client
@@ -2502,9 +2502,9 @@ class WebhookApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerWebhookTriggers'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetWebhookTriggersResponse
+     * @return \HiveCpq\\Client\\Generated\Model\GetWebhookTriggersResponse
      */
     public function getManufacturerWebhookTriggers($manufacturer_id, $webhook_id, $language = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerWebhookTriggers'][0])
     {
@@ -2524,9 +2524,9 @@ class WebhookApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerWebhookTriggers'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetWebhookTriggersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetWebhookTriggersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerWebhookTriggersWithHttpInfo($manufacturer_id, $webhook_id, $language = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerWebhookTriggers'][0])
     {
@@ -2558,7 +2558,7 @@ class WebhookApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetWebhookTriggersResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetWebhookTriggersResponse',
                         $request,
                         $response,
                     );
@@ -2580,7 +2580,7 @@ class WebhookApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetWebhookTriggersResponse',
+                '\HiveCpq\\Client\\Generated\Model\GetWebhookTriggersResponse',
                 $request,
                 $response,
             );
@@ -2589,7 +2589,7 @@ class WebhookApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetWebhookTriggersResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetWebhookTriggersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2643,7 +2643,7 @@ class WebhookApi
      */
     public function getManufacturerWebhookTriggersAsyncWithHttpInfo($manufacturer_id, $webhook_id, $language = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerWebhookTriggers'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetWebhookTriggersResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetWebhookTriggersResponse';
         $request = $this->getManufacturerWebhookTriggersRequest($manufacturer_id, $webhook_id, $language, $page, $page_size, $contentType);
 
         return $this->client
@@ -2838,9 +2838,9 @@ class WebhookApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerWebhooks'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetManufacturerWebhookReponse
+     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturerWebhookReponse
      */
     public function getManufacturerWebhooks($manufacturer_id, $language = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerWebhooks'][0])
     {
@@ -2859,9 +2859,9 @@ class WebhookApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerWebhooks'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturerWebhookReponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturerWebhookReponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerWebhooksWithHttpInfo($manufacturer_id, $language = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerWebhooks'][0])
     {
@@ -2893,7 +2893,7 @@ class WebhookApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerWebhookReponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerWebhookReponse',
                         $request,
                         $response,
                     );
@@ -2915,7 +2915,7 @@ class WebhookApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetManufacturerWebhookReponse',
+                '\HiveCpq\\Client\\Generated\Model\GetManufacturerWebhookReponse',
                 $request,
                 $response,
             );
@@ -2924,7 +2924,7 @@ class WebhookApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerWebhookReponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerWebhookReponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2976,7 +2976,7 @@ class WebhookApi
      */
     public function getManufacturerWebhooksAsyncWithHttpInfo($manufacturer_id, $language = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerWebhooks'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturerWebhookReponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturerWebhookReponse';
         $request = $this->getManufacturerWebhooksRequest($manufacturer_id, $language, $page, $page_size, $contentType);
 
         return $this->client
@@ -3153,9 +3153,9 @@ class WebhookApi
      * @param  string $webhook_id The hive id of the webhook (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Response
+     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Response
      */
     public function getManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions($manufacturer_id, $webhook_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions'][0])
     {
@@ -3172,9 +3172,9 @@ class WebhookApi
      * @param  string $webhook_id The hive id of the webhook (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptionsWithHttpInfo($manufacturer_id, $webhook_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions'][0])
     {
@@ -3206,7 +3206,7 @@ class WebhookApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Response',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Response',
                         $request,
                         $response,
                     );
@@ -3228,7 +3228,7 @@ class WebhookApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Response',
+                '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Response',
                 $request,
                 $response,
             );
@@ -3237,7 +3237,7 @@ class WebhookApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Response',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3285,7 +3285,7 @@ class WebhookApi
      */
     public function getManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptionsAsyncWithHttpInfo($manufacturer_id, $webhook_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Response';
         $request = $this->getManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptionsRequest($manufacturer_id, $webhook_id, $contentType);
 
         return $this->client
@@ -3446,9 +3446,9 @@ class WebhookApi
      * @param  string $webhook_trigger_id the hive id of the trigger (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetSingleWebhookTrigger
+     * @return \HiveCpq\\Client\\Generated\Model\GetSingleWebhookTrigger
      */
     public function getManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerId($manufacturer_id, $webhook_id, $webhook_trigger_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerId'][0])
     {
@@ -3466,9 +3466,9 @@ class WebhookApi
      * @param  string $webhook_trigger_id the hive id of the trigger (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetSingleWebhookTrigger, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetSingleWebhookTrigger, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerIdWithHttpInfo($manufacturer_id, $webhook_id, $webhook_trigger_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerId'][0])
     {
@@ -3500,7 +3500,7 @@ class WebhookApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetSingleWebhookTrigger',
+                        '\HiveCpq\\Client\\Generated\Model\GetSingleWebhookTrigger',
                         $request,
                         $response,
                     );
@@ -3522,7 +3522,7 @@ class WebhookApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetSingleWebhookTrigger',
+                '\HiveCpq\\Client\\Generated\Model\GetSingleWebhookTrigger',
                 $request,
                 $response,
             );
@@ -3531,7 +3531,7 @@ class WebhookApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetSingleWebhookTrigger',
+                        '\HiveCpq\\Client\\Generated\Model\GetSingleWebhookTrigger',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3581,7 +3581,7 @@ class WebhookApi
      */
     public function getManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerIdAsyncWithHttpInfo($manufacturer_id, $webhook_id, $webhook_trigger_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerId'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetSingleWebhookTrigger';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetSingleWebhookTrigger';
         $request = $this->getManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerIdRequest($manufacturer_id, $webhook_id, $webhook_trigger_id, $contentType);
 
         return $this->client
@@ -3754,10 +3754,10 @@ class WebhookApi
      * Add a new webhook
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhook|null $post_webhook post_webhook (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhook|null $post_webhook post_webhook (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerWebhook'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3772,10 +3772,10 @@ class WebhookApi
      * Add a new webhook
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhook|null $post_webhook (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhook|null $post_webhook (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerWebhook'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3822,7 +3822,7 @@ class WebhookApi
      * Add a new webhook
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhook|null $post_webhook (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhook|null $post_webhook (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerWebhook'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3844,7 +3844,7 @@ class WebhookApi
      * Add a new webhook
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhook|null $post_webhook (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhook|null $post_webhook (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerWebhook'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3882,7 +3882,7 @@ class WebhookApi
      * Create request for operation 'postManufacturerWebhook'
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostWebhook|null $post_webhook (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostWebhook|null $post_webhook (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerWebhook'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3990,10 +3990,10 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\HiveEvent[]|null $hive_event Set the event subscriptions (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\HiveEvent[]|null $hive_event Set the event subscriptions (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postSetManufacturerWebhookEventSubscriptions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4009,10 +4009,10 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\HiveEvent[]|null $hive_event Set the event subscriptions (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\HiveEvent[]|null $hive_event Set the event subscriptions (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postSetManufacturerWebhookEventSubscriptions'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4060,7 +4060,7 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\HiveEvent[]|null $hive_event Set the event subscriptions (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\HiveEvent[]|null $hive_event Set the event subscriptions (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postSetManufacturerWebhookEventSubscriptions'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4083,7 +4083,7 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\HiveEvent[]|null $hive_event Set the event subscriptions (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\HiveEvent[]|null $hive_event Set the event subscriptions (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postSetManufacturerWebhookEventSubscriptions'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4122,7 +4122,7 @@ class WebhookApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
-     * @param  \HiveCpq\Client\Generated\Model\HiveEvent[]|null $hive_event Set the event subscriptions (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\HiveEvent[]|null $hive_event Set the event subscriptions (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postSetManufacturerWebhookEventSubscriptions'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4246,10 +4246,10 @@ class WebhookApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
      * @param  string $webhook_trigger_id the hive id of the trigger (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutWebhookTrigger|null $put_webhook_trigger put_webhook_trigger (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutWebhookTrigger|null $put_webhook_trigger put_webhook_trigger (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4266,10 +4266,10 @@ class WebhookApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
      * @param  string $webhook_trigger_id the hive id of the trigger (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutWebhookTrigger|null $put_webhook_trigger (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutWebhookTrigger|null $put_webhook_trigger (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4318,7 +4318,7 @@ class WebhookApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
      * @param  string $webhook_trigger_id the hive id of the trigger (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutWebhookTrigger|null $put_webhook_trigger (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutWebhookTrigger|null $put_webhook_trigger (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4342,7 +4342,7 @@ class WebhookApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
      * @param  string $webhook_trigger_id the hive id of the trigger (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutWebhookTrigger|null $put_webhook_trigger (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutWebhookTrigger|null $put_webhook_trigger (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4382,7 +4382,7 @@ class WebhookApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $webhook_id The hive id of the webhook (required)
      * @param  string $webhook_trigger_id the hive id of the trigger (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutWebhookTrigger|null $put_webhook_trigger (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutWebhookTrigger|null $put_webhook_trigger (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdWebhooksWebhookIdTriggersWebhookTriggerId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

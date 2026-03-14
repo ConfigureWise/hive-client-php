@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * ProjectSellTo Class Doc Comment
  *
  * @category Class
  * @description Contact and/or Company the project will be sold to
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class ProjectSellTo implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'company' => '\HiveCpq\Client\Generated\Model\CompanyLink',
-        'contact' => '\HiveCpq\Client\Generated\Model\ContactLink'
+        'company' => '\HiveCpq\\Client\\Generated\Model\CompanyLink',
+        'contact' => '\HiveCpq\\Client\\Generated\Model\ContactLink'
     ];
 
     /**
@@ -301,7 +301,7 @@ class ProjectSellTo implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets company
      *
-     * @return \HiveCpq\Client\Generated\Model\CompanyLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\CompanyLink|null
      */
     public function getCompany()
     {
@@ -311,7 +311,7 @@ class ProjectSellTo implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets company
      *
-     * @param \HiveCpq\Client\Generated\Model\CompanyLink|null $company company
+     * @param \HiveCpq\\Client\\Generated\Model\CompanyLink|null $company company
      *
      * @return self
      */
@@ -328,7 +328,7 @@ class ProjectSellTo implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets contact
      *
-     * @return \HiveCpq\Client\Generated\Model\ContactLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\ContactLink|null
      */
     public function getContact()
     {
@@ -338,7 +338,7 @@ class ProjectSellTo implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets contact
      *
-     * @param \HiveCpq\Client\Generated\Model\ContactLink|null $contact contact
+     * @param \HiveCpq\\Client\\Generated\Model\ContactLink|null $contact contact
      *
      * @return self
      */

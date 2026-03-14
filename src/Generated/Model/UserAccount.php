@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * UserAccount Class Doc Comment
  *
  * @category Class
  * @description A user account refers to the account the user recieves when connecting to Hive e.g. by claiming an invite. A user account can be linked to multiple manufacturers.
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class UserAccount implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'contacts' => '\HiveCpq\Client\Generated\Model\ContactLink[]',
+        'contacts' => '\HiveCpq\\Client\\Generated\Model\ContactLink[]',
         'last_active_at' => 'string'
     ];
 
@@ -335,7 +335,7 @@ class UserAccount implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets contacts
      *
-     * @return \HiveCpq\Client\Generated\Model\ContactLink[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\ContactLink[]|null
      */
     public function getContacts()
     {
@@ -345,7 +345,7 @@ class UserAccount implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets contacts
      *
-     * @param \HiveCpq\Client\Generated\Model\ContactLink[]|null $contacts List of contacts lined to multiple manufacturers
+     * @param \HiveCpq\\Client\\Generated\Model\ContactLink[]|null $contacts List of contacts lined to multiple manufacturers
      *
      * @return self
      */

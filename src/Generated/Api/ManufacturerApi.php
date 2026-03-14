@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Api;
+namespace HiveCpq\\Client\\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\Client\Generated\ApiException;
-use HiveCpq\Client\Generated\Configuration;
-use HiveCpq\Client\Generated\FormDataProcessor;
-use HiveCpq\Client\Generated\HeaderSelector;
-use HiveCpq\Client\Generated\ObjectSerializer;
+use HiveCpq\\Client\\Generated\ApiException;
+use HiveCpq\\Client\\Generated\Configuration;
+use HiveCpq\\Client\\Generated\FormDataProcessor;
+use HiveCpq\\Client\\Generated\HeaderSelector;
+use HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * ManufacturerApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -133,9 +133,9 @@ class ManufacturerApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersList'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetManufacturersList200Response
+     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturersList200Response
      */
     public function getManufacturersList(string $contentType = self::contentTypes['getManufacturersList'][0])
     {
@@ -150,9 +150,9 @@ class ManufacturerApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersList'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturersList200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturersList200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersListWithHttpInfo(string $contentType = self::contentTypes['getManufacturersList'][0])
     {
@@ -184,7 +184,7 @@ class ManufacturerApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetManufacturersList200Response',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturersList200Response',
                         $request,
                         $response,
                     );
@@ -206,7 +206,7 @@ class ManufacturerApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetManufacturersList200Response',
+                '\HiveCpq\\Client\\Generated\Model\GetManufacturersList200Response',
                 $request,
                 $response,
             );
@@ -215,7 +215,7 @@ class ManufacturerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetManufacturersList200Response',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturersList200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -259,7 +259,7 @@ class ManufacturerApi
      */
     public function getManufacturersListAsyncWithHttpInfo(string $contentType = self::contentTypes['getManufacturersList'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturersList200Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturersList200Response';
         $request = $this->getManufacturersListRequest($contentType);
 
         return $this->client

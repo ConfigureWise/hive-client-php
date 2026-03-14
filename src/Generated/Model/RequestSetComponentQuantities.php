@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * RequestSetComponentQuantities Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class RequestSetComponentQuantities implements ModelInterface, ArrayAccess, \Jso
       */
     protected static $openAPITypes = [
         'integrated_system_name' => 'string',
-        'quantities' => '\HiveCpq\Client\Generated\Model\RequestComponentQuantity[]'
+        'quantities' => '\HiveCpq\\Client\\Generated\Model\RequestComponentQuantity[]'
     ];
 
     /**
@@ -330,7 +330,7 @@ class RequestSetComponentQuantities implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets quantities
      *
-     * @return \HiveCpq\Client\Generated\Model\RequestComponentQuantity[]
+     * @return \HiveCpq\\Client\\Generated\Model\RequestComponentQuantity[]
      */
     public function getQuantities()
     {
@@ -340,7 +340,7 @@ class RequestSetComponentQuantities implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets quantities
      *
-     * @param \HiveCpq\Client\Generated\Model\RequestComponentQuantity[] $quantities A set of quantities. To clear existing values specify an empty list.
+     * @param \HiveCpq\\Client\\Generated\Model\RequestComponentQuantity[] $quantities A set of quantities. To clear existing values specify an empty list.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PutDistributorContact Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class PutDistributorContact implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'info' => '\HiveCpq\Client\Generated\Model\PostContactDistributorInfo',
-        'address' => '\HiveCpq\Client\Generated\Model\Address',
-        'sales_conditions' => '\HiveCpq\Client\Generated\Model\GetContactDistributorSalesConditions'
+        'info' => '\HiveCpq\\Client\\Generated\Model\PostContactDistributorInfo',
+        'address' => '\HiveCpq\\Client\\Generated\Model\Address',
+        'sales_conditions' => '\HiveCpq\\Client\\Generated\Model\GetContactDistributorSalesConditions'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PutDistributorContact implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets info
      *
-     * @return \HiveCpq\Client\Generated\Model\PostContactDistributorInfo|null
+     * @return \HiveCpq\\Client\\Generated\Model\PostContactDistributorInfo|null
      */
     public function getInfo()
     {
@@ -317,7 +317,7 @@ class PutDistributorContact implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets info
      *
-     * @param \HiveCpq\Client\Generated\Model\PostContactDistributorInfo|null $info info
+     * @param \HiveCpq\\Client\\Generated\Model\PostContactDistributorInfo|null $info info
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class PutDistributorContact implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets address
      *
-     * @return \HiveCpq\Client\Generated\Model\Address|null
+     * @return \HiveCpq\\Client\\Generated\Model\Address|null
      */
     public function getAddress()
     {
@@ -344,7 +344,7 @@ class PutDistributorContact implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets address
      *
-     * @param \HiveCpq\Client\Generated\Model\Address|null $address address
+     * @param \HiveCpq\\Client\\Generated\Model\Address|null $address address
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class PutDistributorContact implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets sales_conditions
      *
-     * @return \HiveCpq\Client\Generated\Model\GetContactDistributorSalesConditions|null
+     * @return \HiveCpq\\Client\\Generated\Model\GetContactDistributorSalesConditions|null
      */
     public function getSalesConditions()
     {
@@ -371,7 +371,7 @@ class PutDistributorContact implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets sales_conditions
      *
-     * @param \HiveCpq\Client\Generated\Model\GetContactDistributorSalesConditions|null $sales_conditions sales_conditions
+     * @param \HiveCpq\\Client\\Generated\Model\GetContactDistributorSalesConditions|null $sales_conditions sales_conditions
      *
      * @return self
      */

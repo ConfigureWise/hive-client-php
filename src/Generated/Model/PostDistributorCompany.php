@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PostDistributorCompany Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class PostDistributorCompany implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'info' => '\HiveCpq\Client\Generated\Model\PostDistributorCompanyInfo',
-        'address' => '\HiveCpq\Client\Generated\Model\Address',
-        'integrated_system_link' => '\HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink'
+        'info' => '\HiveCpq\\Client\\Generated\Model\PostDistributorCompanyInfo',
+        'address' => '\HiveCpq\\Client\\Generated\Model\Address',
+        'integrated_system_link' => '\HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostDistributorCompany implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets info
      *
-     * @return \HiveCpq\Client\Generated\Model\PostDistributorCompanyInfo|null
+     * @return \HiveCpq\\Client\\Generated\Model\PostDistributorCompanyInfo|null
      */
     public function getInfo()
     {
@@ -317,7 +317,7 @@ class PostDistributorCompany implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets info
      *
-     * @param \HiveCpq\Client\Generated\Model\PostDistributorCompanyInfo|null $info info
+     * @param \HiveCpq\\Client\\Generated\Model\PostDistributorCompanyInfo|null $info info
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class PostDistributorCompany implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets address
      *
-     * @return \HiveCpq\Client\Generated\Model\Address|null
+     * @return \HiveCpq\\Client\\Generated\Model\Address|null
      */
     public function getAddress()
     {
@@ -344,7 +344,7 @@ class PostDistributorCompany implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets address
      *
-     * @param \HiveCpq\Client\Generated\Model\Address|null $address address
+     * @param \HiveCpq\\Client\\Generated\Model\Address|null $address address
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class PostDistributorCompany implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets integrated_system_link
      *
-     * @return \HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink|null
      */
     public function getIntegratedSystemLink()
     {
@@ -371,7 +371,7 @@ class PostDistributorCompany implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets integrated_system_link
      *
-     * @param \HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink|null $integrated_system_link integrated_system_link
+     * @param \HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink|null $integrated_system_link integrated_system_link
      *
      * @return self
      */

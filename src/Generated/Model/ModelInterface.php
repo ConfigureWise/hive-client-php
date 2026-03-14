@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated\Model
+ * @package  HiveCpq\\Client\\Generated\Model
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package HiveCpq\Client\Generated\Model
+ * @package HiveCpq\\Client\\Generated\Model
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * GetContactDistributor Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,12 +59,12 @@ class GetContactDistributor implements ModelInterface, ArrayAccess, \JsonSeriali
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'info' => '\HiveCpq\Client\Generated\Model\GetContactDistributorInfo',
-        'address' => '\HiveCpq\Client\Generated\Model\Address',
-        'sales_conditions' => '\HiveCpq\Client\Generated\Model\GetContactDistributorSalesConditions',
-        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
-        'account' => '\HiveCpq\Client\Generated\Model\GetContactDistributorAccount',
-        'audit' => '\HiveCpq\Client\Generated\Model\Audit'
+        'info' => '\HiveCpq\\Client\\Generated\Model\GetContactDistributorInfo',
+        'address' => '\HiveCpq\\Client\\Generated\Model\Address',
+        'sales_conditions' => '\HiveCpq\\Client\\Generated\Model\GetContactDistributorSalesConditions',
+        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
+        'account' => '\HiveCpq\\Client\\Generated\Model\GetContactDistributorAccount',
+        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit'
     ];
 
     /**
@@ -362,7 +362,7 @@ class GetContactDistributor implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets info
      *
-     * @return \HiveCpq\Client\Generated\Model\GetContactDistributorInfo|null
+     * @return \HiveCpq\\Client\\Generated\Model\GetContactDistributorInfo|null
      */
     public function getInfo()
     {
@@ -372,7 +372,7 @@ class GetContactDistributor implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets info
      *
-     * @param \HiveCpq\Client\Generated\Model\GetContactDistributorInfo|null $info info
+     * @param \HiveCpq\\Client\\Generated\Model\GetContactDistributorInfo|null $info info
      *
      * @return self
      */
@@ -389,7 +389,7 @@ class GetContactDistributor implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets address
      *
-     * @return \HiveCpq\Client\Generated\Model\Address|null
+     * @return \HiveCpq\\Client\\Generated\Model\Address|null
      */
     public function getAddress()
     {
@@ -399,7 +399,7 @@ class GetContactDistributor implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets address
      *
-     * @param \HiveCpq\Client\Generated\Model\Address|null $address address
+     * @param \HiveCpq\\Client\\Generated\Model\Address|null $address address
      *
      * @return self
      */
@@ -416,7 +416,7 @@ class GetContactDistributor implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets sales_conditions
      *
-     * @return \HiveCpq\Client\Generated\Model\GetContactDistributorSalesConditions|null
+     * @return \HiveCpq\\Client\\Generated\Model\GetContactDistributorSalesConditions|null
      */
     public function getSalesConditions()
     {
@@ -426,7 +426,7 @@ class GetContactDistributor implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets sales_conditions
      *
-     * @param \HiveCpq\Client\Generated\Model\GetContactDistributorSalesConditions|null $sales_conditions sales_conditions
+     * @param \HiveCpq\\Client\\Generated\Model\GetContactDistributorSalesConditions|null $sales_conditions sales_conditions
      *
      * @return self
      */
@@ -443,7 +443,7 @@ class GetContactDistributor implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -453,7 +453,7 @@ class GetContactDistributor implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -470,7 +470,7 @@ class GetContactDistributor implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets account
      *
-     * @return \HiveCpq\Client\Generated\Model\GetContactDistributorAccount|null
+     * @return \HiveCpq\\Client\\Generated\Model\GetContactDistributorAccount|null
      */
     public function getAccount()
     {
@@ -480,7 +480,7 @@ class GetContactDistributor implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets account
      *
-     * @param \HiveCpq\Client\Generated\Model\GetContactDistributorAccount|null $account account
+     * @param \HiveCpq\\Client\\Generated\Model\GetContactDistributorAccount|null $account account
      *
      * @return self
      */
@@ -497,7 +497,7 @@ class GetContactDistributor implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets audit
      *
-     * @return \HiveCpq\Client\Generated\Model\Audit|null
+     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -507,7 +507,7 @@ class GetContactDistributor implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets audit
      *
-     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */

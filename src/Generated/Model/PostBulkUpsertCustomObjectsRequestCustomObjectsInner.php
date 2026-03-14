@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PostBulkUpsertCustomObjectsRequestCustomObjectsInner Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class PostBulkUpsertCustomObjectsRequestCustomObjectsInner implements ModelInter
     protected static $openAPITypes = [
         'item_id' => 'string',
         'object_key' => 'string',
-        'key_values' => '\HiveCpq\Client\Generated\Model\CustomObjectKeyValuePair[]'
+        'key_values' => '\HiveCpq\\Client\\Generated\Model\CustomObjectKeyValuePair[]'
     ];
 
     /**
@@ -367,7 +367,7 @@ class PostBulkUpsertCustomObjectsRequestCustomObjectsInner implements ModelInter
     /**
      * Gets key_values
      *
-     * @return \HiveCpq\Client\Generated\Model\CustomObjectKeyValuePair[]
+     * @return \HiveCpq\\Client\\Generated\Model\CustomObjectKeyValuePair[]
      */
     public function getKeyValues()
     {
@@ -377,7 +377,7 @@ class PostBulkUpsertCustomObjectsRequestCustomObjectsInner implements ModelInter
     /**
      * Sets key_values
      *
-     * @param \HiveCpq\Client\Generated\Model\CustomObjectKeyValuePair[] $key_values key_values
+     * @param \HiveCpq\\Client\\Generated\Model\CustomObjectKeyValuePair[] $key_values key_values
      *
      * @return self
      */

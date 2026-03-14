@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PostBulkUpsertFeaturesRequest Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PostBulkUpsertFeaturesRequest implements ModelInterface, ArrayAccess, \Jso
       */
     protected static $openAPITypes = [
         'integrated_system_name' => 'string',
-        'features' => '\HiveCpq\Client\Generated\Model\PostBulkUpsertFeaturesRequestFeaturesInner[]'
+        'features' => '\HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeaturesRequestFeaturesInner[]'
     ];
 
     /**
@@ -334,7 +334,7 @@ class PostBulkUpsertFeaturesRequest implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets features
      *
-     * @return \HiveCpq\Client\Generated\Model\PostBulkUpsertFeaturesRequestFeaturesInner[]
+     * @return \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeaturesRequestFeaturesInner[]
      */
     public function getFeatures()
     {
@@ -344,7 +344,7 @@ class PostBulkUpsertFeaturesRequest implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets features
      *
-     * @param \HiveCpq\Client\Generated\Model\PostBulkUpsertFeaturesRequestFeaturesInner[] $features features
+     * @param \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeaturesRequestFeaturesInner[] $features features
      *
      * @return self
      */

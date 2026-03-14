@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Api;
+namespace HiveCpq\\Client\\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\Client\Generated\ApiException;
-use HiveCpq\Client\Generated\Configuration;
-use HiveCpq\Client\Generated\FormDataProcessor;
-use HiveCpq\Client\Generated\HeaderSelector;
-use HiveCpq\Client\Generated\ObjectSerializer;
+use HiveCpq\\Client\\Generated\ApiException;
+use HiveCpq\\Client\\Generated\Configuration;
+use HiveCpq\\Client\\Generated\FormDataProcessor;
+use HiveCpq\\Client\\Generated\HeaderSelector;
+use HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * CompanyApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -181,7 +181,7 @@ class CompanyApi
      * @param  string $distributor_id The id of the distributor (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersDistributorAccount'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -200,7 +200,7 @@ class CompanyApi
      * @param  string $distributor_id The id of the distributor (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersDistributorAccount'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -442,7 +442,7 @@ class CompanyApi
      * @param  string $company_id ID of the company you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersManufacturerIdCompaniesCompanyId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -460,7 +460,7 @@ class CompanyApi
      * @param  string $company_id ID of the company you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersManufacturerIdCompaniesCompanyId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -685,7 +685,7 @@ class CompanyApi
      * @param  string $default_address_id default_address_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -704,7 +704,7 @@ class CompanyApi
      * @param  string $default_address_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -952,9 +952,9 @@ class CompanyApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerCompanies'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetManufacturerCompanies200Response
+     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturerCompanies200Response
      */
     public function getManufacturerCompanies($manufacturer_id, $integrated_system_name = null, $integrated_system_ids_in = null, $ids_in = null, $name = null, $include_archived = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerCompanies'][0])
     {
@@ -977,9 +977,9 @@ class CompanyApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerCompanies'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturerCompanies200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturerCompanies200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerCompaniesWithHttpInfo($manufacturer_id, $integrated_system_name = null, $integrated_system_ids_in = null, $ids_in = null, $name = null, $include_archived = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerCompanies'][0])
     {
@@ -1011,7 +1011,7 @@ class CompanyApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerCompanies200Response',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerCompanies200Response',
                         $request,
                         $response,
                     );
@@ -1033,7 +1033,7 @@ class CompanyApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetManufacturerCompanies200Response',
+                '\HiveCpq\\Client\\Generated\Model\GetManufacturerCompanies200Response',
                 $request,
                 $response,
             );
@@ -1042,7 +1042,7 @@ class CompanyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerCompanies200Response',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerCompanies200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1102,7 +1102,7 @@ class CompanyApi
      */
     public function getManufacturerCompaniesAsyncWithHttpInfo($manufacturer_id, $integrated_system_name = null, $integrated_system_ids_in = null, $ids_in = null, $name = null, $include_archived = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerCompanies'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturerCompanies200Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturerCompanies200Response';
         $request = $this->getManufacturerCompaniesRequest($manufacturer_id, $integrated_system_name, $integrated_system_ids_in, $ids_in, $name, $include_archived, $page, $page_size, $contentType);
 
         return $this->client
@@ -1328,9 +1328,9 @@ class CompanyApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerDistributorAccounts'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetDistributorCompaniesResponse
+     * @return \HiveCpq\\Client\\Generated\Model\GetDistributorCompaniesResponse
      */
     public function getManufacturerDistributorAccounts($manufacturer_id, $distributor_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerDistributorAccounts'][0])
     {
@@ -1352,9 +1352,9 @@ class CompanyApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerDistributorAccounts'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetDistributorCompaniesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetDistributorCompaniesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerDistributorAccountsWithHttpInfo($manufacturer_id, $distributor_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerDistributorAccounts'][0])
     {
@@ -1386,7 +1386,7 @@ class CompanyApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetDistributorCompaniesResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetDistributorCompaniesResponse',
                         $request,
                         $response,
                     );
@@ -1408,7 +1408,7 @@ class CompanyApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetDistributorCompaniesResponse',
+                '\HiveCpq\\Client\\Generated\Model\GetDistributorCompaniesResponse',
                 $request,
                 $response,
             );
@@ -1417,7 +1417,7 @@ class CompanyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetDistributorCompaniesResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetDistributorCompaniesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1475,7 +1475,7 @@ class CompanyApi
      */
     public function getManufacturerDistributorAccountsAsyncWithHttpInfo($manufacturer_id, $distributor_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerDistributorAccounts'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetDistributorCompaniesResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetDistributorCompaniesResponse';
         $request = $this->getManufacturerDistributorAccountsRequest($manufacturer_id, $distributor_id, $ids_in, $integrated_system_name, $integrated_system_ids_in, $page, $page_size, $contentType);
 
         return $this->client
@@ -1690,9 +1690,9 @@ class CompanyApi
      * @param  string $company_id ID of the company you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\ResponseGetCompany
+     * @return \HiveCpq\\Client\\Generated\Model\ResponseGetCompany
      */
     public function getManufacturersManufacturerIdCompaniesCompanyId($manufacturer_id, $company_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyId'][0])
     {
@@ -1709,9 +1709,9 @@ class CompanyApi
      * @param  string $company_id ID of the company you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\ResponseGetCompany, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\ResponseGetCompany, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdCompaniesCompanyIdWithHttpInfo($manufacturer_id, $company_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyId'][0])
     {
@@ -1743,7 +1743,7 @@ class CompanyApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\ResponseGetCompany',
+                        '\HiveCpq\\Client\\Generated\Model\ResponseGetCompany',
                         $request,
                         $response,
                     );
@@ -1765,7 +1765,7 @@ class CompanyApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\ResponseGetCompany',
+                '\HiveCpq\\Client\\Generated\Model\ResponseGetCompany',
                 $request,
                 $response,
             );
@@ -1774,7 +1774,7 @@ class CompanyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\ResponseGetCompany',
+                        '\HiveCpq\\Client\\Generated\Model\ResponseGetCompany',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1822,7 +1822,7 @@ class CompanyApi
      */
     public function getManufacturersManufacturerIdCompaniesCompanyIdAsyncWithHttpInfo($manufacturer_id, $company_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyId'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\ResponseGetCompany';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\ResponseGetCompany';
         $request = $this->getManufacturersManufacturerIdCompaniesCompanyIdRequest($manufacturer_id, $company_id, $contentType);
 
         return $this->client
@@ -1984,9 +1984,9 @@ class CompanyApi
      * @param  string[]|null $integrated_system_ids_in Filter on the integrated system ID of the items. This must be used together with the integrated system name filter. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetCompanyDefaultAddressesResponse
+     * @return \HiveCpq\\Client\\Generated\Model\GetCompanyDefaultAddressesResponse
      */
     public function getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses($manufacturer_id, $company_id, $integrated_system_name = null, $integrated_system_ids_in = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses'][0])
     {
@@ -2005,9 +2005,9 @@ class CompanyApi
      * @param  string[]|null $integrated_system_ids_in Filter on the integrated system ID of the items. This must be used together with the integrated system name filter. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetCompanyDefaultAddressesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetCompanyDefaultAddressesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesWithHttpInfo($manufacturer_id, $company_id, $integrated_system_name = null, $integrated_system_ids_in = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses'][0])
     {
@@ -2039,7 +2039,7 @@ class CompanyApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetCompanyDefaultAddressesResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetCompanyDefaultAddressesResponse',
                         $request,
                         $response,
                     );
@@ -2061,7 +2061,7 @@ class CompanyApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetCompanyDefaultAddressesResponse',
+                '\HiveCpq\\Client\\Generated\Model\GetCompanyDefaultAddressesResponse',
                 $request,
                 $response,
             );
@@ -2070,7 +2070,7 @@ class CompanyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetCompanyDefaultAddressesResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetCompanyDefaultAddressesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2122,7 +2122,7 @@ class CompanyApi
      */
     public function getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesAsyncWithHttpInfo($manufacturer_id, $company_id, $integrated_system_name = null, $integrated_system_ids_in = null, string $contentType = self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetCompanyDefaultAddressesResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetCompanyDefaultAddressesResponse';
         $request = $this->getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesRequest($manufacturer_id, $company_id, $integrated_system_name, $integrated_system_ids_in, $contentType);
 
         return $this->client
@@ -2305,9 +2305,9 @@ class CompanyApi
      * @param  string $default_address_id default_address_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\DefaultAddress
+     * @return \HiveCpq\\Client\\Generated\Model\DefaultAddress
      */
     public function getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressId($manufacturer_id, $company_id, $default_address_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressId'][0])
     {
@@ -2325,9 +2325,9 @@ class CompanyApi
      * @param  string $default_address_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\DefaultAddress, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\DefaultAddress, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressIdWithHttpInfo($manufacturer_id, $company_id, $default_address_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressId'][0])
     {
@@ -2359,7 +2359,7 @@ class CompanyApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\DefaultAddress',
+                        '\HiveCpq\\Client\\Generated\Model\DefaultAddress',
                         $request,
                         $response,
                     );
@@ -2381,7 +2381,7 @@ class CompanyApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\DefaultAddress',
+                '\HiveCpq\\Client\\Generated\Model\DefaultAddress',
                 $request,
                 $response,
             );
@@ -2390,7 +2390,7 @@ class CompanyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\DefaultAddress',
+                        '\HiveCpq\\Client\\Generated\Model\DefaultAddress',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2440,7 +2440,7 @@ class CompanyApi
      */
     public function getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressIdAsyncWithHttpInfo($manufacturer_id, $company_id, $default_address_id, string $contentType = self::contentTypes['getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressId'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\DefaultAddress';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\DefaultAddress';
         $request = $this->getManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressIdRequest($manufacturer_id, $company_id, $default_address_id, $contentType);
 
         return $this->client
@@ -2614,12 +2614,12 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $distributor_id The id of the distributor (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostDistributorCompany|null $post_distributor_company post_distributor_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostDistributorCompany|null $post_distributor_company post_distributor_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerDistributorAccounts'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturerDistributorAccounts($manufacturer_id, $distributor_id, $post_distributor_company = null, string $contentType = self::contentTypes['postManufacturerDistributorAccounts'][0])
     {
@@ -2634,12 +2634,12 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $distributor_id The id of the distributor (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostDistributorCompany|null $post_distributor_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostDistributorCompany|null $post_distributor_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerDistributorAccounts'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturerDistributorAccountsWithHttpInfo($manufacturer_id, $distributor_id, $post_distributor_company = null, string $contentType = self::contentTypes['postManufacturerDistributorAccounts'][0])
     {
@@ -2671,7 +2671,7 @@ class CompanyApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -2693,7 +2693,7 @@ class CompanyApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -2702,7 +2702,7 @@ class CompanyApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2721,7 +2721,7 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $distributor_id The id of the distributor (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostDistributorCompany|null $post_distributor_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostDistributorCompany|null $post_distributor_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerDistributorAccounts'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2744,7 +2744,7 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $distributor_id The id of the distributor (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostDistributorCompany|null $post_distributor_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostDistributorCompany|null $post_distributor_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerDistributorAccounts'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2752,7 +2752,7 @@ class CompanyApi
      */
     public function postManufacturerDistributorAccountsAsyncWithHttpInfo($manufacturer_id, $distributor_id, $post_distributor_company = null, string $contentType = self::contentTypes['postManufacturerDistributorAccounts'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturerDistributorAccountsRequest($manufacturer_id, $distributor_id, $post_distributor_company, $contentType);
 
         return $this->client
@@ -2796,7 +2796,7 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $distributor_id The id of the distributor (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostDistributorCompany|null $post_distributor_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostDistributorCompany|null $post_distributor_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerDistributorAccounts'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2918,12 +2918,12 @@ class CompanyApi
      * Add a new company
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersCompanyRequest|null $post_manufacturers_company_request post_manufacturers_company_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersCompanyRequest|null $post_manufacturers_company_request post_manufacturers_company_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersCompany'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturersCompany($manufacturer_id, $post_manufacturers_company_request = null, string $contentType = self::contentTypes['postManufacturersCompany'][0])
     {
@@ -2937,12 +2937,12 @@ class CompanyApi
      * Add a new company
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersCompanyRequest|null $post_manufacturers_company_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersCompanyRequest|null $post_manufacturers_company_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersCompany'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturersCompanyWithHttpInfo($manufacturer_id, $post_manufacturers_company_request = null, string $contentType = self::contentTypes['postManufacturersCompany'][0])
     {
@@ -2974,7 +2974,7 @@ class CompanyApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -2996,7 +2996,7 @@ class CompanyApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -3005,7 +3005,7 @@ class CompanyApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3023,7 +3023,7 @@ class CompanyApi
      * Add a new company
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersCompanyRequest|null $post_manufacturers_company_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersCompanyRequest|null $post_manufacturers_company_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersCompany'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3045,7 +3045,7 @@ class CompanyApi
      * Add a new company
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersCompanyRequest|null $post_manufacturers_company_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersCompanyRequest|null $post_manufacturers_company_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersCompany'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3053,7 +3053,7 @@ class CompanyApi
      */
     public function postManufacturersCompanyAsyncWithHttpInfo($manufacturer_id, $post_manufacturers_company_request = null, string $contentType = self::contentTypes['postManufacturersCompany'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturersCompanyRequest($manufacturer_id, $post_manufacturers_company_request, $contentType);
 
         return $this->client
@@ -3096,7 +3096,7 @@ class CompanyApi
      * Create request for operation 'postManufacturersCompany'
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersCompanyRequest|null $post_manufacturers_company_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersCompanyRequest|null $post_manufacturers_company_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersCompany'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3206,7 +3206,7 @@ class CompanyApi
      * @param  string $company_id ID of the company you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCompaniesCompanyIdArchive'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3224,7 +3224,7 @@ class CompanyApi
      * @param  string $company_id ID of the company you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCompaniesCompanyIdArchive'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3446,12 +3446,12 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostDefaultAddress|null $post_default_address post_default_address (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostDefaultAddress|null $post_default_address post_default_address (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses($manufacturer_id, $company_id, $post_default_address = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses'][0])
     {
@@ -3466,12 +3466,12 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostDefaultAddress|null $post_default_address (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostDefaultAddress|null $post_default_address (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesWithHttpInfo($manufacturer_id, $company_id, $post_default_address = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses'][0])
     {
@@ -3503,7 +3503,7 @@ class CompanyApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -3525,7 +3525,7 @@ class CompanyApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -3534,7 +3534,7 @@ class CompanyApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3553,7 +3553,7 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostDefaultAddress|null $post_default_address (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostDefaultAddress|null $post_default_address (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3576,7 +3576,7 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostDefaultAddress|null $post_default_address (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostDefaultAddress|null $post_default_address (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3584,7 +3584,7 @@ class CompanyApi
      */
     public function postManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesAsyncWithHttpInfo($manufacturer_id, $company_id, $post_default_address = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesRequest($manufacturer_id, $company_id, $post_default_address, $contentType);
 
         return $this->client
@@ -3628,7 +3628,7 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostDefaultAddress|null $post_default_address (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostDefaultAddress|null $post_default_address (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCompaniesCompanyIdDefaultAddresses'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3753,7 +3753,7 @@ class CompanyApi
      * @param  string $company_id ID of the company you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCompaniesCompanyIdUnarchive'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3771,7 +3771,7 @@ class CompanyApi
      * @param  string $company_id ID of the company you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCompaniesCompanyIdUnarchive'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3994,10 +3994,10 @@ class CompanyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $account_id The account id (required)
      * @param  string $distributor_id The id of the distributor (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutDistributorCompany|null $put_distributor_company put_distributor_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutDistributorCompany|null $put_distributor_company put_distributor_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersDistributorAccount'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4014,10 +4014,10 @@ class CompanyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $account_id The account id (required)
      * @param  string $distributor_id The id of the distributor (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutDistributorCompany|null $put_distributor_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutDistributorCompany|null $put_distributor_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersDistributorAccount'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4066,7 +4066,7 @@ class CompanyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $account_id The account id (required)
      * @param  string $distributor_id The id of the distributor (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutDistributorCompany|null $put_distributor_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutDistributorCompany|null $put_distributor_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersDistributorAccount'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4090,7 +4090,7 @@ class CompanyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $account_id The account id (required)
      * @param  string $distributor_id The id of the distributor (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutDistributorCompany|null $put_distributor_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutDistributorCompany|null $put_distributor_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersDistributorAccount'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4130,7 +4130,7 @@ class CompanyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $account_id The account id (required)
      * @param  string $distributor_id The id of the distributor (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutDistributorCompany|null $put_distributor_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutDistributorCompany|null $put_distributor_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersDistributorAccount'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4268,10 +4268,10 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPutCompany|null $request_put_company request_put_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPutCompany|null $request_put_company request_put_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCompaniesCompanyId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4287,10 +4287,10 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPutCompany|null $request_put_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPutCompany|null $request_put_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCompaniesCompanyId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4338,7 +4338,7 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPutCompany|null $request_put_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPutCompany|null $request_put_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCompaniesCompanyId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4361,7 +4361,7 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPutCompany|null $request_put_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPutCompany|null $request_put_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCompaniesCompanyId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4400,7 +4400,7 @@ class CompanyApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPutCompany|null $request_put_company (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPutCompany|null $request_put_company (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCompaniesCompanyId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4524,10 +4524,10 @@ class CompanyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
      * @param  string $default_address_id default_address_id (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutDefaultAddress|null $put_default_address put_default_address (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutDefaultAddress|null $put_default_address put_default_address (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4544,10 +4544,10 @@ class CompanyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
      * @param  string $default_address_id (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutDefaultAddress|null $put_default_address (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutDefaultAddress|null $put_default_address (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4596,7 +4596,7 @@ class CompanyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
      * @param  string $default_address_id (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutDefaultAddress|null $put_default_address (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutDefaultAddress|null $put_default_address (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4620,7 +4620,7 @@ class CompanyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
      * @param  string $default_address_id (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutDefaultAddress|null $put_default_address (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutDefaultAddress|null $put_default_address (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4660,7 +4660,7 @@ class CompanyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $company_id ID of the company you want to access. (required)
      * @param  string $default_address_id (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutDefaultAddress|null $put_default_address (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutDefaultAddress|null $put_default_address (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCompaniesCompanyIdDefaultAddressesDefaultAddressId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

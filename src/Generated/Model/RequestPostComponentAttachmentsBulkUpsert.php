@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * RequestPostComponentAttachmentsBulkUpsert Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class RequestPostComponentAttachmentsBulkUpsert implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attachments' => '\HiveCpq\Client\Generated\Model\RequestPostComponentAttachmentsBulkUpsertAttachmentsInner[]'
+        'attachments' => '\HiveCpq\\Client\\Generated\Model\RequestPostComponentAttachmentsBulkUpsertAttachmentsInner[]'
     ];
 
     /**
@@ -300,7 +300,7 @@ class RequestPostComponentAttachmentsBulkUpsert implements ModelInterface, Array
     /**
      * Gets attachments
      *
-     * @return \HiveCpq\Client\Generated\Model\RequestPostComponentAttachmentsBulkUpsertAttachmentsInner[]
+     * @return \HiveCpq\\Client\\Generated\Model\RequestPostComponentAttachmentsBulkUpsertAttachmentsInner[]
      */
     public function getAttachments()
     {
@@ -310,7 +310,7 @@ class RequestPostComponentAttachmentsBulkUpsert implements ModelInterface, Array
     /**
      * Sets attachments
      *
-     * @param \HiveCpq\Client\Generated\Model\RequestPostComponentAttachmentsBulkUpsertAttachmentsInner[] $attachments attachments
+     * @param \HiveCpq\\Client\\Generated\Model\RequestPostComponentAttachmentsBulkUpsertAttachmentsInner[] $attachments attachments
      *
      * @return self
      */

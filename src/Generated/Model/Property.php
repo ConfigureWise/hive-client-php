@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * Property Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,12 +59,12 @@ class Property implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
+        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
         'code' => 'string',
         'type' => 'string',
         'array_type' => 'string',
         'info' => 'string',
-        'audit' => '\HiveCpq\Client\Generated\Model\Audit'
+        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit'
     ];
 
     /**
@@ -420,7 +420,7 @@ class Property implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -430,7 +430,7 @@ class Property implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -575,7 +575,7 @@ class Property implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets audit
      *
-     * @return \HiveCpq\Client\Generated\Model\Audit|null
+     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -585,7 +585,7 @@ class Property implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets audit
      *
-     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */

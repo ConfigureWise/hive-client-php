@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PutDefaultAddress Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class PutDefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializabl
       */
     protected static $openAPITypes = [
         'company_name' => 'string',
-        'type' => '\HiveCpq\Client\Generated\Model\CompanyDefaultAddressTypeEnum',
-        'address' => '\HiveCpq\Client\Generated\Model\Address',
+        'type' => '\HiveCpq\\Client\\Generated\Model\CompanyDefaultAddressTypeEnum',
+        'address' => '\HiveCpq\\Client\\Generated\Model\Address',
         'contact_person' => 'string',
         'contact_phone' => 'string',
         'email' => 'string',
@@ -394,7 +394,7 @@ class PutDefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets type
      *
-     * @return \HiveCpq\Client\Generated\Model\CompanyDefaultAddressTypeEnum
+     * @return \HiveCpq\\Client\\Generated\Model\CompanyDefaultAddressTypeEnum
      */
     public function getType()
     {
@@ -404,7 +404,7 @@ class PutDefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets type
      *
-     * @param \HiveCpq\Client\Generated\Model\CompanyDefaultAddressTypeEnum $type type
+     * @param \HiveCpq\\Client\\Generated\Model\CompanyDefaultAddressTypeEnum $type type
      *
      * @return self
      */
@@ -421,7 +421,7 @@ class PutDefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets address
      *
-     * @return \HiveCpq\Client\Generated\Model\Address
+     * @return \HiveCpq\\Client\\Generated\Model\Address
      */
     public function getAddress()
     {
@@ -431,7 +431,7 @@ class PutDefaultAddress implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets address
      *
-     * @param \HiveCpq\Client\Generated\Model\Address $address address
+     * @param \HiveCpq\\Client\\Generated\Model\Address $address address
      *
      * @return self
      */

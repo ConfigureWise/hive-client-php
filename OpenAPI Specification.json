@@ -12586,9 +12586,6 @@
             "items": {
               "type": "object",
               "properties": {
-                "contactId": {
-                  "type": "string"
-                },
                 "email": {
                   "type": "string"
                 },
@@ -12604,6 +12601,9 @@
                 },
                 "userAccount": {
                   "$ref": "#/components/schemas/UserAccountLink"
+                },
+                "id": {
+                  "type": "string"
                 }
               }
             }

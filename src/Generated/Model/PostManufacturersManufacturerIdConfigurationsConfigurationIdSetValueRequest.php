@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequest Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueReques
       * @var string[]
       */
     protected static $openAPITypes = [
-        'values' => '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequestValuesInner[]'
+        'values' => '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequestValuesInner[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueReques
     /**
      * Gets values
      *
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequestValuesInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequestValuesInner[]|null
      */
     public function getValues()
     {
@@ -303,7 +303,7 @@ class PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueReques
     /**
      * Sets values
      *
-     * @param \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequestValuesInner[]|null $values values
+     * @param \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdConfigurationsConfigurationIdSetValueRequestValuesInner[]|null $values values
      *
      * @return self
      */

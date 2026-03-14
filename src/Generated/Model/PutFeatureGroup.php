@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PutFeatureGroup Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PutFeatureGroup implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'descriptions' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]'
+        'descriptions' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PutFeatureGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets descriptions
      *
-     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
      */
     public function getDescriptions()
     {
@@ -307,7 +307,7 @@ class PutFeatureGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets descriptions
      *
-     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $descriptions A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $descriptions A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */

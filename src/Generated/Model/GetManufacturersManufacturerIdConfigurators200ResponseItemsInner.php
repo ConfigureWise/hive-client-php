@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * GetManufacturersManufacturerIdConfigurators200ResponseItemsInner Class Doc Comment
  *
  * @category Class
  * @description A list of configurators.
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,8 +61,8 @@ class GetManufacturersManufacturerIdConfigurators200ResponseItemsInner implement
     protected static $openAPITypes = [
         'id' => 'string',
         'code' => 'string',
-        'name' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
-        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]'
+        'name' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
+        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]'
     ];
 
     /**
@@ -373,7 +373,7 @@ class GetManufacturersManufacturerIdConfigurators200ResponseItemsInner implement
     /**
      * Gets name
      *
-     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
      */
     public function getName()
     {
@@ -383,7 +383,7 @@ class GetManufacturersManufacturerIdConfigurators200ResponseItemsInner implement
     /**
      * Sets name
      *
-     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $name A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $name A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -405,7 +405,7 @@ class GetManufacturersManufacturerIdConfigurators200ResponseItemsInner implement
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -415,7 +415,7 @@ class GetManufacturersManufacturerIdConfigurators200ResponseItemsInner implement
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */

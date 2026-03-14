@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PutManufacturerContact Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,7 +66,7 @@ class PutManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerial
         'mobile' => 'string',
         'preferred_language' => 'string',
         'function_title' => 'string',
-        'address' => '\HiveCpq\Client\Generated\Model\Address',
+        'address' => '\HiveCpq\\Client\\Generated\Model\Address',
         'salutation' => 'string',
         'external_system_id' => 'string',
         'role_ids' => 'string[]',
@@ -563,7 +563,7 @@ class PutManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets address
      *
-     * @return \HiveCpq\Client\Generated\Model\Address|null
+     * @return \HiveCpq\\Client\\Generated\Model\Address|null
      */
     public function getAddress()
     {
@@ -573,7 +573,7 @@ class PutManufacturerContact implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets address
      *
-     * @param \HiveCpq\Client\Generated\Model\Address|null $address address
+     * @param \HiveCpq\\Client\\Generated\Model\Address|null $address address
      *
      * @return self
      */

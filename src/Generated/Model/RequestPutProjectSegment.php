@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * RequestPutProjectSegment Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,11 +58,11 @@ class RequestPutProjectSegment implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'order' => '\HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrder',
-        'external_order_status' => '\HiveCpq\Client\Generated\Model\ProjectSegmentExternalOrderStatus',
+        'order' => '\HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrder',
+        'external_order_status' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentExternalOrderStatus',
         'company_a_sales_manager_id' => 'string',
         'company_b_sales_manager_id' => 'string',
-        'status' => '\HiveCpq\Client\Generated\Model\ProjectSegmentFollowUpStatusEnum',
+        'status' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentFollowUpStatusEnum',
         'next_follow_up_date' => 'string',
         'estimated_sales_date' => 'string',
         'free_text_note' => 'string',
@@ -356,7 +356,7 @@ class RequestPutProjectSegment implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets order
      *
-     * @return \HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrder|null
+     * @return \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrder|null
      */
     public function getOrder()
     {
@@ -366,7 +366,7 @@ class RequestPutProjectSegment implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets order
      *
-     * @param \HiveCpq\Client\Generated\Model\RequestPutProjectSegmentOrder|null $order order
+     * @param \HiveCpq\\Client\\Generated\Model\RequestPutProjectSegmentOrder|null $order order
      *
      * @return self
      */
@@ -383,7 +383,7 @@ class RequestPutProjectSegment implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets external_order_status
      *
-     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentExternalOrderStatus|null
+     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentExternalOrderStatus|null
      */
     public function getExternalOrderStatus()
     {
@@ -393,7 +393,7 @@ class RequestPutProjectSegment implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets external_order_status
      *
-     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentExternalOrderStatus|null $external_order_status external_order_status
+     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentExternalOrderStatus|null $external_order_status external_order_status
      *
      * @return self
      */
@@ -464,7 +464,7 @@ class RequestPutProjectSegment implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets status
      *
-     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentFollowUpStatusEnum|null
+     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentFollowUpStatusEnum|null
      */
     public function getStatus()
     {
@@ -474,7 +474,7 @@ class RequestPutProjectSegment implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets status
      *
-     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentFollowUpStatusEnum|null $status status
+     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentFollowUpStatusEnum|null $status status
      *
      * @return self
      */

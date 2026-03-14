@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response imp
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\HiveCpq\Client\Generated\Model\CustomObject[]',
+        'items' => '\HiveCpq\\Client\\Generated\Model\CustomObject[]',
         'total' => 'float'
     ];
 
@@ -300,7 +300,7 @@ class GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response imp
     /**
      * Gets items
      *
-     * @return \HiveCpq\Client\Generated\Model\CustomObject[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\CustomObject[]|null
      */
     public function getItems()
     {
@@ -310,7 +310,7 @@ class GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response imp
     /**
      * Sets items
      *
-     * @param \HiveCpq\Client\Generated\Model\CustomObject[]|null $items items
+     * @param \HiveCpq\\Client\\Generated\Model\CustomObject[]|null $items items
      *
      * @return self
      */

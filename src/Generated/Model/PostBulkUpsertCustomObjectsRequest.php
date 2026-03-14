@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PostBulkUpsertCustomObjectsRequest Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostBulkUpsertCustomObjectsRequest implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'custom_objects' => '\HiveCpq\Client\Generated\Model\PostBulkUpsertCustomObjectsRequestCustomObjectsInner[]'
+        'custom_objects' => '\HiveCpq\\Client\\Generated\Model\PostBulkUpsertCustomObjectsRequestCustomObjectsInner[]'
     ];
 
     /**
@@ -300,7 +300,7 @@ class PostBulkUpsertCustomObjectsRequest implements ModelInterface, ArrayAccess,
     /**
      * Gets custom_objects
      *
-     * @return \HiveCpq\Client\Generated\Model\PostBulkUpsertCustomObjectsRequestCustomObjectsInner[]
+     * @return \HiveCpq\\Client\\Generated\Model\PostBulkUpsertCustomObjectsRequestCustomObjectsInner[]
      */
     public function getCustomObjects()
     {
@@ -310,7 +310,7 @@ class PostBulkUpsertCustomObjectsRequest implements ModelInterface, ArrayAccess,
     /**
      * Sets custom_objects
      *
-     * @param \HiveCpq\Client\Generated\Model\PostBulkUpsertCustomObjectsRequestCustomObjectsInner[] $custom_objects custom_objects
+     * @param \HiveCpq\\Client\\Generated\Model\PostBulkUpsertCustomObjectsRequestCustomObjectsInner[] $custom_objects custom_objects
      *
      * @return self
      */

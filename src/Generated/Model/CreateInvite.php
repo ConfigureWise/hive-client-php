@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * CreateInvite Class Doc Comment
  *
  * @category Class
  * @description Model that provides necessary data to create an invite
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class CreateInvite implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'for_contact' => '\HiveCpq\Client\Generated\Model\CreateInviteForContact',
-        'from_contact' => '\HiveCpq\Client\Generated\Model\CreateInviteFromContact',
+        'for_contact' => '\HiveCpq\\Client\\Generated\Model\CreateInviteForContact',
+        'from_contact' => '\HiveCpq\\Client\\Generated\Model\CreateInviteFromContact',
         'enable_sso' => 'bool'
     ];
 
@@ -308,7 +308,7 @@ class CreateInvite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets for_contact
      *
-     * @return \HiveCpq\Client\Generated\Model\CreateInviteForContact|null
+     * @return \HiveCpq\\Client\\Generated\Model\CreateInviteForContact|null
      */
     public function getForContact()
     {
@@ -318,7 +318,7 @@ class CreateInvite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets for_contact
      *
-     * @param \HiveCpq\Client\Generated\Model\CreateInviteForContact|null $for_contact for_contact
+     * @param \HiveCpq\\Client\\Generated\Model\CreateInviteForContact|null $for_contact for_contact
      *
      * @return self
      */
@@ -335,7 +335,7 @@ class CreateInvite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets from_contact
      *
-     * @return \HiveCpq\Client\Generated\Model\CreateInviteFromContact|null
+     * @return \HiveCpq\\Client\\Generated\Model\CreateInviteFromContact|null
      */
     public function getFromContact()
     {
@@ -345,7 +345,7 @@ class CreateInvite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets from_contact
      *
-     * @param \HiveCpq\Client\Generated\Model\CreateInviteFromContact|null $from_contact from_contact
+     * @param \HiveCpq\\Client\\Generated\Model\CreateInviteFromContact|null $from_contact from_contact
      *
      * @return self
      */

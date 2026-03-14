@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Response Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Respon
       * @var string[]
       */
     protected static $openAPITypes = [
-        'event_subscriptions' => '\HiveCpq\Client\Generated\Model\HiveEvent[]'
+        'event_subscriptions' => '\HiveCpq\\Client\\Generated\Model\HiveEvent[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Respon
     /**
      * Gets event_subscriptions
      *
-     * @return \HiveCpq\Client\Generated\Model\HiveEvent[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\HiveEvent[]|null
      */
     public function getEventSubscriptions()
     {
@@ -303,7 +303,7 @@ class GetManufacturersManufacturerIdWebhooksWebhookIdEventSubscriptions200Respon
     /**
      * Sets event_subscriptions
      *
-     * @param \HiveCpq\Client\Generated\Model\HiveEvent[]|null $event_subscriptions event_subscriptions
+     * @param \HiveCpq\\Client\\Generated\Model\HiveEvent[]|null $event_subscriptions event_subscriptions
      *
      * @return self
      */

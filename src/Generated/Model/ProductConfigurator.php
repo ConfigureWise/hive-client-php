@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * ProductConfigurator Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class ProductConfigurator implements ModelInterface, ArrayAccess, \JsonSerializa
     protected static $openAPITypes = [
         'id' => 'string',
         'href' => 'string',
-        'configuration_parameters' => '\HiveCpq\Client\Generated\Model\ProductConfiguratorConfigurationParametersInner[]'
+        'configuration_parameters' => '\HiveCpq\\Client\\Generated\Model\ProductConfiguratorConfigurationParametersInner[]'
     ];
 
     /**
@@ -375,7 +375,7 @@ class ProductConfigurator implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets configuration_parameters
      *
-     * @return \HiveCpq\Client\Generated\Model\ProductConfiguratorConfigurationParametersInner[]
+     * @return \HiveCpq\\Client\\Generated\Model\ProductConfiguratorConfigurationParametersInner[]
      */
     public function getConfigurationParameters()
     {
@@ -385,7 +385,7 @@ class ProductConfigurator implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets configuration_parameters
      *
-     * @param \HiveCpq\Client\Generated\Model\ProductConfiguratorConfigurationParametersInner[] $configuration_parameters configuration_parameters
+     * @param \HiveCpq\\Client\\Generated\Model\ProductConfiguratorConfigurationParametersInner[] $configuration_parameters configuration_parameters
      *
      * @return self
      */

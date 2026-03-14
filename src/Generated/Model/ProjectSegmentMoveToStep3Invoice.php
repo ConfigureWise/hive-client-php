@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * ProjectSegmentMoveToStep3Invoice Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class ProjectSegmentMoveToStep3Invoice implements ModelInterface, ArrayAccess, \
         'contact_name' => 'string',
         'contact_phone' => 'string',
         'email' => 'string',
-        'address' => '\HiveCpq\Client\Generated\Model\Address'
+        'address' => '\HiveCpq\\Client\\Generated\Model\Address'
     ];
 
     /**
@@ -481,7 +481,7 @@ class ProjectSegmentMoveToStep3Invoice implements ModelInterface, ArrayAccess, \
     /**
      * Gets address
      *
-     * @return \HiveCpq\Client\Generated\Model\Address
+     * @return \HiveCpq\\Client\\Generated\Model\Address
      */
     public function getAddress()
     {
@@ -491,7 +491,7 @@ class ProjectSegmentMoveToStep3Invoice implements ModelInterface, ArrayAccess, \
     /**
      * Sets address
      *
-     * @param \HiveCpq\Client\Generated\Model\Address $address address
+     * @param \HiveCpq\\Client\\Generated\Model\Address $address address
      *
      * @return self
      */

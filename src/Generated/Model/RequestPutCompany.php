@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * RequestPutCompany Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,12 +58,12 @@ class RequestPutCompany implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'info' => '\HiveCpq\Client\Generated\Model\CompanyInfo',
-        'advanced' => '\HiveCpq\Client\Generated\Model\CompanyAdvanced',
-        'sales_conditions' => '\HiveCpq\Client\Generated\Model\CompanySalesConditions',
-        'product_store' => '\HiveCpq\Client\Generated\Model\CompanyProductStore',
-        'default_project_settings' => '\HiveCpq\Client\Generated\Model\CompanyDefaultProjectSettings',
-        'sub_distributor_settings' => '\HiveCpq\Client\Generated\Model\RequestCompanySubDistributorSettings'
+        'info' => '\HiveCpq\\Client\\Generated\Model\CompanyInfo',
+        'advanced' => '\HiveCpq\\Client\\Generated\Model\CompanyAdvanced',
+        'sales_conditions' => '\HiveCpq\\Client\\Generated\Model\CompanySalesConditions',
+        'product_store' => '\HiveCpq\\Client\\Generated\Model\CompanyProductStore',
+        'default_project_settings' => '\HiveCpq\\Client\\Generated\Model\CompanyDefaultProjectSettings',
+        'sub_distributor_settings' => '\HiveCpq\\Client\\Generated\Model\RequestCompanySubDistributorSettings'
     ];
 
     /**
@@ -331,7 +331,7 @@ class RequestPutCompany implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets info
      *
-     * @return \HiveCpq\Client\Generated\Model\CompanyInfo
+     * @return \HiveCpq\\Client\\Generated\Model\CompanyInfo
      */
     public function getInfo()
     {
@@ -341,7 +341,7 @@ class RequestPutCompany implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets info
      *
-     * @param \HiveCpq\Client\Generated\Model\CompanyInfo $info info
+     * @param \HiveCpq\\Client\\Generated\Model\CompanyInfo $info info
      *
      * @return self
      */
@@ -358,7 +358,7 @@ class RequestPutCompany implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets advanced
      *
-     * @return \HiveCpq\Client\Generated\Model\CompanyAdvanced|null
+     * @return \HiveCpq\\Client\\Generated\Model\CompanyAdvanced|null
      */
     public function getAdvanced()
     {
@@ -368,7 +368,7 @@ class RequestPutCompany implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets advanced
      *
-     * @param \HiveCpq\Client\Generated\Model\CompanyAdvanced|null $advanced advanced
+     * @param \HiveCpq\\Client\\Generated\Model\CompanyAdvanced|null $advanced advanced
      *
      * @return self
      */
@@ -385,7 +385,7 @@ class RequestPutCompany implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets sales_conditions
      *
-     * @return \HiveCpq\Client\Generated\Model\CompanySalesConditions|null
+     * @return \HiveCpq\\Client\\Generated\Model\CompanySalesConditions|null
      */
     public function getSalesConditions()
     {
@@ -395,7 +395,7 @@ class RequestPutCompany implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets sales_conditions
      *
-     * @param \HiveCpq\Client\Generated\Model\CompanySalesConditions|null $sales_conditions sales_conditions
+     * @param \HiveCpq\\Client\\Generated\Model\CompanySalesConditions|null $sales_conditions sales_conditions
      *
      * @return self
      */
@@ -412,7 +412,7 @@ class RequestPutCompany implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets product_store
      *
-     * @return \HiveCpq\Client\Generated\Model\CompanyProductStore|null
+     * @return \HiveCpq\\Client\\Generated\Model\CompanyProductStore|null
      */
     public function getProductStore()
     {
@@ -422,7 +422,7 @@ class RequestPutCompany implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets product_store
      *
-     * @param \HiveCpq\Client\Generated\Model\CompanyProductStore|null $product_store product_store
+     * @param \HiveCpq\\Client\\Generated\Model\CompanyProductStore|null $product_store product_store
      *
      * @return self
      */
@@ -439,7 +439,7 @@ class RequestPutCompany implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets default_project_settings
      *
-     * @return \HiveCpq\Client\Generated\Model\CompanyDefaultProjectSettings|null
+     * @return \HiveCpq\\Client\\Generated\Model\CompanyDefaultProjectSettings|null
      */
     public function getDefaultProjectSettings()
     {
@@ -449,7 +449,7 @@ class RequestPutCompany implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets default_project_settings
      *
-     * @param \HiveCpq\Client\Generated\Model\CompanyDefaultProjectSettings|null $default_project_settings default_project_settings
+     * @param \HiveCpq\\Client\\Generated\Model\CompanyDefaultProjectSettings|null $default_project_settings default_project_settings
      *
      * @return self
      */
@@ -466,7 +466,7 @@ class RequestPutCompany implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets sub_distributor_settings
      *
-     * @return \HiveCpq\Client\Generated\Model\RequestCompanySubDistributorSettings|null
+     * @return \HiveCpq\\Client\\Generated\Model\RequestCompanySubDistributorSettings|null
      */
     public function getSubDistributorSettings()
     {
@@ -476,7 +476,7 @@ class RequestPutCompany implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets sub_distributor_settings
      *
-     * @param \HiveCpq\Client\Generated\Model\RequestCompanySubDistributorSettings|null $sub_distributor_settings sub_distributor_settings
+     * @param \HiveCpq\\Client\\Generated\Model\RequestCompanySubDistributorSettings|null $sub_distributor_settings sub_distributor_settings
      *
      * @return self
      */

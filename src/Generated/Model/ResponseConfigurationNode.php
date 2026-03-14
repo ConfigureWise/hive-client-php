@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * ResponseConfigurationNode Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,11 +66,11 @@ class ResponseConfigurationNode implements ModelInterface, ArrayAccess, \JsonSer
         'value' => 'string',
         'quantity' => 'float',
         'unit' => 'string',
-        'price' => '\HiveCpq\Client\Generated\Model\ResponseConfigurationNodePrice',
+        'price' => '\HiveCpq\\Client\\Generated\Model\ResponseConfigurationNodePrice',
         'optional' => 'bool',
-        'component' => '\HiveCpq\Client\Generated\Model\ResponseConfigurationNodeComponentData',
-        'selected_component' => '\HiveCpq\Client\Generated\Model\ResponseConfigurationNodeComponentData',
-        'descriptions' => '\HiveCpq\Client\Generated\Model\KeyValueTranslationsInner[]',
+        'component' => '\HiveCpq\\Client\\Generated\Model\ResponseConfigurationNodeComponentData',
+        'selected_component' => '\HiveCpq\\Client\\Generated\Model\ResponseConfigurationNodeComponentData',
+        'descriptions' => '\HiveCpq\\Client\\Generated\Model\KeyValueTranslationsInner[]',
         'nodes' => 'object[]'
     ];
 
@@ -678,7 +678,7 @@ class ResponseConfigurationNode implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets price
      *
-     * @return \HiveCpq\Client\Generated\Model\ResponseConfigurationNodePrice|null
+     * @return \HiveCpq\\Client\\Generated\Model\ResponseConfigurationNodePrice|null
      */
     public function getPrice()
     {
@@ -688,7 +688,7 @@ class ResponseConfigurationNode implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets price
      *
-     * @param \HiveCpq\Client\Generated\Model\ResponseConfigurationNodePrice|null $price price
+     * @param \HiveCpq\\Client\\Generated\Model\ResponseConfigurationNodePrice|null $price price
      *
      * @return self
      */
@@ -732,7 +732,7 @@ class ResponseConfigurationNode implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets component
      *
-     * @return \HiveCpq\Client\Generated\Model\ResponseConfigurationNodeComponentData|null
+     * @return \HiveCpq\\Client\\Generated\Model\ResponseConfigurationNodeComponentData|null
      */
     public function getComponent()
     {
@@ -742,7 +742,7 @@ class ResponseConfigurationNode implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets component
      *
-     * @param \HiveCpq\Client\Generated\Model\ResponseConfigurationNodeComponentData|null $component component
+     * @param \HiveCpq\\Client\\Generated\Model\ResponseConfigurationNodeComponentData|null $component component
      *
      * @return self
      */
@@ -759,7 +759,7 @@ class ResponseConfigurationNode implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets selected_component
      *
-     * @return \HiveCpq\Client\Generated\Model\ResponseConfigurationNodeComponentData|null
+     * @return \HiveCpq\\Client\\Generated\Model\ResponseConfigurationNodeComponentData|null
      */
     public function getSelectedComponent()
     {
@@ -769,7 +769,7 @@ class ResponseConfigurationNode implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets selected_component
      *
-     * @param \HiveCpq\Client\Generated\Model\ResponseConfigurationNodeComponentData|null $selected_component selected_component
+     * @param \HiveCpq\\Client\\Generated\Model\ResponseConfigurationNodeComponentData|null $selected_component selected_component
      *
      * @return self
      */
@@ -786,7 +786,7 @@ class ResponseConfigurationNode implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets descriptions
      *
-     * @return \HiveCpq\Client\Generated\Model\KeyValueTranslationsInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\KeyValueTranslationsInner[]|null
      */
     public function getDescriptions()
     {
@@ -796,7 +796,7 @@ class ResponseConfigurationNode implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets descriptions
      *
-     * @param \HiveCpq\Client\Generated\Model\KeyValueTranslationsInner[]|null $descriptions descriptions
+     * @param \HiveCpq\\Client\\Generated\Model\KeyValueTranslationsInner[]|null $descriptions descriptions
      *
      * @return self
      */

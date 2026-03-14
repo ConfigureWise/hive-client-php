@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * ProjectSegmentMoveToStep1 Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,12 +59,12 @@ class ProjectSegmentMoveToStep1 implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'info' => '\HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Info',
-        'condition' => '\HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Condition',
-        'delivery' => '\HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Delivery',
-        'sell_to' => '\HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Delivery',
-        'installation' => '\HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Installation',
-        'invoice' => '\HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Invoice'
+        'info' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Info',
+        'condition' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Condition',
+        'delivery' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Delivery',
+        'sell_to' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Delivery',
+        'installation' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Installation',
+        'invoice' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Invoice'
     ];
 
     /**
@@ -332,7 +332,7 @@ class ProjectSegmentMoveToStep1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets info
      *
-     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Info
+     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Info
      */
     public function getInfo()
     {
@@ -342,7 +342,7 @@ class ProjectSegmentMoveToStep1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets info
      *
-     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Info $info info
+     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Info $info info
      *
      * @return self
      */
@@ -359,7 +359,7 @@ class ProjectSegmentMoveToStep1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets condition
      *
-     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Condition|null
+     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Condition|null
      */
     public function getCondition()
     {
@@ -369,7 +369,7 @@ class ProjectSegmentMoveToStep1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets condition
      *
-     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Condition|null $condition condition
+     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Condition|null $condition condition
      *
      * @return self
      */
@@ -386,7 +386,7 @@ class ProjectSegmentMoveToStep1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets delivery
      *
-     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Delivery|null
+     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Delivery|null
      */
     public function getDelivery()
     {
@@ -396,7 +396,7 @@ class ProjectSegmentMoveToStep1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets delivery
      *
-     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Delivery|null $delivery delivery
+     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Delivery|null $delivery delivery
      *
      * @return self
      */
@@ -413,7 +413,7 @@ class ProjectSegmentMoveToStep1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets sell_to
      *
-     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Delivery|null
+     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Delivery|null
      */
     public function getSellTo()
     {
@@ -423,7 +423,7 @@ class ProjectSegmentMoveToStep1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets sell_to
      *
-     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Delivery|null $sell_to sell_to
+     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Delivery|null $sell_to sell_to
      *
      * @return self
      */
@@ -440,7 +440,7 @@ class ProjectSegmentMoveToStep1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets installation
      *
-     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Installation|null
+     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Installation|null
      */
     public function getInstallation()
     {
@@ -450,7 +450,7 @@ class ProjectSegmentMoveToStep1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets installation
      *
-     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Installation|null $installation installation
+     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Installation|null $installation installation
      *
      * @return self
      */
@@ -467,7 +467,7 @@ class ProjectSegmentMoveToStep1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets invoice
      *
-     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Invoice|null
+     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Invoice|null
      */
     public function getInvoice()
     {
@@ -477,7 +477,7 @@ class ProjectSegmentMoveToStep1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets invoice
      *
-     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentMoveToStep1Invoice|null $invoice invoice
+     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentMoveToStep1Invoice|null $invoice invoice
      *
      * @return self
      */

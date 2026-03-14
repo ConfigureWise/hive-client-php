@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PostProperty Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,10 +59,10 @@ class PostProperty implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'code' => 'string',
-        'type' => '\HiveCpq\Client\Generated\Model\EnumComponentPropertyType',
-        'array_type' => '\HiveCpq\Client\Generated\Model\EnumComponentPropertyArrayType',
+        'type' => '\HiveCpq\\Client\\Generated\Model\EnumComponentPropertyType',
+        'array_type' => '\HiveCpq\\Client\\Generated\Model\EnumComponentPropertyArrayType',
         'info' => 'string',
-        'integrated_system_link' => '\HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink'
+        'integrated_system_link' => '\HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink'
     ];
 
     /**
@@ -354,7 +354,7 @@ class PostProperty implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets type
      *
-     * @return \HiveCpq\Client\Generated\Model\EnumComponentPropertyType
+     * @return \HiveCpq\\Client\\Generated\Model\EnumComponentPropertyType
      */
     public function getType()
     {
@@ -364,7 +364,7 @@ class PostProperty implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \HiveCpq\Client\Generated\Model\EnumComponentPropertyType $type type
+     * @param \HiveCpq\\Client\\Generated\Model\EnumComponentPropertyType $type type
      *
      * @return self
      */
@@ -381,7 +381,7 @@ class PostProperty implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets array_type
      *
-     * @return \HiveCpq\Client\Generated\Model\EnumComponentPropertyArrayType|null
+     * @return \HiveCpq\\Client\\Generated\Model\EnumComponentPropertyArrayType|null
      */
     public function getArrayType()
     {
@@ -391,7 +391,7 @@ class PostProperty implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets array_type
      *
-     * @param \HiveCpq\Client\Generated\Model\EnumComponentPropertyArrayType|null $array_type array_type
+     * @param \HiveCpq\\Client\\Generated\Model\EnumComponentPropertyArrayType|null $array_type array_type
      *
      * @return self
      */
@@ -435,7 +435,7 @@ class PostProperty implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets integrated_system_link
      *
-     * @return \HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink|null
      */
     public function getIntegratedSystemLink()
     {
@@ -445,7 +445,7 @@ class PostProperty implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets integrated_system_link
      *
-     * @param \HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink|null $integrated_system_link integrated_system_link
+     * @param \HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink|null $integrated_system_link integrated_system_link
      *
      * @return self
      */

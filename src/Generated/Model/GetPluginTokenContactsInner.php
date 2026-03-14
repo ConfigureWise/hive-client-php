@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * GetPluginTokenContactsInner Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,12 +58,12 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'contact_id' => 'string',
         'email' => 'string',
         'company_id' => 'string',
         'company_name' => 'string',
-        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
-        'user_account' => '\HiveCpq\Client\Generated\Model\UserAccountLink'
+        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
+        'user_account' => '\HiveCpq\\Client\\Generated\Model\UserAccountLink',
+        'id' => 'string'
     ];
 
     /**
@@ -74,12 +74,12 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'contact_id' => null,
         'email' => null,
         'company_id' => null,
         'company_name' => null,
         'external_links' => null,
-        'user_account' => null
+        'user_account' => null,
+        'id' => null
     ];
 
     /**
@@ -88,12 +88,12 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'contact_id' => false,
         'email' => false,
         'company_id' => false,
         'company_name' => false,
         'external_links' => false,
-        'user_account' => false
+        'user_account' => false,
+        'id' => false
     ];
 
     /**
@@ -182,12 +182,12 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $attributeMap = [
-        'contact_id' => 'contactId',
         'email' => 'email',
         'company_id' => 'companyId',
         'company_name' => 'companyName',
         'external_links' => 'externalLinks',
-        'user_account' => 'userAccount'
+        'user_account' => 'userAccount',
+        'id' => 'id'
     ];
 
     /**
@@ -196,12 +196,12 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'contact_id' => 'setContactId',
         'email' => 'setEmail',
         'company_id' => 'setCompanyId',
         'company_name' => 'setCompanyName',
         'external_links' => 'setExternalLinks',
-        'user_account' => 'setUserAccount'
+        'user_account' => 'setUserAccount',
+        'id' => 'setId'
     ];
 
     /**
@@ -210,12 +210,12 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'contact_id' => 'getContactId',
         'email' => 'getEmail',
         'company_id' => 'getCompanyId',
         'company_name' => 'getCompanyName',
         'external_links' => 'getExternalLinks',
-        'user_account' => 'getUserAccount'
+        'user_account' => 'getUserAccount',
+        'id' => 'getId'
     ];
 
     /**
@@ -275,12 +275,12 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('contact_id', $data ?? [], null);
         $this->setIfExists('email', $data ?? [], null);
         $this->setIfExists('company_id', $data ?? [], null);
         $this->setIfExists('company_name', $data ?? [], null);
         $this->setIfExists('external_links', $data ?? [], null);
         $this->setIfExists('user_account', $data ?? [], null);
+        $this->setIfExists('id', $data ?? [], null);
     }
 
     /**
@@ -324,33 +324,6 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets contact_id
-     *
-     * @return string|null
-     */
-    public function getContactId()
-    {
-        return $this->container['contact_id'];
-    }
-
-    /**
-     * Sets contact_id
-     *
-     * @param string|null $contact_id contact_id
-     *
-     * @return self
-     */
-    public function setContactId($contact_id)
-    {
-        if (is_null($contact_id)) {
-            throw new \InvalidArgumentException('non-nullable contact_id cannot be null');
-        }
-        $this->container['contact_id'] = $contact_id;
-
-        return $this;
-    }
 
     /**
      * Gets email
@@ -436,7 +409,7 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -446,7 +419,7 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -463,7 +436,7 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets user_account
      *
-     * @return \HiveCpq\Client\Generated\Model\UserAccountLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\UserAccountLink|null
      */
     public function getUserAccount()
     {
@@ -473,7 +446,7 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets user_account
      *
-     * @param \HiveCpq\Client\Generated\Model\UserAccountLink|null $user_account user_account
+     * @param \HiveCpq\\Client\\Generated\Model\UserAccountLink|null $user_account user_account
      *
      * @return self
      */
@@ -483,6 +456,33 @@ class GetPluginTokenContactsInner implements ModelInterface, ArrayAccess, \JsonS
             throw new \InvalidArgumentException('non-nullable user_account cannot be null');
         }
         $this->container['user_account'] = $user_account;
+
+        return $this;
+    }
+
+    /**
+     * Gets id
+     *
+     * @return string|null
+     */
+    public function getId()
+    {
+        return $this->container['id'];
+    }
+
+    /**
+     * Sets id
+     *
+     * @param string|null $id id
+     *
+     * @return self
+     */
+    public function setId($id)
+    {
+        if (is_null($id)) {
+            throw new \InvalidArgumentException('non-nullable id cannot be null');
+        }
+        $this->container['id'] = $id;
 
         return $this;
     }

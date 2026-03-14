@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Api;
+namespace HiveCpq\\Client\\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\Client\Generated\ApiException;
-use HiveCpq\Client\Generated\Configuration;
-use HiveCpq\Client\Generated\FormDataProcessor;
-use HiveCpq\Client\Generated\HeaderSelector;
-use HiveCpq\Client\Generated\ObjectSerializer;
+use HiveCpq\\Client\\Generated\ApiException;
+use HiveCpq\\Client\\Generated\Configuration;
+use HiveCpq\\Client\\Generated\FormDataProcessor;
+use HiveCpq\\Client\\Generated\HeaderSelector;
+use HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * CategoryApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -147,9 +147,9 @@ class CategoryApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerCategories'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetManufacturerCategoriesResponse
+     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturerCategoriesResponse
      */
     public function getManufacturerCategories($manufacturer_id, $name, $version, $code = null, $main_category_code = null, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $language = null, string $contentType = self::contentTypes['getManufacturerCategories'][0])
     {
@@ -175,9 +175,9 @@ class CategoryApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerCategories'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturerCategoriesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturerCategoriesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerCategoriesWithHttpInfo($manufacturer_id, $name, $version, $code = null, $main_category_code = null, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $language = null, string $contentType = self::contentTypes['getManufacturerCategories'][0])
     {
@@ -209,7 +209,7 @@ class CategoryApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerCategoriesResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerCategoriesResponse',
                         $request,
                         $response,
                     );
@@ -231,7 +231,7 @@ class CategoryApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetManufacturerCategoriesResponse',
+                '\HiveCpq\\Client\\Generated\Model\GetManufacturerCategoriesResponse',
                 $request,
                 $response,
             );
@@ -240,7 +240,7 @@ class CategoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerCategoriesResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerCategoriesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -306,7 +306,7 @@ class CategoryApi
      */
     public function getManufacturerCategoriesAsyncWithHttpInfo($manufacturer_id, $name, $version, $code = null, $main_category_code = null, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $language = null, string $contentType = self::contentTypes['getManufacturerCategories'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturerCategoriesResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturerCategoriesResponse';
         $request = $this->getManufacturerCategoriesRequest($manufacturer_id, $name, $version, $code, $main_category_code, $ids_in, $integrated_system_name, $integrated_system_ids_in, $page, $page_size, $language, $contentType);
 
         return $this->client
@@ -569,12 +569,12 @@ class CategoryApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertCategories|null $request_post_bulk_upsert_categories request_post_bulk_upsert_categories (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertCategories|null $request_post_bulk_upsert_categories request_post_bulk_upsert_categories (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertCategories'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
      */
     public function postBulkUpsertCategories($manufacturer_id, $name, $version, $request_post_bulk_upsert_categories = null, string $contentType = self::contentTypes['postBulkUpsertCategories'][0])
     {
@@ -590,12 +590,12 @@ class CategoryApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertCategories|null $request_post_bulk_upsert_categories (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertCategories|null $request_post_bulk_upsert_categories (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertCategories'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postBulkUpsertCategoriesWithHttpInfo($manufacturer_id, $name, $version, $request_post_bulk_upsert_categories = null, string $contentType = self::contentTypes['postBulkUpsertCategories'][0])
     {
@@ -627,7 +627,7 @@ class CategoryApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $request,
                         $response,
                     );
@@ -649,7 +649,7 @@ class CategoryApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                 $request,
                 $response,
             );
@@ -658,7 +658,7 @@ class CategoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -678,7 +678,7 @@ class CategoryApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertCategories|null $request_post_bulk_upsert_categories (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertCategories|null $request_post_bulk_upsert_categories (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertCategories'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -702,7 +702,7 @@ class CategoryApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertCategories|null $request_post_bulk_upsert_categories (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertCategories|null $request_post_bulk_upsert_categories (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertCategories'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -710,7 +710,7 @@ class CategoryApi
      */
     public function postBulkUpsertCategoriesAsyncWithHttpInfo($manufacturer_id, $name, $version, $request_post_bulk_upsert_categories = null, string $contentType = self::contentTypes['postBulkUpsertCategories'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
         $request = $this->postBulkUpsertCategoriesRequest($manufacturer_id, $name, $version, $request_post_bulk_upsert_categories, $contentType);
 
         return $this->client
@@ -755,7 +755,7 @@ class CategoryApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostBulkUpsertCategories|null $request_post_bulk_upsert_categories (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostBulkUpsertCategories|null $request_post_bulk_upsert_categories (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertCategories'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

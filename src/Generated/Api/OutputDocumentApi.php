@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Api;
+namespace HiveCpq\\Client\\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\Client\Generated\ApiException;
-use HiveCpq\Client\Generated\Configuration;
-use HiveCpq\Client\Generated\FormDataProcessor;
-use HiveCpq\Client\Generated\HeaderSelector;
-use HiveCpq\Client\Generated\ObjectSerializer;
+use HiveCpq\\Client\\Generated\ApiException;
+use HiveCpq\\Client\\Generated\Configuration;
+use HiveCpq\\Client\\Generated\FormDataProcessor;
+use HiveCpq\\Client\\Generated\HeaderSelector;
+use HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * OutputDocumentApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -136,9 +136,9 @@ class OutputDocumentApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersOutputdocuments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetManufacturerOutputDocumentsResponse
+     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturerOutputDocumentsResponse
      */
     public function getManufacturersOutputdocuments($manufacturer_id, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersOutputdocuments'][0])
     {
@@ -156,9 +156,9 @@ class OutputDocumentApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersOutputdocuments'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturerOutputDocumentsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturerOutputDocumentsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersOutputdocumentsWithHttpInfo($manufacturer_id, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersOutputdocuments'][0])
     {
@@ -190,7 +190,7 @@ class OutputDocumentApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerOutputDocumentsResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerOutputDocumentsResponse',
                         $request,
                         $response,
                     );
@@ -212,7 +212,7 @@ class OutputDocumentApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetManufacturerOutputDocumentsResponse',
+                '\HiveCpq\\Client\\Generated\Model\GetManufacturerOutputDocumentsResponse',
                 $request,
                 $response,
             );
@@ -221,7 +221,7 @@ class OutputDocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerOutputDocumentsResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerOutputDocumentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -271,7 +271,7 @@ class OutputDocumentApi
      */
     public function getManufacturersOutputdocumentsAsyncWithHttpInfo($manufacturer_id, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersOutputdocuments'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturerOutputDocumentsResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturerOutputDocumentsResponse';
         $request = $this->getManufacturersOutputdocumentsRequest($manufacturer_id, $page, $page_size, $contentType);
 
         return $this->client

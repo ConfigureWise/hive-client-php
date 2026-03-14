@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PutComplaints Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,7 +65,7 @@ class PutComplaints implements ModelInterface, ArrayAccess, \JsonSerializable
         'company_id' => 'string',
         'order_reference' => 'string',
         'claim_number' => 'string',
-        'articles' => '\HiveCpq\Client\Generated\Model\ComplaintArticlesInner[]',
+        'articles' => '\HiveCpq\\Client\\Generated\Model\ComplaintArticlesInner[]',
         'created_by_contact_id' => 'string',
         'created_at' => 'string',
         'updated_by_contact_id' => 'string',
@@ -652,7 +652,7 @@ class PutComplaints implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets articles
      *
-     * @return \HiveCpq\Client\Generated\Model\ComplaintArticlesInner[]
+     * @return \HiveCpq\\Client\\Generated\Model\ComplaintArticlesInner[]
      */
     public function getArticles()
     {
@@ -662,7 +662,7 @@ class PutComplaints implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets articles
      *
-     * @param \HiveCpq\Client\Generated\Model\ComplaintArticlesInner[] $articles articles
+     * @param \HiveCpq\\Client\\Generated\Model\ComplaintArticlesInner[] $articles articles
      *
      * @return self
      */

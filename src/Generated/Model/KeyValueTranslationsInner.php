@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * KeyValueTranslationsInner Class Doc Comment
  *
  * @category Class
  * @description A collection of translated keys and values.
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class KeyValueTranslationsInner implements ModelInterface, ArrayAccess, \JsonSer
       */
     protected static $openAPITypes = [
         'language_code' => 'string',
-        'translations' => '\HiveCpq\Client\Generated\Model\KeyValueTranslationsInnerTranslationsInner[]'
+        'translations' => '\HiveCpq\\Client\\Generated\Model\KeyValueTranslationsInnerTranslationsInner[]'
     ];
 
     /**
@@ -328,7 +328,7 @@ class KeyValueTranslationsInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets translations
      *
-     * @return \HiveCpq\Client\Generated\Model\KeyValueTranslationsInnerTranslationsInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\KeyValueTranslationsInnerTranslationsInner[]|null
      */
     public function getTranslations()
     {
@@ -338,7 +338,7 @@ class KeyValueTranslationsInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets translations
      *
-     * @param \HiveCpq\Client\Generated\Model\KeyValueTranslationsInnerTranslationsInner[]|null $translations translations
+     * @param \HiveCpq\\Client\\Generated\Model\KeyValueTranslationsInnerTranslationsInner[]|null $translations translations
      *
      * @return self
      */

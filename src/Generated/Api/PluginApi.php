@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Api;
+namespace HiveCpq\\Client\\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\Client\Generated\ApiException;
-use HiveCpq\Client\Generated\Configuration;
-use HiveCpq\Client\Generated\FormDataProcessor;
-use HiveCpq\Client\Generated\HeaderSelector;
-use HiveCpq\Client\Generated\ObjectSerializer;
+use HiveCpq\\Client\\Generated\ApiException;
+use HiveCpq\\Client\\Generated\Configuration;
+use HiveCpq\\Client\\Generated\FormDataProcessor;
+use HiveCpq\\Client\\Generated\HeaderSelector;
+use HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PluginApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -135,9 +135,9 @@ class PluginApi
      * @param  string $plugin_token_id The id of the plugin token (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersPluginTokensById'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetPluginToken
+     * @return \HiveCpq\\Client\\Generated\Model\GetPluginToken
      */
     public function getManufacturersPluginTokensById($manufacturer_id, $plugin_token_id, string $contentType = self::contentTypes['getManufacturersPluginTokensById'][0])
     {
@@ -154,9 +154,9 @@ class PluginApi
      * @param  string $plugin_token_id The id of the plugin token (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersPluginTokensById'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetPluginToken, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetPluginToken, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersPluginTokensByIdWithHttpInfo($manufacturer_id, $plugin_token_id, string $contentType = self::contentTypes['getManufacturersPluginTokensById'][0])
     {
@@ -188,7 +188,7 @@ class PluginApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetPluginToken',
+                        '\HiveCpq\\Client\\Generated\Model\GetPluginToken',
                         $request,
                         $response,
                     );
@@ -210,7 +210,7 @@ class PluginApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetPluginToken',
+                '\HiveCpq\\Client\\Generated\Model\GetPluginToken',
                 $request,
                 $response,
             );
@@ -219,7 +219,7 @@ class PluginApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetPluginToken',
+                        '\HiveCpq\\Client\\Generated\Model\GetPluginToken',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -267,7 +267,7 @@ class PluginApi
      */
     public function getManufacturersPluginTokensByIdAsyncWithHttpInfo($manufacturer_id, $plugin_token_id, string $contentType = self::contentTypes['getManufacturersPluginTokensById'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetPluginToken';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetPluginToken';
         $request = $this->getManufacturersPluginTokensByIdRequest($manufacturer_id, $plugin_token_id, $contentType);
 
         return $this->client

@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Api;
+namespace HiveCpq\\Client\\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\Client\Generated\ApiException;
-use HiveCpq\Client\Generated\Configuration;
-use HiveCpq\Client\Generated\FormDataProcessor;
-use HiveCpq\Client\Generated\HeaderSelector;
-use HiveCpq\Client\Generated\ObjectSerializer;
+use HiveCpq\\Client\\Generated\ApiException;
+use HiveCpq\\Client\\Generated\Configuration;
+use HiveCpq\\Client\\Generated\FormDataProcessor;
+use HiveCpq\\Client\\Generated\HeaderSelector;
+use HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * InviteApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -138,12 +138,12 @@ class InviteApi
      * Create invite for a manufacturer
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\CreateInvite|null $create_invite create_invite (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\CreateInvite|null $create_invite create_invite (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createManufacturerInvite'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\Invite
+     * @return \HiveCpq\\Client\\Generated\Model\Invite
      */
     public function createManufacturerInvite($manufacturer_id, $create_invite = null, string $contentType = self::contentTypes['createManufacturerInvite'][0])
     {
@@ -157,12 +157,12 @@ class InviteApi
      * Create invite for a manufacturer
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\CreateInvite|null $create_invite (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\CreateInvite|null $create_invite (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createManufacturerInvite'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\Invite, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\Invite, HTTP status code, HTTP response headers (array of strings)
      */
     public function createManufacturerInviteWithHttpInfo($manufacturer_id, $create_invite = null, string $contentType = self::contentTypes['createManufacturerInvite'][0])
     {
@@ -194,7 +194,7 @@ class InviteApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\Invite',
+                        '\HiveCpq\\Client\\Generated\Model\Invite',
                         $request,
                         $response,
                     );
@@ -216,7 +216,7 @@ class InviteApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\Invite',
+                '\HiveCpq\\Client\\Generated\Model\Invite',
                 $request,
                 $response,
             );
@@ -225,7 +225,7 @@ class InviteApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\Invite',
+                        '\HiveCpq\\Client\\Generated\Model\Invite',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -243,7 +243,7 @@ class InviteApi
      * Create invite for a manufacturer
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\CreateInvite|null $create_invite (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\CreateInvite|null $create_invite (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createManufacturerInvite'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -265,7 +265,7 @@ class InviteApi
      * Create invite for a manufacturer
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\CreateInvite|null $create_invite (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\CreateInvite|null $create_invite (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createManufacturerInvite'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -273,7 +273,7 @@ class InviteApi
      */
     public function createManufacturerInviteAsyncWithHttpInfo($manufacturer_id, $create_invite = null, string $contentType = self::contentTypes['createManufacturerInvite'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\Invite';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\Invite';
         $request = $this->createManufacturerInviteRequest($manufacturer_id, $create_invite, $contentType);
 
         return $this->client
@@ -316,7 +316,7 @@ class InviteApi
      * Create request for operation 'createManufacturerInvite'
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
-     * @param  \HiveCpq\Client\Generated\Model\CreateInvite|null $create_invite (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\CreateInvite|null $create_invite (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createManufacturerInvite'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -429,9 +429,9 @@ class InviteApi
      * @param  string|null $status Find by status: (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerInvites'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetInvitesResponse
+     * @return \HiveCpq\\Client\\Generated\Model\GetInvitesResponse
      */
     public function getManufacturerInvites($manufacturer_id, $contact_id = null, $integrated_system_name = null, $integrated_contact_system_id = null, $status = null, string $contentType = self::contentTypes['getManufacturerInvites'][0])
     {
@@ -451,9 +451,9 @@ class InviteApi
      * @param  string|null $status Find by status: (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerInvites'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetInvitesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetInvitesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerInvitesWithHttpInfo($manufacturer_id, $contact_id = null, $integrated_system_name = null, $integrated_contact_system_id = null, $status = null, string $contentType = self::contentTypes['getManufacturerInvites'][0])
     {
@@ -485,7 +485,7 @@ class InviteApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetInvitesResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetInvitesResponse',
                         $request,
                         $response,
                     );
@@ -507,7 +507,7 @@ class InviteApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetInvitesResponse',
+                '\HiveCpq\\Client\\Generated\Model\GetInvitesResponse',
                 $request,
                 $response,
             );
@@ -516,7 +516,7 @@ class InviteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetInvitesResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetInvitesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -570,7 +570,7 @@ class InviteApi
      */
     public function getManufacturerInvitesAsyncWithHttpInfo($manufacturer_id, $contact_id = null, $integrated_system_name = null, $integrated_contact_system_id = null, $status = null, string $contentType = self::contentTypes['getManufacturerInvites'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetInvitesResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetInvitesResponse';
         $request = $this->getManufacturerInvitesRequest($manufacturer_id, $contact_id, $integrated_system_name, $integrated_contact_system_id, $status, $contentType);
 
         return $this->client
@@ -756,10 +756,10 @@ class InviteApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $invite_id The id of the invite for which an email must be sent (required)
-     * @param  \HiveCpq\Client\Generated\Model\SendInviteEmailRequest|null $send_invite_email_request send_invite_email_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\SendInviteEmailRequest|null $send_invite_email_request send_invite_email_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendInviteEmail'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -775,10 +775,10 @@ class InviteApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $invite_id The id of the invite for which an email must be sent (required)
-     * @param  \HiveCpq\Client\Generated\Model\SendInviteEmailRequest|null $send_invite_email_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\SendInviteEmailRequest|null $send_invite_email_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendInviteEmail'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -826,7 +826,7 @@ class InviteApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $invite_id The id of the invite for which an email must be sent (required)
-     * @param  \HiveCpq\Client\Generated\Model\SendInviteEmailRequest|null $send_invite_email_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\SendInviteEmailRequest|null $send_invite_email_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendInviteEmail'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -849,7 +849,7 @@ class InviteApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $invite_id The id of the invite for which an email must be sent (required)
-     * @param  \HiveCpq\Client\Generated\Model\SendInviteEmailRequest|null $send_invite_email_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\SendInviteEmailRequest|null $send_invite_email_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendInviteEmail'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -888,7 +888,7 @@ class InviteApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $invite_id The id of the invite for which an email must be sent (required)
-     * @param  \HiveCpq\Client\Generated\Model\SendInviteEmailRequest|null $send_invite_email_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\SendInviteEmailRequest|null $send_invite_email_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendInviteEmail'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

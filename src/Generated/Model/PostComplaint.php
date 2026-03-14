@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PostComplaint Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,12 +65,12 @@ class PostComplaint implements ModelInterface, ArrayAccess, \JsonSerializable
         'company_id' => 'string',
         'order_reference' => 'string',
         'claim_number' => 'string',
-        'articles' => '\HiveCpq\Client\Generated\Model\ComplaintArticlesInner[]',
+        'articles' => '\HiveCpq\\Client\\Generated\Model\ComplaintArticlesInner[]',
         'created_by_contact_id' => 'string',
         'created_at' => 'string',
         'updated_by_contact_id' => 'string',
         'updated_at' => 'string',
-        'integrated_system_link' => '\HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink'
+        'integrated_system_link' => '\HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink'
     ];
 
     /**
@@ -656,7 +656,7 @@ class PostComplaint implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets articles
      *
-     * @return \HiveCpq\Client\Generated\Model\ComplaintArticlesInner[]
+     * @return \HiveCpq\\Client\\Generated\Model\ComplaintArticlesInner[]
      */
     public function getArticles()
     {
@@ -666,7 +666,7 @@ class PostComplaint implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets articles
      *
-     * @param \HiveCpq\Client\Generated\Model\ComplaintArticlesInner[] $articles articles
+     * @param \HiveCpq\\Client\\Generated\Model\ComplaintArticlesInner[] $articles articles
      *
      * @return self
      */
@@ -791,7 +791,7 @@ class PostComplaint implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets integrated_system_link
      *
-     * @return \HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink|null
      */
     public function getIntegratedSystemLink()
     {
@@ -801,7 +801,7 @@ class PostComplaint implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets integrated_system_link
      *
-     * @param \HiveCpq\Client\Generated\Model\BasicIntegratedSystemLink|null $integrated_system_link integrated_system_link
+     * @param \HiveCpq\\Client\\Generated\Model\BasicIntegratedSystemLink|null $integrated_system_link integrated_system_link
      *
      * @return self
      */

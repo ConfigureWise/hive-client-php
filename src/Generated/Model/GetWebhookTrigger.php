@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * GetWebhookTrigger Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,8 +66,8 @@ class GetWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializabl
         'open_in_same_tab' => 'bool',
         'location' => 'string',
         'type' => 'string',
-        'permissions' => '\HiveCpq\Client\Generated\Model\PermissionReference[]',
-        'audit' => '\HiveCpq\Client\Generated\Model\Audit'
+        'permissions' => '\HiveCpq\\Client\\Generated\Model\PermissionReference[]',
+        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit'
     ];
 
     /**
@@ -572,7 +572,7 @@ class GetWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets permissions
      *
-     * @return \HiveCpq\Client\Generated\Model\PermissionReference[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\PermissionReference[]|null
      */
     public function getPermissions()
     {
@@ -582,7 +582,7 @@ class GetWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets permissions
      *
-     * @param \HiveCpq\Client\Generated\Model\PermissionReference[]|null $permissions permissions
+     * @param \HiveCpq\\Client\\Generated\Model\PermissionReference[]|null $permissions permissions
      *
      * @return self
      */
@@ -599,7 +599,7 @@ class GetWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets audit
      *
-     * @return \HiveCpq\Client\Generated\Model\Audit|null
+     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -609,7 +609,7 @@ class GetWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets audit
      *
-     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */

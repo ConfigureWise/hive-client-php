@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * GetVersionsResponse Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetVersionsResponse implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\HiveCpq\Client\Generated\Model\ContainerVersion[]',
+        'items' => '\HiveCpq\\Client\\Generated\Model\ContainerVersion[]',
         'total' => 'int'
     ];
 
@@ -300,7 +300,7 @@ class GetVersionsResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets items
      *
-     * @return \HiveCpq\Client\Generated\Model\ContainerVersion[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\ContainerVersion[]|null
      */
     public function getItems()
     {
@@ -310,7 +310,7 @@ class GetVersionsResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets items
      *
-     * @param \HiveCpq\Client\Generated\Model\ContainerVersion[]|null $items items
+     * @param \HiveCpq\\Client\\Generated\Model\ContainerVersion[]|null $items items
      *
      * @return self
      */

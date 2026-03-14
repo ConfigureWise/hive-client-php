@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * ProjectSegmentItem Class Doc Comment
  *
  * @category Class
  * @description The project segment item represents one configuration/component inside the project segment. And item represents the raw value of what the distributor will order.
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,22 +61,22 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'type' => '\HiveCpq\Client\Generated\Model\ProjectSegmentItemType',
-        'configuration_status' => '\HiveCpq\Client\Generated\Model\ConfigurationStatusEnum',
+        'type' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentItemType',
+        'configuration_status' => '\HiveCpq\\Client\\Generated\Model\ConfigurationStatusEnum',
         'sorting_sequence' => 'int',
         'quantity' => 'float',
-        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
-        'price' => '\HiveCpq\Client\Generated\Model\Price',
+        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
+        'price' => '\HiveCpq\\Client\\Generated\Model\Price',
         'external_serial_numbers' => 'string[]',
-        'component' => '\HiveCpq\Client\Generated\Model\ComponentLink',
+        'component' => '\HiveCpq\\Client\\Generated\Model\ComponentLink',
         'product_group' => 'string',
-        'project' => '\HiveCpq\Client\Generated\Model\ProjectLink',
+        'project' => '\HiveCpq\\Client\\Generated\Model\ProjectLink',
         'order_serial_number' => 'string',
         'order_serial_number_matched' => 'bool',
-        'project_segment' => '\HiveCpq\Client\Generated\Model\ProjectSegmentLink',
-        'shipping_schedule' => '\HiveCpq\Client\Generated\Model\ShippingScheduleLink',
-        'audit' => '\HiveCpq\Client\Generated\Model\Audit',
-        'configuration' => '\HiveCpq\Client\Generated\Model\ConfigurationLink'
+        'project_segment' => '\HiveCpq\\Client\\Generated\Model\ProjectSegmentLink',
+        'shipping_schedule' => '\HiveCpq\\Client\\Generated\Model\ShippingScheduleLink',
+        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit',
+        'configuration' => '\HiveCpq\\Client\\Generated\Model\ConfigurationLink'
     ];
 
     /**
@@ -467,7 +467,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets type
      *
-     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentItemType|null
+     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentItemType|null
      */
     public function getType()
     {
@@ -477,7 +477,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets type
      *
-     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentItemType|null $type type
+     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentItemType|null $type type
      *
      * @return self
      */
@@ -494,7 +494,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets configuration_status
      *
-     * @return \HiveCpq\Client\Generated\Model\ConfigurationStatusEnum|null
+     * @return \HiveCpq\\Client\\Generated\Model\ConfigurationStatusEnum|null
      */
     public function getConfigurationStatus()
     {
@@ -504,7 +504,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets configuration_status
      *
-     * @param \HiveCpq\Client\Generated\Model\ConfigurationStatusEnum|null $configuration_status configuration_status
+     * @param \HiveCpq\\Client\\Generated\Model\ConfigurationStatusEnum|null $configuration_status configuration_status
      *
      * @return self
      */
@@ -575,7 +575,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -585,7 +585,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -602,7 +602,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets price
      *
-     * @return \HiveCpq\Client\Generated\Model\Price|null
+     * @return \HiveCpq\\Client\\Generated\Model\Price|null
      */
     public function getPrice()
     {
@@ -612,7 +612,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets price
      *
-     * @param \HiveCpq\Client\Generated\Model\Price|null $price price
+     * @param \HiveCpq\\Client\\Generated\Model\Price|null $price price
      *
      * @return self
      */
@@ -656,7 +656,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets component
      *
-     * @return \HiveCpq\Client\Generated\Model\ComponentLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\ComponentLink|null
      */
     public function getComponent()
     {
@@ -666,7 +666,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets component
      *
-     * @param \HiveCpq\Client\Generated\Model\ComponentLink|null $component component
+     * @param \HiveCpq\\Client\\Generated\Model\ComponentLink|null $component component
      *
      * @return self
      */
@@ -710,7 +710,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets project
      *
-     * @return \HiveCpq\Client\Generated\Model\ProjectLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\ProjectLink|null
      */
     public function getProject()
     {
@@ -720,7 +720,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets project
      *
-     * @param \HiveCpq\Client\Generated\Model\ProjectLink|null $project project
+     * @param \HiveCpq\\Client\\Generated\Model\ProjectLink|null $project project
      *
      * @return self
      */
@@ -791,7 +791,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets project_segment
      *
-     * @return \HiveCpq\Client\Generated\Model\ProjectSegmentLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\ProjectSegmentLink|null
      */
     public function getProjectSegment()
     {
@@ -801,7 +801,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets project_segment
      *
-     * @param \HiveCpq\Client\Generated\Model\ProjectSegmentLink|null $project_segment project_segment
+     * @param \HiveCpq\\Client\\Generated\Model\ProjectSegmentLink|null $project_segment project_segment
      *
      * @return self
      */
@@ -818,7 +818,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets shipping_schedule
      *
-     * @return \HiveCpq\Client\Generated\Model\ShippingScheduleLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\ShippingScheduleLink|null
      */
     public function getShippingSchedule()
     {
@@ -828,7 +828,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets shipping_schedule
      *
-     * @param \HiveCpq\Client\Generated\Model\ShippingScheduleLink|null $shipping_schedule shipping_schedule
+     * @param \HiveCpq\\Client\\Generated\Model\ShippingScheduleLink|null $shipping_schedule shipping_schedule
      *
      * @return self
      */
@@ -845,7 +845,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets audit
      *
-     * @return \HiveCpq\Client\Generated\Model\Audit|null
+     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -855,7 +855,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets audit
      *
-     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */
@@ -872,7 +872,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets configuration
      *
-     * @return \HiveCpq\Client\Generated\Model\ConfigurationLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\ConfigurationLink|null
      */
     public function getConfiguration()
     {
@@ -882,7 +882,7 @@ class ProjectSegmentItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets configuration
      *
-     * @param \HiveCpq\Client\Generated\Model\ConfigurationLink|null $configuration configuration
+     * @param \HiveCpq\\Client\\Generated\Model\ConfigurationLink|null $configuration configuration
      *
      * @return self
      */

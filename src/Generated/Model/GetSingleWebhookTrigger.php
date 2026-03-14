@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * GetSingleWebhookTrigger Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,14 +60,14 @@ class GetSingleWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSeria
     protected static $openAPITypes = [
         'id' => 'string',
         'code' => 'string',
-        'names' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
-        'confirmations' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
+        'names' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
+        'confirmations' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
         'confirmation_required' => 'bool',
         'open_in_same_tab' => 'bool',
         'location' => 'string',
         'type' => 'string',
-        'permissions' => '\HiveCpq\Client\Generated\Model\PermissionReference[]',
-        'audit' => '\HiveCpq\Client\Generated\Model\Audit'
+        'permissions' => '\HiveCpq\\Client\\Generated\Model\PermissionReference[]',
+        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit'
     ];
 
     /**
@@ -418,7 +418,7 @@ class GetSingleWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets names
      *
-     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
      */
     public function getNames()
     {
@@ -428,7 +428,7 @@ class GetSingleWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets names
      *
-     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $names A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $names A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -450,7 +450,7 @@ class GetSingleWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets confirmations
      *
-     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
      */
     public function getConfirmations()
     {
@@ -460,7 +460,7 @@ class GetSingleWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets confirmations
      *
-     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $confirmations A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $confirmations A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -590,7 +590,7 @@ class GetSingleWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets permissions
      *
-     * @return \HiveCpq\Client\Generated\Model\PermissionReference[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\PermissionReference[]|null
      */
     public function getPermissions()
     {
@@ -600,7 +600,7 @@ class GetSingleWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets permissions
      *
-     * @param \HiveCpq\Client\Generated\Model\PermissionReference[]|null $permissions permissions
+     * @param \HiveCpq\\Client\\Generated\Model\PermissionReference[]|null $permissions permissions
      *
      * @return self
      */
@@ -617,7 +617,7 @@ class GetSingleWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets audit
      *
-     * @return \HiveCpq\Client\Generated\Model\Audit|null
+     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -627,7 +627,7 @@ class GetSingleWebhookTrigger implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets audit
      *
-     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */

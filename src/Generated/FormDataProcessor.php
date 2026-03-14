@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,20 +26,20 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated;
+namespace HiveCpq\\Client\\Generated;
 
 use ArrayAccess;
 use DateTime;
 use GuzzleHttp\Psr7\Utils;
 use Psr\Http\Message\StreamInterface;
 use SplFileObject;
-use HiveCpq\Client\Generated\Model\ModelInterface;
+use HiveCpq\\Client\\Generated\Model\ModelInterface;
 
 /**
  * FormDataProcessor Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

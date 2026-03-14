@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * GetComponentPrice Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class GetComponentPrice implements ModelInterface, ArrayAccess, \JsonSerializabl
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'price_catalog' => '\HiveCpq\Client\Generated\Model\PriceCatalogLink',
-        'unit' => '\HiveCpq\Client\Generated\Model\UnitLink',
+        'price_catalog' => '\HiveCpq\\Client\\Generated\Model\PriceCatalogLink',
+        'unit' => '\HiveCpq\\Client\\Generated\Model\UnitLink',
         'cost_price' => 'float',
         'list_price' => 'float',
         'purchase_price' => 'float',
@@ -369,7 +369,7 @@ class GetComponentPrice implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets price_catalog
      *
-     * @return \HiveCpq\Client\Generated\Model\PriceCatalogLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\PriceCatalogLink|null
      */
     public function getPriceCatalog()
     {
@@ -379,7 +379,7 @@ class GetComponentPrice implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets price_catalog
      *
-     * @param \HiveCpq\Client\Generated\Model\PriceCatalogLink|null $price_catalog price_catalog
+     * @param \HiveCpq\\Client\\Generated\Model\PriceCatalogLink|null $price_catalog price_catalog
      *
      * @return self
      */
@@ -396,7 +396,7 @@ class GetComponentPrice implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets unit
      *
-     * @return \HiveCpq\Client\Generated\Model\UnitLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\UnitLink|null
      */
     public function getUnit()
     {
@@ -406,7 +406,7 @@ class GetComponentPrice implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets unit
      *
-     * @param \HiveCpq\Client\Generated\Model\UnitLink|null $unit unit
+     * @param \HiveCpq\\Client\\Generated\Model\UnitLink|null $unit unit
      *
      * @return self
      */

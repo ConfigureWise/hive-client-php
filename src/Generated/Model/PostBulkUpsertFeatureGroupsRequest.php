@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PostBulkUpsertFeatureGroupsRequest Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PostBulkUpsertFeatureGroupsRequest implements ModelInterface, ArrayAccess,
       */
     protected static $openAPITypes = [
         'integrated_system_name' => 'string',
-        'feature_groups' => '\HiveCpq\Client\Generated\Model\PostBulkUpsertFeatureGroupsRequestFeatureGroupsInner[]'
+        'feature_groups' => '\HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeatureGroupsRequestFeatureGroupsInner[]'
     ];
 
     /**
@@ -334,7 +334,7 @@ class PostBulkUpsertFeatureGroupsRequest implements ModelInterface, ArrayAccess,
     /**
      * Gets feature_groups
      *
-     * @return \HiveCpq\Client\Generated\Model\PostBulkUpsertFeatureGroupsRequestFeatureGroupsInner[]
+     * @return \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeatureGroupsRequestFeatureGroupsInner[]
      */
     public function getFeatureGroups()
     {
@@ -344,7 +344,7 @@ class PostBulkUpsertFeatureGroupsRequest implements ModelInterface, ArrayAccess,
     /**
      * Sets feature_groups
      *
-     * @param \HiveCpq\Client\Generated\Model\PostBulkUpsertFeatureGroupsRequestFeatureGroupsInner[] $feature_groups feature_groups
+     * @param \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeatureGroupsRequestFeatureGroupsInner[] $feature_groups feature_groups
      *
      * @return self
      */

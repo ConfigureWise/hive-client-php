@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * GetFeatureGroup Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,9 +60,9 @@ class GetFeatureGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'code' => 'string',
-        'descriptions' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
-        'audit' => '\HiveCpq\Client\Generated\Model\Audit',
-        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]'
+        'descriptions' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
+        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit',
+        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]'
     ];
 
     /**
@@ -379,7 +379,7 @@ class GetFeatureGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets descriptions
      *
-     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
      */
     public function getDescriptions()
     {
@@ -389,7 +389,7 @@ class GetFeatureGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets descriptions
      *
-     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $descriptions A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $descriptions A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -411,7 +411,7 @@ class GetFeatureGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets audit
      *
-     * @return \HiveCpq\Client\Generated\Model\Audit|null
+     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -421,7 +421,7 @@ class GetFeatureGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets audit
      *
-     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */
@@ -438,7 +438,7 @@ class GetFeatureGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -448,7 +448,7 @@ class GetFeatureGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */

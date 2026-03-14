@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * GetManufacturersManufacturerIdConfigurators200Response Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetManufacturersManufacturerIdConfigurators200Response implements ModelInt
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdConfigurators200ResponseItemsInner[]',
+        'items' => '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdConfigurators200ResponseItemsInner[]',
         'total' => 'int'
     ];
 
@@ -300,7 +300,7 @@ class GetManufacturersManufacturerIdConfigurators200Response implements ModelInt
     /**
      * Gets items
      *
-     * @return \HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdConfigurators200ResponseItemsInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdConfigurators200ResponseItemsInner[]|null
      */
     public function getItems()
     {
@@ -310,7 +310,7 @@ class GetManufacturersManufacturerIdConfigurators200Response implements ModelInt
     /**
      * Sets items
      *
-     * @param \HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdConfigurators200ResponseItemsInner[]|null $items items
+     * @param \HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdConfigurators200ResponseItemsInner[]|null $items items
      *
      * @return self
      */

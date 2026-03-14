@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * Component Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,19 +64,19 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
         'ean_code' => 'string',
         'gtin_code' => 'string',
         'script_price' => 'string',
-        'unit_code' => '\HiveCpq\Client\Generated\Model\ComponentUnitLink',
+        'unit_code' => '\HiveCpq\\Client\\Generated\Model\ComponentUnitLink',
         'product_group' => 'string',
         'show_only_for_serial_number' => 'bool',
         'minimum_quantity' => 'float',
-        'name' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
-        'description' => '\HiveCpq\Client\Generated\Model\TranslationsInner[]',
-        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
-        'audit' => '\HiveCpq\Client\Generated\Model\Audit',
-        'price_catalogs' => '\HiveCpq\Client\Generated\Model\ComponentPriceCatalogsInner[]',
-        'categories' => '\HiveCpq\Client\Generated\Model\CategoryLink[]',
-        'exploded_views' => '\HiveCpq\Client\Generated\Model\ComponentExplodedViewsInner[]',
-        'configurable' => '\HiveCpq\Client\Generated\Model\ComponentConfigurable',
-        'features' => '\HiveCpq\Client\Generated\Model\FeatureLink[]'
+        'name' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
+        'description' => '\HiveCpq\\Client\\Generated\Model\TranslationsInner[]',
+        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
+        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit',
+        'price_catalogs' => '\HiveCpq\\Client\\Generated\Model\ComponentPriceCatalogsInner[]',
+        'categories' => '\HiveCpq\\Client\\Generated\Model\CategoryLink[]',
+        'exploded_views' => '\HiveCpq\\Client\\Generated\Model\ComponentExplodedViewsInner[]',
+        'configurable' => '\HiveCpq\\Client\\Generated\Model\ComponentConfigurable',
+        'features' => '\HiveCpq\\Client\\Generated\Model\FeatureLink[]'
     ];
 
     /**
@@ -578,7 +578,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets unit_code
      *
-     * @return \HiveCpq\Client\Generated\Model\ComponentUnitLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\ComponentUnitLink|null
      */
     public function getUnitCode()
     {
@@ -588,7 +588,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets unit_code
      *
-     * @param \HiveCpq\Client\Generated\Model\ComponentUnitLink|null $unit_code unit_code
+     * @param \HiveCpq\\Client\\Generated\Model\ComponentUnitLink|null $unit_code unit_code
      *
      * @return self
      */
@@ -691,7 +691,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets name
      *
-     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
      */
     public function getName()
     {
@@ -701,7 +701,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets name
      *
-     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $name A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $name A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -723,7 +723,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets description
      *
-     * @return \HiveCpq\Client\Generated\Model\TranslationsInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null
      */
     public function getDescription()
     {
@@ -733,7 +733,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets description
      *
-     * @param \HiveCpq\Client\Generated\Model\TranslationsInner[]|null $description A collection of translations. In most cases the EN-US translation will be available.
+     * @param \HiveCpq\\Client\\Generated\Model\TranslationsInner[]|null $description A collection of translations. In most cases the EN-US translation will be available.
      *
      * @return self
      */
@@ -755,7 +755,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -765,7 +765,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -782,7 +782,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets audit
      *
-     * @return \HiveCpq\Client\Generated\Model\Audit|null
+     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -792,7 +792,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets audit
      *
-     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */
@@ -809,7 +809,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price_catalogs
      *
-     * @return \HiveCpq\Client\Generated\Model\ComponentPriceCatalogsInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\ComponentPriceCatalogsInner[]|null
      */
     public function getPriceCatalogs()
     {
@@ -819,7 +819,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price_catalogs
      *
-     * @param \HiveCpq\Client\Generated\Model\ComponentPriceCatalogsInner[]|null $price_catalogs price_catalogs
+     * @param \HiveCpq\\Client\\Generated\Model\ComponentPriceCatalogsInner[]|null $price_catalogs price_catalogs
      *
      * @return self
      */
@@ -836,7 +836,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets categories
      *
-     * @return \HiveCpq\Client\Generated\Model\CategoryLink[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\CategoryLink[]|null
      */
     public function getCategories()
     {
@@ -846,7 +846,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets categories
      *
-     * @param \HiveCpq\Client\Generated\Model\CategoryLink[]|null $categories categories
+     * @param \HiveCpq\\Client\\Generated\Model\CategoryLink[]|null $categories categories
      *
      * @return self
      */
@@ -863,7 +863,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets exploded_views
      *
-     * @return \HiveCpq\Client\Generated\Model\ComponentExplodedViewsInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\ComponentExplodedViewsInner[]|null
      */
     public function getExplodedViews()
     {
@@ -873,7 +873,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets exploded_views
      *
-     * @param \HiveCpq\Client\Generated\Model\ComponentExplodedViewsInner[]|null $exploded_views exploded_views
+     * @param \HiveCpq\\Client\\Generated\Model\ComponentExplodedViewsInner[]|null $exploded_views exploded_views
      *
      * @return self
      */
@@ -890,7 +890,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets configurable
      *
-     * @return \HiveCpq\Client\Generated\Model\ComponentConfigurable|null
+     * @return \HiveCpq\\Client\\Generated\Model\ComponentConfigurable|null
      */
     public function getConfigurable()
     {
@@ -900,7 +900,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets configurable
      *
-     * @param \HiveCpq\Client\Generated\Model\ComponentConfigurable|null $configurable configurable
+     * @param \HiveCpq\\Client\\Generated\Model\ComponentConfigurable|null $configurable configurable
      *
      * @return self
      */
@@ -917,7 +917,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets features
      *
-     * @return \HiveCpq\Client\Generated\Model\FeatureLink[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\FeatureLink[]|null
      */
     public function getFeatures()
     {
@@ -927,7 +927,7 @@ class Component implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets features
      *
-     * @param \HiveCpq\Client\Generated\Model\FeatureLink[]|null $features features
+     * @param \HiveCpq\\Client\\Generated\Model\FeatureLink[]|null $features features
      *
      * @return self
      */

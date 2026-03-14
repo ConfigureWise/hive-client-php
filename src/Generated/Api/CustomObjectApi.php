@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Api;
+namespace HiveCpq\\Client\\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\Client\Generated\ApiException;
-use HiveCpq\Client\Generated\Configuration;
-use HiveCpq\Client\Generated\FormDataProcessor;
-use HiveCpq\Client\Generated\HeaderSelector;
-use HiveCpq\Client\Generated\ObjectSerializer;
+use HiveCpq\\Client\\Generated\ApiException;
+use HiveCpq\\Client\\Generated\Configuration;
+use HiveCpq\\Client\\Generated\FormDataProcessor;
+use HiveCpq\\Client\\Generated\HeaderSelector;
+use HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * CustomObjectApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -157,7 +157,7 @@ class CustomObjectApi
      * @param  string $custom_object_key The Hive ID of a custom object (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersManufacturerIdCustomObjectsCustomObjectTypeCustomObjectKey'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -176,7 +176,7 @@ class CustomObjectApi
      * @param  string $custom_object_key The Hive ID of a custom object (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersManufacturerIdCustomObjectsCustomObjectTypeCustomObjectKey'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -419,9 +419,9 @@ class CustomObjectApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdCustomObjects'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdCustomObjects200Response
+     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdCustomObjects200Response
      */
     public function getManufacturersManufacturerIdCustomObjects($manufacturer_id, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersManufacturerIdCustomObjects'][0])
     {
@@ -439,9 +439,9 @@ class CustomObjectApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdCustomObjects'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdCustomObjects200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdCustomObjects200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdCustomObjectsWithHttpInfo($manufacturer_id, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersManufacturerIdCustomObjects'][0])
     {
@@ -473,7 +473,7 @@ class CustomObjectApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdCustomObjects200Response',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdCustomObjects200Response',
                         $request,
                         $response,
                     );
@@ -495,7 +495,7 @@ class CustomObjectApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdCustomObjects200Response',
+                '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdCustomObjects200Response',
                 $request,
                 $response,
             );
@@ -504,7 +504,7 @@ class CustomObjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdCustomObjects200Response',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdCustomObjects200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -554,7 +554,7 @@ class CustomObjectApi
      */
     public function getManufacturersManufacturerIdCustomObjectsAsyncWithHttpInfo($manufacturer_id, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersManufacturerIdCustomObjects'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdCustomObjects200Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdCustomObjects200Response';
         $request = $this->getManufacturersManufacturerIdCustomObjectsRequest($manufacturer_id, $page, $page_size, $contentType);
 
         return $this->client
@@ -721,9 +721,9 @@ class CustomObjectApi
      * @param  string $custom_object_key The Hive ID of a custom object (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdCustomObjectsCustomObjectKey'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\CustomObject
+     * @return \HiveCpq\\Client\\Generated\Model\CustomObject
      */
     public function getManufacturersManufacturerIdCustomObjectsCustomObjectKey($manufacturer_id, $custom_object_type, $custom_object_key, string $contentType = self::contentTypes['getManufacturersManufacturerIdCustomObjectsCustomObjectKey'][0])
     {
@@ -741,9 +741,9 @@ class CustomObjectApi
      * @param  string $custom_object_key The Hive ID of a custom object (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdCustomObjectsCustomObjectKey'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\CustomObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\CustomObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdCustomObjectsCustomObjectKeyWithHttpInfo($manufacturer_id, $custom_object_type, $custom_object_key, string $contentType = self::contentTypes['getManufacturersManufacturerIdCustomObjectsCustomObjectKey'][0])
     {
@@ -775,7 +775,7 @@ class CustomObjectApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\CustomObject',
+                        '\HiveCpq\\Client\\Generated\Model\CustomObject',
                         $request,
                         $response,
                     );
@@ -797,7 +797,7 @@ class CustomObjectApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\CustomObject',
+                '\HiveCpq\\Client\\Generated\Model\CustomObject',
                 $request,
                 $response,
             );
@@ -806,7 +806,7 @@ class CustomObjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\CustomObject',
+                        '\HiveCpq\\Client\\Generated\Model\CustomObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -856,7 +856,7 @@ class CustomObjectApi
      */
     public function getManufacturersManufacturerIdCustomObjectsCustomObjectKeyAsyncWithHttpInfo($manufacturer_id, $custom_object_type, $custom_object_key, string $contentType = self::contentTypes['getManufacturersManufacturerIdCustomObjectsCustomObjectKey'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\CustomObject';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\CustomObject';
         $request = $this->getManufacturersManufacturerIdCustomObjectsCustomObjectKeyRequest($manufacturer_id, $custom_object_type, $custom_object_key, $contentType);
 
         return $this->client
@@ -1034,9 +1034,9 @@ class CustomObjectApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdCustomObjectsCustomObjectType'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response
+     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response
      */
     public function getManufacturersManufacturerIdCustomObjectsCustomObjectType($manufacturer_id, $custom_object_type, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersManufacturerIdCustomObjectsCustomObjectType'][0])
     {
@@ -1055,9 +1055,9 @@ class CustomObjectApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturersManufacturerIdCustomObjectsCustomObjectType'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturersManufacturerIdCustomObjectsCustomObjectTypeWithHttpInfo($manufacturer_id, $custom_object_type, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersManufacturerIdCustomObjectsCustomObjectType'][0])
     {
@@ -1089,7 +1089,7 @@ class CustomObjectApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response',
                         $request,
                         $response,
                     );
@@ -1111,7 +1111,7 @@ class CustomObjectApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response',
+                '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response',
                 $request,
                 $response,
             );
@@ -1120,7 +1120,7 @@ class CustomObjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1172,7 +1172,7 @@ class CustomObjectApi
      */
     public function getManufacturersManufacturerIdCustomObjectsCustomObjectTypeAsyncWithHttpInfo($manufacturer_id, $custom_object_type, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturersManufacturerIdCustomObjectsCustomObjectType'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturersManufacturerIdCustomObjectsCustomObjectType200Response';
         $request = $this->getManufacturersManufacturerIdCustomObjectsCustomObjectTypeRequest($manufacturer_id, $custom_object_type, $page, $page_size, $contentType);
 
         return $this->client
@@ -1353,7 +1353,7 @@ class CustomObjectApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['manufacturersManufacturerIdResetCustomObjectUpdateTimestampPost'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1370,7 +1370,7 @@ class CustomObjectApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['manufacturersManufacturerIdResetCustomObjectUpdateTimestampPost'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1574,12 +1574,12 @@ class CustomObjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type custom_object_type (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertCustomObjectsRequest|null $post_bulk_upsert_custom_objects_request post_bulk_upsert_custom_objects_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertCustomObjectsRequest|null $post_bulk_upsert_custom_objects_request post_bulk_upsert_custom_objects_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertCustomObjects'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
      */
     public function postBulkUpsertCustomObjects($manufacturer_id, $custom_object_type, $post_bulk_upsert_custom_objects_request = null, string $contentType = self::contentTypes['postBulkUpsertCustomObjects'][0])
     {
@@ -1594,12 +1594,12 @@ class CustomObjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertCustomObjectsRequest|null $post_bulk_upsert_custom_objects_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertCustomObjectsRequest|null $post_bulk_upsert_custom_objects_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertCustomObjects'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postBulkUpsertCustomObjectsWithHttpInfo($manufacturer_id, $custom_object_type, $post_bulk_upsert_custom_objects_request = null, string $contentType = self::contentTypes['postBulkUpsertCustomObjects'][0])
     {
@@ -1631,7 +1631,7 @@ class CustomObjectApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $request,
                         $response,
                     );
@@ -1653,7 +1653,7 @@ class CustomObjectApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                 $request,
                 $response,
             );
@@ -1662,7 +1662,7 @@ class CustomObjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1681,7 +1681,7 @@ class CustomObjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertCustomObjectsRequest|null $post_bulk_upsert_custom_objects_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertCustomObjectsRequest|null $post_bulk_upsert_custom_objects_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertCustomObjects'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1704,7 +1704,7 @@ class CustomObjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertCustomObjectsRequest|null $post_bulk_upsert_custom_objects_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertCustomObjectsRequest|null $post_bulk_upsert_custom_objects_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertCustomObjects'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1712,7 +1712,7 @@ class CustomObjectApi
      */
     public function postBulkUpsertCustomObjectsAsyncWithHttpInfo($manufacturer_id, $custom_object_type, $post_bulk_upsert_custom_objects_request = null, string $contentType = self::contentTypes['postBulkUpsertCustomObjects'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
         $request = $this->postBulkUpsertCustomObjectsRequest($manufacturer_id, $custom_object_type, $post_bulk_upsert_custom_objects_request, $contentType);
 
         return $this->client
@@ -1756,7 +1756,7 @@ class CustomObjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertCustomObjectsRequest|null $post_bulk_upsert_custom_objects_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertCustomObjectsRequest|null $post_bulk_upsert_custom_objects_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertCustomObjects'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1879,12 +1879,12 @@ class CustomObjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type custom_object_type (required)
-     * @param  \HiveCpq\Client\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request upsert_custom_object_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request upsert_custom_object_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCustomObjectsCustomObjectType'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturersManufacturerIdCustomObjectsCustomObjectType($manufacturer_id, $custom_object_type, $upsert_custom_object_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdCustomObjectsCustomObjectType'][0])
     {
@@ -1899,12 +1899,12 @@ class CustomObjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type (required)
-     * @param  \HiveCpq\Client\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCustomObjectsCustomObjectType'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturersManufacturerIdCustomObjectsCustomObjectTypeWithHttpInfo($manufacturer_id, $custom_object_type, $upsert_custom_object_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdCustomObjectsCustomObjectType'][0])
     {
@@ -1936,7 +1936,7 @@ class CustomObjectApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -1958,7 +1958,7 @@ class CustomObjectApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -1967,7 +1967,7 @@ class CustomObjectApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1986,7 +1986,7 @@ class CustomObjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type (required)
-     * @param  \HiveCpq\Client\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCustomObjectsCustomObjectType'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2009,7 +2009,7 @@ class CustomObjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type (required)
-     * @param  \HiveCpq\Client\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCustomObjectsCustomObjectType'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2017,7 +2017,7 @@ class CustomObjectApi
      */
     public function postManufacturersManufacturerIdCustomObjectsCustomObjectTypeAsyncWithHttpInfo($manufacturer_id, $custom_object_type, $upsert_custom_object_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdCustomObjectsCustomObjectType'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturersManufacturerIdCustomObjectsCustomObjectTypeRequest($manufacturer_id, $custom_object_type, $upsert_custom_object_request, $contentType);
 
         return $this->client
@@ -2061,7 +2061,7 @@ class CustomObjectApi
      *
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type (required)
-     * @param  \HiveCpq\Client\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdCustomObjectsCustomObjectType'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2185,10 +2185,10 @@ class CustomObjectApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type custom_object_type (required)
      * @param  string $custom_object_key The Hive ID of a custom object (required)
-     * @param  \HiveCpq\Client\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request upsert_custom_object_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request upsert_custom_object_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCustomObjectsCustomObjectTypeCustomObjectKey'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2205,10 +2205,10 @@ class CustomObjectApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type (required)
      * @param  string $custom_object_key The Hive ID of a custom object (required)
-     * @param  \HiveCpq\Client\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCustomObjectsCustomObjectTypeCustomObjectKey'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2257,7 +2257,7 @@ class CustomObjectApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type (required)
      * @param  string $custom_object_key The Hive ID of a custom object (required)
-     * @param  \HiveCpq\Client\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCustomObjectsCustomObjectTypeCustomObjectKey'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2281,7 +2281,7 @@ class CustomObjectApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type (required)
      * @param  string $custom_object_key The Hive ID of a custom object (required)
-     * @param  \HiveCpq\Client\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCustomObjectsCustomObjectTypeCustomObjectKey'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2321,7 +2321,7 @@ class CustomObjectApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $custom_object_type (required)
      * @param  string $custom_object_key The Hive ID of a custom object (required)
-     * @param  \HiveCpq\Client\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\UpsertCustomObjectRequest|null $upsert_custom_object_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdCustomObjectsCustomObjectTypeCustomObjectKey'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

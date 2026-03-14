@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Api;
+namespace HiveCpq\\Client\\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\Client\Generated\ApiException;
-use HiveCpq\Client\Generated\Configuration;
-use HiveCpq\Client\Generated\FormDataProcessor;
-use HiveCpq\Client\Generated\HeaderSelector;
-use HiveCpq\Client\Generated\ObjectSerializer;
+use HiveCpq\\Client\\Generated\ApiException;
+use HiveCpq\\Client\\Generated\Configuration;
+use HiveCpq\\Client\\Generated\FormDataProcessor;
+use HiveCpq\\Client\\Generated\HeaderSelector;
+use HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * FeatureApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -183,12 +183,12 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyFeatureGroupToAnotherVersion'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse
+     * @return \HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse
      */
     public function copyFeatureGroupToAnotherVersion($manufacturer_id, $name, $version, $feature_group_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyFeatureGroupToAnotherVersion'][0])
     {
@@ -205,12 +205,12 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyFeatureGroupToAnotherVersion'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function copyFeatureGroupToAnotherVersionWithHttpInfo($manufacturer_id, $name, $version, $feature_group_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyFeatureGroupToAnotherVersion'][0])
     {
@@ -242,7 +242,7 @@ class FeatureApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                        '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
                         $request,
                         $response,
                     );
@@ -264,7 +264,7 @@ class FeatureApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
                 $request,
                 $response,
             );
@@ -273,7 +273,7 @@ class FeatureApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                        '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -294,7 +294,7 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyFeatureGroupToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -319,7 +319,7 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyFeatureGroupToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -327,7 +327,7 @@ class FeatureApi
      */
     public function copyFeatureGroupToAnotherVersionAsyncWithHttpInfo($manufacturer_id, $name, $version, $feature_group_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyFeatureGroupToAnotherVersion'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse';
         $request = $this->copyFeatureGroupToAnotherVersionRequest($manufacturer_id, $name, $version, $feature_group_id, $request_post_copy_to_version, $contentType);
 
         return $this->client
@@ -373,7 +373,7 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyFeatureGroupToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -529,12 +529,12 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyFeatureToAnotherVersion'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse
+     * @return \HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse
      */
     public function copyFeatureToAnotherVersion($manufacturer_id, $name, $version, $feature_group_id, $feature_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyFeatureToAnotherVersion'][0])
     {
@@ -552,12 +552,12 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyFeatureToAnotherVersion'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function copyFeatureToAnotherVersionWithHttpInfo($manufacturer_id, $name, $version, $feature_group_id, $feature_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyFeatureToAnotherVersion'][0])
     {
@@ -589,7 +589,7 @@ class FeatureApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                        '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
                         $request,
                         $response,
                     );
@@ -611,7 +611,7 @@ class FeatureApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
                 $request,
                 $response,
             );
@@ -620,7 +620,7 @@ class FeatureApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                        '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -642,7 +642,7 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyFeatureToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -668,7 +668,7 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyFeatureToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -676,7 +676,7 @@ class FeatureApi
      */
     public function copyFeatureToAnotherVersionAsyncWithHttpInfo($manufacturer_id, $name, $version, $feature_group_id, $feature_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyFeatureToAnotherVersion'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse';
         $request = $this->copyFeatureToAnotherVersionRequest($manufacturer_id, $name, $version, $feature_group_id, $feature_id, $request_post_copy_to_version, $contentType);
 
         return $this->client
@@ -723,7 +723,7 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyFeatureToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -896,7 +896,7 @@ class FeatureApi
      * @param  string $feature_id ID of the feature you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerFeature'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -917,7 +917,7 @@ class FeatureApi
      * @param  string $feature_id ID of the feature you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerFeature'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1197,7 +1197,7 @@ class FeatureApi
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerFeatureGroup'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1217,7 +1217,7 @@ class FeatureApi
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturerFeatureGroup'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1479,9 +1479,9 @@ class FeatureApi
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerFeatureGroup'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetFeatureGroup
+     * @return \HiveCpq\\Client\\Generated\Model\GetFeatureGroup
      */
     public function getManufacturerFeatureGroup($manufacturer_id, $name, $version, $feature_group_id, string $contentType = self::contentTypes['getManufacturerFeatureGroup'][0])
     {
@@ -1500,9 +1500,9 @@ class FeatureApi
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerFeatureGroup'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetFeatureGroup, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetFeatureGroup, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerFeatureGroupWithHttpInfo($manufacturer_id, $name, $version, $feature_group_id, string $contentType = self::contentTypes['getManufacturerFeatureGroup'][0])
     {
@@ -1534,7 +1534,7 @@ class FeatureApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetFeatureGroup',
+                        '\HiveCpq\\Client\\Generated\Model\GetFeatureGroup',
                         $request,
                         $response,
                     );
@@ -1556,7 +1556,7 @@ class FeatureApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetFeatureGroup',
+                '\HiveCpq\\Client\\Generated\Model\GetFeatureGroup',
                 $request,
                 $response,
             );
@@ -1565,7 +1565,7 @@ class FeatureApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetFeatureGroup',
+                        '\HiveCpq\\Client\\Generated\Model\GetFeatureGroup',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1617,7 +1617,7 @@ class FeatureApi
      */
     public function getManufacturerFeatureGroupAsyncWithHttpInfo($manufacturer_id, $name, $version, $feature_group_id, string $contentType = self::contentTypes['getManufacturerFeatureGroup'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetFeatureGroup';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetFeatureGroup';
         $request = $this->getManufacturerFeatureGroupRequest($manufacturer_id, $name, $version, $feature_group_id, $contentType);
 
         return $this->client
@@ -1816,9 +1816,9 @@ class FeatureApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerFeatureGroups'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetManufacturerFeatureGroupsResponse
+     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturerFeatureGroupsResponse
      */
     public function getManufacturerFeatureGroups($manufacturer_id, $name, $version, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $language = null, string $contentType = self::contentTypes['getManufacturerFeatureGroups'][0])
     {
@@ -1842,9 +1842,9 @@ class FeatureApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerFeatureGroups'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturerFeatureGroupsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturerFeatureGroupsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerFeatureGroupsWithHttpInfo($manufacturer_id, $name, $version, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $language = null, string $contentType = self::contentTypes['getManufacturerFeatureGroups'][0])
     {
@@ -1876,7 +1876,7 @@ class FeatureApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerFeatureGroupsResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerFeatureGroupsResponse',
                         $request,
                         $response,
                     );
@@ -1898,7 +1898,7 @@ class FeatureApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetManufacturerFeatureGroupsResponse',
+                '\HiveCpq\\Client\\Generated\Model\GetManufacturerFeatureGroupsResponse',
                 $request,
                 $response,
             );
@@ -1907,7 +1907,7 @@ class FeatureApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerFeatureGroupsResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerFeatureGroupsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1969,7 +1969,7 @@ class FeatureApi
      */
     public function getManufacturerFeatureGroupsAsyncWithHttpInfo($manufacturer_id, $name, $version, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $language = null, string $contentType = self::contentTypes['getManufacturerFeatureGroups'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturerFeatureGroupsResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturerFeatureGroupsResponse';
         $request = $this->getManufacturerFeatureGroupsRequest($manufacturer_id, $name, $version, $ids_in, $integrated_system_name, $integrated_system_ids_in, $page, $page_size, $language, $contentType);
 
         return $this->client
@@ -2219,9 +2219,9 @@ class FeatureApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerFeatures'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetManufacturerFeaturesResponse
+     * @return \HiveCpq\\Client\\Generated\Model\GetManufacturerFeaturesResponse
      */
     public function getManufacturerFeatures($manufacturer_id, $name, $version, $feature_group_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $language = null, string $contentType = self::contentTypes['getManufacturerFeatures'][0])
     {
@@ -2246,9 +2246,9 @@ class FeatureApi
      * @param  string|null $language Specify the ISO 639-1 language code in which translated fields should be returned. If not provided, the language of the user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerFeatures'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetManufacturerFeaturesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetManufacturerFeaturesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerFeaturesWithHttpInfo($manufacturer_id, $name, $version, $feature_group_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $language = null, string $contentType = self::contentTypes['getManufacturerFeatures'][0])
     {
@@ -2280,7 +2280,7 @@ class FeatureApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerFeaturesResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerFeaturesResponse',
                         $request,
                         $response,
                     );
@@ -2302,7 +2302,7 @@ class FeatureApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetManufacturerFeaturesResponse',
+                '\HiveCpq\\Client\\Generated\Model\GetManufacturerFeaturesResponse',
                 $request,
                 $response,
             );
@@ -2311,7 +2311,7 @@ class FeatureApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetManufacturerFeaturesResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetManufacturerFeaturesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2375,7 +2375,7 @@ class FeatureApi
      */
     public function getManufacturerFeaturesAsyncWithHttpInfo($manufacturer_id, $name, $version, $feature_group_id, $ids_in = null, $integrated_system_name = null, $integrated_system_ids_in = null, $page = 0, $page_size = 10, $language = null, string $contentType = self::contentTypes['getManufacturerFeatures'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetManufacturerFeaturesResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetManufacturerFeaturesResponse';
         $request = $this->getManufacturerFeaturesRequest($manufacturer_id, $name, $version, $feature_group_id, $ids_in, $integrated_system_name, $integrated_system_ids_in, $page, $page_size, $language, $contentType);
 
         return $this->client
@@ -2636,9 +2636,9 @@ class FeatureApi
      * @param  string $feature_id ID of the feature you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerSingleFeature'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetFeature
+     * @return \HiveCpq\\Client\\Generated\Model\GetFeature
      */
     public function getManufacturerSingleFeature($manufacturer_id, $name, $version, $feature_group_id, $feature_id, string $contentType = self::contentTypes['getManufacturerSingleFeature'][0])
     {
@@ -2658,9 +2658,9 @@ class FeatureApi
      * @param  string $feature_id ID of the feature you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerSingleFeature'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetFeature, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetFeature, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerSingleFeatureWithHttpInfo($manufacturer_id, $name, $version, $feature_group_id, $feature_id, string $contentType = self::contentTypes['getManufacturerSingleFeature'][0])
     {
@@ -2692,7 +2692,7 @@ class FeatureApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetFeature',
+                        '\HiveCpq\\Client\\Generated\Model\GetFeature',
                         $request,
                         $response,
                     );
@@ -2714,7 +2714,7 @@ class FeatureApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetFeature',
+                '\HiveCpq\\Client\\Generated\Model\GetFeature',
                 $request,
                 $response,
             );
@@ -2723,7 +2723,7 @@ class FeatureApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetFeature',
+                        '\HiveCpq\\Client\\Generated\Model\GetFeature',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2777,7 +2777,7 @@ class FeatureApi
      */
     public function getManufacturerSingleFeatureAsyncWithHttpInfo($manufacturer_id, $name, $version, $feature_group_id, $feature_id, string $contentType = self::contentTypes['getManufacturerSingleFeature'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetFeature';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetFeature';
         $request = $this->getManufacturerSingleFeatureRequest($manufacturer_id, $name, $version, $feature_group_id, $feature_id, $contentType);
 
         return $this->client
@@ -2984,12 +2984,12 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertFeatureGroupsRequest|null $post_bulk_upsert_feature_groups_request post_bulk_upsert_feature_groups_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeatureGroupsRequest|null $post_bulk_upsert_feature_groups_request post_bulk_upsert_feature_groups_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertFeatureGroups'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
      */
     public function postBulkUpsertFeatureGroups($manufacturer_id, $name, $version, $post_bulk_upsert_feature_groups_request = null, string $contentType = self::contentTypes['postBulkUpsertFeatureGroups'][0])
     {
@@ -3005,12 +3005,12 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertFeatureGroupsRequest|null $post_bulk_upsert_feature_groups_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeatureGroupsRequest|null $post_bulk_upsert_feature_groups_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertFeatureGroups'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postBulkUpsertFeatureGroupsWithHttpInfo($manufacturer_id, $name, $version, $post_bulk_upsert_feature_groups_request = null, string $contentType = self::contentTypes['postBulkUpsertFeatureGroups'][0])
     {
@@ -3042,7 +3042,7 @@ class FeatureApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $request,
                         $response,
                     );
@@ -3064,7 +3064,7 @@ class FeatureApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                 $request,
                 $response,
             );
@@ -3073,7 +3073,7 @@ class FeatureApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3093,7 +3093,7 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertFeatureGroupsRequest|null $post_bulk_upsert_feature_groups_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeatureGroupsRequest|null $post_bulk_upsert_feature_groups_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertFeatureGroups'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3117,7 +3117,7 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertFeatureGroupsRequest|null $post_bulk_upsert_feature_groups_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeatureGroupsRequest|null $post_bulk_upsert_feature_groups_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertFeatureGroups'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3125,7 +3125,7 @@ class FeatureApi
      */
     public function postBulkUpsertFeatureGroupsAsyncWithHttpInfo($manufacturer_id, $name, $version, $post_bulk_upsert_feature_groups_request = null, string $contentType = self::contentTypes['postBulkUpsertFeatureGroups'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
         $request = $this->postBulkUpsertFeatureGroupsRequest($manufacturer_id, $name, $version, $post_bulk_upsert_feature_groups_request, $contentType);
 
         return $this->client
@@ -3170,7 +3170,7 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertFeatureGroupsRequest|null $post_bulk_upsert_feature_groups_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeatureGroupsRequest|null $post_bulk_upsert_feature_groups_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertFeatureGroups'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3309,12 +3309,12 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertFeaturesRequest|null $post_bulk_upsert_features_request post_bulk_upsert_features_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeaturesRequest|null $post_bulk_upsert_features_request post_bulk_upsert_features_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertFeatures'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
      */
     public function postBulkUpsertFeatures($manufacturer_id, $name, $version, $post_bulk_upsert_features_request = null, string $contentType = self::contentTypes['postBulkUpsertFeatures'][0])
     {
@@ -3330,12 +3330,12 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertFeaturesRequest|null $post_bulk_upsert_features_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeaturesRequest|null $post_bulk_upsert_features_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertFeatures'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postBulkUpsertFeaturesWithHttpInfo($manufacturer_id, $name, $version, $post_bulk_upsert_features_request = null, string $contentType = self::contentTypes['postBulkUpsertFeatures'][0])
     {
@@ -3367,7 +3367,7 @@ class FeatureApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $request,
                         $response,
                     );
@@ -3389,7 +3389,7 @@ class FeatureApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                 $request,
                 $response,
             );
@@ -3398,7 +3398,7 @@ class FeatureApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3418,7 +3418,7 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertFeaturesRequest|null $post_bulk_upsert_features_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeaturesRequest|null $post_bulk_upsert_features_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertFeatures'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3442,7 +3442,7 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertFeaturesRequest|null $post_bulk_upsert_features_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeaturesRequest|null $post_bulk_upsert_features_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertFeatures'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3450,7 +3450,7 @@ class FeatureApi
      */
     public function postBulkUpsertFeaturesAsyncWithHttpInfo($manufacturer_id, $name, $version, $post_bulk_upsert_features_request = null, string $contentType = self::contentTypes['postBulkUpsertFeatures'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
         $request = $this->postBulkUpsertFeaturesRequest($manufacturer_id, $name, $version, $post_bulk_upsert_features_request, $contentType);
 
         return $this->client
@@ -3495,7 +3495,7 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostBulkUpsertFeaturesRequest|null $post_bulk_upsert_features_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostBulkUpsertFeaturesRequest|null $post_bulk_upsert_features_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBulkUpsertFeatures'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3635,12 +3635,12 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id The hive id of the feature group (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostFeature|null $post_feature post_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostFeature|null $post_feature post_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerFeature'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturerFeature($manufacturer_id, $name, $version, $feature_group_id, $post_feature = null, string $contentType = self::contentTypes['postManufacturerFeature'][0])
     {
@@ -3657,12 +3657,12 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id The hive id of the feature group (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostFeature|null $post_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostFeature|null $post_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerFeature'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturerFeatureWithHttpInfo($manufacturer_id, $name, $version, $feature_group_id, $post_feature = null, string $contentType = self::contentTypes['postManufacturerFeature'][0])
     {
@@ -3694,7 +3694,7 @@ class FeatureApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -3716,7 +3716,7 @@ class FeatureApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -3725,7 +3725,7 @@ class FeatureApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3746,7 +3746,7 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id The hive id of the feature group (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostFeature|null $post_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostFeature|null $post_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerFeature'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3771,7 +3771,7 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id The hive id of the feature group (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostFeature|null $post_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostFeature|null $post_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerFeature'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3779,7 +3779,7 @@ class FeatureApi
      */
     public function postManufacturerFeatureAsyncWithHttpInfo($manufacturer_id, $name, $version, $feature_group_id, $post_feature = null, string $contentType = self::contentTypes['postManufacturerFeature'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturerFeatureRequest($manufacturer_id, $name, $version, $feature_group_id, $post_feature, $contentType);
 
         return $this->client
@@ -3825,7 +3825,7 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id The hive id of the feature group (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostFeature|null $post_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostFeature|null $post_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerFeature'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3979,12 +3979,12 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostFeatureGroup|null $post_feature_group post_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostFeatureGroup|null $post_feature_group post_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerFeatureGroup'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
      */
     public function postManufacturerFeatureGroup($manufacturer_id, $name, $version, $post_feature_group = null, string $contentType = self::contentTypes['postManufacturerFeatureGroup'][0])
     {
@@ -4000,12 +4000,12 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostFeatureGroup|null $post_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostFeatureGroup|null $post_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerFeatureGroup'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturerFeatureGroupWithHttpInfo($manufacturer_id, $name, $version, $post_feature_group = null, string $contentType = self::contentTypes['postManufacturerFeatureGroup'][0])
     {
@@ -4037,7 +4037,7 @@ class FeatureApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -4059,7 +4059,7 @@ class FeatureApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -4068,7 +4068,7 @@ class FeatureApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4088,7 +4088,7 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostFeatureGroup|null $post_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostFeatureGroup|null $post_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerFeatureGroup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4112,7 +4112,7 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostFeatureGroup|null $post_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostFeatureGroup|null $post_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerFeatureGroup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4120,7 +4120,7 @@ class FeatureApi
      */
     public function postManufacturerFeatureGroupAsyncWithHttpInfo($manufacturer_id, $name, $version, $post_feature_group = null, string $contentType = self::contentTypes['postManufacturerFeatureGroup'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->postManufacturerFeatureGroupRequest($manufacturer_id, $name, $version, $post_feature_group, $contentType);
 
         return $this->client
@@ -4165,7 +4165,7 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostFeatureGroup|null $post_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostFeatureGroup|null $post_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturerFeatureGroup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4306,10 +4306,10 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostChangeFeatureGroup|null $post_change_feature_group post_change_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostChangeFeatureGroup|null $post_change_feature_group post_change_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersChangeFeatureGroup'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4328,10 +4328,10 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostChangeFeatureGroup|null $post_change_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostChangeFeatureGroup|null $post_change_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersChangeFeatureGroup'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4382,7 +4382,7 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostChangeFeatureGroup|null $post_change_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostChangeFeatureGroup|null $post_change_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersChangeFeatureGroup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4408,7 +4408,7 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostChangeFeatureGroup|null $post_change_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostChangeFeatureGroup|null $post_change_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersChangeFeatureGroup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4450,7 +4450,7 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostChangeFeatureGroup|null $post_change_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostChangeFeatureGroup|null $post_change_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersChangeFeatureGroup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4620,10 +4620,10 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id The hive id of the feature group (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostReorderFeature|null $post_reorder_feature post_reorder_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostReorderFeature|null $post_reorder_feature post_reorder_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersFeaturesReOrder'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4641,10 +4641,10 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id The hive id of the feature group (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostReorderFeature|null $post_reorder_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostReorderFeature|null $post_reorder_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersFeaturesReOrder'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4694,7 +4694,7 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id The hive id of the feature group (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostReorderFeature|null $post_reorder_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostReorderFeature|null $post_reorder_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersFeaturesReOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4719,7 +4719,7 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id The hive id of the feature group (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostReorderFeature|null $post_reorder_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostReorderFeature|null $post_reorder_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersFeaturesReOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4760,7 +4760,7 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id The hive id of the feature group (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostReorderFeature|null $post_reorder_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostReorderFeature|null $post_reorder_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersFeaturesReOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4914,10 +4914,10 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostReOrderFeatureGroup|null $post_re_order_feature_group post_re_order_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostReOrderFeatureGroup|null $post_re_order_feature_group post_re_order_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdContainersNameVersionsVersionFeatureGroupsReOrder'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4934,10 +4934,10 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostReOrderFeatureGroup|null $post_re_order_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostReOrderFeatureGroup|null $post_re_order_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdContainersNameVersionsVersionFeatureGroupsReOrder'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4986,7 +4986,7 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostReOrderFeatureGroup|null $post_re_order_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostReOrderFeatureGroup|null $post_re_order_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdContainersNameVersionsVersionFeatureGroupsReOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5010,7 +5010,7 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostReOrderFeatureGroup|null $post_re_order_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostReOrderFeatureGroup|null $post_re_order_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdContainersNameVersionsVersionFeatureGroupsReOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5050,7 +5050,7 @@ class FeatureApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostReOrderFeatureGroup|null $post_re_order_feature_group (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostReOrderFeatureGroup|null $post_re_order_feature_group (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdContainersNameVersionsVersionFeatureGroupsReOrder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5190,10 +5190,10 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutFeatureGroup|null $put_feature_group  (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutFeatureGroup|null $put_feature_group  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerFeatureGroup'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -5211,10 +5211,10 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutFeatureGroup|null $put_feature_group  (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutFeatureGroup|null $put_feature_group  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerFeatureGroup'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5264,7 +5264,7 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutFeatureGroup|null $put_feature_group  (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutFeatureGroup|null $put_feature_group  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerFeatureGroup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5289,7 +5289,7 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutFeatureGroup|null $put_feature_group  (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutFeatureGroup|null $put_feature_group  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerFeatureGroup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5330,7 +5330,7 @@ class FeatureApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutFeatureGroup|null $put_feature_group  (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutFeatureGroup|null $put_feature_group  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturerFeatureGroup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5486,10 +5486,10 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutFeature|null $put_feature put_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutFeature|null $put_feature put_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdContainersNameVersionsVersionFeatureGroupsFeatureGroupIdFeaturesFeatureId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -5508,10 +5508,10 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutFeature|null $put_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutFeature|null $put_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdContainersNameVersionsVersionFeatureGroupsFeatureGroupIdFeaturesFeatureId'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5562,7 +5562,7 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutFeature|null $put_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutFeature|null $put_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdContainersNameVersionsVersionFeatureGroupsFeatureGroupIdFeaturesFeatureId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5588,7 +5588,7 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutFeature|null $put_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutFeature|null $put_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdContainersNameVersionsVersionFeatureGroupsFeatureGroupIdFeaturesFeatureId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5630,7 +5630,7 @@ class FeatureApi
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $feature_group_id ID of the feature group you want to access. (required)
      * @param  string $feature_id ID of the feature you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutFeature|null $put_feature (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutFeature|null $put_feature (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersManufacturerIdContainersNameVersionsVersionFeatureGroupsFeatureGroupIdFeaturesFeatureId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

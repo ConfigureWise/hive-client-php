@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Api;
+namespace HiveCpq\\Client\\Generated\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use HiveCpq\Client\Generated\ApiException;
-use HiveCpq\Client\Generated\Configuration;
-use HiveCpq\Client\Generated\FormDataProcessor;
-use HiveCpq\Client\Generated\HeaderSelector;
-use HiveCpq\Client\Generated\ObjectSerializer;
+use HiveCpq\\Client\\Generated\ApiException;
+use HiveCpq\\Client\\Generated\Configuration;
+use HiveCpq\\Client\\Generated\FormDataProcessor;
+use HiveCpq\\Client\\Generated\HeaderSelector;
+use HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * PropertyApi Class Doc Comment
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -149,12 +149,12 @@ class PropertyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostProperty|null $post_property post_property (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostProperty|null $post_property post_property (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerProperty'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response
      */
     public function addManufacturerProperty($manufacturer_id, $name, $version, $post_property = null, string $contentType = self::contentTypes['addManufacturerProperty'][0])
     {
@@ -170,12 +170,12 @@ class PropertyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostProperty|null $post_property (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostProperty|null $post_property (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerProperty'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function addManufacturerPropertyWithHttpInfo($manufacturer_id, $name, $version, $post_property = null, string $contentType = self::contentTypes['addManufacturerProperty'][0])
     {
@@ -207,7 +207,7 @@ class PropertyApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $request,
                         $response,
                     );
@@ -229,7 +229,7 @@ class PropertyApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                 $request,
                 $response,
             );
@@ -238,7 +238,7 @@ class PropertyApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -258,7 +258,7 @@ class PropertyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostProperty|null $post_property (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostProperty|null $post_property (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerProperty'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -282,7 +282,7 @@ class PropertyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostProperty|null $post_property (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostProperty|null $post_property (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerProperty'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -290,7 +290,7 @@ class PropertyApi
      */
     public function addManufacturerPropertyAsyncWithHttpInfo($manufacturer_id, $name, $version, $post_property = null, string $contentType = self::contentTypes['addManufacturerProperty'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersCompany201Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersCompany201Response';
         $request = $this->addManufacturerPropertyRequest($manufacturer_id, $name, $version, $post_property, $contentType);
 
         return $this->client
@@ -335,7 +335,7 @@ class PropertyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostProperty|null $post_property (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostProperty|null $post_property (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addManufacturerProperty'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -475,12 +475,12 @@ class PropertyApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $property_id ID of the property you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyPropertyToAnotherVersion'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse
+     * @return \HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse
      */
     public function copyPropertyToAnotherVersion($manufacturer_id, $name, $version, $property_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyPropertyToAnotherVersion'][0])
     {
@@ -497,12 +497,12 @@ class PropertyApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $property_id ID of the property you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyPropertyToAnotherVersion'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function copyPropertyToAnotherVersionWithHttpInfo($manufacturer_id, $name, $version, $property_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyPropertyToAnotherVersion'][0])
     {
@@ -534,7 +534,7 @@ class PropertyApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                        '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
                         $request,
                         $response,
                     );
@@ -556,7 +556,7 @@ class PropertyApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
                 $request,
                 $response,
             );
@@ -565,7 +565,7 @@ class PropertyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse',
+                        '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -586,7 +586,7 @@ class PropertyApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $property_id ID of the property you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyPropertyToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -611,7 +611,7 @@ class PropertyApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $property_id ID of the property you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyPropertyToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -619,7 +619,7 @@ class PropertyApi
      */
     public function copyPropertyToAnotherVersionAsyncWithHttpInfo($manufacturer_id, $name, $version, $property_id, $request_post_copy_to_version = null, string $contentType = self::contentTypes['copyPropertyToAnotherVersion'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\ResponseObjectCopiedToVersionResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\ResponseObjectCopiedToVersionResponse';
         $request = $this->copyPropertyToAnotherVersionRequest($manufacturer_id, $name, $version, $property_id, $request_post_copy_to_version, $contentType);
 
         return $this->client
@@ -665,7 +665,7 @@ class PropertyApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $property_id ID of the property you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\RequestPostCopyToVersion|null $request_post_copy_to_version (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyPropertyToAnotherVersion'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -822,7 +822,7 @@ class PropertyApi
      * @param  string $property_id ID of the property you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersProperty'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -842,7 +842,7 @@ class PropertyApi
      * @param  string $property_id ID of the property you want to access. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManufacturersProperty'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1108,9 +1108,9 @@ class PropertyApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerProperties'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\GetPropertiesResponse
+     * @return \HiveCpq\\Client\\Generated\Model\GetPropertiesResponse
      */
     public function getManufacturerProperties($manufacturer_id, $name, $version, $ids_in = null, $integrated_system_ids_in = null, $integrated_system_name = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerProperties'][0])
     {
@@ -1133,9 +1133,9 @@ class PropertyApi
      * @param  int|null $page_size Control the size of the returned page. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManufacturerProperties'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\GetPropertiesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\GetPropertiesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerPropertiesWithHttpInfo($manufacturer_id, $name, $version, $ids_in = null, $integrated_system_ids_in = null, $integrated_system_name = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerProperties'][0])
     {
@@ -1167,7 +1167,7 @@ class PropertyApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\GetPropertiesResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetPropertiesResponse',
                         $request,
                         $response,
                     );
@@ -1189,7 +1189,7 @@ class PropertyApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\GetPropertiesResponse',
+                '\HiveCpq\\Client\\Generated\Model\GetPropertiesResponse',
                 $request,
                 $response,
             );
@@ -1198,7 +1198,7 @@ class PropertyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\GetPropertiesResponse',
+                        '\HiveCpq\\Client\\Generated\Model\GetPropertiesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1258,7 +1258,7 @@ class PropertyApi
      */
     public function getManufacturerPropertiesAsyncWithHttpInfo($manufacturer_id, $name, $version, $ids_in = null, $integrated_system_ids_in = null, $integrated_system_name = null, $page = 0, $page_size = 10, string $contentType = self::contentTypes['getManufacturerProperties'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\GetPropertiesResponse';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\GetPropertiesResponse';
         $request = $this->getManufacturerPropertiesRequest($manufacturer_id, $name, $version, $ids_in, $integrated_system_ids_in, $integrated_system_name, $page, $page_size, $contentType);
 
         return $this->client
@@ -1488,12 +1488,12 @@ class PropertyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdPropertiesBulkUpsertRequest|null $post_manufacturers_manufacturer_id_properties_bulk_upsert_request post_manufacturers_manufacturer_id_properties_bulk_upsert_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdPropertiesBulkUpsertRequest|null $post_manufacturers_manufacturer_id_properties_bulk_upsert_request post_manufacturers_manufacturer_id_properties_bulk_upsert_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdPropertiesBulkUpsert'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
+     * @return \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response
      */
     public function postManufacturersManufacturerIdPropertiesBulkUpsert($manufacturer_id, $name, $version, $post_manufacturers_manufacturer_id_properties_bulk_upsert_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdPropertiesBulkUpsert'][0])
     {
@@ -1509,12 +1509,12 @@ class PropertyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdPropertiesBulkUpsertRequest|null $post_manufacturers_manufacturer_id_properties_bulk_upsert_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdPropertiesBulkUpsertRequest|null $post_manufacturers_manufacturer_id_properties_bulk_upsert_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdPropertiesBulkUpsert'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postManufacturersManufacturerIdPropertiesBulkUpsertWithHttpInfo($manufacturer_id, $name, $version, $post_manufacturers_manufacturer_id_properties_bulk_upsert_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdPropertiesBulkUpsert'][0])
     {
@@ -1546,7 +1546,7 @@ class PropertyApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $request,
                         $response,
                     );
@@ -1568,7 +1568,7 @@ class PropertyApi
             }
 
             return $this->handleResponseWithDataType(
-                '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                 $request,
                 $response,
             );
@@ -1577,7 +1577,7 @@ class PropertyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
+                        '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1597,7 +1597,7 @@ class PropertyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdPropertiesBulkUpsertRequest|null $post_manufacturers_manufacturer_id_properties_bulk_upsert_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdPropertiesBulkUpsertRequest|null $post_manufacturers_manufacturer_id_properties_bulk_upsert_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdPropertiesBulkUpsert'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1621,7 +1621,7 @@ class PropertyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdPropertiesBulkUpsertRequest|null $post_manufacturers_manufacturer_id_properties_bulk_upsert_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdPropertiesBulkUpsertRequest|null $post_manufacturers_manufacturer_id_properties_bulk_upsert_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdPropertiesBulkUpsert'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1629,7 +1629,7 @@ class PropertyApi
      */
     public function postManufacturersManufacturerIdPropertiesBulkUpsertAsyncWithHttpInfo($manufacturer_id, $name, $version, $post_manufacturers_manufacturer_id_properties_bulk_upsert_request = null, string $contentType = self::contentTypes['postManufacturersManufacturerIdPropertiesBulkUpsert'][0])
     {
-        $returnType = '\HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
+        $returnType = '\HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdComponentsBulkUpsert200Response';
         $request = $this->postManufacturersManufacturerIdPropertiesBulkUpsertRequest($manufacturer_id, $name, $version, $post_manufacturers_manufacturer_id_properties_bulk_upsert_request, $contentType);
 
         return $this->client
@@ -1674,7 +1674,7 @@ class PropertyApi
      * @param  string $manufacturer_id ID of the manufacturer company to which you are connecting. (required)
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PostManufacturersManufacturerIdPropertiesBulkUpsertRequest|null $post_manufacturers_manufacturer_id_properties_bulk_upsert_request (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PostManufacturersManufacturerIdPropertiesBulkUpsertRequest|null $post_manufacturers_manufacturer_id_properties_bulk_upsert_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postManufacturersManufacturerIdPropertiesBulkUpsert'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1814,10 +1814,10 @@ class PropertyApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $property_id ID of the property you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutProperty|null $put_property put_property (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutProperty|null $put_property put_property (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersProperty'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1835,10 +1835,10 @@ class PropertyApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $property_id ID of the property you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutProperty|null $put_property (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutProperty|null $put_property (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersProperty'] to see the possible values for this operation
      *
-     * @throws \HiveCpq\Client\Generated\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \HiveCpq\\Client\\Generated\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1888,7 +1888,7 @@ class PropertyApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $property_id ID of the property you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutProperty|null $put_property (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutProperty|null $put_property (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersProperty'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1913,7 +1913,7 @@ class PropertyApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $property_id ID of the property you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutProperty|null $put_property (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutProperty|null $put_property (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersProperty'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1954,7 +1954,7 @@ class PropertyApi
      * @param  string $name Name of the container you want to access. (required)
      * @param  string $version Number of the version (e.g. 1.0.0) you want to access. Providing &#39;top&#39; accesses the highest available version. (required)
      * @param  string $property_id ID of the property you want to access. (required)
-     * @param  \HiveCpq\Client\Generated\Model\PutProperty|null $put_property (optional)
+     * @param  \HiveCpq\\Client\\Generated\Model\PutProperty|null $put_property (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putManufacturersProperty'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

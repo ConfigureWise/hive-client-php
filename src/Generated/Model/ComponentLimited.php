@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * ComponentLimited Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,12 +65,12 @@ class ComponentLimited implements ModelInterface, ArrayAccess, \JsonSerializable
         'article_code' => 'string',
         'ean_code' => 'string',
         'gtin_code' => 'string',
-        'unit_code' => '\HiveCpq\Client\Generated\Model\ComponentUnitLink',
+        'unit_code' => '\HiveCpq\\Client\\Generated\Model\ComponentUnitLink',
         'product_group' => 'string',
         'show_only_for_serial_number' => 'bool',
         'minimum_quantity' => 'float',
-        'external_links' => '\HiveCpq\Client\Generated\Model\ExternalLinksInner[]',
-        'audit' => '\HiveCpq\Client\Generated\Model\Audit',
+        'external_links' => '\HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]',
+        'audit' => '\HiveCpq\\Client\\Generated\Model\Audit',
         'configurable' => 'bool'
     ];
 
@@ -562,7 +562,7 @@ class ComponentLimited implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets unit_code
      *
-     * @return \HiveCpq\Client\Generated\Model\ComponentUnitLink|null
+     * @return \HiveCpq\\Client\\Generated\Model\ComponentUnitLink|null
      */
     public function getUnitCode()
     {
@@ -572,7 +572,7 @@ class ComponentLimited implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets unit_code
      *
-     * @param \HiveCpq\Client\Generated\Model\ComponentUnitLink|null $unit_code unit_code
+     * @param \HiveCpq\\Client\\Generated\Model\ComponentUnitLink|null $unit_code unit_code
      *
      * @return self
      */
@@ -675,7 +675,7 @@ class ComponentLimited implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets external_links
      *
-     * @return \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null
+     * @return \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null
      */
     public function getExternalLinks()
     {
@@ -685,7 +685,7 @@ class ComponentLimited implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets external_links
      *
-     * @param \HiveCpq\Client\Generated\Model\ExternalLinksInner[]|null $external_links external_links
+     * @param \HiveCpq\\Client\\Generated\Model\ExternalLinksInner[]|null $external_links external_links
      *
      * @return self
      */
@@ -702,7 +702,7 @@ class ComponentLimited implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets audit
      *
-     * @return \HiveCpq\Client\Generated\Model\Audit|null
+     * @return \HiveCpq\\Client\\Generated\Model\Audit|null
      */
     public function getAudit()
     {
@@ -712,7 +712,7 @@ class ComponentLimited implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets audit
      *
-     * @param \HiveCpq\Client\Generated\Model\Audit|null $audit audit
+     * @param \HiveCpq\\Client\\Generated\Model\Audit|null $audit audit
      *
      * @return self
      */

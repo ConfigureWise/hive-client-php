@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace HiveCpq\Client\Generated\Model;
+namespace HiveCpq\\Client\\Generated\Model;
 
 use \ArrayAccess;
-use \HiveCpq\Client\Generated\ObjectSerializer;
+use \HiveCpq\\Client\\Generated\ObjectSerializer;
 
 /**
  * ComponentExtensions Class Doc Comment
  *
  * @category Class
  * @description Manages links between the component and related Hive objects. Not including the extensions block will not modify existing relations.
- * @package  HiveCpq\Client\Generated
+ * @package  HiveCpq\\Client\\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,11 +59,11 @@ class ComponentExtensions implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'feature' => '\HiveCpq\Client\Generated\Model\RequestSetFeatureLinks',
-        'category' => '\HiveCpq\Client\Generated\Model\RequestSetCategoryLinks',
-        'property' => '\HiveCpq\Client\Generated\Model\RequestSetPropertyValues',
-        'quantity' => '\HiveCpq\Client\Generated\Model\RequestSetComponentQuantities',
-        'tooltip' => '\HiveCpq\Client\Generated\Model\PutComponentTooltip'
+        'feature' => '\HiveCpq\\Client\\Generated\Model\RequestSetFeatureLinks',
+        'category' => '\HiveCpq\\Client\\Generated\Model\RequestSetCategoryLinks',
+        'property' => '\HiveCpq\\Client\\Generated\Model\RequestSetPropertyValues',
+        'quantity' => '\HiveCpq\\Client\\Generated\Model\RequestSetComponentQuantities',
+        'tooltip' => '\HiveCpq\\Client\\Generated\Model\PutComponentTooltip'
     ];
 
     /**
@@ -322,7 +322,7 @@ class ComponentExtensions implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets feature
      *
-     * @return \HiveCpq\Client\Generated\Model\RequestSetFeatureLinks|null
+     * @return \HiveCpq\\Client\\Generated\Model\RequestSetFeatureLinks|null
      */
     public function getFeature()
     {
@@ -332,7 +332,7 @@ class ComponentExtensions implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets feature
      *
-     * @param \HiveCpq\Client\Generated\Model\RequestSetFeatureLinks|null $feature feature
+     * @param \HiveCpq\\Client\\Generated\Model\RequestSetFeatureLinks|null $feature feature
      *
      * @return self
      */
@@ -349,7 +349,7 @@ class ComponentExtensions implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets category
      *
-     * @return \HiveCpq\Client\Generated\Model\RequestSetCategoryLinks|null
+     * @return \HiveCpq\\Client\\Generated\Model\RequestSetCategoryLinks|null
      */
     public function getCategory()
     {
@@ -359,7 +359,7 @@ class ComponentExtensions implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets category
      *
-     * @param \HiveCpq\Client\Generated\Model\RequestSetCategoryLinks|null $category category
+     * @param \HiveCpq\\Client\\Generated\Model\RequestSetCategoryLinks|null $category category
      *
      * @return self
      */
@@ -376,7 +376,7 @@ class ComponentExtensions implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets property
      *
-     * @return \HiveCpq\Client\Generated\Model\RequestSetPropertyValues|null
+     * @return \HiveCpq\\Client\\Generated\Model\RequestSetPropertyValues|null
      */
     public function getProperty()
     {
@@ -386,7 +386,7 @@ class ComponentExtensions implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets property
      *
-     * @param \HiveCpq\Client\Generated\Model\RequestSetPropertyValues|null $property property
+     * @param \HiveCpq\\Client\\Generated\Model\RequestSetPropertyValues|null $property property
      *
      * @return self
      */
@@ -403,7 +403,7 @@ class ComponentExtensions implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets quantity
      *
-     * @return \HiveCpq\Client\Generated\Model\RequestSetComponentQuantities|null
+     * @return \HiveCpq\\Client\\Generated\Model\RequestSetComponentQuantities|null
      */
     public function getQuantity()
     {
@@ -413,7 +413,7 @@ class ComponentExtensions implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets quantity
      *
-     * @param \HiveCpq\Client\Generated\Model\RequestSetComponentQuantities|null $quantity quantity
+     * @param \HiveCpq\\Client\\Generated\Model\RequestSetComponentQuantities|null $quantity quantity
      *
      * @return self
      */
@@ -430,7 +430,7 @@ class ComponentExtensions implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets tooltip
      *
-     * @return \HiveCpq\Client\Generated\Model\PutComponentTooltip|null
+     * @return \HiveCpq\\Client\\Generated\Model\PutComponentTooltip|null
      */
     public function getTooltip()
     {
@@ -440,7 +440,7 @@ class ComponentExtensions implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets tooltip
      *
-     * @param \HiveCpq\Client\Generated\Model\PutComponentTooltip|null $tooltip tooltip
+     * @param \HiveCpq\\Client\\Generated\Model\PutComponentTooltip|null $tooltip tooltip
      *
      * @return self
      */
