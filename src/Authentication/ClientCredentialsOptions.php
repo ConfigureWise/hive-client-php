@@ -14,6 +14,8 @@ class ClientCredentialsOptions
     public string $audience = 'https://ebusinesscloud.eu.auth0.com/api/v2/';
     public string $domain = 'https://ebusinesscloud.eu.auth0.com';
     public int $tokenRefreshBuffer = 3600;
+    public int $connectTimeout = 5;
+    public int $requestTimeout = 10;
 
     public function validate(): void
     {

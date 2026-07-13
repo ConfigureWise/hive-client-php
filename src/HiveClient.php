@@ -67,7 +67,7 @@ class HiveClient
         }
 
         $tokenProvider = $this->resolveTokenProvider($options);
-        $stack->push(new BearerTokenProvider($tokenProvider));
+        $stack->push(new BearerTokenProvider($tokenProvider, $options->tokenInvalidator));
 
         $this->httpClient = new Client([
             'handler' => $stack,
@@ -110,6 +110,7 @@ class HiveClient
 
         $options = new HiveClientOptions();
         $options->tokenProvider = $tokenProvider->getToken(...);
+        $options->tokenInvalidator = $tokenProvider->invalidateToken(...);
 
         if ($baseUrl !== null) {
             $options->baseUrl = $baseUrl;

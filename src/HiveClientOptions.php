@@ -12,6 +12,8 @@ class HiveClientOptions
     public ?string $bearerToken = null;
     /** @var callable(string): string|null */
     public mixed $tokenProvider = null;
+    /** @var callable(): void|null */
+    public mixed $tokenInvalidator = null;
     /** @var array<string, string> */
     public array $defaultHeaders = [];
     public string $userAgent = 'HiveCpq.Client.PHP/1.0.0';
