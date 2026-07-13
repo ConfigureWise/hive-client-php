@@ -53,7 +53,7 @@ class HiveClient
 
         $stack = HandlerStack::create();
 
-        $stack->push(RetryMiddleware::create($options->maxRetries, $options->retryDelay, $logger));
+        $stack->push(RetryMiddleware::create($options->maxRetries, $options->retryDelay, $logger, $options->maxRetryDelay));
 
         $stack->push(DefaultHeadersMiddleware::create(
             $options->defaultHeaders,

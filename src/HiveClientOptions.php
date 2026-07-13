@@ -23,6 +23,7 @@ class HiveClientOptions
     public int $timeout = 30;
     public int $maxRetries = 3;
     public float $retryDelay = 1.0;
+    public float $maxRetryDelay = 30.0;
 
     public function validate(): void
     {

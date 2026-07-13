@@ -14,7 +14,7 @@ class RetryMiddleware
 {
     private const RETRYABLE_STATUS_CODES = [408, 429, 500, 502, 503, 504];
 
-    public static function create(int $maxRetries = 3, float $initialDelay = 1.0, ?LoggerInterface $logger = null): callable
+    public static function create(int $maxRetries = 3, float $initialDelay = 1.0, ?LoggerInterface $logger = null, float $maxDelay = 30.0): callable
     {
         $decider = function (int $retries, RequestInterface $request, ?ResponseInterface $response = null, ?\Throwable $exception = null) use ($maxRetries, $logger): bool {
             if ($retries >= $maxRetries) {
@@ -45,21 +45,23 @@ class RetryMiddleware
             return false;
         };
 
-        $delay = function (int $retries, ?ResponseInterface $response = null) use ($initialDelay): int {
+        $delay = function (int $retries, ?ResponseInterface $response = null) use ($initialDelay, $maxDelay): int {
+            $maxDelayMs = (int) ($maxDelay * 1000);
+
             if ($response && $response->hasHeader('Retry-After')) {
                 $retryAfter = $response->getHeaderLine('Retry-After');
                 if (is_numeric($retryAfter)) {
-                    return (int) ($retryAfter * 1000);
+                    return min((int) ($retryAfter * 1000), $maxDelayMs);
                 }
                 $date = strtotime($retryAfter);
                 if ($date !== false) {
-                    return max(0, ($date - time()) * 1000);
+                    return min(max(0, ($date - time()) * 1000), $maxDelayMs);
                 }
             }
 
             $exponential = $initialDelay * (2 ** $retries) * 1000;
             $jitter = $exponential * 0.2 * (mt_rand() / mt_getrandmax());
-            return (int) ($exponential + $jitter);
+            return min((int) ($exponential + $jitter), $maxDelayMs);
         };
 
         return Middleware::retry($decider, $delay);
