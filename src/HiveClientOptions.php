@@ -24,6 +24,8 @@ class HiveClientOptions
     public int $maxRetries = 3;
     public float $retryDelay = 1.0;
     public float $maxRetryDelay = 30.0;
+    /** Client-side pacing of outgoing requests, in requests per second. 0 disables throttling. */
+    public float $maxRequestsPerSecond = 0.0;
 
     public function validate(): void
     {

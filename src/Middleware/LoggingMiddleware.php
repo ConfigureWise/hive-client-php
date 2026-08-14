@@ -11,8 +11,6 @@ use Psr\Log\LoggerInterface;
 
 class LoggingMiddleware
 {
-    private const REDACTED_HEADERS = ['Authorization', 'X-Api-Key'];
-
     public static function create(LoggerInterface $logger): callable
     {
         return function (callable $handler) use ($logger): callable {

@@ -17,10 +17,13 @@ class HiveClientFactory
     public static function create(array $config, ?LoggerInterface $logger = null): HiveClient
     {
         $options = new HiveClientOptions();
-        $options->baseUrl = $config['base_url'];
-        $options->timeout = $config['timeout'];
-        $options->maxRetries = $config['max_retries'];
-        $options->userAgent = $config['user_agent'];
+        $options->baseUrl = $config['base_url'] ?? $options->baseUrl;
+        $options->timeout = $config['timeout'] ?? $options->timeout;
+        $options->maxRetries = $config['max_retries'] ?? $options->maxRetries;
+        $options->retryDelay = $config['retry_delay'] ?? $options->retryDelay;
+        $options->maxRetryDelay = $config['max_retry_delay'] ?? $options->maxRetryDelay;
+        $options->maxRequestsPerSecond = $config['max_requests_per_second'] ?? $options->maxRequestsPerSecond;
+        $options->userAgent = $config['user_agent'] ?? $options->userAgent;
 
         $auth = $config['auth'];
 

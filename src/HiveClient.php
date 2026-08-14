@@ -40,6 +40,7 @@ use HiveCpq\Client\Generated\Configuration as GeneratedConfiguration;
 use HiveCpq\Client\Middleware\DefaultHeadersMiddleware;
 use HiveCpq\Client\Middleware\LoggingMiddleware;
 use HiveCpq\Client\Middleware\RetryMiddleware;
+use HiveCpq\Client\Middleware\ThrottleMiddleware;
 use Psr\Log\LoggerInterface;
 
 class HiveClient
@@ -54,6 +55,11 @@ class HiveClient
         $stack = HandlerStack::create();
 
         $stack->push(RetryMiddleware::create($options->maxRetries, $options->retryDelay, $logger, $options->maxRetryDelay));
+
+        // Inside the retry, so every attempt is paced rather than only the first.
+        if ($options->maxRequestsPerSecond > 0) {
+            $stack->push(ThrottleMiddleware::create($options->maxRequestsPerSecond, $logger));
+        }
 
         $stack->push(DefaultHeadersMiddleware::create(
             $options->defaultHeaders,
