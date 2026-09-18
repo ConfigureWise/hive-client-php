@@ -27,6 +27,12 @@ class HiveClientOptions
     public float $maxRetryDelay = 30.0;
     /** Client-side pacing of outgoing requests, in requests per second. 0 disables throttling. */
     public float $maxRequestsPerSecond = 0.0;
+    /**
+     * Guzzle handler at the bottom of the stack, for tests that swap in a MockHandler.
+     *
+     * @var callable|null
+     */
+    public mixed $handler = null;
 
     public function validate(): void
     {

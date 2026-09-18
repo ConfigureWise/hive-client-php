@@ -67,6 +67,7 @@ $options->maxRetries = 3;      // retry attempts for transient failures
 $options->retryDelay = 1.0;    // initial retry delay in seconds
 $options->maxRetryDelay = 30.0;  // cap on any retry delay, including Retry-After
 $options->maxRequestsPerSecond = 0; // client-side pacing, 0 disables
+$options->handler = null;      // Guzzle handler, e.g. a MockHandler in tests
 $options->userAgent = 'MyApp/1.0.0';
 $options->defaultHeaders = [
     'X-Custom-Header' => 'custom-value',

@@ -52,7 +52,7 @@ class HiveClient
     {
         $options->validate();
 
-        $stack = HandlerStack::create();
+        $stack = HandlerStack::create($options->handler);
 
         $stack->push(RetryMiddleware::create($options->maxRetries, $options->retryDelay, $logger, $options->maxRetryDelay));
 

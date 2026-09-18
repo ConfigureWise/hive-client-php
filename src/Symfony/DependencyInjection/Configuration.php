@@ -19,6 +19,7 @@ class Configuration implements ConfigurationInterface
                     ->defaultValue('https://connect.hivecpq.com/api/v1')
                 ->end()
                 ->integerNode('timeout')
+                    ->info('Seconds allowed for the whole request.')
                     ->defaultValue(30)
                 ->end()
                 ->integerNode('connect_timeout')
