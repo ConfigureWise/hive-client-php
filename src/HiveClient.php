@@ -78,6 +78,7 @@ class HiveClient
         $this->httpClient = new Client([
             'handler' => $stack,
             'timeout' => $options->timeout,
+            'connect_timeout' => $options->connectTimeout,
         ]);
 
         $this->configuration = new GeneratedConfiguration();

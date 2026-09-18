@@ -19,6 +19,7 @@ class HiveClientFactory
         $options = new HiveClientOptions();
         $options->baseUrl = $config['base_url'] ?? $options->baseUrl;
         $options->timeout = $config['timeout'] ?? $options->timeout;
+        $options->connectTimeout = $config['connect_timeout'] ?? $options->connectTimeout;
         $options->maxRetries = $config['max_retries'] ?? $options->maxRetries;
         $options->retryDelay = $config['retry_delay'] ?? $options->retryDelay;
         $options->maxRetryDelay = $config['max_retry_delay'] ?? $options->maxRetryDelay;

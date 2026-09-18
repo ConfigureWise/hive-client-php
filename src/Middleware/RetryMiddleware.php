@@ -22,8 +22,11 @@ class RetryMiddleware
     private const RETRYABLE_STATUS_CODES = [408, 429, 500, 502, 503, 504];
     private const IDEMPOTENT_METHODS = ['GET', 'HEAD', 'PUT', 'DELETE', 'OPTIONS', 'TRACE'];
 
-    /** Upserts are keyed by the caller, so replaying one cannot create a duplicate. */
-    private const REPLAYABLE_PATH_SUFFIXES = ['/bulkUpsert', '/bulkDelete'];
+    /**
+     * Upserts are keyed by the caller and checkConfiguration sets values on an existing
+     * configuration, so replaying either cannot create a duplicate.
+     */
+    private const REPLAYABLE_PATH_SUFFIXES = ['/bulkUpsert', '/bulkDelete', '/checkConfiguration'];
 
     public static function create(int $maxRetries = 3, float $initialDelay = 1.0, ?LoggerInterface $logger = null, float $maxDelay = 30.0): callable
     {

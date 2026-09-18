@@ -21,6 +21,7 @@ class HiveClientOptions
     /** @var callable(): ?string|null */
     public mixed $correlationIdProvider = null;
     public int $timeout = 30;
+    public int $connectTimeout = 10;
     public int $maxRetries = 3;
     public float $retryDelay = 1.0;
     public float $maxRetryDelay = 30.0;

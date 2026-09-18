@@ -130,6 +130,39 @@ class RetryMiddlewareTest extends TestCase
         }
     }
 
+    public function testConnectionErrorOnCheckConfigurationIsRetried(): void
+    {
+        $uri = 'https://example.test/manufacturers/m/configurations/c/checkConfiguration';
+
+        [$client, $attempts] = $this->clientFor([
+            new ConnectException('timed out', new Request('POST', $uri)),
+            new Response(204),
+        ]);
+
+        $response = $client->post($uri);
+
+        $this->assertSame(204, $response->getStatusCode());
+        $this->assertSame(2, $attempts());
+    }
+
+    public function testConnectionErrorOnAddConfigurationIsNotRetried(): void
+    {
+        $uri = 'https://example.test/manufacturers/m/projects/p/addConfiguration';
+
+        [$client, $attempts] = $this->clientFor([
+            new ConnectException('timed out', new Request('POST', $uri)),
+            new Response(201),
+        ]);
+
+        $this->expectException(ConnectException::class);
+
+        try {
+            $client->post($uri);
+        } finally {
+            $this->assertSame(1, $attempts());
+        }
+    }
+
     public function testGivesUpAfterMaxRetries(): void
     {
         [$client, $attempts] = $this->clientFor([

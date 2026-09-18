@@ -61,9 +61,12 @@ use HiveCpq\Client\HiveClient;
 $options = new HiveClientOptions();
 $options->bearerToken = 'your-jwt-token';
 $options->baseUrl = 'https://connect.hivecpq.com/api/v1'; // default
-$options->timeout = 30;        // seconds
+$options->timeout = 30;        // seconds, total per request
+$options->connectTimeout = 10; // seconds, until the connection is established
 $options->maxRetries = 3;      // retry attempts for transient failures
 $options->retryDelay = 1.0;    // initial retry delay in seconds
+$options->maxRetryDelay = 30.0;  // cap on any retry delay, including Retry-After
+$options->maxRequestsPerSecond = 0; // client-side pacing, 0 disables
 $options->userAgent = 'MyApp/1.0.0';
 $options->defaultHeaders = [
     'X-Custom-Header' => 'custom-value',
@@ -73,6 +76,16 @@ $options->correlationIdProvider = fn() => bin2hex(random_bytes(8));
 
 $client = new HiveClient($options);
 ```
+
+### Retry Behaviour
+
+A `429 Too Many Requests` is always retried: the server rejected the call without processing it. Server errors (5xx) and connection errors, including timeouts, are only retried when the request is safe to repeat:
+
+- idempotent methods (`GET`, `HEAD`, `PUT`, `DELETE`, `OPTIONS`, `TRACE`)
+- `POST` to `/bulkUpsert`, `/bulkDelete` and `/checkConfiguration`, which are keyed by the caller or set values on an existing resource
+- any request carrying the `X-Hive-Retry-Unsafe` header (`RetryMiddleware::RETRY_UNSAFE_HEADER`)
+
+Other `POST` calls, such as creating a project or adding a configuration, fail on the first error so a lost response never turns into a duplicate. A `Retry-After` header is honoured up to `maxRetryDelay`.
 
 ### With Logging (PSR-3)
 
@@ -108,6 +121,7 @@ return [
 hive_cpq:
     base_url: 'https://connect.hivecpq.com/api/v1'
     timeout: 30
+    connect_timeout: 10
     max_retries: 3
 
     auth:
